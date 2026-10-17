@@ -1,0 +1,5 @@
+Image 1:
+Focus Trail on a vivid blue background. Large text reads “Make every Tab count.” Peach, lilac and mint keyboard keys labeled Tab, Enter and Esc connect along a focus path. Supporting text says “Catch keyboard focus regressions in Playwright.”
+
+Image 2:
+A lilac product image reads “Catch the first wrong turn.” A preview of a deliberately broken demo report marks Step 08, return-opener after Escape, as regressed. The reviewed baseline focuses Open settings; the current run times out after 500 milliseconds. A note states that the last sample was retained and a fresh endpoint sample was unavailable.

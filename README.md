@@ -10,7 +10,7 @@ Focus Trail adds authored focus checkpoints to an existing Playwright test, reco
 >
 > Engineering qualification passed. Human evidence: **0/5 maintainer assessments · 0/3 independent installations**. Public npm release remains pending. [Measured status](pilot/operator/status.json)
 
-![Focus Trail's interactive landing page: a real keyboard journey beside a live focus inspector.](docs/images/frontend-desktop.png)
+![Focus Trail's cobalt landing page with dimensional keys and a live keyboard workshop below.](docs/images/frontend-desktop.png)
 
 ## What it does
 
@@ -105,11 +105,13 @@ Open **http://127.0.0.1:49371**. The responsive demo includes a live focus inspe
 
 ![The redesigned dialog opened using the keyboard, with Cancel visibly focused.](docs/images/demo-keyboard-dialog.png)
 
-[Desktop/mobile pictures and browser verification](evidence/frontend/README.md): 14 UI checks, ten viewport widths, all six fixture behaviors and no external asset requests.
+[Desktop/mobile pictures and browser verification](evidence/frontend/README.md): 16 UI checks, ten viewport widths, headline checks at 17 widths, all six fixture behaviors and no external asset requests.
 
 </details>
 
-To regenerate them with actual browser tests:
+Sharing the project? Download the [two-image portrait post kit](social/focus-trail-instagram.zip), including 1080 × 1350 PNGs, a caption and alt text. [Preview and regenerate the artwork](social/README.md).
+
+To regenerate the recorded journey reports with actual browser tests:
 
 ```sh
 npx --no-install playwright install chromium

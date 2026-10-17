@@ -1,23 +1,23 @@
 {
-  "checks": 14,
+  "checks": 16,
   "screenshots": [
     {
       "path": "docs/images/frontend-desktop.png",
-      "description": "Redesigned landing page, reached with a real Tab; Open settings has visible focus and the inspector reflects it.",
-      "bytes": 288570,
-      "sha256": "d6d6dc4676c74ce5475736276802df69013e84403442df2ef3903e690838200f"
+      "description": "Actual landing page with its dimensional key illustration and the beginning of the live workshop.",
+      "bytes": 409908,
+      "sha256": "74e745676da1525bd2b7f8177a0dbda8c0618357250a4f61ffe501944b8585ba"
     },
     {
       "path": "docs/images/demo-keyboard-dialog.png",
       "description": "Real keyboard navigation: Tab, Enter, Tab; Cancel is visibly focused in the redesigned dialog.",
-      "bytes": 554954,
-      "sha256": "16a5aa64d000f9cc08d12122b4cdf24dbde2beef842c3110f98a7e9cdfcb94a9"
+      "bytes": 413372,
+      "sha256": "1aa4c9d7a95b0832dbd5f2d4a4ce7e49af240f01b6049b8b6015101c53bd475b"
     },
     {
       "path": "docs/images/frontend-mobile.png",
       "description": "The actual responsive landing page at 390px, including stacked report evidence.",
-      "bytes": 578768,
-      "sha256": "00d88687756a120d7c6ddd717a8b56e7e4b3244625a443ce08a5e17555c64103"
+      "bytes": 691002,
+      "sha256": "722ecea79913d0b100bbd509078145cba4cfcc3b6c39b809c13932ea9e6c5874"
     }
   ],
   "browserErrors": [],

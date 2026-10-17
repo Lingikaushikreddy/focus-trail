@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-10-17T01:20:55.559Z",
+  "verifiedAt": "2026-10-17T01:36:38.005Z",
   "browser": "156.0.8078.4",
   "channel": "chromium",
   "deviceScaleFactor": 2,
   "sourceSha256": {
-    "examples/dialog/app/index.html": "f70b52488ad3aa7adb83e3e60bf824d66f93b59aaa87f6cb4a17ce17645bc7eb",
-    "examples/dialog/app/style.css": "dfeda7620ec753e4670519b1a65a7debcce763830378cff81a0815a530c27077",
-    "examples/dialog/app/app.js": "9601c5aebbc033e9619445f0ed1013d3680fcbe5a3f98048e728e07a7609210e"
+    "examples/dialog/app/index.html": "2ce31261c9156294277e40375077b2ef9a46b566fbb4f14c3f93986a97aafbf0",
+    "examples/dialog/app/style.css": "bc44474df2faf21d85200cfc9b55b4ff416441c679b3f052d2d1776602b490f8",
+    "examples/dialog/app/app.js": "2cc7a0dbd2eb7b0d7eca9ddab2e32d23babe00f2349d6f3ab9d7dd01d3c34799"
   },
   "checks": [
     {
@@ -14,7 +14,15 @@
       "result": "passed"
     },
     {
+      "name": "Hero headline stays on two readable lines across layout breakpoints",
+      "result": "passed"
+    },
+    {
       "name": "First real Tab reaches opener, shows a visible focus ring and updates inspector",
+      "result": "passed"
+    },
+    {
+      "name": "Illustration and key echo respond to the actual keyboard event",
       "result": "passed"
     },
     {
@@ -108,6 +116,110 @@
       "scrollWidth": 1920
     }
   ],
+  "headlineMeasurements": [
+    {
+      "width": 320,
+      "firstLineRects": 1,
+      "finalWordRects": 1,
+      "keyAlignedWithFinalWord": true
+    },
+    {
+      "width": 390,
+      "firstLineRects": 1,
+      "finalWordRects": 1,
+      "keyAlignedWithFinalWord": true
+    },
+    {
+      "width": 430,
+      "firstLineRects": 1,
+      "finalWordRects": 1,
+      "keyAlignedWithFinalWord": true
+    },
+    {
+      "width": 431,
+      "firstLineRects": 1,
+      "finalWordRects": 1,
+      "keyAlignedWithFinalWord": true
+    },
+    {
+      "width": 450,
+      "firstLineRects": 1,
+      "finalWordRects": 1,
+      "keyAlignedWithFinalWord": true
+    },
+    {
+      "width": 480,
+      "firstLineRects": 1,
+      "finalWordRects": 1,
+      "keyAlignedWithFinalWord": true
+    },
+    {
+      "width": 700,
+      "firstLineRects": 1,
+      "finalWordRects": 1,
+      "keyAlignedWithFinalWord": true
+    },
+    {
+      "width": 701,
+      "firstLineRects": 1,
+      "finalWordRects": 1,
+      "keyAlignedWithFinalWord": true
+    },
+    {
+      "width": 768,
+      "firstLineRects": 1,
+      "finalWordRects": 1,
+      "keyAlignedWithFinalWord": true
+    },
+    {
+      "width": 800,
+      "firstLineRects": 1,
+      "finalWordRects": 1,
+      "keyAlignedWithFinalWord": true
+    },
+    {
+      "width": 801,
+      "firstLineRects": 1,
+      "finalWordRects": 1,
+      "keyAlignedWithFinalWord": true
+    },
+    {
+      "width": 860,
+      "firstLineRects": 1,
+      "finalWordRects": 1,
+      "keyAlignedWithFinalWord": true
+    },
+    {
+      "width": 900,
+      "firstLineRects": 1,
+      "finalWordRects": 1,
+      "keyAlignedWithFinalWord": true
+    },
+    {
+      "width": 901,
+      "firstLineRects": 1,
+      "finalWordRects": 1,
+      "keyAlignedWithFinalWord": true
+    },
+    {
+      "width": 1020,
+      "firstLineRects": 1,
+      "finalWordRects": 1,
+      "keyAlignedWithFinalWord": true
+    },
+    {
+      "width": 1150,
+      "firstLineRects": 1,
+      "finalWordRects": 1,
+      "keyAlignedWithFinalWord": true
+    },
+    {
+      "width": 1440,
+      "firstLineRects": 1,
+      "finalWordRects": 1,
+      "keyAlignedWithFinalWord": true
+    }
+  ],
   "reportResponses": [
     {
       "name": "good",
@@ -131,21 +243,21 @@
   "screenshots": [
     {
       "path": "docs/images/frontend-desktop.png",
-      "description": "Redesigned landing page, reached with a real Tab; Open settings has visible focus and the inspector reflects it.",
-      "bytes": 288570,
-      "sha256": "d6d6dc4676c74ce5475736276802df69013e84403442df2ef3903e690838200f"
+      "description": "Actual landing page with its dimensional key illustration and the beginning of the live workshop.",
+      "bytes": 409908,
+      "sha256": "74e745676da1525bd2b7f8177a0dbda8c0618357250a4f61ffe501944b8585ba"
     },
     {
       "path": "docs/images/demo-keyboard-dialog.png",
       "description": "Real keyboard navigation: Tab, Enter, Tab; Cancel is visibly focused in the redesigned dialog.",
-      "bytes": 554954,
-      "sha256": "16a5aa64d000f9cc08d12122b4cdf24dbde2beef842c3110f98a7e9cdfcb94a9"
+      "bytes": 413372,
+      "sha256": "1aa4c9d7a95b0832dbd5f2d4a4ce7e49af240f01b6049b8b6015101c53bd475b"
     },
     {
       "path": "docs/images/frontend-mobile.png",
       "description": "The actual responsive landing page at 390px, including stacked report evidence.",
-      "bytes": 578768,
-      "sha256": "00d88687756a120d7c6ddd717a8b56e7e4b3244625a443ce08a5e17555c64103"
+      "bytes": 691002,
+      "sha256": "722ecea79913d0b100bbd509078145cba4cfcc3b6c39b809c13932ea9e6c5874"
     }
   ],
   "limitation": "Automated browser and visual review; does not count as a human pilot installation or assistive-technology assessment."

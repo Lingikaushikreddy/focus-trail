@@ -45,6 +45,10 @@ opener.addEventListener('click', () => {
 save.addEventListener('click', () => close(true));
 cancel.addEventListener('click', () => close());
 document.addEventListener('keydown', event => {
+  if (['Tab', 'Enter', 'Escape', ' ', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
+    document.querySelector('#last-key').textContent = event.key === ' ' ? 'Space' : event.key;
+    for (const key of document.querySelectorAll('[data-art-key]')) key.classList.toggle('is-active', key.dataset.artKey === event.key);
+  }
   if (modal.hidden) return;
   if (event.key === 'Escape') { event.preventDefault(); close(); }
   if (event.key === 'Tab' && variant !== 'escape') {
@@ -56,6 +60,8 @@ document.addEventListener('focusin', event => {
   const label = event.target === document.body ? 'Document body'
     : (event.target.getAttribute('aria-label') || event.target.innerText || event.target.textContent || event.target.tagName).replace(/\s+/g, ' ').trim();
   document.querySelector('#focus').textContent = label;
+  document.querySelector('#hero-focus-label').textContent = [opener, save, cancel].includes(event.target)
+    ? 'Focus → ' + label : event.target === document.body ? 'Focus → Document body' : 'Exploring the page';
   document.querySelector('#focus-detail').textContent = event.target === document.body
     ? 'Focus is on the document, outside any control'
     : event.target === save || event.target === cancel

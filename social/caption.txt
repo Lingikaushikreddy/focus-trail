@@ -1,0 +1,12 @@
+Good interfaces keep your place.
+
+I'm building Focus Trail: a small tool that makes keyboard focus changes reviewable in Playwright tests.
+
+Real keypresses. Authored checkpoints. A reviewed baseline. An offline report that shows the first changed step.
+
+Swipe for a controlled demo: the dialog closes, but focus doesn't return to its opener.
+
+Pilot candidate v0.1.0. Source and demo instructions:
+https://github.com/Lingikaushikreddy/focus-trail
+
+#BuildInPublic #WebDevelopment #Playwright #Accessibility #OpenSource

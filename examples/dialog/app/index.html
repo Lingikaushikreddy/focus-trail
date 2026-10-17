@@ -4,26 +4,59 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Catch keyboard focus regressions in your Playwright tests. Try a real keyboard journey and explore the evidence with Focus Trail.">
-  <meta name="theme-color" content="#f8f7f3">
-  <title>Focus Trail — Keep the keyboard journey intact.</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23e35b36'/%3E%3Cpath d='M13 8H8v5m11-5h5v5M8 19v5h5m11-5v5h-5' fill='none' stroke='white' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='white'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#f4f5fb">
+  <title>Focus Trail — Make every Tab count.</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234b43d6'/%3E%3Cpath d='M13 8H8v5m11-5h5v5M8 19v5h5m11-5v5h-5' fill='none' stroke='white' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='white'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
   <script type="module" src="app.js"></script>
 </head>
 <body>
   <header class="site-header" data-outside>
     <div class="brand"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M12 4H4v8m16-8h8v8M4 20v8h8m16-8v8h-8"/><circle cx="16" cy="16" r="4"/></svg><span>Focus Trail</span></div>
-    <span class="header-note">Small tool. Clear evidence.</span>
+    <span class="header-note">Keep your place.</span>
     <span class="version"><span class="status-dot"></span>Open source <span class="version-number">/ v0.1.0</span></span>
   </header>
   <main>
     <section class="hero" data-outside>
-      <p class="eyebrow"><span class="mini-trail" aria-hidden="true">↳</span> Keyboard journeys for Playwright</p>
       <div class="hero-layout">
-        <h1>Don’t let focus<br><span>get lost.</span><svg class="hero-trail" viewBox="0 0 190 60" aria-hidden="true"><path d="M3 8h110a22 22 0 0 1 0 44H70m0 0 12-12M70 52l12 7"/><circle cx="3" cy="8" r="3"/></svg></h1>
-        <div class="hero-copy"><p>Ship your next UI change with the keyboard journey intact.</p><p class="hero-detail">Follow real keypresses, catch changed focus, and give your team a report they can actually review.</p><div class="compatibility"><span class="tiny-focus" aria-hidden="true"></span>Playwright + Chromium <span aria-hidden="true">·</span> Runs locally</div></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="hero-badge-dot"></span> Built for the way people navigate.</p>
+          <h1>Make every<br><kbd class="headline-key">Tab <span aria-hidden="true">⇥</span></kbd> count.</h1>
+          <p class="hero-detail">Great interfaces keep your place.<br>Catch keyboard focus regressions<br class="desktop-break"> before your next release.</p>
+          <div class="hero-invitation"><span class="invitation-arrow" aria-hidden="true">↙</span><span>Try the real keyboard journey below.</span></div>
+        </div>
+        <div class="hero-art">
+          <span class="art-stamp">Follow the focus.</span>
+          <svg class="key-art" viewBox="0 0 600 540" fill="none" aria-hidden="true">
+<defs><filter id="key-shadow" x="-40%" y="-40%" width="200%" height="220%"><feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#241d87" flood-opacity=".25"/></filter></defs>
+<ellipse cx="300" cy="274" rx="250" ry="204" stroke="#8e88eb" stroke-width="1" stroke-dasharray="3 10"/>
+<path d="M77 157H44a24 24 0 0 0-24 24v95a32 32 0 0 0 32 32h426a38 38 0 0 1 38 38v91a30 30 0 0 1-30 30H243" stroke="#a49df7" stroke-width="9" stroke-linecap="round"/>
+<path d="M102 305H317" stroke="#ffbba6" stroke-width="9" stroke-linecap="round"/>
+<circle cx="77" cy="157" r="9" fill="#ffbba6"/><circle cx="244" cy="467" r="9" fill="#ffbba6"/>
+<g class="art-key" data-art-key="Tab" transform="translate(92 71) rotate(-13 100 80)" filter="url(#key-shadow)">
+<rect y="18" width="194" height="164" rx="26" fill="#ada3ef"/>
+<g class="key-face"><rect width="194" height="164" rx="26" fill="#e5dfff"/><rect x="10" y="10" width="174" height="144" rx="19" stroke="#f7f4ff" stroke-width="2"/><text x="28" y="63" fill="#332d6d" font-size="46" font-weight="600">Tab</text><path d="M130 101h32m-10-10 10 10-10 10m13-22v24" stroke="#71669e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="28" y="137" fill="#71669e" font-size="12">Find your next stop</text></g>
+<rect class="art-key-ring" x="-8" y="-8" width="210" height="180" rx="33" stroke="#ffffff" stroke-width="3"/>
+</g>
+<g class="art-key" data-art-key="Enter" transform="translate(327 214) rotate(11 100 80)" filter="url(#key-shadow)">
+<rect y="18" width="194" height="164" rx="26" fill="#e58f75"/>
+<g class="key-face"><rect width="194" height="164" rx="26" fill="#ffbba6"/><rect x="10" y="10" width="174" height="144" rx="19" stroke="#ffe2d7" stroke-width="2"/><text x="27" y="61" fill="#673726" font-size="37" font-weight="600">Enter</text><path d="M158 86v24h-32m11-11-11 11 11 11" stroke="#9b5c45" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="27" y="137" fill="#8d503a" font-size="12">Make something happen</text></g>
+<rect class="art-key-ring" x="-8" y="-8" width="210" height="180" rx="33" stroke="#ffffff" stroke-width="3"/>
+</g>
+<g class="art-key" data-art-key="Escape" transform="translate(94 365) rotate(-10 85 65)" filter="url(#key-shadow)">
+<rect y="15" width="166" height="132" rx="23" fill="#91c4b2"/>
+<g class="key-face"><rect width="166" height="132" rx="23" fill="#c5eadb"/><rect x="9" y="9" width="148" height="114" rx="17" stroke="#e7fff4" stroke-width="2"/><text x="25" y="60" fill="#315d4e" font-size="38" font-weight="600">Esc</text><path d="M113 86h24m-8-8 8 8-8 8" stroke="#538674" stroke-width="2.5" stroke-linecap="round"/><text x="25" y="106" fill="#538674" font-size="11">Find your way back</text></g>
+<rect class="art-key-ring" x="-8" y="-8" width="182" height="148" rx="30" stroke="#ffffff" stroke-width="3"/>
+</g>
+<g transform="translate(460 112) rotate(9)"><path d="m0 0 5 53 13-16 21 8 5-13-21-8L37 11Z" fill="#fff" stroke="#302a9b" stroke-width="3" stroke-linejoin="round"/></g>
+<path d="m335 103 14-22m-38 9 2-25m39 55 24-8" stroke="#ffbba6" stroke-width="3" stroke-linecap="round"/>
+</svg>
+          <div class="art-note"><span class="note-focus-icon" aria-hidden="true"></span><span id="hero-focus-label">A path for every keypress</span></div>
+        </div>
       </div>
+      <div class="hero-bottom"><span>Made for Playwright. Kept local.</span><div class="hero-capabilities"><span>Real keypresses</span><span>Reviewed baselines</span><span>Offline reports</span></div></div>
     </section>
+    <div class="demo-intro" data-outside><h2>Take it for a Tab.</h2><p>A working dialog. Three deliberate faults. Your keyboard.</p></div>
     <section class="product-window" aria-label="Interactive keyboard demo">
       <div class="window-bar" data-outside><div class="window-title"><span class="window-symbol" aria-hidden="true">⌘</span><span>dialog.journey</span><span class="file-extension">.spec.ts</span></div><span class="live-label"><span class="status-dot"></span>Live in your browser</span></div>
       <div class="workspace">
@@ -52,7 +85,7 @@
           <a class="text-link" href="/reports/lost-return.html" data-testid="outside">Explore a recorded failure <span aria-hidden="true">↗</span></a>
         </aside>
       </div>
-      <div class="window-footer" data-outside><span><span class="status-dot"></span>Real browser. Real keyboard events.</span><span>Controlled demo fixtures</span></div>
+      <div class="window-footer" data-outside><span><span class="status-dot"></span>Real browser. Real keyboard events.</span><span class="key-echo">Last key <kbd id="last-key">—</kbd></span><span>Controlled demo fixtures</span></div>
     </section>
     <section class="fixture-section" id="variants" data-outside aria-labelledby="fixtures-title">
       <div class="section-intro"><h2 id="fixtures-title">Same dialog. <br>Different destinations.</h2><p>Switch the behavior. Follow the same keys. <br>Feel the difference for yourself.</p></div>

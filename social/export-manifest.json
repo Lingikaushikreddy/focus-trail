@@ -1,0 +1,30 @@
+{
+  "exportedAt": "2026-10-17T01:36:32.134Z",
+  "browser": "156.0.8078.4",
+  "images": [
+    {
+      "file": "01-focus-trail-cover.png",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 163083,
+      "sha256": "3cc91e069e06424274c4b47f8e4a336aadacc34210ad57e52912697b83ec48c8"
+    },
+    {
+      "file": "02-focus-trail-evidence.png",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 110867,
+      "sha256": "500f227fdd2d5314d6f385cbe3819c67c60d848fc445da1ef5a70880543ba632"
+    }
+  ],
+  "sourceSha256": {
+    "examples/dialog/app/index.html": "2ce31261c9156294277e40375077b2ef9a46b566fbb4f14c3f93986a97aafbf0",
+    "examples/dialog/app/style.css": "bc44474df2faf21d85200cfc9b55b4ff416441c679b3f052d2d1776602b490f8",
+    "examples/dialog/app/social.html": "56b4509b8081ebd39d215cbfd8728b768852f8b2747fad5e180e7557dbfd8d3b",
+    "examples/dialog/app/social.css": "967bc1b3e451ba551ce28e1c089983ff99186d99fc2dfeb94834b1acc4f50450",
+    "examples/dialog/app/social.js": "824fb9977adc070ee697b5c3970c4b0fc25e4543c7e4f5eeeae1c7261040a522",
+    "evidence/demo/lost-return.json": "984deaf0ce65bc64758483f527f8c6040b221b1f0bdf76cfe2d68199ba0964a2"
+  },
+  "browserErrors": [],
+  "note": "Static portrait artwork rendered from the same key illustration and report preview as the working demo. The failure is a controlled fixture, not a customer incident."
+}

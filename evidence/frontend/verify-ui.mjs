@@ -37,8 +37,28 @@ await check('No horizontal overflow from 320px phone to 1920px desktop', async (
     viewports.push(measurement);
   }
 });
+const headlineMeasurements = [];
+await check('Hero headline stays on two readable lines across layout breakpoints', async () => {
+  for (const width of [320, 390, 430, 431, 450, 480, 700, 701, 768, 800, 801, 860, 900, 901, 1020, 1150, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    const measurement = await page.locator('h1').evaluate(el => {
+      const range = document.createRange();
+      range.selectNodeContents(el.firstChild);
+      const first = [...range.getClientRects()].filter(r => r.width > 1);
+      range.setStart(el.lastChild, 1); range.setEnd(el.lastChild, el.lastChild.length);
+      const last = [...range.getClientRects()].filter(r => r.width > 1);
+      const key = el.querySelector('kbd').getBoundingClientRect();
+      return { width: innerWidth, firstLineRects: first.length, finalWordRects: last.length, keyAlignedWithFinalWord: Math.abs(key.top - last[0].top) < parseFloat(getComputedStyle(el).fontSize) * .8 };
+    });
+    assert.equal(measurement.firstLineRects, 1, JSON.stringify(measurement));
+    assert.equal(measurement.finalWordRects, 1, JSON.stringify(measurement));
+    assert(measurement.keyAlignedWithFinalWord, JSON.stringify(measurement));
+    headlineMeasurements.push(measurement);
+  }
+});
 await page.setViewportSize({ width: 1440, height: 1000 });
 await goto();
+await shot('frontend-desktop.png', 'Actual landing page with its dimensional key illustration and the beginning of the live workshop.');
 await check('First real Tab reaches opener, shows a visible focus ring and updates inspector', async () => {
   await page.keyboard.press('Tab');
   assert.equal(await focused(), 'opener');
@@ -47,11 +67,16 @@ await check('First real Tab reaches opener, shows a visible focus ring and updat
   const ring = await page.locator('#opener').evaluate(el => ({ style: getComputedStyle(el).outlineStyle, width: getComputedStyle(el).outlineWidth }));
   assert.deepEqual(ring, { style: 'solid', width: '3px' });
 });
-await shot('frontend-desktop.png', 'Redesigned landing page, reached with a real Tab; Open settings has visible focus and the inspector reflects it.');
+await check('Illustration and key echo respond to the actual keyboard event', async () => {
+  await expect(page.locator('#last-key')).toHaveText('Tab');
+  await expect(page.locator('[data-art-key="Tab"]')).toHaveClass(/is-active/);
+  await expect(page.locator('#hero-focus-label')).toHaveText('Focus → Open settings');
+});
 await check('Good dialog opens, traps both Tab directions, saves and returns focus', async () => {
   await page.keyboard.press('Enter');
   await expect(page.getByRole('dialog')).toBeVisible();
   assert.equal(await focused(), 'save');
+  await expect(page.locator('[data-art-key="Enter"]')).toHaveClass(/is-active/);
   const unguarded = await page.locator('a, button').evaluateAll(elements => elements.filter(el => !el.closest('#modal') && !el.closest('[inert]')).length);
   assert.equal(unguarded, 0);
   await page.keyboard.press('Shift+Tab'); assert.equal(await focused(), 'cancel');
@@ -61,6 +86,7 @@ await check('Good dialog opens, traps both Tab directions, saves and returns foc
   await page.keyboard.press('Escape');
   await expect(page.getByRole('dialog')).toBeHidden();
   assert.equal(await focused(), 'opener');
+  await expect(page.locator('[data-art-key="Escape"]')).toHaveClass(/is-active/);
   await page.keyboard.press('Enter'); await page.keyboard.press('Enter');
   await expect(page.locator('#saved')).toHaveText('Your settings have been saved.');
   assert.equal(await focused(), 'opener');
@@ -155,7 +181,7 @@ await check('Reduced-motion preference removes decorative transitions', async ()
 await check('No browser script errors or external asset requests', async () => { assert.deepEqual(errors, []); assert.deepEqual(externalRequests, []); });
 const files = {};
 for (const name of ['examples/dialog/app/index.html', 'examples/dialog/app/style.css', 'examples/dialog/app/app.js']) files[name] = createHash('sha256').update(await readFile(new URL(name, repo))).digest('hex');
-const receipt = { verifiedAt: new Date().toISOString(), browser: await browser.version(), channel: 'chromium', deviceScaleFactor: 2, sourceSha256: files, checks, viewports, reportResponses, browserErrors: errors, externalRequests, screenshots, limitation: 'Automated browser and visual review; does not count as a human pilot installation or assistive-technology assessment.' };
+const receipt = { verifiedAt: new Date().toISOString(), browser: await browser.version(), channel: 'chromium', deviceScaleFactor: 2, sourceSha256: files, checks, viewports, headlineMeasurements, reportResponses, browserErrors: errors, externalRequests, screenshots, limitation: 'Automated browser and visual review; does not count as a human pilot installation or assistive-technology assessment.' };
 await writeFile(new URL('browser-verification.json', evidence), JSON.stringify(receipt, null, 2) + '\n');
 console.log(JSON.stringify({ checks: checks.length, screenshots, browserErrors: errors, externalRequests }, null, 2));
 await browser.close();
