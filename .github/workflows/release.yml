@@ -12,8 +12,8 @@ jobs:
     timeout-minutes: 20
     env:
       CI: 'true'
-      FOCUS_TRAIL_WORK_DIR: ${{ runner.temp }}/focus-trail-work
-      PLAYWRIGHT_BROWSERS_PATH: ${{ runner.temp }}/focus-trail-browsers
+      FOCUS_TRAIL_WORK_DIR: ${{ github.workspace }}/work/ci-consumers
+      PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/work/ci-browsers
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
