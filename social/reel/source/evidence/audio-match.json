@@ -1,152 +1,389 @@
 {
-  "method": "Independent reconstruction of 13 declared local audio tracks at their authored starts and gains; compare FFmpeg-decoded mono PCM to the final AAC mix. Fitted gain accounts for downmix conventions.",
+  "method": "Compare the unchanged mono narration source with the encoded AAC mix using normalized lag correlation and windowed least-squares projections; inspect encoded stereo music evidence in SFX-free speech windows and a music-only outro; inspect authored canonical carve; measure final AAC loudness/true peak.",
   "comparison_sample_rate": 16000,
+  "render": {
+    "path": "renders/focus-trail-instagram-reel.mp4",
+    "sha256": "8683ed3676f59774de3020cec5763d0f1c033e5d7471be52eb7a12acb7e6062d",
+    "decoded_duration": 20.0
+  },
   "declared_tracks": [
     {
       "id": "key-tap-0",
-      "source": ".media/audio/sfx/sfx_001.mp3",
-      "start": 3.64,
-      "duration": 0.4,
-      "volume": 0.12
+      "src": ".media/audio/sfx/sfx_001.mp3",
+      "data-start": "3.64",
+      "data-duration": "0.4",
+      "data-volume": "0.08"
     },
     {
       "id": "key-tap-1",
-      "source": ".media/audio/sfx/sfx_001.mp3",
-      "start": 4.44,
-      "duration": 0.4,
-      "volume": 0.12
+      "src": ".media/audio/sfx/sfx_001.mp3",
+      "data-start": "4.44",
+      "data-duration": "0.4",
+      "data-volume": "0.08"
     },
     {
       "id": "key-tap-2",
-      "source": ".media/audio/sfx/sfx_001.mp3",
-      "start": 5.36,
-      "duration": 0.4,
-      "volume": 0.12
+      "src": ".media/audio/sfx/sfx_001.mp3",
+      "data-start": "5.36",
+      "data-duration": "0.4",
+      "data-volume": "0.08"
     },
     {
       "id": "key-tap-3",
-      "source": ".media/audio/sfx/sfx_001.mp3",
-      "start": 6.24,
-      "duration": 0.4,
-      "volume": 0.12
+      "src": ".media/audio/sfx/sfx_001.mp3",
+      "data-start": "6.24",
+      "data-duration": "0.4",
+      "data-volume": "0.08"
     },
     {
       "id": "key-tap-4",
-      "source": ".media/audio/sfx/sfx_001.mp3",
-      "start": 8.64,
-      "duration": 0.4,
-      "volume": 0.12
+      "src": ".media/audio/sfx/sfx_001.mp3",
+      "data-start": "8.64",
+      "data-duration": "0.4",
+      "data-volume": "0.08"
     },
     {
       "id": "key-tap-5",
-      "source": ".media/audio/sfx/sfx_001.mp3",
-      "start": 9.44,
-      "duration": 0.4,
-      "volume": 0.12
+      "src": ".media/audio/sfx/sfx_001.mp3",
+      "data-start": "9.44",
+      "data-duration": "0.4",
+      "data-volume": "0.08"
     },
     {
       "id": "key-tap-6",
-      "source": ".media/audio/sfx/sfx_001.mp3",
-      "start": 10.32,
-      "duration": 0.4,
-      "volume": 0.12
+      "src": ".media/audio/sfx/sfx_001.mp3",
+      "data-start": "10.32",
+      "data-duration": "0.4",
+      "data-volume": "0.08"
     },
     {
       "id": "key-tap-7",
-      "source": ".media/audio/sfx/sfx_001.mp3",
-      "start": 11.24,
-      "duration": 0.4,
-      "volume": 0.12
+      "src": ".media/audio/sfx/sfx_001.mp3",
+      "data-start": "11.24",
+      "data-duration": "0.4",
+      "data-volume": "0.08"
     },
     {
-      "id": "voiceover-intro",
-      "source": "assets/voice/intro.wav",
-      "start": 0.15,
-      "duration": 1.95,
-      "volume": 1.0
+      "id": "narration",
+      "src": "assets/voice/narration.wav",
+      "data-start": "0.15",
+      "data-duration": "18.125",
+      "data-volume": "1"
     },
     {
-      "id": "voiceover-good",
-      "source": "assets/voice/good.wav",
-      "start": 3.2,
-      "duration": 3.15,
-      "volume": 1.0
-    },
-    {
-      "id": "voiceover-bad",
-      "source": "assets/voice/bad.wav",
-      "start": 8.9,
-      "duration": 3.7,
-      "volume": 1.0
-    },
-    {
-      "id": "voiceover-report",
-      "source": "assets/voice/report.wav",
-      "start": 13.15,
-      "duration": 3.0,
-      "volume": 1.0
-    },
-    {
-      "id": "voiceover-close",
-      "source": "assets/voice/close.wav",
-      "start": 17.5,
-      "duration": 2.1,
-      "volume": 1.0
+      "id": "music-bed",
+      "src": "assets/music/focus-trail-bed.wav",
+      "data-start": "0",
+      "data-duration": "20",
+      "data-volume": "1.4"
     }
   ],
-  "voice_segments": [
-    {
-      "id": "intro",
-      "start": 0.15,
-      "end": 2.1,
-      "correlation": 0.999975,
-      "fitted_gain": 1.41319,
-      "normalized_error": 0.007031
+  "narration": {
+    "estimated_timing_error_seconds": 0.0,
+    "whole_source_projection": {
+      "correlation": 0.9790268243350788,
+      "fitted_gain": 0.9986657105028475,
+      "source_rms_dbfs": -17.302612972374536,
+      "actual_rms_dbfs": -17.130102026272912,
+      "mixed_residual_rms_dbfs": -30.94894327438785,
+      "projected_voice_to_mixed_residual_db": 13.634733071942957
     },
-    {
-      "id": "good",
-      "start": 3.2,
-      "end": 6.35,
-      "correlation": 0.999968,
-      "fitted_gain": 1.412969,
-      "normalized_error": 0.008038
-    },
-    {
-      "id": "bad",
-      "start": 8.9,
-      "end": 12.6,
-      "correlation": 0.999967,
-      "fitted_gain": 1.412509,
-      "normalized_error": 0.008176
-    },
-    {
-      "id": "report",
-      "start": 13.15,
-      "end": 16.15,
-      "correlation": 0.999862,
-      "fitted_gain": 1.41308,
-      "normalized_error": 0.016616
-    },
-    {
-      "id": "close",
-      "start": 17.5,
-      "end": 19.6,
-      "correlation": 0.99995,
-      "fitted_gain": 1.412978,
-      "normalized_error": 0.009968
-    }
-  ],
-  "whole_mix": {
-    "correlation": 0.999942,
-    "fitted_gain": 1.41293,
-    "normalized_error": 0.010762
+    "active_windows": [
+      {
+        "source_start": 0.0,
+        "source_end": 2.0,
+        "correlation": 0.9249432893674217,
+        "fitted_gain": 0.9989263113549655,
+        "source_rms_dbfs": -17.395898623870032,
+        "actual_rms_dbfs": -16.727531692166437,
+        "mixed_residual_rms_dbfs": -25.129457024084484,
+        "projected_voice_to_mixed_residual_db": 7.724227448972961
+      },
+      {
+        "source_start": 2.0,
+        "source_end": 4.0,
+        "correlation": 0.987007146754693,
+        "fitted_gain": 0.9985694383983684,
+        "source_rms_dbfs": -16.4861707595757,
+        "actual_rms_dbfs": -16.385011302821813,
+        "mixed_residual_rms_dbfs": -32.26597168016617,
+        "projected_voice_to_mixed_residual_db": 15.767366324047924
+      },
+      {
+        "source_start": 4.0,
+        "source_end": 6.0,
+        "correlation": 0.9929072189788741,
+        "fitted_gain": 0.9988894973328594,
+        "source_rms_dbfs": -15.539496480000984,
+        "actual_rms_dbfs": -15.48732090868285,
+        "mixed_residual_rms_dbfs": -33.984284586728286,
+        "projected_voice_to_mixed_residual_db": 18.43513704335956
+      },
+      {
+        "source_start": 6.0,
+        "source_end": 8.0,
+        "correlation": 0.9885348488413277,
+        "fitted_gain": 0.9983370118604272,
+        "source_rms_dbfs": -15.988321810233423,
+        "actual_rms_dbfs": -15.902618047812249,
+        "mixed_residual_rms_dbfs": -32.32348813509927,
+        "projected_voice_to_mixed_residual_db": 16.32070976954164
+      },
+      {
+        "source_start": 8.0,
+        "source_end": 10.0,
+        "correlation": 0.9885294206861726,
+        "fitted_gain": 0.998966707845994,
+        "source_rms_dbfs": -17.338908899738307,
+        "actual_rms_dbfs": -17.247680588413438,
+        "mixed_residual_rms_dbfs": -33.66650685795658,
+        "projected_voice_to_mixed_residual_db": 16.31861825647764
+      },
+      {
+        "source_start": 10.0,
+        "source_end": 12.0,
+        "correlation": 0.9868754021355159,
+        "fitted_gain": 0.9993752202290657,
+        "source_rms_dbfs": -17.27865317282291,
+        "actual_rms_dbfs": -17.16932812334073,
+        "mixed_residual_rms_dbfs": -33.00676173605283,
+        "projected_voice_to_mixed_residual_db": 15.72268009911757
+      },
+      {
+        "source_start": 12.0,
+        "source_end": 14.0,
+        "correlation": 0.9789000591089128,
+        "fitted_gain": 0.9966684905129142,
+        "source_rms_dbfs": -19.002886666881317,
+        "actual_rms_dbfs": -18.846639194721682,
+        "mixed_residual_rms_dbfs": -32.639588193198534,
+        "projected_voice_to_mixed_residual_db": 13.607716093107607
+      },
+      {
+        "source_start": 14.0,
+        "source_end": 16.0,
+        "correlation": 0.9846427275716864,
+        "fitted_gain": 0.9988990318690665,
+        "source_rms_dbfs": -18.92573247208938,
+        "actual_rms_dbfs": -18.800874180131004,
+        "mixed_residual_rms_dbfs": -33.960909924756145,
+        "projected_voice_to_mixed_residual_db": 15.025609296902145
+      },
+      {
+        "source_start": 16.0,
+        "source_end": 18.0,
+        "correlation": 0.9735202745867734,
+        "fitted_gain": 0.9988892632601207,
+        "source_rms_dbfs": -19.09831484512567,
+        "actual_rms_dbfs": -18.87486795570386,
+        "mixed_residual_rms_dbfs": -31.69331725885727,
+        "projected_voice_to_mixed_residual_db": 12.585349314973344
+      }
+    ],
+    "median_window_correlation": 0.9868754021355159,
+    "p10_window_correlation": 0.963804877542903,
+    "median_projected_voice_to_mixed_residual_db": 15.72268009911757
   },
-  "threshold": {
-    "minimum_correlation": 0.97
+  "music": {
+    "sfx_free_stereo_intervals": [
+      {
+        "start": 0.65,
+        "end": 1.05,
+        "side_rms_dbfs": -57.192256113169435,
+        "original_music_side_rms_dbfs": -41.67348701038105,
+        "original_music_side_correlation": 0.9013248692452112
+      },
+      {
+        "start": 1.15,
+        "end": 1.5499999999999998,
+        "side_rms_dbfs": -58.56765977650893,
+        "original_music_side_rms_dbfs": -43.103114085073486,
+        "original_music_side_correlation": 0.9552274165638721
+      },
+      {
+        "start": 1.65,
+        "end": 2.05,
+        "side_rms_dbfs": -60.0928103168749,
+        "original_music_side_rms_dbfs": -42.32723432196173,
+        "original_music_side_correlation": 0.9359218415226236
+      },
+      {
+        "start": 2.65,
+        "end": 3.05,
+        "side_rms_dbfs": -59.49048294850186,
+        "original_music_side_rms_dbfs": -44.70751359905242,
+        "original_music_side_correlation": 0.9153772187532841
+      },
+      {
+        "start": 3.15,
+        "end": 3.55,
+        "side_rms_dbfs": -59.6482322935278,
+        "original_music_side_rms_dbfs": -41.89409673359463,
+        "original_music_side_correlation": 0.9396989962301483
+      },
+      {
+        "start": 7.15,
+        "end": 7.550000000000001,
+        "side_rms_dbfs": -57.86685030543913,
+        "original_music_side_rms_dbfs": -42.51496638047343,
+        "original_music_side_correlation": 0.8717763640844475
+      },
+      {
+        "start": 7.65,
+        "end": 8.05,
+        "side_rms_dbfs": -58.88547955107893,
+        "original_music_side_rms_dbfs": -42.32999848753756,
+        "original_music_side_correlation": 0.9643632304091773
+      },
+      {
+        "start": 8.15,
+        "end": 8.55,
+        "side_rms_dbfs": -58.87300476054064,
+        "original_music_side_rms_dbfs": -41.3923863806651,
+        "original_music_side_correlation": 0.882472018467495
+      },
+      {
+        "start": 12.15,
+        "end": 12.55,
+        "side_rms_dbfs": -58.39199828797049,
+        "original_music_side_rms_dbfs": -41.94683777216791,
+        "original_music_side_correlation": 0.9263137276595856
+      },
+      {
+        "start": 12.65,
+        "end": 13.05,
+        "side_rms_dbfs": -56.680835708884,
+        "original_music_side_rms_dbfs": -41.84959626466239,
+        "original_music_side_correlation": 0.9607060647770229
+      },
+      {
+        "start": 13.15,
+        "end": 13.55,
+        "side_rms_dbfs": -54.23692921601632,
+        "original_music_side_rms_dbfs": -41.13588425719015,
+        "original_music_side_correlation": 0.9827020942729587
+      },
+      {
+        "start": 13.65,
+        "end": 14.05,
+        "side_rms_dbfs": -60.908966027204485,
+        "original_music_side_rms_dbfs": -41.78252310334345,
+        "original_music_side_correlation": 0.885692691016183
+      },
+      {
+        "start": 14.15,
+        "end": 14.55,
+        "side_rms_dbfs": -58.280436631212424,
+        "original_music_side_rms_dbfs": -40.96058246913689,
+        "original_music_side_correlation": 0.9606395580934601
+      },
+      {
+        "start": 14.65,
+        "end": 15.05,
+        "side_rms_dbfs": -54.9665771680057,
+        "original_music_side_rms_dbfs": -41.43632475803419,
+        "original_music_side_correlation": 0.9671760534899836
+      },
+      {
+        "start": 15.15,
+        "end": 15.55,
+        "side_rms_dbfs": -61.59176976995155,
+        "original_music_side_rms_dbfs": -44.86363941971397,
+        "original_music_side_correlation": 0.874711010367725
+      },
+      {
+        "start": 15.65,
+        "end": 16.05,
+        "side_rms_dbfs": -58.90934640821234,
+        "original_music_side_rms_dbfs": -42.40834122875125,
+        "original_music_side_correlation": 0.9418130288155336
+      },
+      {
+        "start": 16.15,
+        "end": 16.549999999999997,
+        "side_rms_dbfs": -60.81203541964668,
+        "original_music_side_rms_dbfs": -42.65524133048244,
+        "original_music_side_correlation": 0.794391245588238
+      },
+      {
+        "start": 16.65,
+        "end": 17.049999999999997,
+        "side_rms_dbfs": -57.74457624116223,
+        "original_music_side_rms_dbfs": -41.67452790673749,
+        "original_music_side_correlation": 0.9674128913674943
+      },
+      {
+        "start": 17.15,
+        "end": 17.549999999999997,
+        "side_rms_dbfs": -56.74502483511728,
+        "original_music_side_rms_dbfs": -41.8632417772228,
+        "original_music_side_correlation": 0.9682432470664308
+      }
+    ],
+    "median_side_rms_under_voice_dbfs": -58.56765977650893,
+    "median_original_music_side_correlation": 0.9396989962301483,
+    "fraction_windows_music_correlation_at_least_0point5": 1.0,
+    "outro": {
+      "start": 18.55,
+      "end": 19.2,
+      "rms_dbfs": -20.68031385582783,
+      "side_rms_dbfs": -42.459537622512656
+    },
+    "authored_carve": {
+      "enabled": true,
+      "sources": [
+        "narration"
+      ],
+      "strength": 0.65
+    },
+    "carved_peaking_nodes": 5,
+    "carved_gain_nodes": 1,
+    "changing_automation_lanes": [
+      "fx.n1.gain",
+      "fx.n2.gain",
+      "fx.n3.gain",
+      "fx.n4.gain",
+      "fx.n5.gain",
+      "fx.n6.gain"
+    ]
+  },
+  "final_mix": {
+    "integrated_lufs": -14.52,
+    "true_peak_dbtp": -1.32,
+    "loudness_range_lu": 8.5
+  },
+  "threshold_reasoning": [
+    "A 25 ms lag limit is below one 30 fps picture frame and catches shifted narration.",
+    "Correlation >=0.90 globally/median with >=0.80 at the 10th percentile requires the same narrator waveform to dominate the mix while tolerating AAC and added music; median fitted voice/residual ratio >=8 dB requires at least 6.3 times the residual energy.",
+    "SFX-free stereo side energy above -60 dBFS and an outro above -50 dBFS reject a missing/muted stereo bed while allowing a quiet speech mix. Median side correlation with the original music >=0.70, with >=80% of windows >=0.50, requires actual music identity beyond merely nonzero stereo codec artifacts while allowing the canonical EQ to alter phase. These are presence/identity gates, not listening-quality scores.",
+    "The -20 to -13 LUFS range is this project\u2019s broad social-delivery gate, not a claimed Instagram requirement. A <=-1 dBTP ceiling preserves encoding headroom."
+  ],
+  "checks": {
+    "ten_authored_audio_tracks": true,
+    "eight_quiet_key_effects": true,
+    "one_continuous_narration_track": true,
+    "narration_starts_at_150ms": true,
+    "source_duration_matches_declared": true,
+    "source_hash_matches_cue_record": true,
+    "encoded_audio_covers_20_seconds": true,
+    "narration_timing_within_25ms": true,
+    "dominant_voice_matches_source": true,
+    "voice_dominates_mixed_residual": true,
+    "stereo_music_survives_under_voice": true,
+    "stereo_under_voice_matches_original_music": true,
+    "music_only_outro_is_non_silent": true,
+    "carve_targets_only_narration": true,
+    "canonical_carve_nodes_present": true,
+    "carve_automation_resolves_and_changes": true,
+    "social_delivery_loudness_range": true,
+    "delivery_peak_headroom": true
   },
   "passed": true,
   "limits": [
-    "This proves encoded source inclusion and timing, not independent speech recognition or subjective voice quality.",
-    "TTS word timings are model estimates, not ASR."
+    "The mixed residual includes music, SFX, AAC error and projection error. It is not an independently reconstructed processed music stem.",
+    "Canonical carve metadata is checked for valid references and changing lanes; waveform evidence verifies source voice and music presence, not the exact offline effect implementation.",
+    "Stereo evidence under voice can include codec artifacts; attribution also uses direct correlation with the original music side channel, the mono narrator, exclusion of SFX windows and the independently non-silent music-only outro.",
+    "Single synthesis-call provenance comes from the generator/cue record. Waveform continuity alone does not establish a model invocation count.",
+    "This is not independent speech recognition, a transcription accuracy test, a subjective listening review or a score for naturalness/energy."
   ]
 }

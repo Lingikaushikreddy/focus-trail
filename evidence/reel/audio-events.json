@@ -11,38 +11,21 @@
     11.24
   ],
   "narration": true,
-  "voice": "af_heart",
+  "voice": "af_bella",
   "cues": [
     {
-      "id": "intro",
+      "id": "narration",
       "start": 0.15,
-      "duration": 1.95,
-      "end": 2.1
-    },
-    {
-      "id": "good",
-      "start": 3.2,
-      "duration": 3.15,
-      "end": 6.35
-    },
-    {
-      "id": "bad",
-      "start": 8.9,
-      "duration": 3.7,
-      "end": 12.6
-    },
-    {
-      "id": "report",
-      "start": 13.15,
-      "duration": 3.0,
-      "end": 16.15
-    },
-    {
-      "id": "close",
-      "start": 17.5,
-      "duration": 2.1,
-      "end": 19.6
+      "duration": 18.125,
+      "end": 18.275
     }
   ],
-  "note": "Timing declarations are checked against the encoded AAC mix in audio-match.json."
+  "note": "Timing declarations are checked against the encoded AAC mix in audio-match.json.",
+  "music": {
+    "count": 1,
+    "source": "assets/music/focus-trail-bed.wav",
+    "gain": 1.4,
+    "original": true,
+    "carve": "music/carve.json"
+  }
 }

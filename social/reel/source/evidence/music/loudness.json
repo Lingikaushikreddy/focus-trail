@@ -1,0 +1,14 @@
+{
+  "source": "assets/music/focus-trail-bed.wav",
+  "measurement": "FFmpeg loudnorm input measurements",
+  "input_i": "-20.12",
+  "input_tp": "-5.29",
+  "input_lra": "1.40",
+  "input_thresh": "-30.31",
+  "output_i": "-19.98",
+  "output_tp": "-5.06",
+  "output_lra": "1.30",
+  "output_thresh": "-30.09",
+  "normalization_type": "dynamic",
+  "target_offset": "-0.02"
+}

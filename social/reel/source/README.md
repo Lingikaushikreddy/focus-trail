@@ -1,6 +1,6 @@
 # Focus Trail · Instagram Reel
 
-A 20-second portrait Reel showing the new UI, a working keyboard journey, a deliberate lost-return-focus bug, and its saved report. The narration tells a short developer story with a curious hook, a hidden break and a user-facing payoff.
+A 20-second portrait Reel showing the new UI, a working keyboard journey, a deliberate lost-return-focus bug, and its saved report. One continuous, conversational AI performance carries a developer story across the cuts, with an original upbeat instrumental beneath it.
 
 - **Video:** `renders/focus-trail-instagram-reel.mp4`
 - **Cover:** `poster.png`
@@ -17,6 +17,7 @@ A 20-second portrait Reel showing the new UI, a working keyboard journey, a deli
 Use Node.js 22 or newer and FFmpeg. From this directory:
 
 ```sh
+npm ci
 npm run dev
 npm run check
 npm run render -- --quality delivery --fps 30 --output renders/focus-trail-instagram-reel.mp4 --workers 2
@@ -36,7 +37,7 @@ This is a controlled demo. It does not count as an independent maintainer instal
 
 Product and report images are actual local browser captures. UI source: [Focus Trail](https://github.com/Lingikaushikreddy/focus-trail).
 
-Manrope is included with its SIL Open Font License in `assets/fonts/OFL-Manrope.txt`. GSAP 3.14.2 retains its upstream license header in `vendor/gsap.min.js`. The eight quiet keyboard sound effects come from the locally bundled media-use keypress asset; source and license credits are in `assets/SFX-CREDITS.md` and the `.media/` ledger. English AI narration uses the local Kokoro model and af_heart voice. See `assets/voice/` for measured WAV files and provenance. No music or remote runtime assets.
+Manrope is included with its SIL Open Font License in `assets/fonts/OFL-Manrope.txt`. GSAP 3.14.2 retains its upstream license header in `vendor/gsap.min.js`. The eight quiet keyboard sound effects come from the locally bundled media-use keypress asset; source and license credits are in `assets/SFX-CREDITS.md` and the `.media/` ledger. English AI narration uses the local Kokoro model and stock af_bella voice in one uninterrupted take. See `VOICE.md` for reproduction and measured provenance. The original 96 BPM instrumental uses synthesized notes and drums, without third-party samples; credits and the MIT license are in `assets/music/MUSIC.md`. Speech-aware EQ and gain automation make room for the voice, then release the music into the final hold. All render assets are local.
 
 No video has been posted to Instagram.
 

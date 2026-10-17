@@ -1,106 +1,117 @@
 {
-  "review": "Narrative and source-timing review of story-led narration revision",
+  "reviewedAt": "2026-10-17T03:09:23.676075+00:00",
+  "review": "Independent source review of the continuous narration and original music revision",
   "status": "passed_source_review",
-  "method": "Inspected narration-script.txt, narration-cues.json, scripts/generate-voice.py, index.html and relevant scene source; independently hashed each delivered WAV and matched its scheduled source cue. No listening, ASR transcript check, final MP4 review or publication audit was performed in this review.",
-  "wordCount": 39,
+  "method": "Inspected the script, cues, current WAV headers and hashes, generator source, composition audio elements, carve metadata and scene source. Checked current independent voice verification. No listening, ASR transcript check or final encoded MP4 inspection is claimed here.",
+  "script": "Looks ready to ship, right? You change a setting, close the dialog, and jump straight back to work. Until one tiny bug makes your next move a guessing game. Focus Trail follows your keyboard journey, spots where it breaks, and helps you catch the problem before your users do.",
+  "wordCount": 49,
   "storyArc": [
-    "Question invites the viewer to trust a polished interface.",
-    "Normal interaction establishes the expected return to the previous place.",
-    "A tiny controlled change introduces loss of place.",
-    "Focus Trail provides the checkpoint-level diagnostic payoff.",
-    "The closing line asks the developer to catch the problem before shipping."
-  ],
-  "script": [
-    "Looks ready to ship, right?",
-    "A quick setting change. Back to what you were doing.",
-    "Then one tiny change… and suddenly, you’ve lost your place.",
-    "Focus Trail shows you where the journey breaks.",
-    "Catch it before your users do."
+    "A shipping question invites the viewer into an apparently polished interface.",
+    "A familiar setting-dialog scenario establishes the intended return to work.",
+    "One small bug turns the next move into uncertainty.",
+    "Focus Trail follows the keyboard journey and points to the break.",
+    "The developer is invited to catch the problem before users meet it."
   ],
   "checks": {
-    "fiveNarrativeBeats": true,
-    "noSpokenKeyboardSequence": true,
-    "noScreenLabelOrReportNumberReadout": true,
+    "oneNarrationCue": true,
+    "oneScheduledNarrationElement": true,
+    "cueWaveHashMatches": true,
+    "cueWaveDurationMatches": true,
+    "scheduledStartAndDurationMatch": true,
+    "nativeDurationPreserved": true,
+    "oneSynthesisResult": true,
+    "sourceContainsNoPostSynthesisTimeStretch": true,
+    "voiceVerificationPassed": true,
+    "originalMusicSourcePresent": true,
+    "oneScheduledMusicBed": true,
+    "musicCarvedAgainstNarration": true,
+    "savedReportCaveatExplicit": true,
+    "noSpokenKeyboardReadout": true,
     "noUnsupportedAdoptionOrAccessibilityGuarantee": true,
-    "allWaveHashesMatchCurrentCues": true,
-    "allAudioElementsMatchCueStartAndDuration": true,
-    "noPostSynthesisTimeStretchFilter": true,
-    "noInsertedInternalPauseSegmentsInGenerationSource": true
+    "spokenCaptionTextMatchesWholeStory": true,
+    "spokenCaptionRangesAreOrderedInsideReel": true,
+    "spokenCaptionHasNineShortPhrases": true
   },
-  "timingExplanation": {
-    "synthesisSpeedControls": "Native Kokoro synthesis speed values are 0.98–1.04; these are model generation parameters, not post-synthesis stretching.",
-    "pauses": "Punctuation creates the model’s natural pauses. Generated chunks are concatenated without inserted silent segments. Separate cues are scheduled in intentional gaps between story beats.",
-    "normalization": "The source temporarily pads after the waveform for the loudness filter, then trims back to the original sample duration. No padded silence extends a delivered cue.",
-    "wordTimestamps": "Kokoro phoneme/token duration predictions are timing estimates, not an independently measured ASR transcript.",
-    "cues": [
-      {
-        "id": "intro",
-        "startSeconds": 0.15,
-        "nativeWaveDurationSeconds": 1.95,
-        "endSeconds": 2.1,
-        "sha256": "1df223b9f898989eaaa6f0e13f220467a31d79c6f7b598cef621278c02604061",
-        "sourceCueMatches": true,
-        "fitsSlot": true
+  "continuousDelivery": {
+    "synthesis": "One complete paragraph in one synthesis result.",
+    "placement": {
+      "startSeconds": 0.15,
+      "durationSeconds": 18.125,
+      "endSeconds": 18.275,
+      "sha256": "826970378ec3f90a71d01e774e076fda71ac199316aa1dc4bfa264ed4bbecfa0"
+    },
+    "pauses": "Three measured sentence pauses of about 0.57\u20130.60 seconds remain. No scene-boundary gaps or stitched scene takes are authored. Continuity does not mean removal of ordinary breathing and punctuation.",
+    "normalization": "Two-pass loudness normalization and 24-to-48 kHz resampling preserve exact native duration. Padding is confined to the trailing normalization guard; no internal silence is inserted.",
+    "expressivenessLimit": "Story, paragraph-level performance and forward-moving language support the requested energetic delivery. Perceived naturalness and energy are subjective and were not established by this source review."
+  },
+  "timing": {
+    "method": "Composition offset plus Kokoro predicted phoneme/token timings; estimates, not independently recognized speech.",
+    "bugOnsetSeconds": 8.125,
+    "brandOnsetSeconds": 10.85,
+    "spotsOnsetSeconds": 13.5,
+    "breaksOnsetSeconds": 14.15,
+    "interpretation": "The continuous story bridges scene cuts. The twist anticipates the controlled-fault journey, while the diagnostic payoff continues into the saved report. It is not presented as a timestamped narration of each key or outcome."
+  },
+  "music": {
+    "path": "assets/music/focus-trail-bed.wav",
+    "sha256": "2291e7d87ef6f2b4fb4722bf5211bebf4f624c4935a5a7b5f3190173d7171e3f",
+    "durationSeconds": 20,
+    "bpm": 96,
+    "provenance": "Generator constructs oscillators and noise directly; the original composition, source WAV and code have an included MIT license. No third-party recordings or samples are inputs.",
+    "mixSource": {
+      "volume": 1.4,
+      "carve": {
+        "enabled": true,
+        "sources": [
+          "narration"
+        ],
+        "strength": 0.65
       },
-      {
-        "id": "good",
-        "startSeconds": 3.2,
-        "nativeWaveDurationSeconds": 3.15,
-        "endSeconds": 6.35,
-        "sha256": "28a39bf5c6793190a0ef6fb1e67bfbbfa33f94a8a1f720840e6788803acce078",
-        "sourceCueMatches": true,
-        "fitsSlot": true
-      },
-      {
-        "id": "bad",
-        "startSeconds": 8.9,
-        "nativeWaveDurationSeconds": 3.7,
-        "endSeconds": 12.6,
-        "sha256": "316b9a027fef9a12d1135375ad09102113df5c2b1210761ae88159b637f3eea8",
-        "sourceCueMatches": true,
-        "fitsSlot": true
-      },
-      {
-        "id": "report",
-        "startSeconds": 13.15,
-        "nativeWaveDurationSeconds": 3.0,
-        "endSeconds": 16.15,
-        "sha256": "ef72ff12b54a25dc9cfaeecc332765d0f6b1202aa1fb48b8b9957a0a5e177af0",
-        "sourceCueMatches": true,
-        "fitsSlot": true
-      },
-      {
-        "id": "close",
-        "startSeconds": 17.5,
-        "nativeWaveDurationSeconds": 2.1,
-        "endSeconds": 19.6,
-        "sha256": "07a5167b40c37fa2c54a69e21040e20c24df3dee3c252220b72062c1872d4d4a",
-        "sourceCueMatches": true,
-        "fitsSlot": true
+      "effectTypes": [
+        "peaking",
+        "peaking",
+        "peaking",
+        "peaking",
+        "peaking",
+        "gain"
+      ],
+      "automationLaneCount": 6,
+      "authoredRelease": {
+        "voiceEndSeconds": 18.275,
+        "gainDuckReleaseEndSeconds": 18.95,
+        "description": "Retains the canonical spectral carve and speech-time gain envelope. The music level rises by 6.66 dB from the first encode; the gain duck releases to 0 dB after the complete voice ends, before the source music fade from 19.25 to 20 seconds.",
+        "evidence": "evidence/music/carve.json"
       }
-    ]
+    },
+    "limit": "Carve settings establish intended speech clearance. Actual encoded inclusion and signal levels require the separate render-audio evidence; no listening claim is made."
   },
   "factualScope": {
-    "controlledDemonstration": "The story describes a controlled keyboard-focus regression in a dialog, not a claim that all accessibility problems are detected.",
-    "settingLine": "The setting-change line supplies the user’s scenario and motivation; the demonstration itself verifies dialog focus behavior and does not establish that a setting was saved.",
-    "freshFocusObservation": "The live broken-flow capture and its inspector independently demonstrate focus on the document body after Escape.",
-    "savedReport": "The saved first-difference report marks the return-opener checkpoint missing at 500 ms and retains its last coherent sample. The report scene keeps endpoint-sample unavailability visible; narration does not claim that the report freshly sampled BODY.",
-    "closingLine": "Catch it before your users do is an invitation to test, not a guarantee that no bug will reach users."
+    "controlledDemonstration": "A controlled dialog keyboard-focus regression, not proof that every accessibility issue is detected or that independent installations have occurred.",
+    "settingScenario": "Changing a setting and returning to work supplies the scenario. The captured demonstration verifies dialog focus behavior and does not establish that a setting was saved.",
+    "freshFocusObservation": "The broken-flow capture and visible inspector separately show Document body after Escape.",
+    "savedReport": "The historical report marks return-opener missing after 500 ms and retains its last coherent sample. The endpoint-sample-unavailable caveat remains visible; the narration does not claim this report freshly sampled BODY.",
+    "closing": "Catch the problem before your users do is an invitation to test, not a guarantee of bug-free releases."
   },
   "reviewedSourceSha256": {
-    "narration-script.txt": "08bf4d39b51f92f37d4382e64beedefa25226fb2c8d8d5cd8aaacc1b897c13fc",
-    "narration-cues.json": "51b2c0b63d001e2d1bf7bb641a31dbdab9244f00719a1e7a2ea6d78bb79fd5b2",
-    "scripts/generate-voice.py": "108753ce412a49ac7cde288ed11282ebf090b0114547e3d18b02f2e4bf714219",
-    "index.html": "0030fd191efde6e51df224164bc2c45ea2205c6a6f41c7c1a8d4bd5791ace573",
+    "narration-script.txt": "bbcb3b8e1f09cd45a8fa5fe5ad074d07044efbd16416c0482e2040e0b73aa40e",
+    "narration-cues.json": "6735be80cd14fde25694f330a9c852c37a26ce1a7048a168afe61c6e8e268657",
+    "narration-verification.json": "9b42d015d4124910478ad1c8d8268d5f1217d15fbbb01f8c5ebe6edf0a6c939a",
+    "scripts/generate-voice.py": "d4063406742a931995abc8ed2cbc7eba8c3687c590026c505e9963c469217f93",
+    "index.html": "d5fabd305692f86e34692f585ec62174e8de65871e9e73f9978e1b3afa2f2d07",
     "compositions/frames/good.html": "cb326bf17026be3a8d092f4c05786cabcf6ae2fbb554670fc7394ab8a759c9c2",
     "compositions/frames/bad.html": "8038526832d5b5977860893d7f4a11608f253f34d999d9379625245deb1d12fa",
-    "compositions/frames/report.html": "6cc8af1d17830af4d480f567a4a6d31c35c21b0ce07feaadd9d21f51eb29ee52"
+    "compositions/frames/report.html": "6cc8af1d17830af4d480f567a4a6d31c35c21b0ce07feaadd9d21f51eb29ee52",
+    "assets/voice/narration.wav": "826970378ec3f90a71d01e774e076fda71ac199316aa1dc4bfa264ed4bbecfa0",
+    "assets/music/focus-trail-bed.wav": "2291e7d87ef6f2b4fb4722bf5211bebf4f624c4935a5a7b5f3190173d7171e3f",
+    "assets/music/MUSIC.md": "f173dd5c2db9706db3ced2440d08b49f80e5a937e8c15487e2821d271ec30db5",
+    "scripts/generate-music.py": "98d14b8a6e2aa64348d013ec11b2cd0229a6ac83b7d9b6083966c7d823e766d2",
+    "narration.srt": "565b2a145caa47c478ae72fa660324aa6268069e5257ac529b9cb71ded579d8f",
+    "evidence/music/carve.json": "0354227e11b19e032658430b8c1e986c98073b19247cd86d4fd2f1de4645774d"
   },
-  "finalEncodeReference": {
-    "path": "renders/focus-trail-instagram-reel.mp4",
-    "sha256": "cde88f65d1d1d6113b65da436069a55a79706bd64c7d628d53ece742a7fc0f38",
-    "visualReview": "evidence/visual-review.json",
-    "visualReviewSha256": "17bd67143d49107de2dbe118216beb66ce25343167fc56ceb09e4ad2a3d07d5a"
-  },
-  "finalEncodeReviewLimit": "Current decoded stills and supplied signal verification reviewed separately in visual-review.json. No listening, ASR transcript check or subjective voice-quality claim."
+  "blockingFindings": [],
+  "limits": [
+    "No subjective listening or ASR transcript validation.",
+    "Final video and rendered mix are reviewed separately after rendering.",
+    "Spoken narration.srt matches all 49 words in 9 ordered phrases. Its timings use model estimates, not ASR. captions.srt represents the visible UI captions rather than a transcript of the voice."
+  ]
 }

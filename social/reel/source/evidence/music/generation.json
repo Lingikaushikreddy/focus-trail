@@ -1,0 +1,9 @@
+{
+  "path": "assets/music/focus-trail-bed.wav",
+  "duration_seconds": 20.0,
+  "sample_rate": 48000,
+  "channels": 2,
+  "bpm": 96,
+  "seed": 4162026,
+  "sha256": "2291e7d87ef6f2b4fb4722bf5211bebf4f624c4935a5a7b5f3190173d7171e3f"
+}

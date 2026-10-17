@@ -3,8 +3,8 @@
   "model": "hexgrad/Kokoro-82M",
   "modelRevision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
   "modelSha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
-  "voice": "af_heart",
-  "voiceSha256": "0ab5709b8ffab19bfd849cd11d98f75b60af7733253ad0d67b12382a102cb4ff",
+  "voice": "af_bella",
+  "voiceSha256": "8cb64e02fcc8de0327a8e13817e49c76c945ecf0052ceac97d3081480e8e48d6",
   "sampleRate": 48000,
   "channels": 1,
   "format": "PCM signed 16-bit WAV",
@@ -12,12 +12,20 @@
   "device": "CPU",
   "fallbackPhonemizer": "Disabled; English lexicon only",
   "normalization": {
-    "method": "FFmpeg loudnorm",
+    "method": "FFmpeg two-pass loudnorm",
     "targetIntegratedLufs": -17,
     "truePeakLimitDbtp": -2,
     "targetLra": 7
   },
-  "delivery": "Story-led narration using natural model punctuation; no inserted silence and no speech time stretching.",
+  "delivery": "One complete paragraph, one synthesis result, one uninterrupted WAV. No inserted pauses, scene stitching or speech time stretching.",
+  "synthesis": {
+    "calls": 1,
+    "resultChunks": 1,
+    "nativeSampleRate": 24000,
+    "nativeDuration": 18.125,
+    "resamplingOnly": true,
+    "tailPreservation": "Append 0.2 s after native ending before loudnorm; resample to output rate; preserve the exact native duration using sample-count trim with trailing padding only. No internal samples or word timings are removed."
+  },
   "wordTimingMethod": "Kokoro predicted phoneme durations joined into tokens; estimates, not ASR measurements",
   "versions": {
     "kokoro": "0.9.4",
@@ -37,373 +45,319 @@
   },
   "cues": [
     {
-      "id": "intro",
-      "text": "Looks ready to ship, right?",
+      "id": "narration",
+      "text": "Looks ready to ship, right? You change a setting, close the dialog, and jump straight back to work. Until one tiny bug makes your next move a guessing game. Focus Trail follows your keyboard journey, spots where it breaks, and helps you catch the problem before your users do.",
       "start": 0.15,
-      "slotEnd": 2.9,
-      "speed": 1.02,
-      "path": "assets/voice/intro.wav",
-      "duration": 1.95,
-      "end": 2.1,
-      "sha256": "1df223b9f898989eaaa6f0e13f220467a31d79c6f7b598cef621278c02604061",
+      "slotEnd": 19.8,
+      "speed": 0.94,
+      "path": "assets/voice/narration.wav",
+      "duration": 18.125,
+      "end": 18.275,
+      "sha256": "826970378ec3f90a71d01e774e076fda71ac199316aa1dc4bfa264ed4bbecfa0",
       "words": [
         {
           "text": "Looks",
-          "start": 0.3,
-          "end": 0.525
-        },
-        {
-          "text": "ready",
-          "start": 0.525,
-          "end": 0.75
-        },
-        {
-          "text": "to",
-          "start": 0.75,
-          "end": 0.8875
-        },
-        {
-          "text": "ship",
-          "start": 0.8875,
-          "end": 1.125
-        },
-        {
-          "text": ",",
-          "start": 1.125,
-          "end": 1.175
-        },
-        {
-          "text": "right",
-          "start": 1.175,
-          "end": 1.725
-        },
-        {
-          "text": "?",
-          "start": 1.725,
-          "end": 1.875
-        }
-      ],
-      "peakDbfs": -1.994,
-      "normalization": {
-        "input_i": "-26.27",
-        "input_tp": "-10.54",
-        "input_lra": "9.10",
-        "input_thresh": "-37.43",
-        "output_i": "-14.92",
-        "output_tp": "-2.00",
-        "output_lra": "0.00",
-        "output_thresh": "-25.48",
-        "normalization_type": "dynamic",
-        "target_offset": "-2.08"
-      }
-    },
-    {
-      "id": "good",
-      "text": "A quick setting change. Back to what you were doing.",
-      "start": 3.2,
-      "slotEnd": 7.9,
-      "speed": 1.03,
-      "path": "assets/voice/good.wav",
-      "duration": 3.15,
-      "end": 6.35,
-      "sha256": "28a39bf5c6793190a0ef6fb1e67bfbbfa33f94a8a1f720840e6788803acce078",
-      "words": [
-        {
-          "text": "A",
-          "start": 0.25,
-          "end": 0.325
-        },
-        {
-          "text": "quick",
-          "start": 0.325,
-          "end": 0.575
-        },
-        {
-          "text": "setting",
-          "start": 0.575,
-          "end": 0.875
-        },
-        {
-          "text": "change",
-          "start": 0.875,
-          "end": 1.45
-        },
-        {
-          "text": ".",
-          "start": 1.45,
-          "end": 1.5875
-        },
-        {
-          "text": "Back",
-          "start": 1.5875,
-          "end": 1.875
-        },
-        {
-          "text": "to",
-          "start": 1.875,
-          "end": 1.9625
-        },
-        {
-          "text": "what",
-          "start": 1.9625,
-          "end": 2.0875
-        },
-        {
-          "text": "you",
-          "start": 2.0875,
-          "end": 2.1625
-        },
-        {
-          "text": "were",
-          "start": 2.1625,
-          "end": 2.275
-        },
-        {
-          "text": "doing",
-          "start": 2.275,
-          "end": 2.925
-        },
-        {
-          "text": ".",
-          "start": 2.925,
-          "end": 3.075
-        }
-      ],
-      "peakDbfs": -2.0,
-      "normalization": {
-        "input_i": "-25.73",
-        "input_tp": "-5.77",
-        "input_lra": "9.50",
-        "input_thresh": "-36.35",
-        "output_i": "-17.27",
-        "output_tp": "-2.00",
-        "output_lra": "5.60",
-        "output_thresh": "-27.74",
-        "normalization_type": "dynamic",
-        "target_offset": "0.27"
-      }
-    },
-    {
-      "id": "bad",
-      "text": "Then one tiny change\u2026 and suddenly, you\u2019ve lost your place.",
-      "start": 8.9,
-      "slotEnd": 12.9,
-      "speed": 0.98,
-      "path": "assets/voice/bad.wav",
-      "duration": 3.7,
-      "end": 12.6,
-      "sha256": "316b9a027fef9a12d1135375ad09102113df5c2b1210761ae88159b637f3eea8",
-      "words": [
-        {
-          "text": "Then",
-          "start": 0.275,
-          "end": 0.45
-        },
-        {
-          "text": "one",
-          "start": 0.45,
-          "end": 0.675
-        },
-        {
-          "text": "tiny",
-          "start": 0.675,
-          "end": 1.0125
-        },
-        {
-          "text": "change",
-          "start": 1.0125,
-          "end": 1.475
-        },
-        {
-          "text": "\u2026",
-          "start": 1.475,
-          "end": 1.575
-        },
-        {
-          "text": "and",
-          "start": 1.575,
-          "end": 1.7125
-        },
-        {
-          "text": "suddenly",
-          "start": 1.7125,
-          "end": 2.175
-        },
-        {
-          "text": ",",
-          "start": 2.175,
-          "end": 2.25
-        },
-        {
-          "text": "you\u2019ve",
-          "start": 2.25,
-          "end": 2.45
-        },
-        {
-          "text": "lost",
-          "start": 2.45,
-          "end": 2.7375
-        },
-        {
-          "text": "your",
-          "start": 2.7375,
-          "end": 2.85
-        },
-        {
-          "text": "place",
-          "start": 2.85,
-          "end": 3.5
-        },
-        {
-          "text": ".",
-          "start": 3.5,
-          "end": 3.65
-        }
-      ],
-      "peakDbfs": -2.0,
-      "normalization": {
-        "input_i": "-26.13",
-        "input_tp": "-7.43",
-        "input_lra": "14.40",
-        "input_thresh": "-36.55",
-        "output_i": "-17.77",
-        "output_tp": "-2.00",
-        "output_lra": "5.40",
-        "output_thresh": "-27.90",
-        "normalization_type": "dynamic",
-        "target_offset": "0.77"
-      }
-    },
-    {
-      "id": "report",
-      "text": "Focus Trail shows you where the journey breaks.",
-      "start": 13.15,
-      "slotEnd": 17.4,
-      "speed": 1.03,
-      "path": "assets/voice/report.wav",
-      "duration": 3.0,
-      "end": 16.15,
-      "sha256": "ef72ff12b54a25dc9cfaeecc332765d0f6b1202aa1fb48b8b9957a0a5e177af0",
-      "words": [
-        {
-          "text": "Focus",
-          "start": 0.275,
+          "start": 0.4,
           "end": 0.625
         },
         {
-          "text": "Trail",
+          "text": "ready",
           "start": 0.625,
-          "end": 1.15
+          "end": 0.85
         },
         {
-          "text": "shows",
-          "start": 1.15,
-          "end": 1.45
+          "text": "to",
+          "start": 0.85,
+          "end": 1.0125
         },
         {
-          "text": "you",
-          "start": 1.45,
-          "end": 1.5375
-        },
-        {
-          "text": "where",
-          "start": 1.5375,
-          "end": 1.6625
-        },
-        {
-          "text": "the",
-          "start": 1.6625,
-          "end": 1.75
-        },
-        {
-          "text": "journey",
-          "start": 1.75,
-          "end": 2.075
-        },
-        {
-          "text": "breaks",
-          "start": 2.075,
-          "end": 2.75
-        },
-        {
-          "text": ".",
-          "start": 2.75,
-          "end": 2.9
-        }
-      ],
-      "peakDbfs": -2.0,
-      "normalization": {
-        "input_i": "-26.93",
-        "input_tp": "-8.56",
-        "input_lra": "13.10",
-        "input_thresh": "-37.30",
-        "output_i": "-16.77",
-        "output_tp": "-2.00",
-        "output_lra": "9.10",
-        "output_thresh": "-26.93",
-        "normalization_type": "dynamic",
-        "target_offset": "-0.23"
-      }
-    },
-    {
-      "id": "close",
-      "text": "Catch it before your users do.",
-      "start": 17.5,
-      "slotEnd": 19.9,
-      "speed": 1.04,
-      "path": "assets/voice/close.wav",
-      "duration": 2.1,
-      "end": 19.6,
-      "sha256": "07a5167b40c37fa2c54a69e21040e20c24df3dee3c252220b72062c1872d4d4a",
-      "words": [
-        {
-          "text": "Catch",
-          "start": 0.25,
-          "end": 0.4625
-        },
-        {
-          "text": "it",
-          "start": 0.4625,
-          "end": 0.55
-        },
-        {
-          "text": "before",
-          "start": 0.55,
-          "end": 0.8875
-        },
-        {
-          "text": "your",
-          "start": 0.8875,
-          "end": 1.0
-        },
-        {
-          "text": "users",
-          "start": 1.0,
+          "text": "ship",
+          "start": 1.0125,
           "end": 1.4
         },
         {
-          "text": "do",
+          "text": ",",
           "start": 1.4,
-          "end": 1.875
+          "end": 1.475
+        },
+        {
+          "text": "right",
+          "start": 1.475,
+          "end": 2.25
+        },
+        {
+          "text": "?",
+          "start": 2.25,
+          "end": 2.4125
+        },
+        {
+          "text": "You",
+          "start": 2.4125,
+          "end": 2.5875
+        },
+        {
+          "text": "change",
+          "start": 2.5875,
+          "end": 2.8875
+        },
+        {
+          "text": "a",
+          "start": 2.8875,
+          "end": 3.0
+        },
+        {
+          "text": "setting",
+          "start": 3.0,
+          "end": 3.5
+        },
+        {
+          "text": ",",
+          "start": 3.5,
+          "end": 3.5875
+        },
+        {
+          "text": "close",
+          "start": 3.5875,
+          "end": 3.925
+        },
+        {
+          "text": "the",
+          "start": 3.925,
+          "end": 4.025
+        },
+        {
+          "text": "dialog",
+          "start": 4.025,
+          "end": 4.8
+        },
+        {
+          "text": ",",
+          "start": 4.8,
+          "end": 4.875
+        },
+        {
+          "text": "and",
+          "start": 4.875,
+          "end": 5.0125
+        },
+        {
+          "text": "jump",
+          "start": 5.0125,
+          "end": 5.3375
+        },
+        {
+          "text": "straight",
+          "start": 5.3375,
+          "end": 5.675
+        },
+        {
+          "text": "back",
+          "start": 5.675,
+          "end": 5.95
+        },
+        {
+          "text": "to",
+          "start": 5.95,
+          "end": 6.075
+        },
+        {
+          "text": "work",
+          "start": 6.075,
+          "end": 6.825
         },
         {
           "text": ".",
-          "start": 1.875,
-          "end": 2.05
+          "start": 6.825,
+          "end": 6.95
+        },
+        {
+          "text": "Until",
+          "start": 6.95,
+          "end": 7.25
+        },
+        {
+          "text": "one",
+          "start": 7.25,
+          "end": 7.4875
+        },
+        {
+          "text": "tiny",
+          "start": 7.4875,
+          "end": 7.975
+        },
+        {
+          "text": "bug",
+          "start": 7.975,
+          "end": 8.35
+        },
+        {
+          "text": "makes",
+          "start": 8.35,
+          "end": 8.5875
+        },
+        {
+          "text": "your",
+          "start": 8.5875,
+          "end": 8.7
+        },
+        {
+          "text": "next",
+          "start": 8.7,
+          "end": 9.025
+        },
+        {
+          "text": "move",
+          "start": 9.025,
+          "end": 9.2625
+        },
+        {
+          "text": "a",
+          "start": 9.2625,
+          "end": 9.325
+        },
+        {
+          "text": "guessing",
+          "start": 9.325,
+          "end": 9.725
+        },
+        {
+          "text": "game",
+          "start": 9.725,
+          "end": 10.525
+        },
+        {
+          "text": ".",
+          "start": 10.525,
+          "end": 10.7
+        },
+        {
+          "text": "Focus",
+          "start": 10.7,
+          "end": 11.1125
+        },
+        {
+          "text": "Trail",
+          "start": 11.1125,
+          "end": 11.5125
+        },
+        {
+          "text": "follows",
+          "start": 11.5125,
+          "end": 11.95
+        },
+        {
+          "text": "your",
+          "start": 11.95,
+          "end": 12.1125
+        },
+        {
+          "text": "keyboard",
+          "start": 12.1125,
+          "end": 12.6125
+        },
+        {
+          "text": "journey",
+          "start": 12.6125,
+          "end": 13.2
+        },
+        {
+          "text": ",",
+          "start": 13.2,
+          "end": 13.35
+        },
+        {
+          "text": "spots",
+          "start": 13.35,
+          "end": 13.7875
+        },
+        {
+          "text": "where",
+          "start": 13.7875,
+          "end": 13.9125
+        },
+        {
+          "text": "it",
+          "start": 13.9125,
+          "end": 14.0
+        },
+        {
+          "text": "breaks",
+          "start": 14.0,
+          "end": 14.725
+        },
+        {
+          "text": ",",
+          "start": 14.725,
+          "end": 14.8
+        },
+        {
+          "text": "and",
+          "start": 14.8,
+          "end": 14.925
+        },
+        {
+          "text": "helps",
+          "start": 14.925,
+          "end": 15.25
+        },
+        {
+          "text": "you",
+          "start": 15.25,
+          "end": 15.3875
+        },
+        {
+          "text": "catch",
+          "start": 15.3875,
+          "end": 15.675
+        },
+        {
+          "text": "the",
+          "start": 15.675,
+          "end": 15.775
+        },
+        {
+          "text": "problem",
+          "start": 15.775,
+          "end": 16.225
+        },
+        {
+          "text": "before",
+          "start": 16.225,
+          "end": 16.625
+        },
+        {
+          "text": "your",
+          "start": 16.625,
+          "end": 16.775
+        },
+        {
+          "text": "users",
+          "start": 16.775,
+          "end": 17.2
+        },
+        {
+          "text": "do",
+          "start": 17.2,
+          "end": 17.825
+        },
+        {
+          "text": ".",
+          "start": 17.825,
+          "end": 18.025
         }
       ],
-      "peakDbfs": -2.0,
+      "peakDbfs": -1.999,
       "normalization": {
-        "input_i": "-26.61",
-        "input_tp": "-8.45",
-        "input_lra": "9.30",
-        "input_thresh": "-37.30",
-        "output_i": "-15.90",
+        "input_i": "-24.37",
+        "input_tp": "-5.16",
+        "input_lra": "4.10",
+        "input_thresh": "-34.80",
+        "output_i": "-17.03",
         "output_tp": "-2.00",
-        "output_lra": "3.40",
-        "output_thresh": "-26.40",
+        "output_lra": "2.70",
+        "output_thresh": "-27.47",
         "normalization_type": "dynamic",
-        "target_offset": "-1.10"
+        "target_offset": "0.03"
       }
     }
   ]

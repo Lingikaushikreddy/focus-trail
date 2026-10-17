@@ -24,7 +24,7 @@ The MVP covers one page's main document in Chromium. It supports Tab, Shift+Tab,
 
 ## Watch the keyboard demo
 
-A **20-second portrait Reel with English AI voiceover** shows the new UI and real **Tab → Enter → Tab → Escape** interactions. The working dialog returns focus to **Open settings**; the controlled bug leaves it on **Document body**. The saved report identifies the failed `return-opener` checkpoint at Step 8.
+A **20-second portrait Reel with continuous AI narration and original music** shows the new UI and real **Tab → Enter → Tab → Escape** interactions. The working dialog returns focus to **Open settings**; the controlled bug leaves it on **Document body**. The saved report identifies the failed `return-opener` checkpoint at Step 8.
 
 <a href="social/reel/focus-trail-instagram-reel.mp4"><img src="social/reel/cover.png" alt="Watch the Focus Trail Reel: a keyboard demo catches lost return focus." width="300"></a>
 

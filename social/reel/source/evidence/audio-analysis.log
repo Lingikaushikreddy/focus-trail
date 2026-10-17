@@ -6,15 +6,15 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '<workspace>/outputs/focus-trail-reel/re
     hyperframes_version: 0.8.167
     hyperframes_renderer: hyperframes
     encoder         : Lavf63.1.101
-  Duration: 00:00:20.00, start: 0.000000, bitrate: 1027 kb/s
+  Duration: 00:00:20.00, start: 0.000000, bitrate: 1081 kb/s
   Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920 [SAR 1:1 DAR 9:16], 878 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
     Metadata:
       handler_name    : VideoHandler
       encoder         : Lavc63.1.101 libx264
-  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 141 kb/s (default)
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 195 kb/s (default)
     Metadata:
       handler_name    : SoundHandler
-[Parsed_volumedetect_0 @ 0x15ae16f40] n_samples: 0
+[Parsed_volumedetect_0 @ 0x10ee05e00] n_samples: 0
 Stream mapping:
   Stream #0:1 -> #0:0 (aac (native) -> pcm_s16le (native))
 Press [q] to stop, [?] for help
@@ -30,11 +30,11 @@ Output #0, null, to '/dev/null':
     Metadata:
       encoder         : Lavc63.1.101 pcm_s16le
       handler_name    : SoundHandler
-[Parsed_volumedetect_0 @ 0x14af044f0] n_samples: 1920000
-[Parsed_volumedetect_0 @ 0x14af044f0] mean_volume: -19.0 dB
-[Parsed_volumedetect_0 @ 0x14af044f0] max_volume: -2.0 dB
-[Parsed_volumedetect_0 @ 0x14af044f0] histogram_1db: 18
-[Parsed_volumedetect_0 @ 0x14af044f0] histogram_2db: 1446
-[Parsed_volumedetect_0 @ 0x14af044f0] histogram_3db: 2240
-[out#0/null @ 0x15ae150d0] video:0KiB audio:3750KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
-size=N/A time=00:00:20.00 bitrate=N/A speed=1.72e+03x elapsed=0:00:00.01    
+[Parsed_volumedetect_0 @ 0x1037052f0] n_samples: 1920000
+[Parsed_volumedetect_0 @ 0x1037052f0] mean_volume: -17.3 dB
+[Parsed_volumedetect_0 @ 0x1037052f0] max_volume: -1.3 dB
+[Parsed_volumedetect_0 @ 0x1037052f0] histogram_1db: 38
+[Parsed_volumedetect_0 @ 0x1037052f0] histogram_2db: 593
+[Parsed_volumedetect_0 @ 0x1037052f0] histogram_3db: 2230
+[out#0/null @ 0x10ee12640] video:0KiB audio:3750KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:20.00 bitrate=N/A speed=1.17e+03x elapsed=0:00:00.01    

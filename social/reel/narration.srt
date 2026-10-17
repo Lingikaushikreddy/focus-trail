@@ -1,19 +1,35 @@
 1
-00:00:00,150 --> 00:00:02,100
+00:00:00,550 --> 00:00:02,562
 Looks ready to ship, right?
 
 2
-00:00:03,200 --> 00:00:06,350
-A quick setting change. Back to what you were doing.
+00:00:02,562 --> 00:00:05,025
+You change a setting, close the dialog,
 
 3
-00:00:08,900 --> 00:00:12,600
-Then one tiny change… and suddenly, you’ve lost your place.
+00:00:05,025 --> 00:00:07,100
+and jump straight back to work.
 
 4
-00:00:13,150 --> 00:00:16,150
-Focus Trail shows you where the journey breaks.
+00:00:07,100 --> 00:00:08,500
+Until one tiny bug
 
 5
-00:00:17,500 --> 00:00:19,600
-Catch it before your users do.
+00:00:08,500 --> 00:00:10,850
+makes your next move a guessing game.
+
+6
+00:00:10,850 --> 00:00:13,500
+Focus Trail follows your keyboard journey,
+
+7
+00:00:13,500 --> 00:00:14,950
+spots where it breaks,
+
+8
+00:00:14,950 --> 00:00:16,375
+and helps you catch the problem
+
+9
+00:00:16,375 --> 00:00:18,175
+before your users do.

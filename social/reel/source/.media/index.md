@@ -1,4 +1,4 @@
-# .media · 19 assets
+# .media · 16 assets
 
 id         type   dur   dims       path                                        description
 image_001  image  —     2000×3000  assets/good-focus-verified-full.png         good focus verified full
@@ -15,8 +15,5 @@ image_009  image  —     1920×508   assets/report-first-difference-2x.png     
 image_010  image  —     1440×1100  assets/report-first-difference.png          report first difference
 image_011  image  —     1440×1100  assets/report-step-detail.png               report step detail
 sfx_001    sfx    —     —          .media/audio/sfx/sfx_001.mp3                key-press.mp3
-voice_001  voice  1.95s  —          .media/audio/voice/voice_001.wav            intro.wav
-voice_002  voice  3.15s  —          .media/audio/voice/voice_002.wav            good.wav
-voice_003  voice  3.7s  —          .media/audio/voice/voice_003.wav            bad.wav
-voice_004  voice  3.0s  —          .media/audio/voice/voice_004.wav            report.wav
-voice_005  voice  2.1s  —          .media/audio/voice/voice_005.wav            close.wav
+bgm_001    bgm    —     —          .media/audio/bgm/bgm_001.wav                focus-trail-bed.wav
+voice_001  voice  —     —          .media/audio/voice/voice_001.wav            narration.wav

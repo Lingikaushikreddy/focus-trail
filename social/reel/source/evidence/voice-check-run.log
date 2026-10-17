@@ -1,0 +1,55 @@
+{
+  "method": "Independent WAV headers, SHA-256, duration and FFmpeg loudness/silence measurements. Single-pass provenance comes from the generator. Spoken words use the synthesis text and native estimated token boundaries; no ASR or subjective listening claim.",
+  "cues": [
+    {
+      "id": "narration",
+      "duration": 18.125,
+      "sha256": "826970378ec3f90a71d01e774e076fda71ac199316aa1dc4bfa264ed4bbecfa0",
+      "format": {
+        "channels": 1,
+        "sampleRate": 48000,
+        "sampleWidth": 2,
+        "frames": 870000,
+        "compression": "NONE"
+      },
+      "integratedLufs": -17.22,
+      "truePeakDbtp": -2.0,
+      "silenceMeasurement": {
+        "thresholdDb": -45,
+        "minimumDuration": 0.3,
+        "internalSilences": [
+          {
+            "start": 1.907485,
+            "end": 2.473016,
+            "duration": 0.565531
+          },
+          {
+            "start": 6.457297,
+            "end": 7.031099,
+            "duration": 0.573802
+          },
+          {
+            "start": 10.157458,
+            "end": 10.759177,
+            "duration": 0.601719
+          }
+        ],
+        "maximumAllowedInternalSeconds": 0.65,
+        "note": "Natural model punctuation includes brief question/sentence pauses. Continuity also requires one synthesis result and exact native duration; silence is not removed to force a flat cadence."
+      },
+      "checks": {
+        "sha256Matches": true,
+        "durationMatches": true,
+        "fits20SecondEdit": true,
+        "pcm16Mono48k": true,
+        "truePeakAtOrBelowMinus1point9": true,
+        "singleContinuousCue": true,
+        "singleSynthesisResult": true,
+        "nativeDurationPreserved": true,
+        "allEstimatedWordEndingsInsideWav": true,
+        "noLongInternalSilentGaps": true
+      }
+    }
+  ],
+  "passed": true
+}

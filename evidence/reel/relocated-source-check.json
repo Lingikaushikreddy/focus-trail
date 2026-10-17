@@ -25,10 +25,15 @@
     "findings": [],
     "duration": 20,
     "samples": [
-      1.5,
-      6.7,
-      11.7,
-      18.5
+      1.111,
+      3.333,
+      5.556,
+      7.778,
+      10,
+      12.222,
+      14.444,
+      16.667,
+      18.889
     ],
     "transitionSamples": [],
     "transitionSamplesDropped": 0,
@@ -53,13 +58,14 @@
     "findings": [],
     "enabled": true,
     "samples": [
-      1.5,
-      6.7,
-      11.7,
-      18.5
+      1.111,
+      5.556,
+      10,
+      14.444,
+      18.889
     ],
-    "checked": 33,
-    "passed": 33
+    "checked": 31,
+    "passed": 31
   },
   "hdr": {
     "autoPromotion": null,
@@ -72,9 +78,9 @@
     "findingFiles": []
   },
   "saved": {
-    "id": "21bb6966-d41c-424c-b4d2-dc2d0ad95361",
-    "revision": "bf7c5953-2eed-4789-bc3c-8ae27c215626",
-    "report": "<workspace>/outputs/focus-trail/social/reel/source/.hyperframes/artifacts/checks/21bb6966-d41c-424c-b4d2-dc2d0ad95361.json",
+    "id": "d9b90c34-dcff-4e2b-bf84-fd3af00908fe",
+    "revision": "8dfff2cc-09a8-40fa-a39e-7c360ef36a97",
+    "report": "<workspace>/outputs/focus-trail/social/reel/source/.hyperframes/artifacts/checks/d9b90c34-dcff-4e2b-bf84-fd3af00908fe.json",
     "attribution": "recorded-revision"
   },
   "_meta": {

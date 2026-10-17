@@ -1,74 +1,53 @@
 {
-  "method": "Independent WAV header/hash/duration checks and FFmpeg loudness analysis of delivered WAVs. Spoken content uses the synthesis script; no ASR claim.",
+  "method": "Independent WAV headers, SHA-256, duration and FFmpeg loudness/silence measurements. Single-pass provenance comes from the generator. Spoken words use the synthesis text and native estimated token boundaries; no ASR or subjective listening claim.",
   "cues": [
     {
-      "id": "intro",
-      "duration": 1.95,
-      "sha256": "1df223b9f898989eaaa6f0e13f220467a31d79c6f7b598cef621278c02604061",
-      "integratedLufs": -14.92,
-      "truePeakDbtp": -1.99,
-      "checks": {
-        "sha256Matches": true,
-        "durationMatches": true,
-        "fitsSlot": true,
-        "pcm16Mono48k": true,
-        "truePeakAtOrBelowMinus1point9": true
-      }
-    },
-    {
-      "id": "good",
-      "duration": 3.15,
-      "sha256": "28a39bf5c6793190a0ef6fb1e67bfbbfa33f94a8a1f720840e6788803acce078",
-      "integratedLufs": -17.27,
+      "id": "narration",
+      "duration": 18.125,
+      "sha256": "826970378ec3f90a71d01e774e076fda71ac199316aa1dc4bfa264ed4bbecfa0",
+      "format": {
+        "channels": 1,
+        "sampleRate": 48000,
+        "sampleWidth": 2,
+        "frames": 870000,
+        "compression": "NONE"
+      },
+      "integratedLufs": -17.22,
       "truePeakDbtp": -2.0,
+      "silenceMeasurement": {
+        "thresholdDb": -45,
+        "minimumDuration": 0.3,
+        "internalSilences": [
+          {
+            "start": 1.907485,
+            "end": 2.473016,
+            "duration": 0.565531
+          },
+          {
+            "start": 6.457297,
+            "end": 7.031099,
+            "duration": 0.573802
+          },
+          {
+            "start": 10.157458,
+            "end": 10.759177,
+            "duration": 0.601719
+          }
+        ],
+        "maximumAllowedInternalSeconds": 0.65,
+        "note": "Natural model punctuation includes brief question/sentence pauses. Continuity also requires one synthesis result and exact native duration; silence is not removed to force a flat cadence."
+      },
       "checks": {
         "sha256Matches": true,
         "durationMatches": true,
-        "fitsSlot": true,
+        "fits20SecondEdit": true,
         "pcm16Mono48k": true,
-        "truePeakAtOrBelowMinus1point9": true
-      }
-    },
-    {
-      "id": "bad",
-      "duration": 3.7,
-      "sha256": "316b9a027fef9a12d1135375ad09102113df5c2b1210761ae88159b637f3eea8",
-      "integratedLufs": -18.32,
-      "truePeakDbtp": -2.0,
-      "checks": {
-        "sha256Matches": true,
-        "durationMatches": true,
-        "fitsSlot": true,
-        "pcm16Mono48k": true,
-        "truePeakAtOrBelowMinus1point9": true
-      }
-    },
-    {
-      "id": "report",
-      "duration": 3.0,
-      "sha256": "ef72ff12b54a25dc9cfaeecc332765d0f6b1202aa1fb48b8b9957a0a5e177af0",
-      "integratedLufs": -16.77,
-      "truePeakDbtp": -2.0,
-      "checks": {
-        "sha256Matches": true,
-        "durationMatches": true,
-        "fitsSlot": true,
-        "pcm16Mono48k": true,
-        "truePeakAtOrBelowMinus1point9": true
-      }
-    },
-    {
-      "id": "close",
-      "duration": 2.1,
-      "sha256": "07a5167b40c37fa2c54a69e21040e20c24df3dee3c252220b72062c1872d4d4a",
-      "integratedLufs": -15.9,
-      "truePeakDbtp": -2.0,
-      "checks": {
-        "sha256Matches": true,
-        "durationMatches": true,
-        "fitsSlot": true,
-        "pcm16Mono48k": true,
-        "truePeakAtOrBelowMinus1point9": true
+        "truePeakAtOrBelowMinus1point9": true,
+        "singleContinuousCue": true,
+        "singleSynthesisResult": true,
+        "nativeDurationPreserved": true,
+        "allEstimatedWordEndingsInsideWav": true,
+        "noLongInternalSilentGaps": true
       }
     }
   ],

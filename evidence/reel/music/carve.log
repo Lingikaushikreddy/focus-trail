@@ -1,0 +1,7 @@
+bed    music-bed (--bed)
+voice  narration (--voice)
+carve  strength 0.65, 1 voice
+bands  250Hz -9.4dB q1.88, 400Hz -6.2dB q1.88, 630Hz -6.2dB q1.88, 1000Hz -12.4dB q1.88, 1600Hz -9.58dB q1.88
+level  168-point envelope, floor -15.5 dB
+lanes  6 carve
+wrote index.html (id="music-bed")

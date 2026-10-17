@@ -1,0 +1,13 @@
+{
+  "measurement": "Actual final AAC mix, FFmpeg loudnorm input measurements",
+  "input_i": "-14.52",
+  "input_tp": "-1.32",
+  "input_lra": "8.50",
+  "input_thresh": "-25.38",
+  "output_i": "-16.67",
+  "output_tp": "-3.12",
+  "output_lra": "2.90",
+  "output_thresh": "-27.31",
+  "normalization_type": "dynamic",
+  "target_offset": "0.67"
+}

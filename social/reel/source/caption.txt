@@ -12,4 +12,5 @@ Controlled demo. The saved report retains its last coherent sample and marks the
 
 #WebDevelopment #Accessibility #Playwright #OpenSource #BuildInPublic
 
-English AI narration: Kokoro af_heart.
+AI voice: stock Kokoro af_bella, one continuous performance.
+Original instrumental music: Focus Trail bed, 96 BPM; synthesized without third-party samples.

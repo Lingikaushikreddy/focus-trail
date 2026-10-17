@@ -1,17 +1,5 @@
-Focus Trail — AI narration
-Stock synthetic US English voice: Kokoro af_heart
+Focus Trail — continuous AI narration
+Stock synthetic US English voice: Kokoro af_bella
 
-00.15–02.10  intro
-Looks ready to ship, right?
-
-03.20–06.35  good
-A quick setting change. Back to what you were doing.
-
-08.90–12.60  bad
-Then one tiny change… and suddenly, you’ve lost your place.
-
-13.15–16.15  report
-Focus Trail shows you where the journey breaks.
-
-17.50–19.60  close
-Catch it before your users do.
+00.15–18.27  narration
+Looks ready to ship, right? You change a setting, close the dialog, and jump straight back to work. Until one tiny bug makes your next move a guessing game. Focus Trail follows your keyboard journey, spots where it breaks, and helps you catch the problem before your users do.

@@ -25,14 +25,15 @@
     "findings": [],
     "duration": 20,
     "samples": [
-      1.5,
-      4.8,
-      6.7,
-      9.8,
-      11.7,
-      15,
-      18.5,
-      19.95
+      1.111,
+      3.333,
+      5.556,
+      7.778,
+      10,
+      12.222,
+      14.444,
+      16.667,
+      18.889
     ],
     "transitionSamples": [],
     "transitionSamplesDropped": 0,
@@ -57,11 +58,11 @@
     "findings": [],
     "enabled": true,
     "samples": [
-      1.5,
-      4.8,
-      9.8,
-      15,
-      19.95
+      1.111,
+      5.556,
+      10,
+      14.444,
+      18.889
     ],
     "checked": 31,
     "passed": 31
@@ -77,9 +78,9 @@
     "findingFiles": []
   },
   "saved": {
-    "id": "825a6624-2997-44b1-a2bf-9cce95039383",
+    "id": "6c79a301-3042-4309-93a0-fe1f54ab4a21",
     "revision": null,
-    "report": "<workspace>/outputs/focus-trail-reel/.hyperframes/artifacts/checks/825a6624-2997-44b1-a2bf-9cce95039383.json",
+    "report": "<workspace>/outputs/focus-trail-reel/.hyperframes/artifacts/checks/6c79a301-3042-4309-93a0-fe1f54ab4a21.json",
     "attribution": "inputs-changed"
   },
   "_meta": {

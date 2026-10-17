@@ -1,16 +1,15 @@
 {
-  "reviewedAt": "2026-10-17T02:14:51.981177+00:00",
-  "reviewer": "independent narrative and visual review agent",
-  "scope": "Inspected the listed final encoded-video stills, narration and scene source, current WAV hashes, declared cue timing, and supplied current signal/layout verification. No listening or speech-recognition review.",
-  "revisionNote": "Story-led script replaces the literal UI readout. Current final MP4 and image hashes replace the prior version. The old good-flow outcome-onset assertion is removed because that line now establishes a general user experience, not a timed technical outcome.",
+  "reviewedAt": "2026-10-17T03:09:23.681047+00:00",
+  "reviewer": "Independent source and decoded-still review agent",
+  "scope": "Visually inspected the three listed still images decoded from the current final MP4, and checked current source, spoken-caption text and supplied browser-check output. No listening, speech recognition or rendered audio assessment is claimed here.",
   "encodedVideo": {
     "path": "renders/focus-trail-instagram-reel.mp4",
-    "sha256": "cde88f65d1d1d6113b65da436069a55a79706bd64c7d628d53ece742a7fc0f38"
+    "sha256": "8683ed3676f59774de3020cec5763d0f1c033e5d7471be52eb7a12acb7e6062d"
   },
   "imagesInspected": [
     {
       "path": "evidence/encoded-contact-sheet.png",
-      "sha256": "8b7f30688410f4693a8461c29e0cd6d3e396e5c2abbe58e80ee7c3d305325647"
+      "sha256": "8b62649cde23c133a2c4c5a8a090e70cf518aea0531c86b0ec3809d225f07a9e"
     },
     {
       "path": "evidence/encoded-bug-result.png",
@@ -21,91 +20,54 @@
       "sha256": "3c46f871eca73c48168142bb114f128087290214cc334c98e7d39a7153ddcbc0"
     }
   ],
-  "sourceInspected": [
-    "index.html",
-    "compositions/frames/good.html",
-    "compositions/frames/bad.html",
-    "compositions/frames/report.html",
-    "narration-script.txt",
-    "narration-cues.json",
-    "scripts/generate-voice.py",
-    "narration-verification.json",
-    "evidence/check.json",
-    "evidence/audio-match.json"
-  ],
-  "script": [
-    "Looks ready to ship, right?",
-    "A quick setting change. Back to what you were doing.",
-    "Then one tiny change… and suddenly, you’ve lost your place.",
-    "Focus Trail shows you where the journey breaks.",
-    "Catch it before your users do."
-  ],
   "findings": [
     {
-      "check": "Actual UI and both keyboard journeys visible",
+      "check": "Actual UI and keyboard journeys",
       "result": "pass",
-      "evidence": "The contact sheet visibly includes the shipped hero, the real browser workshop, an open settings modal in both journeys, and the final focus outcomes. It shows Open settings for the working flow and Document body for the controlled fault. Large Tab, Enter, Tab and Esc key labels make the path legible."
+      "evidence": "The seven-panel contact sheet shows the shipped UI, the actual workshop dialog in both journeys, the good outcome Open settings and controlled-fault outcome Document body. The large Tab, Enter, Tab and Esc labels keep the path clear."
     },
     {
-      "check": "Story rather than screen readout",
+      "check": "Visible controlled-fault proof",
       "result": "pass",
-      "evidence": "The five spoken lines introduce a shipping question, establish the normal user experience, introduce loss of place, offer Focus Trail’s diagnostic payoff, and close with a testing invitation. They do not read keyboard names, button labels, report row labels, or checkpoint numbers."
+      "evidence": "The full fault still shows Document body in the application inspector and the large outcome caption. CONTROLLED FAULT remains visible. This is a demonstration fixture, not an independent maintainer installation."
     },
     {
-      "check": "Visible bug proof",
+      "check": "Saved-report scope and caveat",
       "result": "pass",
-      "evidence": "The full encoded fault still clearly shows Document body in the real application inspector and in the large outcome caption, with the controlled-fault label visible. The expected return to Open settings is visible in the good-flow contact-sheet panel."
+      "evidence": "The full report still visibly names Step 8 / return-opener and the 500 ms timeout. Its observed-target row states Focus unavailable and retains the last coherent sample without a later verified sample. Saved report \u00b7 endpoint sample unavailable remains directly below the report. It does not present that report as a fresh BODY sample."
     },
     {
-      "check": "Saved-report truthfulness",
+      "check": "Phone-oriented hierarchy and brand",
       "result": "pass",
-      "evidence": "The full report still visibly states the return-opener 500 ms checkpoint timeout and Step 8. Its observed-target row says Focus unavailable and retains the last coherent sample without a later verified sample. The caption keeps Saved report · endpoint sample unavailable visible, and the closing label says Controlled demo · Open source. No narration claims that this historical report freshly sampled BODY."
+      "evidence": "Headlines, key labels, primary outcomes and focus mark are large and legible in the inspected stills. The report card has clear checkpoint and sample-unavailability text. No visible text clipping or overlap was found in these images."
     },
     {
-      "check": "Phone-first hierarchy and branding",
+      "check": "Continuous story and caption consistency",
       "result": "pass",
-      "evidence": "Main headlines, keys and outcome captions are large and high contrast in the inspected stills. The corner focus mark and Focus Trail brand remain visible. The full-resolution report’s checkpoint and sample-unavailability wording are legible. No visible clipping or overlapping text was found."
+      "evidence": "The source has one 49-word narration cue across the scene cuts. The 9 spoken SRT phrases reproduce every word in order, with non-overlapping ranges inside the 20-second edit. The story provides a general setup, twist and diagnostic payoff; it is not a timestamped reading of each key or outcome."
     },
     {
-      "check": "Bad-flow narrative timing",
+      "check": "Current browser validation",
       "result": "pass",
-      "evidence": "The native model estimate for the onset of lost is 8.9 + 2.45 = 11.35s, after the capture-derived global Escape at 11.24s. The good-flow line is a general experiential setup; no technical outcome-word timing assertion is made for it. These timings are source/model estimates, not ASR or listening evidence."
-    },
-    {
-      "check": "Current story voice sources included in encoded mix",
-      "result": "pass",
-      "evidence": "The supplied current independent reconstruction compares 13 authored tracks with decoded AAC PCM. Whole-mix correlation is 0.999942; the lowest of the five voice-segment correlations is 0.999862 (required minimum 0.97). This supports source inclusion and scheduling, not perceived delivery quality."
-    },
-    {
-      "check": "Current composition browser checks",
-      "result": "pass",
-      "evidence": "The current check reports strict ok=true, browserSkipped=false, no lint/runtime/layout findings, 8 layout sample times and 31/31 contrast checks. Motion analysis is disabled and is not claimed as a measured pass."
+      "evidence": "Strict check ok=True, browserSkipped=False; no lint, runtime or layout findings; 9 layout samples and 31/31 contrast checks. Motion analysis was disabled and is not claimed as a measured pass."
     }
   ],
-  "narrationOutcomeTiming": {
-    "method": "Composition offset plus model-estimated word onset and capture-derived Escape time; not independently recognized speech.",
-    "good": "General experience clause; no outcome-onset assertion.",
-    "lostReturn": {
-      "escapeSeconds": 11.24,
-      "outcomeWord": "lost",
-      "modelEstimatedWordOnsetSeconds": 11.35,
-      "afterEscapeSeconds": 0.11,
-      "passed": true
-    }
-  },
-  "currentVerificationSha256": {
-    "evidence/audio-match.json": "45422ca1eac01210bc8e016c61248eb9051f167859465497a15f4e84a015a8b1",
-    "evidence/check.json": "b537521fc77e4843c13c24cd633726b1a0f58edbee2d35ddf8f23793e49dcb02",
-    "narration-cues.json": "51b2c0b63d001e2d1bf7bb641a31dbdab9244f00719a1e7a2ea6d78bb79fd5b2",
-    "narration-verification.json": "49201c8483810c7981ab93c091b404077bab4df78be3a43c4d2b378abf461b10"
+  "currentEvidenceSha256": {
+    "index.html": "d5fabd305692f86e34692f585ec62174e8de65871e9e73f9978e1b3afa2f2d07",
+    "narration-cues.json": "6735be80cd14fde25694f330a9c852c37a26ce1a7048a168afe61c6e8e268657",
+    "narration.srt": "565b2a145caa47c478ae72fa660324aa6268069e5257ac529b9cb71ded579d8f",
+    "evidence/check.json": "fb4d5575c6c13e92f95ebb0590d16c8a33fbfc64882a3049f1d3f5fab4061001",
+    "evidence/narrative-review.json": "702b3e358e856a1ca716982a255c479ea505bd79a621a126537115942505b627"
   },
   "blockingFindings": [],
   "limits": [
-    "This review inspected the listed decoded stills; it did not watch every frame or certify every transition.",
-    "No audio was heard or subjectively evaluated. Spoken content comes from the synthesis script; word onsets are model estimates. Signal matching supports inclusion, not speech recognition or expressive quality.",
-    "The setting-change line supplies the user scenario; this controlled demonstration verifies dialog focus behavior and does not establish that a setting was saved.",
-    "Small secondary UI text remains small. Essential keys and outcomes are repeated in large captions; most viewers will not read the entire report during the Reel.",
-    "Instagram UI overlays and platform recompression were not tested in the Instagram app."
+    "Only the listed decoded stills were visually inspected; not every frame or transition.",
+    "No audio was heard or subjectively judged. Source continuity, intended story cadence and caption text do not prove perceived energy or intelligibility.",
+    "Spoken caption timings come from model predictions, not an independently measured transcript.",
+    "Secondary application text remains small; essential keys and focus outcomes are repeated in large captions.",
+    "Instagram overlays and platform recompression were not tested in the Instagram app.",
+    "Actual music/voice inclusion, loudness and signal behavior are checked separately in audio evidence."
   ],
-  "verdict": "No blocking visual, story-scope or declared source-timing issue found in the inspected current encode. Subjective voice quality was not assessed."
+  "verdict": "No blocking visual, story-scope or caption consistency issue found in the inspected current encode and source. Audio assessment is outside this review.",
+  "revisionNote": "Refreshed for the final music-balance encode. Re-inspected the changed contact sheet; full bug and report still bytes are identical to the previously inspected images. Review remains limited to source and visible frames, with no listening claim."
 }
