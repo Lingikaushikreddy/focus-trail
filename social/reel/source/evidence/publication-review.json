@@ -1,0 +1,499 @@
+{
+  "passed": true,
+  "findings": [],
+  "relativeReadmeLinks": [
+    {
+      "from": "README.md",
+      "target": "pilot/operator/status.json",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "docs/images/frontend-desktop.png",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "docs/limits.md",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "social/reel/focus-trail-instagram-reel.mp4",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "social/reel/caption.txt",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "social/reel/source/",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "social/reel/focus-trail-instagram-kit.zip",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "evidence/reel/README.md",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "distribution/focus-trail-0.1.0.tgz",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "docs/baseline-review.md",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "pilot/participant-kit/START-HERE.md",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "docs/quickstart.md",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "docs/images/demo-keyboard-dialog.png",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "evidence/frontend/README.md",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "social/focus-trail-instagram.zip",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "social/README.md",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "docs/images/report-first-difference.png",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "evidence/demo/good.html",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "evidence/demo/good.json",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "evidence/demo/lost-return.html",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "evidence/demo/lost-return.json",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "evidence/demo/escape.html",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "evidence/demo/escape.json",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "evidence/demo/activation.html",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "evidence/demo/activation.json",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "docs/reports.md",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "docs/images/report-before-after.png",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "pilot/README.md",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "pilot/participant-kit/INVITATION.txt",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "pilot/focus-trail-pilot-participant-kit.zip",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "pilot/operator/session-guide.md",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "evidence/summary.json",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "evidence/repeat-verification.log",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "evidence/package/verification.json",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "pilot/operator/verification-summary.json",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "pilot/operator/task-verification.json",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "evidence/upstream/README.md",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "evidence/github/verification.json",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "evidence/github/README.md",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "evidence/",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "pilot/operator/verification/",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "CONTRIBUTING.md",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "docs/qualification.md",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "docs/provenance.md",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "LICENSE",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "evidence/upstream/source/upstream/LICENSE",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "docs/provenance.md",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "social/reel/focus-trail-instagram-reel.mp4",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "social/reel/cover.png",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "social/reel/keyboard-bug.png",
+      "exists": true
+    },
+    {
+      "from": "README.md",
+      "target": "social/reel/report.png",
+      "exists": true
+    },
+    {
+      "from": "social/reel/README.md",
+      "target": "focus-trail-instagram-reel.mp4",
+      "exists": true
+    },
+    {
+      "from": "social/reel/README.md",
+      "target": "focus-trail-instagram-kit.zip",
+      "exists": true
+    },
+    {
+      "from": "social/reel/README.md",
+      "target": "../../evidence/reel/README.md",
+      "exists": true
+    },
+    {
+      "from": "social/reel/README.md",
+      "target": "caption.txt",
+      "exists": true
+    },
+    {
+      "from": "social/reel/README.md",
+      "target": "cover.png",
+      "exists": true
+    },
+    {
+      "from": "social/reel/README.md",
+      "target": "keyboard-bug.png",
+      "exists": true
+    },
+    {
+      "from": "social/reel/README.md",
+      "target": "report.png",
+      "exists": true
+    },
+    {
+      "from": "social/reel/README.md",
+      "target": "source/README.md",
+      "exists": true
+    },
+    {
+      "from": "social/reel/README.md",
+      "target": "narration-script.txt",
+      "exists": true
+    },
+    {
+      "from": "social/reel/README.md",
+      "target": "source/VOICE.md",
+      "exists": true
+    },
+    {
+      "from": "social/reel/README.md",
+      "target": "captions.srt",
+      "exists": true
+    },
+    {
+      "from": "social/reel/README.md",
+      "target": "narration.srt",
+      "exists": true
+    },
+    {
+      "from": "social/reel/README.md",
+      "target": "focus-trail-instagram-reel.mp4",
+      "exists": true
+    },
+    {
+      "from": "social/reel/README.md",
+      "target": "cover.png",
+      "exists": true
+    },
+    {
+      "from": "social/reel/source/VOICE.md",
+      "target": "narration-cues.json",
+      "exists": true
+    },
+    {
+      "from": "social/reel/source/VOICE.md",
+      "target": "narration-script.txt",
+      "exists": true
+    },
+    {
+      "from": "evidence/reel/README.md",
+      "target": "../../social/reel/focus-trail-instagram-reel.mp4",
+      "exists": true
+    },
+    {
+      "from": "evidence/reel/README.md",
+      "target": "ffprobe.json",
+      "exists": true
+    },
+    {
+      "from": "evidence/reel/README.md",
+      "target": "decode-errors.log",
+      "exists": true
+    },
+    {
+      "from": "evidence/reel/README.md",
+      "target": "check.json",
+      "exists": true
+    },
+    {
+      "from": "evidence/reel/README.md",
+      "target": "narration-verification.json",
+      "exists": true
+    },
+    {
+      "from": "evidence/reel/README.md",
+      "target": "audio-match.json",
+      "exists": true
+    },
+    {
+      "from": "evidence/reel/README.md",
+      "target": "mix-loudness.log",
+      "exists": true
+    },
+    {
+      "from": "evidence/reel/README.md",
+      "target": "audio-analysis.log",
+      "exists": true
+    },
+    {
+      "from": "evidence/reel/README.md",
+      "target": "claim-review.json",
+      "exists": true
+    },
+    {
+      "from": "evidence/reel/README.md",
+      "target": "../../social/reel/source/assets/capture-provenance.json",
+      "exists": true
+    },
+    {
+      "from": "evidence/reel/README.md",
+      "target": "visual-review.json",
+      "exists": true
+    },
+    {
+      "from": "evidence/reel/README.md",
+      "target": "encoded-contact-sheet.png",
+      "exists": true
+    },
+    {
+      "from": "evidence/reel/README.md",
+      "target": "verification.json",
+      "exists": true
+    },
+    {
+      "from": "evidence/reel/README.md",
+      "target": "publication-manifest.json",
+      "exists": true
+    },
+    {
+      "from": "evidence/reel/README.md",
+      "target": "../../social/reel/source/",
+      "exists": true
+    },
+    {
+      "from": "evidence/reel/README.md",
+      "target": "transition-check.json",
+      "exists": true
+    },
+    {
+      "from": "evidence/reel/README.md",
+      "target": "check.json",
+      "exists": true
+    }
+  ],
+  "voiceFiles": [
+    {
+      "id": "intro",
+      "sha256": "7f6e80aa4e6bc5b29ad217f4ca8ac7e009265ee373abe36e58843b972fd4d838",
+      "registeredMatches": true,
+      "sampleRate": 48000,
+      "channels": 1,
+      "width": 2,
+      "duration": 2.05
+    },
+    {
+      "id": "good",
+      "sha256": "b6652bea2a52ec46e08df5abf4a3c7e1929ee202c5df5ed01a08873bc2047e23",
+      "registeredMatches": true,
+      "sampleRate": 48000,
+      "channels": 1,
+      "width": 2,
+      "duration": 4.7
+    },
+    {
+      "id": "bad",
+      "sha256": "a66d34edc758eb99b6be9d987dda896da9564a3f2970b2f787882b89b9a4404d",
+      "registeredMatches": true,
+      "sampleRate": 48000,
+      "channels": 1,
+      "width": 2,
+      "duration": 4.6
+    },
+    {
+      "id": "report",
+      "sha256": "ed11fd1d877fb688df01bc6a8f996fa37621628b0efa8d09560fb17e98d6086a",
+      "registeredMatches": true,
+      "sampleRate": 48000,
+      "channels": 1,
+      "width": 2,
+      "duration": 3.4
+    },
+    {
+      "id": "close",
+      "sha256": "ddfe35ecf2f35aaefa8b9d09b5ae786f4df11bb773be4c67c209eaced2c1e6be",
+      "registeredMatches": true,
+      "sampleRate": 48000,
+      "channels": 1,
+      "width": 2,
+      "duration": 2.4
+    }
+  ],
+  "zip": {
+    "badCrc": null,
+    "fileCount": 83,
+    "machinePaths": [],
+    "runtimeOrModels": []
+  },
+  "mp4Sha256": "8c96d1f9d1ca3effb38de0508a1b5f1ce73b51ad91139f0fc23868a472ec2a39",
+  "trackedChanges": [
+    "README.md"
+  ],
+  "gitStatus": " M README.md\n?? evidence/reel/\n?? social/reel/\n",
+  "frozenCandidates": [
+    {
+      "path": "distribution/focus-trail-0.1.0.tgz",
+      "sha256": "79bac5b64c1f96e7cb684e4bb746cc37af4bda902f719590bacc3984fb8e67e4"
+    },
+    {
+      "path": "pilot/participant-kit/candidate/focus-trail-0.1.0.tgz",
+      "sha256": "79bac5b64c1f96e7cb684e4bb746cc37af4bda902f719590bacc3984fb8e67e4"
+    },
+    {
+      "path": "evidence/package/focus-trail-0.1.0.tgz",
+      "sha256": "79bac5b64c1f96e7cb684e4bb746cc37af4bda902f719590bacc3984fb8e67e4"
+    }
+  ],
+  "payloadFiles": 116
+}

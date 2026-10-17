@@ -1,0 +1,17 @@
+Focus Trail — AI narration
+Stock synthetic US English voice: Kokoro af_heart
+
+00.15–02.20  intro
+Pretty UI. But where’s focus?
+
+03.15–07.85  good
+Tab. Enter. Tab. Escape. Focus returns.
+
+08.15–12.75  bad
+Same keys. This time, focus gets lost.
+
+13.15–16.55  report
+Focus Trail flags the failed return checkpoint.
+
+17.50–19.90  close
+Keep your place. Try Focus Trail.

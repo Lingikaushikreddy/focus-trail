@@ -1,0 +1,293 @@
+{
+  "createdAt": "2026-10-17T01:46:24.362Z",
+  "baseUrl": "http://127.0.0.1:49371",
+  "method": "Unmodified local app, real Playwright keyboard.press events. Viewport-only scroll, no focus setters or application code injection.",
+  "viewport": {
+    "width": 1000,
+    "height": 1500
+  },
+  "crop": {
+    "x": 20,
+    "y": 430,
+    "width": 960,
+    "height": 600
+  },
+  "recordings": [
+    {
+      "variant": "good",
+      "sourceWebm": "<workspace>/work/focus-trail-reel-capture/raw-clean/page@f7a7db1aaad5aa9850c0fdc80085cf48.webm",
+      "sceneDurationSeconds": 5.5,
+      "events": [
+        {
+          "key": "Tab",
+          "seconds": 0.6503163749999998,
+          "state": {
+            "activeTag": "BUTTON",
+            "activeId": "opener",
+            "inspector": "Open settings",
+            "lastKey": "Tab",
+            "dialogVisible": false,
+            "scrollY": 300
+          }
+        },
+        {
+          "key": "Enter",
+          "seconds": 1.452049125,
+          "state": {
+            "activeTag": "BUTTON",
+            "activeId": "save",
+            "inspector": "Save changes",
+            "lastKey": "Enter",
+            "dialogVisible": true,
+            "scrollY": 300
+          }
+        },
+        {
+          "key": "Tab",
+          "seconds": 2.357644875,
+          "state": {
+            "activeTag": "BUTTON",
+            "activeId": "cancel",
+            "inspector": "Cancel",
+            "lastKey": "Tab",
+            "dialogVisible": true,
+            "scrollY": 300
+          }
+        },
+        {
+          "key": "Escape",
+          "seconds": 3.2535627080000005,
+          "state": {
+            "activeTag": "BUTTON",
+            "activeId": "opener",
+            "inspector": "Open settings",
+            "lastKey": "Escape",
+            "dialogVisible": false,
+            "scrollY": 300
+          }
+        }
+      ],
+      "errors": [],
+      "assertionsPassed": true,
+      "notes": "No screenshots or viewport changes during recording. Source clip timing derived separately from decoded 25fps frames.",
+      "deliveredClip": "good-keyboard-demo.mp4",
+      "sourceDurationSeconds": 5.84,
+      "sourceTrimStartSeconds": 0.32,
+      "deliveredDurationSeconds": 5.5,
+      "deliveredDimensions": {
+        "width": 960,
+        "height": 600
+      },
+      "sourceFrameRate": 25,
+      "deliveredFrameRate": 30,
+      "decodedFrameTiming": [
+        {
+          "key": "Tab",
+          "sourceSeconds": 0.96,
+          "clipSeconds": 0.64
+        },
+        {
+          "key": "Enter",
+          "sourceSeconds": 1.76,
+          "clipSeconds": 1.44
+        },
+        {
+          "key": "Tab",
+          "sourceSeconds": 2.68,
+          "clipSeconds": 2.36
+        },
+        {
+          "key": "Escape",
+          "sourceSeconds": 3.56,
+          "clipSeconds": 3.24
+        }
+      ],
+      "frameTimingMethod": "Observed first changed decoded frame for each key outcome; source is 25 fps (40 ms precision). Encoded to 30 fps by frame duplication, no synthesized UI states."
+    },
+    {
+      "variant": "lost-return",
+      "sourceWebm": "<workspace>/work/focus-trail-reel-capture/raw-clean/page@f51183a7f5e5f4b3b9856884f144f269.webm",
+      "sceneDurationSeconds": 5.5,
+      "events": [
+        {
+          "key": "Tab",
+          "seconds": 0.6500802920000005,
+          "state": {
+            "activeTag": "BUTTON",
+            "activeId": "opener",
+            "inspector": "Open settings",
+            "lastKey": "Tab",
+            "dialogVisible": false,
+            "scrollY": 300
+          }
+        },
+        {
+          "key": "Enter",
+          "seconds": 1.4502057920000007,
+          "state": {
+            "activeTag": "BUTTON",
+            "activeId": "save",
+            "inspector": "Save changes",
+            "lastKey": "Enter",
+            "dialogVisible": true,
+            "scrollY": 300
+          }
+        },
+        {
+          "key": "Tab",
+          "seconds": 2.350879959,
+          "state": {
+            "activeTag": "BUTTON",
+            "activeId": "cancel",
+            "inspector": "Cancel",
+            "lastKey": "Tab",
+            "dialogVisible": true,
+            "scrollY": 300
+          }
+        },
+        {
+          "key": "Escape",
+          "seconds": 3.2516640000000008,
+          "state": {
+            "activeTag": "BODY",
+            "activeId": "",
+            "inspector": "Document body",
+            "lastKey": "Escape",
+            "dialogVisible": false,
+            "scrollY": 300
+          }
+        }
+      ],
+      "errors": [],
+      "assertionsPassed": true,
+      "notes": "No screenshots or viewport changes during recording. Source clip timing derived separately from decoded 25fps frames.",
+      "deliveredClip": "lost-return-keyboard-demo.mp4",
+      "sourceDurationSeconds": 5.84,
+      "sourceTrimStartSeconds": 0.32,
+      "deliveredDurationSeconds": 5.5,
+      "deliveredDimensions": {
+        "width": 960,
+        "height": 600
+      },
+      "sourceFrameRate": 25,
+      "deliveredFrameRate": 30,
+      "decodedFrameTiming": [
+        {
+          "key": "Tab",
+          "sourceSeconds": 0.96,
+          "clipSeconds": 0.64
+        },
+        {
+          "key": "Enter",
+          "sourceSeconds": 1.76,
+          "clipSeconds": 1.44
+        },
+        {
+          "key": "Tab",
+          "sourceSeconds": 2.64,
+          "clipSeconds": 2.32
+        },
+        {
+          "key": "Escape",
+          "sourceSeconds": 3.56,
+          "clipSeconds": 3.24
+        }
+      ],
+      "frameTimingMethod": "Observed first changed decoded frame for each key outcome; source is 25 fps (40 ms precision). Encoded to 30 fps by frame duplication, no synthesized UI states."
+    }
+  ],
+  "hero": {
+    "url": "http://127.0.0.1:49371",
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 759
+    }
+  },
+  "report": {
+    "url": "http://127.0.0.1:49371/reports/lost-return.html",
+    "title": "Focus Trail · return-focus",
+    "h1": "return-focus",
+    "additionalCrops": [
+      "report-first-difference-2x.png",
+      "report-comparison-2x.png",
+      "report-first-difference-mobile-2x.png"
+    ],
+    "honestyNote": "Historical report is retained evidence of controlled lost-return fixture. It says the return-opener checkpoint did not receive focus within 500ms; its last coherent sample is retained and a fresh endpoint sample was unavailable. The Reel browser recording separately verifies BODY focus after Escape.",
+    "mobileSummary": {
+      "file": "report-first-difference-mobile-2x.png",
+      "viewport": {
+        "width": 520,
+        "height": 1200
+      },
+      "deviceScaleFactor": 2,
+      "selector": ".summary",
+      "cssBounds": {
+        "x": 20,
+        "y": 237.46875,
+        "width": 480,
+        "height": 352.265625
+      },
+      "text": "First difference\n\nCheckpoint return-opener did not receive focus within 500ms\n\nPosition\nStep 8 · checkpoint return-opener\nExpected key\nEscape\nObserved key\nEscape\nExpected target\nreturn-opener · “Open settings” · button · test id: opener\nObserved target\nFocus unavailable: Last coherent sample at 570ms; checkpoint wait ended without a later verified sample"
+    }
+  },
+  "mediaAssets": {
+    "good-focus-verified-full.png": {
+      "bytes": 457230,
+      "sha256": "2cc4b8063996fb6e69c2f17713d451810002d78bfddad13c21763ec06575ea47"
+    },
+    "good-focus-verified.png": {
+      "bytes": 150203,
+      "sha256": "906d32339fa7c20090afa6a38ba827d9e26819885dd3f240c8cb56834c6c18b8"
+    },
+    "good-inspector-2x.png": {
+      "bytes": 47068,
+      "sha256": "d991c92ffab3677678929b8ee88cd29b9cb67a42e18d35561e71fd28283c0f53"
+    },
+    "good-keyboard-demo.mp4": {
+      "bytes": 236089,
+      "sha256": "f9352c1b46328a4146bb024fd228f7133c6a07eb4a5d02c0597c9195e747ddd9"
+    },
+    "hero-ui.png": {
+      "bytes": 139283,
+      "sha256": "dcf13a25b5d4d4bd070df176e1c12c0ee0a2b136f887553c5feaa5ea979f8f8f"
+    },
+    "lost-return-focus-verified-full.png": {
+      "bytes": 454871,
+      "sha256": "550b4ef99cb949228fdeedce4772b16079c56b10540da1862f0efbe99f904587"
+    },
+    "lost-return-focus-verified.png": {
+      "bytes": 150855,
+      "sha256": "9585ab2f655396b3ce8d078d57f027977d1ea4961a2bda4307e43dc7028a2103"
+    },
+    "lost-return-inspector-2x.png": {
+      "bytes": 47492,
+      "sha256": "65b1cfadbd2b00c9839c84d885d71c08b3c6fae76d4878de5f6c3ab2d13180ca"
+    },
+    "lost-return-keyboard-demo.mp4": {
+      "bytes": 276317,
+      "sha256": "87f6b27c10e6535834b513ff98a51929083eed9e4422708df73b0989eea8bad8"
+    },
+    "report-comparison-2x.png": {
+      "bytes": 195124,
+      "sha256": "1a2e3f5e1afa6075e0af3d11e08809b5ffbc3b5a3a56028e47c3c56ff295b03b"
+    },
+    "report-first-difference-2x.png": {
+      "bytes": 86141,
+      "sha256": "c65ac8e8cb56d5a54f0efd06fc0fbead72a126feda4e33cc4dedda8f997b30c3"
+    },
+    "report-first-difference.png": {
+      "bytes": 156386,
+      "sha256": "4a9e8f58c3543b7041c9ff519a61e9a723ad88856c115260e1d2f0cd7c99cdc7"
+    },
+    "report-step-detail.png": {
+      "bytes": 185032,
+      "sha256": "8ebf6119c87c0efe077367d7828b6cba6dcf711e89e182e57b0bedc064fed06a"
+    },
+    "report-first-difference-mobile-2x.png": {
+      "bytes": 94130,
+      "sha256": "fa87ef61d719d02e8639a09162e94f3b56cc1ab5eeaab60477feecd1f1eb847d"
+    }
+  }
+}

@@ -1,0 +1,480 @@
+{
+  "files": {
+    "social/reel/README.md": {
+      "bytes": 987,
+      "sha256": "26eca86807649721542ef466f909dd76817a4c0d40c3a58ec0d7ff71927c97cc"
+    },
+    "social/reel/caption.txt": {
+      "bytes": 576,
+      "sha256": "4866955d2a24e419a51f203fc8c7bfd4609995512c1e18335fb08c2046d0f457"
+    },
+    "social/reel/captions.srt": {
+      "bytes": 651,
+      "sha256": "be9b4298956c0dbc71773d859312904d4db1824b1ba1bf94552aae08f9839420"
+    },
+    "social/reel/cover.png": {
+      "bytes": 279394,
+      "sha256": "357c0b4205eb5d95829921c97f67ed64bed3c01b09a376403a289f8583e16228"
+    },
+    "social/reel/focus-trail-instagram-kit.zip": {
+      "bytes": 8929543,
+      "sha256": "a5ccca4531903de40bff50a06bda54a4454ffe32c74476a8b439ee84c0269fa1"
+    },
+    "social/reel/focus-trail-instagram-reel.mp4": {
+      "bytes": 2599855,
+      "sha256": "8c96d1f9d1ca3effb38de0508a1b5f1ce73b51ad91139f0fc23868a472ec2a39"
+    },
+    "social/reel/keyboard-bug.png": {
+      "bytes": 352380,
+      "sha256": "28fd4cbafe7fe6309e9710e4976adeac6492aff2786ad9e08669c7626af0b304"
+    },
+    "social/reel/narration-script.txt": {
+      "bytes": 380,
+      "sha256": "9d4b8cd70888ff0da31948dce75bc38ef631178cc0d7e7922fa36b96f3a2f42b"
+    },
+    "social/reel/narration.srt": {
+      "bytes": 357,
+      "sha256": "a78c8ace3a338e1010e5c3f70d6103faff208948ff8d4f1404f51c733d42e376"
+    },
+    "social/reel/report.png": {
+      "bytes": 429325,
+      "sha256": "3c46f871eca73c48168142bb114f128087290214cc334c98e7d39a7153ddcbc0"
+    },
+    "social/reel/source/.gitignore": {
+      "bytes": 81,
+      "sha256": "f436fb5232432707c07d6fcb7e729d7dbdfa11d2e3306dfd719be2a21ef7774a"
+    },
+    "social/reel/source/.media/audio/sfx/sfx_001.mp3": {
+      "bytes": 3909,
+      "sha256": "bcc892df0898bf466162f14233c3e92a8c1ea351f6affd8a3a7e56c9a760bb72"
+    },
+    "social/reel/source/.media/audio/voice/voice_001.wav": {
+      "bytes": 196878,
+      "sha256": "7f6e80aa4e6bc5b29ad217f4ca8ac7e009265ee373abe36e58843b972fd4d838"
+    },
+    "social/reel/source/.media/audio/voice/voice_002.wav": {
+      "bytes": 451278,
+      "sha256": "b6652bea2a52ec46e08df5abf4a3c7e1929ee202c5df5ed01a08873bc2047e23"
+    },
+    "social/reel/source/.media/audio/voice/voice_003.wav": {
+      "bytes": 441678,
+      "sha256": "a66d34edc758eb99b6be9d987dda896da9564a3f2970b2f787882b89b9a4404d"
+    },
+    "social/reel/source/.media/audio/voice/voice_004.wav": {
+      "bytes": 326478,
+      "sha256": "ed11fd1d877fb688df01bc6a8f996fa37621628b0efa8d09560fb17e98d6086a"
+    },
+    "social/reel/source/.media/audio/voice/voice_005.wav": {
+      "bytes": 230478,
+      "sha256": "ddfe35ecf2f35aaefa8b9d09b5ae786f4df11bb773be4c67c209eaced2c1e6be"
+    },
+    "social/reel/source/.media/index.md": {
+      "bytes": 2027,
+      "sha256": "c8db97f9627db59d2f2fc1d246c701656c5490c277589ca230c9f94a72e11b77"
+    },
+    "social/reel/source/.media/manifest.jsonl": {
+      "bytes": 3917,
+      "sha256": "7fb72b49797bb16c1aa0652c0322cc2d777f2c7b5cca58e04fbab36f7c143318"
+    },
+    "social/reel/source/BRIEF.md": {
+      "bytes": 2555,
+      "sha256": "a314a4bce05f3855bd9b412b94b5624f7dbbfc3c3841cec5df309c7e568ca082"
+    },
+    "social/reel/source/README.md": {
+      "bytes": 2747,
+      "sha256": "7c7e5160e31d7d6215d97d020384a2d94ba81bc6bc732b3126344a07355477a8"
+    },
+    "social/reel/source/STORYBOARD.md": {
+      "bytes": 667,
+      "sha256": "8999f1c4a526038a716a3959049869717c9dbd350876f683fdb3ab52101a553e"
+    },
+    "social/reel/source/VOICE.md": {
+      "bytes": 2143,
+      "sha256": "f73cb9d90a28c241aea6230f1ec45413b8dbd8ea292477ea5ffea491b4de786e"
+    },
+    "social/reel/source/assets/SFX-CREDITS.md": {
+      "bytes": 1183,
+      "sha256": "79590c7738b0427b10f362f76b02cfd2643158a40e1d5fd787f9ac6b33bcf4ce"
+    },
+    "social/reel/source/assets/capture-provenance.json": {
+      "bytes": 9324,
+      "sha256": "14b71ba0be4295ada42f727eb4e42c43f77df05ae6e54ed59b6059b293c7b936"
+    },
+    "social/reel/source/assets/fonts/Manrope-Variable.ttf": {
+      "bytes": 164700,
+      "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6"
+    },
+    "social/reel/source/assets/fonts/OFL-Manrope.txt": {
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    "social/reel/source/assets/good-focus-verified-full.png": {
+      "bytes": 457230,
+      "sha256": "2cc4b8063996fb6e69c2f17713d451810002d78bfddad13c21763ec06575ea47"
+    },
+    "social/reel/source/assets/good-focus-verified.png": {
+      "bytes": 150203,
+      "sha256": "906d32339fa7c20090afa6a38ba827d9e26819885dd3f240c8cb56834c6c18b8"
+    },
+    "social/reel/source/assets/good-inspector-2x.png": {
+      "bytes": 47068,
+      "sha256": "d991c92ffab3677678929b8ee88cd29b9cb67a42e18d35561e71fd28283c0f53"
+    },
+    "social/reel/source/assets/good-keyboard-demo.mp4": {
+      "bytes": 236089,
+      "sha256": "f9352c1b46328a4146bb024fd228f7133c6a07eb4a5d02c0597c9195e747ddd9"
+    },
+    "social/reel/source/assets/hero-ui.png": {
+      "bytes": 139283,
+      "sha256": "dcf13a25b5d4d4bd070df176e1c12c0ee0a2b136f887553c5feaa5ea979f8f8f"
+    },
+    "social/reel/source/assets/lost-return-focus-verified-full.png": {
+      "bytes": 454871,
+      "sha256": "550b4ef99cb949228fdeedce4772b16079c56b10540da1862f0efbe99f904587"
+    },
+    "social/reel/source/assets/lost-return-focus-verified.png": {
+      "bytes": 150855,
+      "sha256": "9585ab2f655396b3ce8d078d57f027977d1ea4961a2bda4307e43dc7028a2103"
+    },
+    "social/reel/source/assets/lost-return-inspector-2x.png": {
+      "bytes": 47492,
+      "sha256": "65b1cfadbd2b00c9839c84d885d71c08b3c6fae76d4878de5f6c3ab2d13180ca"
+    },
+    "social/reel/source/assets/lost-return-keyboard-demo.mp4": {
+      "bytes": 276317,
+      "sha256": "87f6b27c10e6535834b513ff98a51929083eed9e4422708df73b0989eea8bad8"
+    },
+    "social/reel/source/assets/report-comparison-2x.png": {
+      "bytes": 195124,
+      "sha256": "1a2e3f5e1afa6075e0af3d11e08809b5ffbc3b5a3a56028e47c3c56ff295b03b"
+    },
+    "social/reel/source/assets/report-first-difference-2x.png": {
+      "bytes": 86141,
+      "sha256": "c65ac8e8cb56d5a54f0efd06fc0fbead72a126feda4e33cc4dedda8f997b30c3"
+    },
+    "social/reel/source/assets/report-first-difference-mobile-2x.png": {
+      "bytes": 94130,
+      "sha256": "fa87ef61d719d02e8639a09162e94f3b56cc1ab5eeaab60477feecd1f1eb847d"
+    },
+    "social/reel/source/assets/report-first-difference.png": {
+      "bytes": 156386,
+      "sha256": "4a9e8f58c3543b7041c9ff519a61e9a723ad88856c115260e1d2f0cd7c99cdc7"
+    },
+    "social/reel/source/assets/report-step-detail.png": {
+      "bytes": 185032,
+      "sha256": "8ebf6119c87c0efe077367d7828b6cba6dcf711e89e182e57b0bedc064fed06a"
+    },
+    "social/reel/source/assets/voice/bad.wav": {
+      "bytes": 441678,
+      "sha256": "a66d34edc758eb99b6be9d987dda896da9564a3f2970b2f787882b89b9a4404d"
+    },
+    "social/reel/source/assets/voice/close.wav": {
+      "bytes": 230478,
+      "sha256": "ddfe35ecf2f35aaefa8b9d09b5ae786f4df11bb773be4c67c209eaced2c1e6be"
+    },
+    "social/reel/source/assets/voice/good.wav": {
+      "bytes": 451278,
+      "sha256": "b6652bea2a52ec46e08df5abf4a3c7e1929ee202c5df5ed01a08873bc2047e23"
+    },
+    "social/reel/source/assets/voice/intro.wav": {
+      "bytes": 196878,
+      "sha256": "7f6e80aa4e6bc5b29ad217f4ca8ac7e009265ee373abe36e58843b972fd4d838"
+    },
+    "social/reel/source/assets/voice/report.wav": {
+      "bytes": 326478,
+      "sha256": "ed11fd1d877fb688df01bc6a8f996fa37621628b0efa8d09560fb17e98d6086a"
+    },
+    "social/reel/source/caption.txt": {
+      "bytes": 576,
+      "sha256": "4866955d2a24e419a51f203fc8c7bfd4609995512c1e18335fb08c2046d0f457"
+    },
+    "social/reel/source/captions.srt": {
+      "bytes": 651,
+      "sha256": "be9b4298956c0dbc71773d859312904d4db1824b1ba1bf94552aae08f9839420"
+    },
+    "social/reel/source/compositions/components/line-by-line-slide.html": {
+      "bytes": 4804,
+      "sha256": "4d6ce6381540c89e971dcebff09a48be031177455ceddacac41886113afe3f44"
+    },
+    "social/reel/source/compositions/frames/bad.html": {
+      "bytes": 4014,
+      "sha256": "8038526832d5b5977860893d7f4a11608f253f34d999d9379625245deb1d12fa"
+    },
+    "social/reel/source/compositions/frames/good.html": {
+      "bytes": 4044,
+      "sha256": "cb326bf17026be3a8d092f4c05786cabcf6ae2fbb554670fc7394ab8a759c9c2"
+    },
+    "social/reel/source/compositions/frames/intro.html": {
+      "bytes": 2866,
+      "sha256": "9ac53f0d025afafd0ca115c8a5018633307b6f654496368437add52dfce62234"
+    },
+    "social/reel/source/compositions/frames/report.html": {
+      "bytes": 4737,
+      "sha256": "6cc8af1d17830af4d480f567a4a6d31c35c21b0ce07feaadd9d21f51eb29ee52"
+    },
+    "social/reel/source/evidence/README.md": {
+      "bytes": 3378,
+      "sha256": "4693fa8d63f02d10a570621166d118d12bd44c4a35abe8eb88fdbec98360f886"
+    },
+    "social/reel/source/evidence/adopt.json": {
+      "bytes": 2796,
+      "sha256": "820beaec6f9424eda308128c5beff1531b031b80586b714e257e3a720be87681"
+    },
+    "social/reel/source/evidence/audio-analysis.log": {
+      "bytes": 2004,
+      "sha256": "c4325f52fd9282d7ecb2f91f87a2354401dc5136de00fa3bdcbcc5e9ed3b13cf"
+    },
+    "social/reel/source/evidence/audio-events.json": {
+      "bytes": 769,
+      "sha256": "bf06a415626404799051d4e171fe22c1c7d42d8cbb033aa1ca8a76b40892d045"
+    },
+    "social/reel/source/evidence/audio-match.json": {
+      "bytes": 3492,
+      "sha256": "929edce1c0add67899c86fab329632001e21cd9d71190c45d06494d2c9308613"
+    },
+    "social/reel/source/evidence/check.json": {
+      "bytes": 2217,
+      "sha256": "ff92231cd8e5320e9dd0398e0759d6679e40f8fd285788d74b82cf0fcc5776e5"
+    },
+    "social/reel/source/evidence/claim-review.json": {
+      "bytes": 4198,
+      "sha256": "9516d9c44c9ccb84bfed44292f788165eccd8deb18c6d02e393b07dce7bc3c37"
+    },
+    "social/reel/source/evidence/decode-errors.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "social/reel/source/evidence/encoded-bug-result.png": {
+      "bytes": 352380,
+      "sha256": "28fd4cbafe7fe6309e9710e4976adeac6492aff2786ad9e08669c7626af0b304"
+    },
+    "social/reel/source/evidence/encoded-contact-sheet.png": {
+      "bytes": 309378,
+      "sha256": "6d4afde17dcc8f6bc0eb3f49da6506a0bb34d111b981b729bfe99d3809c58ef8"
+    },
+    "social/reel/source/evidence/encoded-good-result.png": {
+      "bytes": 371907,
+      "sha256": "2b862f37ba0148dee3eb70fedb5d77b86a1b48148e379003f22c5b9ea8fd3bfc"
+    },
+    "social/reel/source/evidence/encoded-report-result.png": {
+      "bytes": 429325,
+      "sha256": "3c46f871eca73c48168142bb114f128087290214cc334c98e7d39a7153ddcbc0"
+    },
+    "social/reel/source/evidence/ffprobe.json": {
+      "bytes": 3797,
+      "sha256": "9d42827ab23e6180a1125b56dac613983ee877100e7988ff0fe8d3bebbe8878e"
+    },
+    "social/reel/source/evidence/key-sfx.json": {
+      "bytes": 252,
+      "sha256": "b78c7491a84b1087b337834c42ec4b34b6fc1468a8254d2898868791d65c0aa6"
+    },
+    "social/reel/source/evidence/lint.json": {
+      "bytes": 219,
+      "sha256": "18d2d280bef34df5b91df8416ffdbb9df03115370e944bd283cca22df9601e89"
+    },
+    "social/reel/source/evidence/mix-loudness.log": {
+      "bytes": 1939,
+      "sha256": "d90a4e4b11de5fd2d223b788bfc3a9919c8f0e3a0946a6ef71ddee11f35a0a91"
+    },
+    "social/reel/source/evidence/narration-registration.json": {
+      "bytes": 1782,
+      "sha256": "70adf1582579fe17de9e7c0996d3b58885a6950735f4e1081791ba6ebae22e71"
+    },
+    "social/reel/source/evidence/narration-verification.json": {
+      "bytes": 2164,
+      "sha256": "18dbf8591ad850d51cfa75e8d270d98056e7f219ab5c62ccecd0baa7e3b3e391"
+    },
+    "social/reel/source/evidence/publication-review.json": {
+      "bytes": 11405,
+      "sha256": "8ee08e2e413195fef62fc3d1e82c143df510f2c29fe07bb82ae624b2c64bd856"
+    },
+    "social/reel/source/evidence/relocated-source-check.json": {
+      "bytes": 1608,
+      "sha256": "6dd0ecdfe3a76205c248e9147383dc9d1c343fa6cc2508f6f8613703bbc7a771"
+    },
+    "social/reel/source/evidence/render.log": {
+      "bytes": 25502,
+      "sha256": "b4d8d8decc777422c55b5b40c74233415b3dda5179424b8e4f536551230801bb"
+    },
+    "social/reel/source/evidence/transition-check.json": {
+      "bytes": 3259,
+      "sha256": "1754cf7d3787162270da49dce92e623bc715d1609e4ddd13a7e9b43e4bad6ef9"
+    },
+    "social/reel/source/evidence/verification.json": {
+      "bytes": 2802,
+      "sha256": "c41ecc4406ae946dfe1ba3b219287a898c06e9e3bb7ef3983a7da3fc7faa5024"
+    },
+    "social/reel/source/evidence/visual-review.json": {
+      "bytes": 6691,
+      "sha256": "5fcf20ed8a4ab12d07e7972230ddd01d97861b2c74400bf96d7adc5816a551e3"
+    },
+    "social/reel/source/frame.md": {
+      "bytes": 633,
+      "sha256": "394792a9363221dc24d30437ae2ce1ccb3df9ae4360ed1f9870e76e52928db30"
+    },
+    "social/reel/source/hyperframes.json": {
+      "bytes": 541,
+      "sha256": "5a92581f38363165f9e7e6c67d1679b06a9a99a88cb28061133c70710cba372d"
+    },
+    "social/reel/source/hyperframes.lock.json": {
+      "bytes": 124,
+      "sha256": "e57fe872c80dca6fb4fcdd424c4eaf4a809c76086a0716fb75c768f1aa9574a1"
+    },
+    "social/reel/source/index.html": {
+      "bytes": 4576,
+      "sha256": "7d948606b47b61cdeacdfbe73198ff7c902b144040d59eb3e1486995382f1c6c"
+    },
+    "social/reel/source/meta.json": {
+      "bytes": 103,
+      "sha256": "8706895d5afd00237ea852db09481793c755de87bbfc2540f3fd7863e72dead9"
+    },
+    "social/reel/source/narration-cues.json": {
+      "bytes": 9537,
+      "sha256": "58049a166f8d7faafe8bbe854d68f6fb2e2fffc0dee63c0705ee462f94c67fdd"
+    },
+    "social/reel/source/narration-registration.json": {
+      "bytes": 1782,
+      "sha256": "70adf1582579fe17de9e7c0996d3b58885a6950735f4e1081791ba6ebae22e71"
+    },
+    "social/reel/source/narration-script.txt": {
+      "bytes": 380,
+      "sha256": "9d4b8cd70888ff0da31948dce75bc38ef631178cc0d7e7922fa36b96f3a2f42b"
+    },
+    "social/reel/source/narration-verification.json": {
+      "bytes": 2164,
+      "sha256": "18dbf8591ad850d51cfa75e8d270d98056e7f219ab5c62ccecd0baa7e3b3e391"
+    },
+    "social/reel/source/narration.srt": {
+      "bytes": 357,
+      "sha256": "a78c8ace3a338e1010e5c3f70d6103faff208948ff8d4f1404f51c733d42e376"
+    },
+    "social/reel/source/package.json": {
+      "bytes": 305,
+      "sha256": "316aef83d057242c538425192c54c3265d659c7be2d9c3a7706aaca21afa2a32"
+    },
+    "social/reel/source/poster.png": {
+      "bytes": 279394,
+      "sha256": "357c0b4205eb5d95829921c97f67ed64bed3c01b09a376403a289f8583e16228"
+    },
+    "social/reel/source/renders/focus-trail-instagram-reel.mp4": {
+      "bytes": 2599855,
+      "sha256": "8c96d1f9d1ca3effb38de0508a1b5f1ce73b51ad91139f0fc23868a472ec2a39"
+    },
+    "social/reel/source/scripts/generate-voice.py": {
+      "bytes": 6693,
+      "sha256": "047ddb14c6ab9c5d955bf468df0ecec6f544b226e715f81679f57a76bc6e5f0b"
+    },
+    "social/reel/source/scripts/verify-render-audio.py": {
+      "bytes": 2617,
+      "sha256": "c438a0e05e86482dd1dd06167d0cc423592536c2380e42a65aee42af76856078"
+    },
+    "social/reel/source/scripts/voice-requirements.txt": {
+      "bytes": 236,
+      "sha256": "d3c7dc889fd84f7e37137b3ef3ef6efcc71bf5595cbb305aa7891d62cf6c4ba4"
+    },
+    "social/reel/source/vendor/gsap.min.js": {
+      "bytes": 72779,
+      "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "evidence/reel/README.md": {
+      "bytes": 3356,
+      "sha256": "240a2757b770b0d95c3fe6199add75c331038d0d16b237d912f638848d36d007"
+    },
+    "evidence/reel/adopt.json": {
+      "bytes": 2796,
+      "sha256": "820beaec6f9424eda308128c5beff1531b031b80586b714e257e3a720be87681"
+    },
+    "evidence/reel/audio-analysis.log": {
+      "bytes": 2004,
+      "sha256": "c4325f52fd9282d7ecb2f91f87a2354401dc5136de00fa3bdcbcc5e9ed3b13cf"
+    },
+    "evidence/reel/audio-events.json": {
+      "bytes": 769,
+      "sha256": "bf06a415626404799051d4e171fe22c1c7d42d8cbb033aa1ca8a76b40892d045"
+    },
+    "evidence/reel/audio-match.json": {
+      "bytes": 3492,
+      "sha256": "929edce1c0add67899c86fab329632001e21cd9d71190c45d06494d2c9308613"
+    },
+    "evidence/reel/check.json": {
+      "bytes": 2217,
+      "sha256": "ff92231cd8e5320e9dd0398e0759d6679e40f8fd285788d74b82cf0fcc5776e5"
+    },
+    "evidence/reel/claim-review.json": {
+      "bytes": 4198,
+      "sha256": "9516d9c44c9ccb84bfed44292f788165eccd8deb18c6d02e393b07dce7bc3c37"
+    },
+    "evidence/reel/decode-errors.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/reel/encoded-bug-result.png": {
+      "bytes": 352380,
+      "sha256": "28fd4cbafe7fe6309e9710e4976adeac6492aff2786ad9e08669c7626af0b304"
+    },
+    "evidence/reel/encoded-contact-sheet.png": {
+      "bytes": 309378,
+      "sha256": "6d4afde17dcc8f6bc0eb3f49da6506a0bb34d111b981b729bfe99d3809c58ef8"
+    },
+    "evidence/reel/encoded-good-result.png": {
+      "bytes": 371907,
+      "sha256": "2b862f37ba0148dee3eb70fedb5d77b86a1b48148e379003f22c5b9ea8fd3bfc"
+    },
+    "evidence/reel/encoded-report-result.png": {
+      "bytes": 429325,
+      "sha256": "3c46f871eca73c48168142bb114f128087290214cc334c98e7d39a7153ddcbc0"
+    },
+    "evidence/reel/ffprobe.json": {
+      "bytes": 3797,
+      "sha256": "9d42827ab23e6180a1125b56dac613983ee877100e7988ff0fe8d3bebbe8878e"
+    },
+    "evidence/reel/key-sfx.json": {
+      "bytes": 252,
+      "sha256": "b78c7491a84b1087b337834c42ec4b34b6fc1468a8254d2898868791d65c0aa6"
+    },
+    "evidence/reel/lint.json": {
+      "bytes": 219,
+      "sha256": "18d2d280bef34df5b91df8416ffdbb9df03115370e944bd283cca22df9601e89"
+    },
+    "evidence/reel/mix-loudness.log": {
+      "bytes": 1939,
+      "sha256": "d90a4e4b11de5fd2d223b788bfc3a9919c8f0e3a0946a6ef71ddee11f35a0a91"
+    },
+    "evidence/reel/narration-registration.json": {
+      "bytes": 1782,
+      "sha256": "70adf1582579fe17de9e7c0996d3b58885a6950735f4e1081791ba6ebae22e71"
+    },
+    "evidence/reel/narration-verification.json": {
+      "bytes": 2164,
+      "sha256": "18dbf8591ad850d51cfa75e8d270d98056e7f219ab5c62ccecd0baa7e3b3e391"
+    },
+    "evidence/reel/publication-review.json": {
+      "bytes": 11405,
+      "sha256": "8ee08e2e413195fef62fc3d1e82c143df510f2c29fe07bb82ae624b2c64bd856"
+    },
+    "evidence/reel/relocated-source-check.json": {
+      "bytes": 1608,
+      "sha256": "6dd0ecdfe3a76205c248e9147383dc9d1c343fa6cc2508f6f8613703bbc7a771"
+    },
+    "evidence/reel/render.log": {
+      "bytes": 25502,
+      "sha256": "b4d8d8decc777422c55b5b40c74233415b3dda5179424b8e4f536551230801bb"
+    },
+    "evidence/reel/transition-check.json": {
+      "bytes": 3259,
+      "sha256": "1754cf7d3787162270da49dce92e623bc715d1609e4ddd13a7e9b43e4bad6ef9"
+    },
+    "evidence/reel/verification.json": {
+      "bytes": 2802,
+      "sha256": "c41ecc4406ae946dfe1ba3b219287a898c06e9e3bb7ef3983a7da3fc7faa5024"
+    },
+    "evidence/reel/visual-review.json": {
+      "bytes": 6691,
+      "sha256": "5fcf20ed8a4ab12d07e7972230ddd01d97861b2c74400bf96d7adc5816a551e3"
+    }
+  },
+  "path_normalization": "Machine-specific path prefixes in copied text receipts are replaced with <workspace>, <installed-skills>, or <user-home>. Source capture and media bytes are unchanged.",
+  "video": "social/reel/focus-trail-instagram-reel.mp4",
+  "source": "social/reel/source/",
+  "kit": "social/reel/focus-trail-instagram-kit.zip"
+}

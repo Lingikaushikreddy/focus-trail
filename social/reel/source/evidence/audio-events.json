@@ -1,0 +1,48 @@
+{
+  "effects": 8,
+  "effect_starts_seconds": [
+    3.64,
+    4.44,
+    5.36,
+    6.24,
+    8.64,
+    9.44,
+    10.32,
+    11.24
+  ],
+  "narration": true,
+  "voice": "af_heart",
+  "cues": [
+    {
+      "id": "intro",
+      "start": 0.15,
+      "duration": 2.05,
+      "end": 2.2
+    },
+    {
+      "id": "good",
+      "start": 3.15,
+      "duration": 4.7,
+      "end": 7.85
+    },
+    {
+      "id": "bad",
+      "start": 8.15,
+      "duration": 4.6,
+      "end": 12.75
+    },
+    {
+      "id": "report",
+      "start": 13.15,
+      "duration": 3.4,
+      "end": 16.55
+    },
+    {
+      "id": "close",
+      "start": 17.5,
+      "duration": 2.4,
+      "end": 19.9
+    }
+  ],
+  "note": "Timing declarations are checked against the encoded AAC mix in audio-match.json."
+}

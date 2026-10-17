@@ -1,0 +1,82 @@
+[
+  {
+    "id": "intro",
+    "result": {
+      "ok": true,
+      "id": "voice_001",
+      "type": "voice",
+      "path": ".media/audio/voice/voice_001.wav",
+      "source": "ingested",
+      "description": "intro.wav",
+      "provenance": {
+        "provider": "local",
+        "from": "assets/voice/intro.wav"
+      },
+      "_source": "ingested"
+    }
+  },
+  {
+    "id": "good",
+    "result": {
+      "ok": true,
+      "id": "voice_002",
+      "type": "voice",
+      "path": ".media/audio/voice/voice_002.wav",
+      "source": "ingested",
+      "description": "good.wav",
+      "provenance": {
+        "provider": "local",
+        "from": "assets/voice/good.wav"
+      },
+      "_source": "ingested"
+    }
+  },
+  {
+    "id": "bad",
+    "result": {
+      "ok": true,
+      "id": "voice_003",
+      "type": "voice",
+      "path": ".media/audio/voice/voice_003.wav",
+      "source": "ingested",
+      "description": "bad.wav",
+      "provenance": {
+        "provider": "local",
+        "from": "assets/voice/bad.wav"
+      },
+      "_source": "ingested"
+    }
+  },
+  {
+    "id": "report",
+    "result": {
+      "ok": true,
+      "id": "voice_004",
+      "type": "voice",
+      "path": ".media/audio/voice/voice_004.wav",
+      "source": "ingested",
+      "description": "report.wav",
+      "provenance": {
+        "provider": "local",
+        "from": "assets/voice/report.wav"
+      },
+      "_source": "ingested"
+    }
+  },
+  {
+    "id": "close",
+    "result": {
+      "ok": true,
+      "id": "voice_005",
+      "type": "voice",
+      "path": ".media/audio/voice/voice_005.wav",
+      "source": "ingested",
+      "description": "close.wav",
+      "provenance": {
+        "provider": "local",
+        "from": "assets/voice/close.wav"
+      },
+      "_source": "ingested"
+    }
+  }
+]

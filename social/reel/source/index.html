@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Focus Trail — keep your place</title>
+<style>@font-face{font-family:Manrope;src:url('assets/fonts/Manrope-Variable.ttf') format('truetype');font-weight:200 800;font-display:block;}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}#focus-trail-reel{position:relative;width:100%;height:100%;overflow:hidden;background:#4b43d6;color:#fff;font-family:Manrope,sans-serif}.scene{position:absolute;inset:0;width:100%;height:100%}.brand{position:absolute;left:72px;top:166px;z-index:8;display:flex;align-items:center;gap:18px;font-size:36px;font-weight:800;letter-spacing:-1px}.brand-symbol{width:44px;height:44px;fill:none;stroke:#ffbba6;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}.brand-symbol circle{fill:#ffbba6;stroke:none}</style>
+<script src="vendor/gsap.min.js"></script></head><body>
+<div data-hf-id="hf-ntil" id="focus-trail-reel" data-composition-id="focus-trail-reel" data-width="1080" data-height="1920" data-duration="20">
+<div data-hf-id="hf-oojr" class="brand"><svg class="brand-symbol" viewBox="0 0 32 32" aria-hidden="true"><path d="M12 4H4v8m16-8h8v8M4 20v8h8m16-8v8h-8"/><circle cx="16" cy="16" r="4"/></svg><span data-hf-id="hf-x3y3">Focus Trail</span></div>
+<div data-hf-id="hf-a6ym" id="reel-intro-host" class="scene clip" data-composition-id="reel-intro" data-composition-src="compositions/frames/intro.html" data-start="0" data-duration="3" data-track-index="1" data-width="1080" data-height="1920"></div>
+<div data-hf-id="hf-m6rc" id="reel-good-host" class="scene clip" data-composition-id="reel-good" data-composition-src="compositions/frames/good.html" data-start="3" data-duration="5" data-track-index="1" data-width="1080" data-height="1920"></div>
+<div data-hf-id="hf-ibqz" id="reel-bad-host" class="scene clip" data-composition-id="reel-bad" data-composition-src="compositions/frames/bad.html" data-start="8" data-duration="5" data-track-index="1" data-width="1080" data-height="1920"></div>
+<div data-hf-id="hf-nekk" id="reel-report-host" class="scene clip" data-composition-id="reel-report" data-composition-src="compositions/frames/report.html" data-start="13" data-duration="7" data-track-index="1" data-width="1080" data-height="1920"></div>
+
+<audio data-hf-id="hf-e2v8" id="key-tap-0" src=".media/audio/sfx/sfx_001.mp3" data-start="3.64" data-duration="0.4" data-volume="0.12" data-track-index="3"></audio>
+<audio data-hf-id="hf-4ilo" id="key-tap-1" src=".media/audio/sfx/sfx_001.mp3" data-start="4.44" data-duration="0.4" data-volume="0.12" data-track-index="3"></audio>
+<audio data-hf-id="hf-1ni5" id="key-tap-2" src=".media/audio/sfx/sfx_001.mp3" data-start="5.36" data-duration="0.4" data-volume="0.12" data-track-index="3"></audio>
+<audio data-hf-id="hf-mps6" id="key-tap-3" src=".media/audio/sfx/sfx_001.mp3" data-start="6.24" data-duration="0.4" data-volume="0.12" data-track-index="3"></audio>
+<audio data-hf-id="hf-bg9p" id="key-tap-4" src=".media/audio/sfx/sfx_001.mp3" data-start="8.64" data-duration="0.4" data-volume="0.12" data-track-index="3"></audio>
+<audio data-hf-id="hf-9rfz" id="key-tap-5" src=".media/audio/sfx/sfx_001.mp3" data-start="9.44" data-duration="0.4" data-volume="0.12" data-track-index="3"></audio>
+<audio data-hf-id="hf-m4qf" id="key-tap-6" src=".media/audio/sfx/sfx_001.mp3" data-start="10.32" data-duration="0.4" data-volume="0.12" data-track-index="3"></audio>
+<audio data-hf-id="hf-zfx2" id="key-tap-7" src=".media/audio/sfx/sfx_001.mp3" data-start="11.24" data-duration="0.4" data-volume="0.12" data-track-index="3"></audio>
+<audio id="voiceover-intro" src="assets/voice/intro.wav" data-start="0.15" data-duration="2.05" data-volume="1" data-track-index="4" data-label="AI voice: intro"></audio>
+<audio id="voiceover-good" src="assets/voice/good.wav" data-start="3.15" data-duration="4.7" data-volume="1" data-track-index="4" data-label="AI voice: good"></audio>
+<audio id="voiceover-bad" src="assets/voice/bad.wav" data-start="8.15" data-duration="4.6" data-volume="1" data-track-index="4" data-label="AI voice: bad"></audio>
+<audio id="voiceover-report" src="assets/voice/report.wav" data-start="13.15" data-duration="3.4" data-volume="1" data-track-index="4" data-label="AI voice: report"></audio>
+<audio id="voiceover-close" src="assets/voice/close.wav" data-start="17.5" data-duration="2.4" data-volume="1" data-track-index="4" data-label="AI voice: close"></audio>
+</div><script>{const tl=gsap.timeline({paused:true});window.__timelines['focus-trail-reel']=tl;}</script></body></html>

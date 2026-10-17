@@ -4,7 +4,7 @@
 
 Focus Trail adds authored focus checkpoints to an existing Playwright test, records what received focus, and compares the journey with a reviewed passing baseline. Its portable HTML report identifies the first changed checkpoint or failed run.
 
-[Quickstart](#quickstart) · [Demo](#run-the-demo) · [Reports](#example-reports) · [Pilot kit](#five-maintainer-pilot) · [Verification](#verification)
+[Reel](#watch-the-keyboard-demo) · [Quickstart](#quickstart) · [Demo](#run-the-demo) · [Reports](#example-reports) · [Pilot kit](#five-maintainer-pilot) · [Verification](#verification)
 
 > **Pilot candidate · v0.1.0**
 >
@@ -21,6 +21,23 @@ Focus Trail adds authored focus checkpoints to an existing Playwright test, reco
 - Preserves failures from ordinary application assertions, including after early finalization.
 
 The MVP covers one page's main document in Chromium. It supports Tab, Shift+Tab, Enter, Space, Escape and arrow keys, with bounded actions/checkpoints and duration. It records text by default and writes locally. [Scope, privacy and limits](docs/limits.md)
+
+## Watch the keyboard demo
+
+A **20-second portrait Reel with English AI voiceover** shows the new UI and real **Tab → Enter → Tab → Escape** interactions. The working dialog returns focus to **Open settings**; the controlled bug leaves it on **Document body**. The saved report identifies the failed `return-opener` checkpoint at Step 8.
+
+<a href="social/reel/focus-trail-instagram-reel.mp4"><img src="social/reel/cover.png" alt="Watch the Focus Trail Reel: a keyboard demo catches lost return focus." width="300"></a>
+
+**[Watch/download the Reel](social/reel/focus-trail-instagram-reel.mp4)** · [Post caption](social/reel/caption.txt)
+
+<p>
+  <img src="social/reel/keyboard-bug.png" alt="Reel frame showing the controlled keyboard bug leaving focus on Document body." width="300">
+  <img src="social/reel/report.png" alt="Reel frame showing the saved report's failed return-opener checkpoint at Step 8." width="300">
+</p>
+
+[Editable source](social/reel/source/) · [Complete Reel kit ZIP](social/reel/focus-trail-instagram-kit.zip) · [Capture, voice and render verification](evidence/reel/README.md)
+
+The report preserves its historical sample and marks a fresh endpoint sample unavailable. The separate browser recording verifies the demo's final focus state. GitHub may open the MP4 as a download; the cover links to the video file.
 
 ## Quickstart
 
@@ -191,6 +208,7 @@ npm run verify
 | `docs/` | API, baseline review, limits, report summaries and pictures |
 | `distribution/` | Frozen installer, checksum and qualified source archive |
 | `pilot/` | Participant kit, task attachments, operator protocol and receipts |
+| `social/` | Portrait post artwork, narrated Reel, editable video source and sharing kits |
 | `evidence/` | Engineering qualification, reports and primary evidence |
 | `tests/` | Unit, browser integration and report checks |
 

@@ -1,0 +1,7 @@
+.hyperframes/
+node_modules/
+work/
+.voice-env/
+__pycache__/
+*.pyc
+renders/work-*/

@@ -1,0 +1,76 @@
+{
+  "method": "Independent WAV header/hash/duration checks and FFmpeg loudness analysis of delivered WAVs. Spoken content uses the synthesis script; no ASR claim.",
+  "cues": [
+    {
+      "id": "intro",
+      "duration": 2.05,
+      "sha256": "7f6e80aa4e6bc5b29ad217f4ca8ac7e009265ee373abe36e58843b972fd4d838",
+      "integratedLufs": -15.55,
+      "truePeakDbtp": -2.0,
+      "checks": {
+        "sha256Matches": true,
+        "durationMatches": true,
+        "fitsSlot": true,
+        "pcm16Mono48k": true,
+        "truePeakAtOrBelowMinus1point9": true
+      }
+    },
+    {
+      "id": "good",
+      "duration": 4.7,
+      "sha256": "b6652bea2a52ec46e08df5abf4a3c7e1929ee202c5df5ed01a08873bc2047e23",
+      "integratedLufs": -17.04,
+      "truePeakDbtp": -2.0,
+      "checks": {
+        "sha256Matches": true,
+        "durationMatches": true,
+        "fitsSlot": true,
+        "pcm16Mono48k": true,
+        "truePeakAtOrBelowMinus1point9": true
+      }
+    },
+    {
+      "id": "bad",
+      "duration": 4.6,
+      "sha256": "a66d34edc758eb99b6be9d987dda896da9564a3f2970b2f787882b89b9a4404d",
+      "integratedLufs": -16.84,
+      "truePeakDbtp": -2.0,
+      "checks": {
+        "sha256Matches": true,
+        "durationMatches": true,
+        "fitsSlot": true,
+        "pcm16Mono48k": true,
+        "truePeakAtOrBelowMinus1point9": true
+      }
+    },
+    {
+      "id": "report",
+      "duration": 3.4,
+      "sha256": "ed11fd1d877fb688df01bc6a8f996fa37621628b0efa8d09560fb17e98d6086a",
+      "integratedLufs": -17.52,
+      "truePeakDbtp": -2.0,
+      "checks": {
+        "sha256Matches": true,
+        "durationMatches": true,
+        "fitsSlot": true,
+        "pcm16Mono48k": true,
+        "truePeakAtOrBelowMinus1point9": true
+      }
+    },
+    {
+      "id": "close",
+      "duration": 2.4,
+      "sha256": "ddfe35ecf2f35aaefa8b9d09b5ae786f4df11bb773be4c67c209eaced2c1e6be",
+      "integratedLufs": -16.28,
+      "truePeakDbtp": -2.0,
+      "checks": {
+        "sha256Matches": true,
+        "durationMatches": true,
+        "fitsSlot": true,
+        "pcm16Mono48k": true,
+        "truePeakAtOrBelowMinus1point9": true
+      }
+    }
+  ],
+  "passed": true
+}

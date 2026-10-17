@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:03,000
+Pretty UI. Where’s focus?
+
+2
+00:00:03,000 --> 00:00:06,350
+A dialog that keeps your place.
+Tab → Enter → Tab → Escape
+
+3
+00:00:06,350 --> 00:00:08,000
+After Escape: focus returns to Open settings.
+
+4
+00:00:08,000 --> 00:00:11,350
+Same keys. Focus gets lost.
+Tab → Enter → Tab → Escape
+
+5
+00:00:11,350 --> 00:00:13,000
+After Escape: current focus is Document body.
+
+6
+00:00:13,000 --> 00:00:17,500
+Caught at step 8: return-opener timed out after 500ms.
+Saved report: fresh endpoint sample unavailable.
+
+7
+00:00:17,500 --> 00:00:20,000
+Keep your place. Focus Trail.
+github.com/Lingikaushikreddy/focus-trail

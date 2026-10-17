@@ -1,0 +1,26 @@
+<template>
+<style>
+@font-face{font-family:Manrope;src:url('assets/fonts/Manrope-Variable.ttf') format('truetype');font-weight:200 800;font-display:block;}
+#reel-good{position:absolute;inset:0;width:100%;height:100%;font-family:Manrope,sans-serif;color:#fff;}
+#reel-good .demo-label{position:absolute;left:72px;top:278px;font-size:25px;font-weight:700;letter-spacing:2px;margin:0;color:#c5eadb;}
+#reel-good h2{position:absolute;left:72px;top:330px;margin:0;font-size:90px;line-height:1.07;font-weight:800;letter-spacing:-4px;width:900px;}
+#reel-good h2 span{display:block;}
+#reel-good .demo-footage{position:absolute;left:72px;top:610px;width:900px;height:562.5px;border-radius:26px;overflow:hidden;background:#f4f5fb;box-shadow:0 24px 0 rgba(32,35,66,.18);}
+#reel-good video{display:block;width:100%;height:100%;object-fit:cover;}
+#reel-good .demo-keys{position:absolute;left:72px;top:1230px;display:flex;gap:20px;}
+#reel-good .demo-key{width:182px;height:90px;border-radius:18px;background:#f4f5fb;color:#202342;box-shadow:0 9px 0 #c0bdeb;display:flex;align-items:center;justify-content:center;font-size:40px;font-weight:800;}
+#reel-good .demo-result{position:absolute;left:72px;top:1385px;width:900px;}
+#reel-good .demo-result p{margin:0;font-size:25px;color:#fff;font-weight:500;}
+#reel-good .demo-result strong{display:block;margin-top:5px;font-size:52px;line-height:1.15;font-weight:800;color:#c5eadb;letter-spacing:-1.5px;}
+#reel-good .demo-result small{display:block;margin-top:12px;font-size:28px;color:#fff;font-weight:500;}
+</style>
+<div data-hf-id="hf-8e6w" id="reel-good" data-composition-id="reel-good" data-width="1080" data-height="1920" data-duration="5">
+<p data-hf-id="hf-43ya" class="demo-label">01 / WORKING DIALOG</p><h2 data-hf-id="hf-2l5r"><span data-hf-id="hf-gluh">A dialog that</span><span data-hf-id="hf-wrwj">keeps your place.</span></h2>
+<div data-hf-id="hf-m93v" class="demo-footage"><video data-hf-id="hf-shdc" id="reel-good-video" class="clip" src="assets/good-keyboard-demo.mp4" playsinline muted data-start="0" data-duration="5" data-track-index="1"></video></div>
+<div data-hf-id="hf-zom6" class="demo-keys"><div data-hf-id="hf-f7jg" id="reel-good-key-0" class="demo-key"><span data-hf-id="hf-c1o8">Tab</span></div><div data-hf-id="hf-fz79" id="reel-good-key-1" class="demo-key"><span data-hf-id="hf-60m9">Enter</span></div><div data-hf-id="hf-jxba" id="reel-good-key-2" class="demo-key"><span data-hf-id="hf-4wgg">Tab</span></div><div data-hf-id="hf-nvfb" id="reel-good-key-3" class="demo-key"><span data-hf-id="hf-dfje">Esc</span></div></div>
+<div data-hf-id="hf-ha1j" id="reel-good-result" class="demo-result"><p data-hf-id="hf-yd4a">AFTER ESCAPE · CURRENT FOCUS</p><strong data-hf-id="hf-8mg3">Open settings</strong><small data-hf-id="hf-3691">Focus returns to its opener.</small></div>
+</div>
+<script>
+{const tl=gsap.timeline({paused:true});tl.fromTo('#reel-good h2 span',{opacity:0,x:-36,y:18},{opacity:1,x:0,y:0,duration:.34,stagger:.08,ease:'power3.out'},.04);tl.fromTo('#reel-good .demo-label',{opacity:0},{opacity:1,duration:.2},.04);tl.fromTo('#reel-good-key-0',{y:0,backgroundColor:'#f4f5fb'},{y:8,backgroundColor:'#c5eadb',duration:.10,ease:'power3.out'},0.64);tl.to('#reel-good-key-0',{y:0,duration:.14,ease:'power3.out'},0.76);tl.fromTo('#reel-good-key-1',{y:0,backgroundColor:'#f4f5fb'},{y:8,backgroundColor:'#c5eadb',duration:.10,ease:'power3.out'},1.44);tl.to('#reel-good-key-1',{y:0,duration:.14,ease:'power3.out'},1.56);tl.fromTo('#reel-good-key-2',{y:0,backgroundColor:'#f4f5fb'},{y:8,backgroundColor:'#c5eadb',duration:.10,ease:'power3.out'},2.36);tl.to('#reel-good-key-2',{y:0,duration:.14,ease:'power3.out'},2.48);tl.fromTo('#reel-good-key-3',{y:0,backgroundColor:'#f4f5fb'},{y:8,backgroundColor:'#c5eadb',duration:.10,ease:'power3.out'},3.24);tl.to('#reel-good-key-3',{y:0,duration:.14,ease:'power3.out'},3.3600000000000003);tl.fromTo('#reel-good-result',{opacity:0,y:16},{opacity:1,y:0,duration:.25,ease:'power3.out'},3.35);window.__timelines['reel-good']=tl;}
+</script>
+</template>

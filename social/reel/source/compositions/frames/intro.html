@@ -1,0 +1,87 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Manrope";
+      src: url("assets/fonts/Manrope-Variable.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 200 800;
+      font-display: block;
+    }
+    #reel-intro {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      color: #ffffff;
+      font-family: "Manrope", sans-serif;
+    }
+    #reel-intro-heading {
+      position: absolute;
+      left: 72px;
+      top: 300px;
+      width: 900px;
+      margin: 0;
+      font-size: 100px;
+      line-height: 1;
+      letter-spacing: -5px;
+      font-weight: 800;
+    }
+    #reel-intro-heading span {
+      display: block;
+      width: 900px;
+      min-height: 106px;
+    }
+    #reel-intro-card {
+      position: absolute;
+      left: 72px;
+      top: 625px;
+      width: 900px;
+      box-sizing: border-box;
+      padding: 16px;
+      border-radius: 32px;
+      background: #f4f5fb;
+      overflow: hidden;
+    }
+    #reel-intro-ui {
+      display: block;
+      width: 868px;
+      height: auto;
+      border-radius: 20px;
+    }
+    #reel-intro-note {
+      position: absolute;
+      top: 1240px;
+      left: 72px;
+      width: 880px;
+      margin: 0;
+      font-size: 34px;
+      line-height: 1.35;
+      letter-spacing: -0.8px;
+      font-weight: 600;
+    }
+    #reel-intro-note-label {
+      display: inline-block;
+      border: 2px solid rgba(255, 255, 255, 0.55);
+      padding: 18px 24px;
+      border-radius: 999px;
+    }
+  </style>
+  <div data-hf-id="hf-b9ue" id="reel-intro" data-composition-id="reel-intro" data-width="1080" data-height="1920" data-duration="3">
+    <h1 data-hf-id="hf-1rjb" id="reel-intro-heading"><span data-hf-id="hf-t03t" id="reel-intro-line-one">Pretty UI.</span><span data-hf-id="hf-p0m3" id="reel-intro-line-two">Where’s focus?</span></h1>
+    <div data-hf-id="hf-rd17" id="reel-intro-card"><img data-hf-id="hf-188d" id="reel-intro-ui" src="assets/hero-ui.png" alt="The new Focus Trail homepage with its Make every Tab count headline and keyboard illustration" width="1440" height="759"></div>
+    <p data-hf-id="hf-6mki" id="reel-intro-note"><span data-hf-id="hf-xbo1" id="reel-intro-note-label">Keyboard bugs hide in plain sight.</span></p>
+  </div>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo(["#reel-intro-line-one", "#reel-intro-line-two"],
+        { opacity: 0, x: -36, y: 18 },
+        { opacity: 1, x: 0, y: 0, duration: 0.34, stagger: 0.08, ease: "power3.out" }, 0.10);
+      tl.fromTo("#reel-intro-card", { opacity: 0, y: 24 },
+        { opacity: 1, y: 0, duration: 0.42, ease: "power3.out" }, 0.38);
+      tl.fromTo("#reel-intro-note-label", { opacity: 0, y: 14 },
+        { opacity: 1, y: 0, duration: 0.34, ease: "power3.out" }, 0.72);
+      window.__timelines["reel-intro"] = tl;
+    })();
+  </script>
+</template>

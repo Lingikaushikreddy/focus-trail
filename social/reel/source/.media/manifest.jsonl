@@ -1,0 +1,19 @@
+{"id":"image_001","type":"image","path":"assets/good-focus-verified-full.png","source":"existing","description":"good focus verified full","width":2000,"height":3000,"provenance":{"provider":"local","adopted":true}}
+{"id":"image_002","type":"image","path":"assets/good-focus-verified.png","source":"existing","description":"good focus verified","width":1920,"height":1200,"provenance":{"provider":"local","adopted":true}}
+{"id":"image_003","type":"image","path":"assets/good-inspector-2x.png","source":"existing","description":"good inspector 2x","width":750,"height":808,"provenance":{"provider":"local","adopted":true}}
+{"id":"video_001","type":"video","path":"assets/good-keyboard-demo.mp4","source":"existing","description":"good keyboard demo","duration":5.5,"width":960,"height":600,"provenance":{"provider":"local","adopted":true}}
+{"id":"image_004","type":"image","path":"assets/hero-ui.png","source":"existing","description":"hero ui","width":1440,"height":759,"provenance":{"provider":"local","adopted":true}}
+{"id":"image_005","type":"image","path":"assets/lost-return-focus-verified-full.png","source":"existing","description":"lost return focus verified full","width":2000,"height":3000,"provenance":{"provider":"local","adopted":true}}
+{"id":"image_006","type":"image","path":"assets/lost-return-focus-verified.png","source":"existing","description":"lost return focus verified","width":1920,"height":1200,"provenance":{"provider":"local","adopted":true}}
+{"id":"image_007","type":"image","path":"assets/lost-return-inspector-2x.png","source":"existing","description":"lost return inspector 2x","width":750,"height":808,"provenance":{"provider":"local","adopted":true}}
+{"id":"video_002","type":"video","path":"assets/lost-return-keyboard-demo.mp4","source":"existing","description":"lost return keyboard demo","duration":5.5,"width":960,"height":600,"provenance":{"provider":"local","adopted":true}}
+{"id":"image_008","type":"image","path":"assets/report-comparison-2x.png","source":"existing","description":"report comparison 2x","width":1344,"height":1718,"provenance":{"provider":"local","adopted":true}}
+{"id":"image_009","type":"image","path":"assets/report-first-difference-2x.png","source":"existing","description":"report first difference 2x","width":1920,"height":508,"provenance":{"provider":"local","adopted":true}}
+{"id":"image_010","type":"image","path":"assets/report-first-difference.png","source":"existing","description":"report first difference","width":1440,"height":1100,"provenance":{"provider":"local","adopted":true}}
+{"id":"image_011","type":"image","path":"assets/report-step-detail.png","source":"existing","description":"report step detail","width":1440,"height":1100,"provenance":{"provider":"local","adopted":true}}
+{"id":"sfx_001","type":"sfx","path":".media/audio/sfx/sfx_001.mp3","source":"ingested","description":"key-press.mp3","provenance":{"provider":"local","from":"<installed-skills>/media-use/audio/assets/sfx/key-press.mp3"}}
+{"id":"voice_001","type":"voice","path":".media/audio/voice/voice_001.wav","source":"ingested","description":"intro.wav","provenance":{"provider":"local","from":"assets/voice/intro.wav"}}
+{"id":"voice_002","type":"voice","path":".media/audio/voice/voice_002.wav","source":"ingested","description":"good.wav","provenance":{"provider":"local","from":"assets/voice/good.wav"}}
+{"id":"voice_003","type":"voice","path":".media/audio/voice/voice_003.wav","source":"ingested","description":"bad.wav","provenance":{"provider":"local","from":"assets/voice/bad.wav"}}
+{"id":"voice_004","type":"voice","path":".media/audio/voice/voice_004.wav","source":"ingested","description":"report.wav","provenance":{"provider":"local","from":"assets/voice/report.wav"}}
+{"id":"voice_005","type":"voice","path":".media/audio/voice/voice_005.wav","source":"ingested","description":"close.wav","provenance":{"provider":"local","from":"assets/voice/close.wav"}}

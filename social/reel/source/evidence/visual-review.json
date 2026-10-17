@@ -1,0 +1,107 @@
+{
+  "reviewedAt": "2026-10-17T02:04:48.674377+00:00",
+  "reviewer": "independent visual review agent",
+  "scope": "Decoded final narrated-video stills, composition/capture-provenance source, declared narration cues, and supplied signal verification results. No media/code edits; no listening or speech-recognition review.",
+  "revisionNote": "Final narrated encode rechecked. The inspected pictures preserve the verified UI proof, corner focus mark, unclipped hierarchy and saved-report caveat. AI voice source cues and encoded audio-match evidence were checked without claiming to hear or recognize the voice.",
+  "imagesInspected": [
+    {
+      "path": "evidence/encoded-contact-sheet.png",
+      "sha256": "6d4afde17dcc8f6bc0eb3f49da6506a0bb34d111b981b729bfe99d3809c58ef8"
+    },
+    {
+      "path": "evidence/encoded-bug-result.png",
+      "sha256": "28fd4cbafe7fe6309e9710e4976adeac6492aff2786ad9e08669c7626af0b304"
+    },
+    {
+      "path": "evidence/encoded-report-result.png",
+      "sha256": "3c46f871eca73c48168142bb114f128087290214cc334c98e7d39a7153ddcbc0"
+    }
+  ],
+  "sourceInspected": [
+    "index.html",
+    "compositions/frames/good.html",
+    "compositions/frames/bad.html",
+    "compositions/frames/report.html",
+    "assets/capture-provenance.json",
+    "narration-cues.json",
+    "narration-verification.json",
+    "evidence/check.json",
+    "evidence/audio-match.json"
+  ],
+  "findings": [
+    {
+      "check": "Actual UI visible",
+      "result": "pass",
+      "evidence": "The cover contains the shipped Focus Trail hero. Good and fault scenes contain the actual browser workshop, not a recreation. The result frames visibly show the app inspector and its focus outcome."
+    },
+    {
+      "check": "Modal during keyboard journey",
+      "result": "pass",
+      "evidence": "The encoded contact sheet visibly contains the Notification settings modal in both journeys. The large Tab, Enter, Tab, Esc labels make the sequence legible. Capture provenance records Enter focusing Save changes and the next Tab focusing Cancel while the modal is visible."
+    },
+    {
+      "check": "Contrasting final focus",
+      "result": "pass",
+      "evidence": "The encoded good result shows the visible focus ring on Open settings and an inspector reading Open settings. The encoded fault result shows Document body in the app inspector; the nearby large caption repeats that outcome. These agree with the separate real-keyboard recording assertions."
+    },
+    {
+      "check": "Report truthfulness",
+      "result": "pass",
+      "evidence": "The encoded report names Step 8, return-opener, Escape, and a 500ms checkpoint timeout. Its observed-target row explicitly retains the last coherent sample and says no later sample was verified. The visible caption says Saved report \u00b7 endpoint sample unavailable, and the close says Controlled demo \u00b7 Open source. It does not claim the historical report freshly measured BODY."
+    },
+    {
+      "check": "Phone-first hierarchy",
+      "result": "pass",
+      "evidence": "Headlines, key labels and outcome captions are large and high contrast. The report screenshot is broad enough to read the core checkpoint and unavailable-sample wording in the full resolution still. Main content has no visible clipping or overlapping text."
+    },
+    {
+      "check": "Final branding and footer revision",
+      "result": "pass",
+      "evidence": "The final encoded contact sheet, fault result and report result show the existing corner focus mark. The redundant REAL UI. REAL KEYBOARD EVENTS. footer is absent. Headline, keyboard and report proof placement remains unchanged and visibly unclipped."
+    },
+    {
+      "check": "Outcome narration follows the actual Escape outcome",
+      "result": "pass",
+      "evidence": "Capture-derived scene-local Escape is 3.24s in both clips, so global Escape is 6.24s for the good scene and 11.24s for the controlled fault. The model-estimated onset of \u201cFocus returns\u201d is 3.15 + 3.2375 = 6.3875s; the fault outcome word \u201cfocus\u201d begins at 8.15 + 3.2 = 11.35s. Both outcome clauses follow Escape. These are source/timing checks, not independently recognized speech."
+    },
+    {
+      "check": "Narrated source is included in final encoded mix",
+      "result": "pass",
+      "evidence": "Supplied narration-verification.json reports matching delivered WAV hashes, durations, PCM 16-bit mono 48k format and cue-slot fits. evidence/audio-match.json compares an independent reconstruction of the 13 declared tracks with final AAC-decoded PCM: whole-mix correlation 0.999967; all five voice segment correlations exceed 0.9999 (required minimum 0.97). This supports encoded source inclusion and timing, not subjective speech quality."
+    },
+    {
+      "check": "Final composition browser checks",
+      "result": "pass",
+      "evidence": "evidence/check.json reports strict ok=true, browserSkipped=false, no lint/runtime/layout findings, eight layout sample times and 31/31 contrast checks. Motion analysis was disabled and is not claimed as a measured pass."
+    }
+  ],
+  "blockingFindings": [],
+  "limits": [
+    "This review inspected the listed decoded still images; it did not watch every frame or certify every motion transition.",
+    "No audio was heard or subjectively evaluated; spoken content and outcome timing were checked from the synthesis script, model-estimated word timings and supplied encoded signal-match results. No independent speech recognition was performed.",
+    "The UI includes small secondary browser text. Essential keys and outcomes are repeated in large captions; the complete report contains more text than most viewers will read during a short Reel.",
+    "Instagram UI overlays and compression were not tested in the Instagram app."
+  ],
+  "verdict": "No blocking visual or claim issue found in the inspected final narrated encode; declared outcome narration starts after the corresponding Escape result. Subjective voice quality was not assessed.",
+  "encodedVideo": {
+    "path": "renders/focus-trail-instagram-reel.mp4",
+    "sha256": "8c96d1f9d1ca3effb38de0508a1b5f1ce73b51ad91139f0fc23868a472ec2a39"
+  },
+  "narrationOutcomeTiming": {
+    "method": "Composition offsets plus capture-derived video frame timing and model-estimated word onsets; no ASR or listening claim",
+    "good": {
+      "escapeSeconds": 6.24,
+      "outcomeWord": "Focus",
+      "outcomeWordSeconds": 6.3875,
+      "afterEscapeSeconds": 0.1475,
+      "passed": true
+    },
+    "lostReturn": {
+      "escapeSeconds": 11.24,
+      "outcomeWord": "focus",
+      "outcomeWordSeconds": 11.35,
+      "afterEscapeSeconds": 0.11,
+      "passed": true
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "reviewedAtUtc": "2026-10-17T01:52:47.013349+00:00",
+  "reviewMethod": "Independent source-file inspection against real capture provenance and asset hashes; no capture rerun and no source edits. This reviews truth and synchronization, not the final encoded export.",
+  "result": "pass",
+  "filesInspected": [
+    "index.html",
+    "compositions/frames/intro.html",
+    "compositions/frames/good.html",
+    "compositions/frames/bad.html",
+    "compositions/frames/report.html",
+    "assets/capture-provenance.json"
+  ],
+  "checks": [
+    {
+      "check": "good key timing and result",
+      "status": "pass",
+      "globalKeySeconds": [
+        3.64,
+        4.44,
+        5.36,
+        6.24
+      ],
+      "resultLabelGlobalSeconds": 6.35,
+      "escapePrecedesResultBySeconds": 0.11,
+      "actualFinalFocus": {
+        "activeTag": "BUTTON",
+        "activeId": "opener",
+        "inspector": "Open settings",
+        "lastKey": "Escape",
+        "dialogVisible": false,
+        "scrollY": 300
+      }
+    },
+    {
+      "check": "bad key timing and result",
+      "status": "pass",
+      "globalKeySeconds": [
+        8.64,
+        9.44,
+        10.32,
+        11.24
+      ],
+      "resultLabelGlobalSeconds": 11.35,
+      "escapePrecedesResultBySeconds": 0.11,
+      "actualFinalFocus": {
+        "activeTag": "BODY",
+        "activeId": "",
+        "inspector": "Document body",
+        "lastKey": "Escape",
+        "dialogVisible": false,
+        "scrollY": 300
+      }
+    },
+    {
+      "check": "Eight key sound overlays",
+      "status": "pass",
+      "actualGlobalSeconds": [
+        3.64,
+        4.44,
+        5.36,
+        6.24,
+        8.64,
+        9.44,
+        10.32,
+        11.24
+      ],
+      "timingPrecisionSeconds": 0.04,
+      "note": "Key SFX are editorial overlays aligned to decoded real keyboard-event footage; they do not imply microphone capture."
+    },
+    {
+      "check": "Source asset hash: good-keyboard-demo.mp4",
+      "status": "pass",
+      "sha256": "f9352c1b46328a4146bb024fd228f7133c6a07eb4a5d02c0597c9195e747ddd9"
+    },
+    {
+      "check": "Source asset hash: lost-return-keyboard-demo.mp4",
+      "status": "pass",
+      "sha256": "87f6b27c10e6535834b513ff98a51929083eed9e4422708df73b0989eea8bad8"
+    },
+    {
+      "check": "Source asset hash: hero-ui.png",
+      "status": "pass",
+      "sha256": "dcf13a25b5d4d4bd070df176e1c12c0ee0a2b136f887553c5feaa5ea979f8f8f"
+    },
+    {
+      "check": "Source asset hash: report-first-difference-mobile-2x.png",
+      "status": "pass",
+      "sha256": "fa87ef61d719d02e8639a09162e94f3b56cc1ab5eeaab60477feecd1f1eb847d"
+    },
+    {
+      "check": "Report and fresh browser-focus distinction",
+      "status": "pass",
+      "evidence": "Report labels Step 8, return-opener, 500 ms timeout and retains unavailable endpoint wording. Current browser proof independently asserts BODY after Escape. The Reel explicitly says Saved report \u00b7 endpoint sample unavailable."
+    },
+    {
+      "check": "Marketing headline scope",
+      "status": "pass",
+      "evidence": "Pretty UI / Where\u2019s focus?; working dialog; controlled fault; focus returns to opener; Document body; Focus left every control are supported by source UI and asserted activeElement states. No compliance, customer, adoption, universal-browser or public-release qualification claims."
+    }
+  ],
+  "publicness": {
+    "repository": "https://github.com/Lingikaushikreddy/focus-trail",
+    "visibility": "PUBLIC",
+    "isPrivate": false,
+    "verifiedBy": "gh repo view --json visibility,isPrivate,url",
+    "concerns": []
+  },
+  "scopeLimits": [
+    "The failing behavior is an intentional lost-return fixture, clearly labelled Controlled fault / Controlled demo.",
+    "Fresh BODY focus evidence and saved checkpoint report are different runs, correctly distinguished on screen.",
+    "No claim is made that the five-maintainer pilot or three independent installations have been completed.",
+    "GitHub repository is public; local 127.0.0.1 demo is not a hosted public app. Reel CTA uses the public repository.",
+    "Capture source paths include local absolute paths in provenance; no secrets or participant data observed."
+  ]
+}

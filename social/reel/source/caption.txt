@@ -1,0 +1,15 @@
+Pretty UI. Where’s focus?
+
+Same four keys: Tab → Enter → Tab → Escape.
+The working dialog returns to its opener. The broken version loses focus to the document body.
+
+Focus Trail makes the failed checkpoint reviewable. Built for Playwright. Open source.
+
+Try the demo and join the maintainer pilot:
+github.com/Lingikaushikreddy/focus-trail
+
+Controlled demo. The saved report retains its last coherent sample and marks the fresh endpoint sample unavailable.
+
+#WebDevelopment #Accessibility #Playwright #OpenSource #BuildInPublic
+
+English AI narration: Kokoro af_heart.

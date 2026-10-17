@@ -1,0 +1,72 @@
+{
+  "verified_utc": "2026-10-17T02:04:14.571401+00:00",
+  "artifact": "renders/focus-trail-instagram-reel.mp4",
+  "sha256": "8c96d1f9d1ca3effb38de0508a1b5f1ce73b51ad91139f0fc23868a472ec2a39",
+  "bytes": 2599855,
+  "video": {
+    "duration_seconds": 20,
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "fps": 30,
+    "frames": 600,
+    "codec": "h264",
+    "pixel_format": "yuv420p"
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": "48000",
+    "effects": 8,
+    "max_volume_dbfs": -2.0,
+    "narration": true,
+    "voice": "af_heart",
+    "provider": "local Kokoro",
+    "voice_segments": 5,
+    "encoded_match": {
+      "minimum_segment_correlation": 0.999946,
+      "whole_mix_correlation": 0.999967,
+      "passed": true,
+      "record": "audio-match.json"
+    },
+    "voice_verification_checks": 25,
+    "voice_source_hashes": {
+      "assets/voice/bad.wav": "a66d34edc758eb99b6be9d987dda896da9564a3f2970b2f787882b89b9a4404d",
+      "assets/voice/close.wav": "ddfe35ecf2f35aaefa8b9d09b5ae786f4df11bb773be4c67c209eaced2c1e6be",
+      "assets/voice/good.wav": "b6652bea2a52ec46e08df5abf4a3c7e1929ee202c5df5ed01a08873bc2047e23",
+      "assets/voice/intro.wav": "7f6e80aa4e6bc5b29ad217f4ca8ac7e009265ee373abe36e58843b972fd4d838",
+      "assets/voice/report.wav": "ed11fd1d877fb688df01bc6a8f996fa37621628b0efa8d09560fb17e98d6086a"
+    },
+    "integrated_lufs": -13.55,
+    "true_peak_dbtp": -1.96
+  },
+  "decode_errors": 0,
+  "hyperframes_version": "0.8.167",
+  "render_mode": "screenshot capture \u00b7 hardware GPU",
+  "checks": {
+    "strict": true,
+    "browser_skipped": false,
+    "layout_samples": 8,
+    "layout_findings": 0,
+    "contrast_checked": 31,
+    "contrast_passed": 31,
+    "transition_samples_dropped": 0,
+    "motion_audit_enabled": false
+  },
+  "source_sha256": {
+    "index.html": "7d948606b47b61cdeacdfbe73198ff7c902b144040d59eb3e1486995382f1c6c",
+    "compositions/frames/bad.html": "8038526832d5b5977860893d7f4a11608f253f34d999d9379625245deb1d12fa",
+    "compositions/frames/good.html": "cb326bf17026be3a8d092f4c05786cabcf6ae2fbb554670fc7394ab8a759c9c2",
+    "compositions/frames/intro.html": "9ac53f0d025afafd0ca115c8a5018633307b6f654496368437add52dfce62234",
+    "compositions/frames/report.html": "6cc8af1d17830af4d480f567a4a6d31c35c21b0ce07feaadd9d21f51eb29ee52"
+  },
+  "source_claim_review": "claim-review.json",
+  "encoded_visual_review": "visual-review.json",
+  "limits": [
+    "Controlled demo, not independent maintainer evidence.",
+    "The saved report marks the fresh endpoint sample unavailable.",
+    "Instagram overlay and recompression are not tested.",
+    "Motion audit is disabled in this CLI; key source timing and encoded proof stills were checked.",
+    "Native TTS token timing is estimated; no independent speech-recognition claim."
+  ]
+}
