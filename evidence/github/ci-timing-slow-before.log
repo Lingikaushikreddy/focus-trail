@@ -1,0 +1,116 @@
+
+Running 3 tests using 1 worker
+
+(node:42264) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 ../../work/github-focus-trail-verification/ci-timing/journey-slow-before.spec.ts:86:5 › names, IDs, and errors are masked while input values are never captured (710ms)
+(node:42281) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 ../../work/github-focus-trail-verification/ci-timing/journey-slow-before.spec.ts:251:5 › later unavailable captures cannot erase a real checkpoint observation (505ms)
+(node:42295) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  3 ../../work/github-focus-trail-verification/ci-timing/journey-slow-before.spec.ts:278:5 › a detected focus change invalidates evidence retained before a later outage (558ms)
+
+
+  1) ../../work/github-focus-trail-verification/ci-timing/journey-slow-before.spec.ts:86:5 › names, IDs, and errors are masked while input values are never captured 
+
+    Error: Checkpoint [redacted]-input did not receive focus within 50ms
+
+       at ../../../outputs/focus-trail/packages/core/src/journey.ts:73
+
+      71 |     result.status = 'failed';
+      72 |     result.error ??= redact(message);
+    > 73 |     return new Error(redact(message));
+         |            ^
+      74 |   };
+      75 |   const assertDuration = () => {
+      76 |     if (remaining() <= 0) throw new Error('Journey duration budget exceeded');
+        at fail (/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail/packages/core/src/journey.ts:73:12)
+        at record (/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail/packages/core/src/journey.ts:102:13)
+        at /Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail/packages/core/src/journey.ts:133:9
+
+    Error Context: ../../work/github-focus-trail-verification/ci-timing/before-results/journey-slow-before-names--4ca5a-t-values-are-never-captured/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../work/github-focus-trail-verification/ci-timing/before-results/journey-slow-before-names--4ca5a-t-values-are-never-captured/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../work/github-focus-trail-verification/ci-timing/before-results/journey-slow-before-names--4ca5a-t-values-are-never-captured/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) ../../work/github-focus-trail-verification/ci-timing/journey-slow-before.spec.ts:251:5 › later unavailable captures cannot erase a real checkpoint observation 
+
+    Error: expect(received).toMatchObject(expected)
+
+    - Expected  - 4
+    + Received  + 4
+
+      Object {
+    -   "name": "Outside",
+    -   "role": "button",
+    -   "tag": "button",
+    -   "testId": "outside",
+    +   "name": null,
+    +   "role": null,
+    +   "tag": null,
+    +   "testId": null,
+      }
+
+      267 |     const failed = (await run.finish()).steps.at(-1)!;
+      268 |     expect(failed.status).toBe('failed');
+    > 269 |     expect(failed.observed).toMatchObject({ tag: 'button', role: 'button', name: 'Outside', testId: 'outside' });
+          |                             ^
+      270 |     expect(failed.observed.unavailable).toMatch(/last coherent sample.*\d+ms/i);
+      271 |     expect((await attachment(info)).steps.at(-1)).toEqual(failed);
+      272 |     await expect(page.getByTestId('outside')).toBeFocused();
+        at /Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/github-focus-trail-verification/ci-timing/journey-slow-before.spec.ts:269:29
+
+    attachment #1: focus-trail:dialog.json (application/json) ──────────────────────────────────────
+    ../../work/github-focus-trail-verification/ci-timing/before-results/journey-slow-before-later--e7512-real-checkpoint-observation/attachments/focus-trail-dialog-json-ee0219e5abb613299005cec20702525106333376.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../work/github-focus-trail-verification/ci-timing/before-results/journey-slow-before-later--e7512-real-checkpoint-observation/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../work/github-focus-trail-verification/ci-timing/before-results/journey-slow-before-later--e7512-real-checkpoint-observation/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../work/github-focus-trail-verification/ci-timing/before-results/journey-slow-before-later--e7512-real-checkpoint-observation/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) ../../work/github-focus-trail-verification/ci-timing/journey-slow-before.spec.ts:278:5 › a detected focus change invalidates evidence retained before a later outage 
+
+    Error: expect(received).not.toMatch(expected)
+
+    Expected pattern: not /last coherent sample/i
+    Received string:      "Last coherent sample at 381ms; checkpoint wait ended without a later verified sample"
+
+      300 |     const failed = (await run.finish()).steps.at(-1)!;
+      301 |     expect(failed.status).toBe('failed');
+    > 302 |     expect(failed.observed.unavailable).not.toMatch(/last coherent sample/i);
+          |                                             ^
+      303 |     expect(failed.observed.testId).toBeNull();
+      304 |     await expect(page.getByTestId('changed')).toBeFocused();
+      305 |   } finally {
+        at /Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/github-focus-trail-verification/ci-timing/journey-slow-before.spec.ts:302:45
+
+    attachment #1: focus-trail:dialog.json (application/json) ──────────────────────────────────────
+    ../../work/github-focus-trail-verification/ci-timing/before-results/journey-slow-before-a-dete-0a436-ained-before-a-later-outage/attachments/focus-trail-dialog-json-b2788219c88a2d9fd9d52f94607f2a32340b24db.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../work/github-focus-trail-verification/ci-timing/before-results/journey-slow-before-a-dete-0a436-ained-before-a-later-outage/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../work/github-focus-trail-verification/ci-timing/before-results/journey-slow-before-a-dete-0a436-ained-before-a-later-outage/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../work/github-focus-trail-verification/ci-timing/before-results/journey-slow-before-a-dete-0a436-ained-before-a-later-outage/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    ../../work/github-focus-trail-verification/ci-timing/journey-slow-before.spec.ts:86:5 › names, IDs, and errors are masked while input values are never captured 
+    ../../work/github-focus-trail-verification/ci-timing/journey-slow-before.spec.ts:251:5 › later unavailable captures cannot erase a real checkpoint observation 
+    ../../work/github-focus-trail-verification/ci-timing/journey-slow-before.spec.ts:278:5 › a detected focus change invalidates evidence retained before a later outage 

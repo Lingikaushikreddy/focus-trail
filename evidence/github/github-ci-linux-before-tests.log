@@ -1,0 +1,246 @@
+verify	Run npm run verify	﻿2026-10-17T00:58:38.5932619Z ##[group]Run npm run verify
+verify	Run npm run verify	2026-10-17T00:58:38.5933142Z [36;1mnpm run verify[0m
+verify	Run npm run verify	2026-10-17T00:58:38.5988863Z shell: /usr/bin/bash -e {0}
+verify	Run npm run verify	2026-10-17T00:58:38.5989448Z env:
+verify	Run npm run verify	2026-10-17T00:58:38.5989878Z   CI: true
+verify	Run npm run verify	2026-10-17T00:58:38.5990470Z   FOCUS_TRAIL_WORK_DIR: /home/runner/work/focus-trail/focus-trail/work/ci-consumers
+verify	Run npm run verify	2026-10-17T00:58:38.5991635Z   PLAYWRIGHT_BROWSERS_PATH: /home/runner/work/focus-trail/focus-trail/work/ci-browsers
+verify	Run npm run verify	2026-10-17T00:58:38.5992360Z ##[endgroup]
+verify	Run npm run verify	2026-10-17T00:58:38.7372096Z 
+verify	Run npm run verify	2026-10-17T00:58:38.7394191Z > focus-trail@0.1.0 verify
+verify	Run npm run verify	2026-10-17T00:58:38.7416295Z > npm run lint && npm run build && npm run typecheck && npm test && npm run test:pack
+verify	Run npm run verify	2026-10-17T00:58:38.7417163Z 
+verify	Run npm run verify	2026-10-17T00:58:38.9248615Z 
+verify	Run npm run verify	2026-10-17T00:58:38.9274621Z > focus-trail@0.1.0 lint
+verify	Run npm run verify	2026-10-17T00:58:38.9292283Z > eslint packages tests scripts examples --max-warnings 0
+verify	Run npm run verify	2026-10-17T00:58:38.9302881Z 
+verify	Run npm run verify	2026-10-17T00:58:41.1001408Z 
+verify	Run npm run verify	2026-10-17T00:58:41.1002528Z > focus-trail@0.1.0 build
+verify	Run npm run verify	2026-10-17T00:58:41.1003502Z > tsup
+verify	Run npm run verify	2026-10-17T00:58:41.1003800Z 
+verify	Run npm run verify	2026-10-17T00:58:41.3870919Z [34mCLI[39m Building entry: {"index":"packages/core/src/index.ts","reporter":"packages/reporter/src/index.ts","cli":"packages/cli/src/index.ts"}
+verify	Run npm run verify	2026-10-17T00:58:41.3873370Z [34mCLI[39m Using tsconfig: tsconfig.json
+verify	Run npm run verify	2026-10-17T00:58:41.3891658Z [34mCLI[39m tsup v8.5.0
+verify	Run npm run verify	2026-10-17T00:58:41.3893272Z [34mCLI[39m Using tsup config: /home/runner/work/focus-trail/focus-trail/tsup.config.ts
+verify	Run npm run verify	2026-10-17T00:58:41.4010385Z [34mCLI[39m Target: node24
+verify	Run npm run verify	2026-10-17T00:58:41.4056094Z [34mCLI[39m Cleaning output folder
+verify	Run npm run verify	2026-10-17T00:58:41.4072365Z [34mESM[39m Build start
+verify	Run npm run verify	2026-10-17T00:58:41.4524110Z [32mESM[39m [1mdist/index.js              [22m[32m15.91 KB[39m
+verify	Run npm run verify	2026-10-17T00:58:41.4525841Z [32mESM[39m [1mdist/cli.js                [22m[32m2.36 KB[39m
+verify	Run npm run verify	2026-10-17T00:58:41.4527001Z [32mESM[39m [1mdist/reporter.js           [22m[32m8.48 KB[39m
+verify	Run npm run verify	2026-10-17T00:58:41.4528169Z [32mESM[39m [1mdist/chunk-5AIYLYST.js     [22m[32m13.94 KB[39m
+verify	Run npm run verify	2026-10-17T00:58:41.4529186Z [32mESM[39m [1mdist/chunk-FTC5XAX4.js     [22m[32m8.91 KB[39m
+verify	Run npm run verify	2026-10-17T00:58:41.4530180Z [32mESM[39m [1mdist/index.js.map          [22m[32m27.80 KB[39m
+verify	Run npm run verify	2026-10-17T00:58:41.4531473Z [32mESM[39m [1mdist/cli.js.map            [22m[32m4.07 KB[39m
+verify	Run npm run verify	2026-10-17T00:58:41.4532516Z [32mESM[39m [1mdist/reporter.js.map       [22m[32m14.62 KB[39m
+verify	Run npm run verify	2026-10-17T00:58:41.4533575Z [32mESM[39m [1mdist/chunk-5AIYLYST.js.map [22m[32m18.97 KB[39m
+verify	Run npm run verify	2026-10-17T00:58:41.4534671Z [32mESM[39m [1mdist/chunk-FTC5XAX4.js.map [22m[32m17.76 KB[39m
+verify	Run npm run verify	2026-10-17T00:58:41.4535921Z [32mESM[39m ⚡️ Build success in 47ms
+verify	Run npm run verify	2026-10-17T00:58:41.7006319Z [34mDTS[39m Build start
+verify	Run npm run verify	2026-10-17T00:58:45.1686793Z [32mDTS[39m ⚡️ Build success in 3468ms
+verify	Run npm run verify	2026-10-17T00:58:45.1691674Z [32mDTS[39m [1mdist/cli.d.ts            [22m[32m94.00 B[39m
+verify	Run npm run verify	2026-10-17T00:58:45.1702693Z [32mDTS[39m [1mdist/index.d.ts          [22m[32m1.32 KB[39m
+verify	Run npm run verify	2026-10-17T00:58:45.1703744Z [32mDTS[39m [1mdist/reporter.d.ts       [22m[32m1.15 KB[39m
+verify	Run npm run verify	2026-10-17T00:58:45.1704873Z [32mDTS[39m [1mdist/types-Cah3DzEv.d.ts [22m[32m2.02 KB[39m
+verify	Run npm run verify	2026-10-17T00:58:45.3034414Z 
+verify	Run npm run verify	2026-10-17T00:58:45.3035459Z > focus-trail@0.1.0 typecheck
+verify	Run npm run verify	2026-10-17T00:58:45.3036380Z > tsc --noEmit
+verify	Run npm run verify	2026-10-17T00:58:45.3036851Z 
+verify	Run npm run verify	2026-10-17T00:58:47.5604397Z 
+verify	Run npm run verify	2026-10-17T00:58:47.5605457Z > focus-trail@0.1.0 test
+verify	Run npm run verify	2026-10-17T00:58:47.5606867Z > npm run test:unit && npm run test:integration && npm run test:e2e
+verify	Run npm run verify	2026-10-17T00:58:47.5607455Z 
+verify	Run npm run verify	2026-10-17T00:58:47.6518700Z 
+verify	Run npm run verify	2026-10-17T00:58:47.6519714Z > focus-trail@0.1.0 test:unit
+verify	Run npm run verify	2026-10-17T00:58:47.6520681Z > vitest run
+verify	Run npm run verify	2026-10-17T00:58:47.6521066Z 
+verify	Run npm run verify	2026-10-17T00:58:47.9405617Z 
+verify	Run npm run verify	2026-10-17T00:58:47.9453374Z [1m[30m[46m RUN [49m[39m[22m [36mv5.0.5 [39m[90m/home/runner/work/focus-trail/focus-trail[39m
+verify	Run npm run verify	2026-10-17T00:58:47.9672864Z 
+verify	Run npm run verify	2026-10-17T00:58:48.2560849Z Focus Trail: Invalid baseline: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+verify	Run npm run verify	2026-10-17T00:58:48.2662753Z Focus Trail: Invalid attachment: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+verify	Run npm run verify	2026-10-17T00:58:48.2702459Z  [32m✓[39m tests/unit/render.test.ts [2m([22m[2m17 tests[22m[2m)[22m[32m 47[2mms[22m[39m
+verify	Run npm run verify	2026-10-17T00:58:48.4767942Z  [32m✓[39m tests/unit/compare.test.ts [2m([22m[2m88 tests[22m[2m)[22m[32m 58[2mms[22m[39m
+verify	Run npm run verify	2026-10-17T00:58:49.0917350Z  [32m✓[39m tests/unit/cli.test.ts [2m([22m[2m9 tests[22m[2m)[22m[33m 500[2mms[22m[39m
+verify	Run npm run verify	2026-10-17T00:58:49.0953554Z 
+verify	Run npm run verify	2026-10-17T00:58:49.0958782Z [2m Test Files [22m [1m[32m3 passed[39m[22m[90m (3)[39m
+verify	Run npm run verify	2026-10-17T00:58:49.0961657Z [2m      Tests [22m [1m[32m114 passed[39m[22m[90m (114)[39m
+verify	Run npm run verify	2026-10-17T00:58:49.0963038Z [2m   Start at [22m 00:58:47
+verify	Run npm run verify	2026-10-17T00:58:49.0965595Z [2m   Duration [22m 1.16s[2m (tests 73%, transform 19%, import 6%, worker 1%)[22m
+verify	Run npm run verify	2026-10-17T00:58:49.0976321Z 
+verify	Run npm run verify	2026-10-17T00:58:49.2024983Z 
+verify	Run npm run verify	2026-10-17T00:58:49.2032486Z > focus-trail@0.1.0 test:integration
+verify	Run npm run verify	2026-10-17T00:58:49.2033421Z > playwright test --project=integration
+verify	Run npm run verify	2026-10-17T00:58:49.2033765Z 
+verify	Run npm run verify	2026-10-17T00:58:50.2464346Z 
+verify	Run npm run verify	2026-10-17T00:58:50.2465171Z Running 34 tests using 2 workers
+verify	Run npm run verify	2026-10-17T00:58:50.2465797Z 
+verify	Run npm run verify	2026-10-17T00:58:52.5235323Z   ✓   1 [integration] › tests/integration/capture.spec.ts:4:1 › captures Chromium computed accessible role and labelledby name without form values (818ms)
+verify	Run npm run verify	2026-10-17T00:58:53.1172727Z   ✓   3 [integration] › tests/integration/capture.spec.ts:12:1 › masks computed names and target evidence using literal strings (527ms)
+verify	Run npm run verify	2026-10-17T00:58:53.1712810Z   ✓   2 [integration] › tests/integration/demo.spec.ts:4:1 › demo good fixture opens, wraps and returns focus using real keys (1.5s)
+verify	Run npm run verify	2026-10-17T00:58:53.7824515Z   ✓   4 [integration] › tests/integration/capture.spec.ts:18:1 › body focus and unavailable capture remain explicit evidence (600ms)
+verify	Run npm run verify	2026-10-17T00:58:54.2053716Z   ✓   5 [integration] › tests/integration/demo.spec.ts:23:1 › demo return mutation reproduces body focus after Escape (957ms)
+verify	Run npm run verify	2026-10-17T00:58:54.4242628Z   ✓   6 [integration] › tests/integration/capture.spec.ts:25:1 › focused shadow content is explicitly unsupported (592ms)
+verify	Run npm run verify	2026-10-17T00:58:55.1448986Z   ✓   8 [integration] › tests/integration/capture.spec.ts:31:1 › focused iframe content is explicitly unsupported (666ms)
+verify	Run npm run verify	2026-10-17T00:58:55.3221536Z   ✓   7 [integration] › tests/integration/demo.spec.ts:32:1 › demo activation mutation leaves focus unchanged but does not open dialog (1.1s)
+verify	Run npm run verify	2026-10-17T00:58:56.3716904Z   ✓  10 [integration] › tests/integration/demo.spec.ts:39:1 › demo escape mutation permits focus outside the open modal (950ms)
+verify	Run npm run verify	2026-10-17T00:58:57.3653562Z   ✓   9 [integration] › tests/integration/journey.spec.ts:25:1 › real keyboard journey opens a dialog, navigates, and restores focus (2.0s)
+verify	Run npm run verify	2026-10-17T00:58:58.3914251Z   ✓  12 [integration] › tests/integration/journey.spec.ts:53:1 › caught checkpoint failure still attaches a failed return result (939ms)
+verify	Run npm run verify	2026-10-17T00:58:59.2008840Z   ✓  13 [integration] › tests/integration/journey.spec.ts:68:1 › checkpoint retries until delayed application focus is observed (814ms)
+verify	Run npm run verify	2026-10-17T00:58:59.5113804Z   ✓  11 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (3.1s)
+verify	Run npm run verify	2026-10-17T00:59:00.2139354Z   ✓  14 [integration] › tests/integration/journey.spec.ts:77:1 › duplicate targets fail strictly while duplicate names permit stable keyed locators (939ms)
+verify	Run npm run verify	2026-10-17T00:59:01.3834375Z   ✘  16 [integration] › tests/integration/journey.spec.ts:86:1 › names, IDs, and errors are masked while input values are never captured (903ms)
+verify	Run npm run verify	2026-10-17T00:59:02.1865397Z   ✓  15 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (2.6s)
+verify	Run npm run verify	2026-10-17T00:59:04.0555810Z   ✘  17 [integration] › tests/integration/journey.spec.ts:100:3 › rejects frame checkpoint targets explicitly (1.3s)
+verify	Run npm run verify	2026-10-17T00:59:04.4584715Z   ✓  18 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (2.2s)
+verify	Run npm run verify	2026-10-17T00:59:06.4488463Z   ✓  20 [integration] › tests/integration/journey.spec.ts:100:3 › rejects shadow checkpoint targets explicitly (790ms)
+verify	Run npm run verify	2026-10-17T00:59:07.0570768Z   ✓  19 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (2.5s)
+verify	Run npm run verify	2026-10-17T00:59:07.3813022Z   ✓  21 [integration] › tests/integration/journey.spec.ts:100:3 › rejects other page checkpoint targets explicitly (869ms)
+verify	Run npm run verify	2026-10-17T00:59:07.7689836Z   ✓  22 [integration] › tests/integration/journey.spec.ts:112:1 › unsupported focused observations fail keyboard records explicitly (330ms)
+verify	Run npm run verify	2026-10-17T00:59:08.0388838Z   ✓  23 [integration] › tests/integration/journey.spec.ts:119:1 › closed-page failures retain unavailable evidence and attach JSON (270ms)
+verify	Run npm run verify	2026-10-17T00:59:08.7278950Z   ✓  24 [integration] › tests/integration/journey.spec.ts:127:1 › fixed viewport and actual locale are recorded; null viewport is rejected (661ms)
+verify	Run npm run verify	2026-10-17T00:59:09.2420605Z   ✓  25 [integration] › tests/integration/journey.spec.ts:141:1 › action and duration budgets reject input before delivering extra keys (473ms)
+verify	Run npm run verify	2026-10-17T00:59:09.7860722Z   ✓  26 [integration] › tests/integration/journey.spec.ts:155:1 › checkpoint timeout remains bounded and illegal budget/key extensions are rejected (460ms)
+verify	Run npm run verify	2026-10-17T00:59:11.7272665Z   ✓  27 [integration] › tests/integration/journey.spec.ts:170:1 › checkpoint count is bounded and finalized journeys reject additional actions (2.0s)
+verify	Run npm run verify	2026-10-17T00:59:13.3192045Z   ✓  28 [integration] › tests/integration/journey.spec.ts:180:1 › fixture finalizer updates early-passed attachment after external activation failure (1.6s)
+verify	Run npm run verify	2026-10-17T00:59:13.6333717Z   ✓  29 [integration] › tests/integration/journey.spec.ts:202:1 › idle journeys fail their duration budget at first finish (283ms)
+verify	Run npm run verify	2026-10-17T00:59:13.8727444Z   ✓  30 [integration] › tests/integration/journey.spec.ts:209:1 › unsupported browser fails before constructing a journey (210ms)
+verify	Run npm run verify	2026-10-17T00:59:14.4674025Z   ✓  31 [integration] › tests/integration/journey.spec.ts:225:1 › later finalization preserves a timely finished journey after its duration limit (575ms)
+verify	Run npm run verify	2026-10-17T00:59:15.6703484Z   ✓  32 [integration] › tests/integration/journey.spec.ts:235:1 › busy-page checkpoint timeout preserves its last coherent focus sample (1.2s)
+verify	Run npm run verify	2026-10-17T00:59:18.4820584Z   ✘  33 [integration] › tests/integration/journey.spec.ts:251:1 › later unavailable captures cannot erase a real checkpoint observation (573ms)
+verify	Run npm run verify	2026-10-17T00:59:20.3429148Z   ✘  34 [integration] › tests/integration/journey.spec.ts:278:1 › a detected focus change invalidates evidence retained before a later outage (1.0s)
+verify	Run npm run verify	2026-10-17T00:59:20.3569524Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3574291Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3584408Z   1) [integration] › tests/integration/journey.spec.ts:86:1 › names, IDs, and errors are masked while input values are never captured 
+verify	Run npm run verify	2026-10-17T00:59:20.3588422Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3589177Z     Error: Checkpoint [redacted]-input did not receive focus within 50ms
+verify	Run npm run verify	2026-10-17T00:59:20.3589799Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3590140Z        at ../packages/core/src/journey.ts:73
+verify	Run npm run verify	2026-10-17T00:59:20.3590585Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3591037Z       71 |     result.status = 'failed';
+verify	Run npm run verify	2026-10-17T00:59:20.3592003Z       72 |     result.error ??= redact(message);
+verify	Run npm run verify	2026-10-17T00:59:20.3592699Z     > 73 |     return new Error(redact(message));
+verify	Run npm run verify	2026-10-17T00:59:20.3593417Z          |            ^
+verify	Run npm run verify	2026-10-17T00:59:20.3593973Z       74 |   };
+verify	Run npm run verify	2026-10-17T00:59:20.3594577Z       75 |   const assertDuration = () => {
+verify	Run npm run verify	2026-10-17T00:59:20.3595422Z       76 |     if (remaining() <= 0) throw new Error('Journey duration budget exceeded');
+verify	Run npm run verify	2026-10-17T00:59:20.3596492Z         at fail (/home/runner/work/focus-trail/focus-trail/packages/core/src/journey.ts:73:12)
+verify	Run npm run verify	2026-10-17T00:59:20.3597852Z         at record (/home/runner/work/focus-trail/focus-trail/packages/core/src/journey.ts:102:13)
+verify	Run npm run verify	2026-10-17T00:59:20.3599642Z         at /home/runner/work/focus-trail/focus-trail/packages/core/src/journey.ts:133:9
+verify	Run npm run verify	2026-10-17T00:59:20.3600362Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3602915Z     Error Context: work/test-results/integration-journey-names--00a0f-t-values-are-never-captured-integration/error-context.md
+verify	Run npm run verify	2026-10-17T00:59:20.3604028Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3604962Z     attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+verify	Run npm run verify	2026-10-17T00:59:20.3606424Z     work/test-results/integration-journey-names--00a0f-t-values-are-never-captured-integration/trace.zip
+verify	Run npm run verify	2026-10-17T00:59:20.3609593Z     Usage:
+verify	Run npm run verify	2026-10-17T00:59:20.3610015Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3610988Z         npx playwright show-trace work/test-results/integration-journey-names--00a0f-t-values-are-never-captured-integration/trace.zip
+verify	Run npm run verify	2026-10-17T00:59:20.3612158Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3612935Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+verify	Run npm run verify	2026-10-17T00:59:20.3613501Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3614311Z   2) [integration] › tests/integration/journey.spec.ts:100:3 › rejects frame checkpoint targets explicitly 
+verify	Run npm run verify	2026-10-17T00:59:20.3615027Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3615426Z     Error: expect(received).rejects.toThrow(expected)
+verify	Run npm run verify	2026-10-17T00:59:20.3615857Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3616193Z     Expected pattern: /frame|shadow|page/i
+verify	Run npm run verify	2026-10-17T00:59:20.3617007Z     Received message: "Checkpoint unsupported did not receive focus within 60ms"
+verify	Run npm run verify	2026-10-17T00:59:20.3617913Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3618234Z           71 |     result.status = 'failed';
+verify	Run npm run verify	2026-10-17T00:59:20.3618837Z           72 |     result.error ??= redact(message);
+verify	Run npm run verify	2026-10-17T00:59:20.3619509Z         > 73 |     return new Error(redact(message));
+verify	Run npm run verify	2026-10-17T00:59:20.3620071Z              |            ^
+verify	Run npm run verify	2026-10-17T00:59:20.3620629Z           74 |   };
+verify	Run npm run verify	2026-10-17T00:59:20.3621360Z           75 |   const assertDuration = () => {
+verify	Run npm run verify	2026-10-17T00:59:20.3622218Z           76 |     if (remaining() <= 0) throw new Error('Journey duration budget exceeded');
+verify	Run npm run verify	2026-10-17T00:59:20.3622843Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3623399Z           at fail (file:/home/runner/work/focus-trail/focus-trail/packages/core/src/journey.ts:73:12)
+verify	Run npm run verify	2026-10-17T00:59:20.3624585Z           at record (file:/home/runner/work/focus-trail/focus-trail/packages/core/src/journey.ts:102:13)
+verify	Run npm run verify	2026-10-17T00:59:20.3625729Z           at file:/home/runner/work/focus-trail/focus-trail/packages/core/src/journey.ts:133:9
+verify	Run npm run verify	2026-10-17T00:59:20.3626328Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3627319Z       104 |     const target = boundary === 'frame' ? page.frameLocator('iframe').getByRole('button') : boundary === 'shadow' ? page.locator('#host').getByRole('button') : other!.getByRole('button');
+verify	Run npm run verify	2026-10-17T00:59:20.3628743Z       105 |     const run = createJourney(page, info, { ...options, checkpointTimeoutMs: 60 });
+verify	Run npm run verify	2026-10-17T00:59:20.3629863Z     > 106 |     await expect(run.expectFocus('unsupported', target)).rejects.toThrow(/frame|shadow|page/i);
+verify	Run npm run verify	2026-10-17T00:59:20.3630838Z           |                                                                  ^
+verify	Run npm run verify	2026-10-17T00:59:20.3632161Z       107 |     expect((await run.finish()).status).toBe('failed');
+verify	Run npm run verify	2026-10-17T00:59:20.3632816Z       108 |     await other?.close();
+verify	Run npm run verify	2026-10-17T00:59:20.3633302Z       109 |   });
+verify	Run npm run verify	2026-10-17T00:59:20.3634010Z         at /home/runner/work/focus-trail/focus-trail/tests/integration/journey.spec.ts:106:66
+verify	Run npm run verify	2026-10-17T00:59:20.3634584Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3635360Z     Error Context: work/test-results/integration-journey-reject-f8f4e-eckpoint-targets-explicitly-integration/error-context.md
+verify	Run npm run verify	2026-10-17T00:59:20.3636165Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3636894Z     attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+verify	Run npm run verify	2026-10-17T00:59:20.3638052Z     work/test-results/integration-journey-reject-f8f4e-eckpoint-targets-explicitly-integration/trace.zip
+verify	Run npm run verify	2026-10-17T00:59:20.3638926Z     Usage:
+verify	Run npm run verify	2026-10-17T00:59:20.3639149Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3640192Z         npx playwright show-trace work/test-results/integration-journey-reject-f8f4e-eckpoint-targets-explicitly-integration/trace.zip
+verify	Run npm run verify	2026-10-17T00:59:20.3640994Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3641647Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+verify	Run npm run verify	2026-10-17T00:59:20.3642142Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3642958Z   3) [integration] › tests/integration/journey.spec.ts:251:1 › later unavailable captures cannot erase a real checkpoint observation 
+verify	Run npm run verify	2026-10-17T00:59:20.3643815Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3644166Z     TypeError: expect(received).toMatch(expected)
+verify	Run npm run verify	2026-10-17T00:59:20.3644644Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3644917Z     Matcher error: received value must be a string
+verify	Run npm run verify	2026-10-17T00:59:20.3645313Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3645635Z     Received has value: undefined
+verify	Run npm run verify	2026-10-17T00:59:20.3645933Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3646297Z       268 |     expect(failed.status).toBe('failed');
+verify	Run npm run verify	2026-10-17T00:59:20.3647204Z       269 |     expect(failed.observed).toMatchObject({ tag: 'button', role: 'button', name: 'Outside', testId: 'outside' });
+verify	Run npm run verify	2026-10-17T00:59:20.3648379Z     > 270 |     expect(failed.observed.unavailable).toMatch(/last coherent sample.*\d+ms/i);
+verify	Run npm run verify	2026-10-17T00:59:20.3649174Z           |                                         ^
+verify	Run npm run verify	2026-10-17T00:59:20.3649896Z       271 |     expect((await attachment(info)).steps.at(-1)).toEqual(failed);
+verify	Run npm run verify	2026-10-17T00:59:20.3650681Z       272 |     await expect(page.getByTestId('outside')).toBeFocused();
+verify	Run npm run verify	2026-10-17T00:59:20.3651444Z       273 |   } finally {
+verify	Run npm run verify	2026-10-17T00:59:20.3652197Z         at /home/runner/work/focus-trail/focus-trail/tests/integration/journey.spec.ts:270:41
+verify	Run npm run verify	2026-10-17T00:59:20.3652985Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3653709Z     attachment #1: focus-trail:dialog.json (application/json) ──────────────────────────────────────
+verify	Run npm run verify	2026-10-17T00:59:20.3655366Z     work/test-results/integration-journey-later--e0459-real-checkpoint-observation-integration/attachments/focus-trail-dialog-json-cbde7d1fb5f8740a3ed554f959307ffb45752747.json
+verify	Run npm run verify	2026-10-17T00:59:20.3656932Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+verify	Run npm run verify	2026-10-17T00:59:20.3657408Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3658250Z     Error Context: work/test-results/integration-journey-later--e0459-real-checkpoint-observation-integration/error-context.md
+verify	Run npm run verify	2026-10-17T00:59:20.3659085Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3659750Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+verify	Run npm run verify	2026-10-17T00:59:20.3660910Z     work/test-results/integration-journey-later--e0459-real-checkpoint-observation-integration/trace.zip
+verify	Run npm run verify	2026-10-17T00:59:20.3662937Z     Usage:
+verify	Run npm run verify	2026-10-17T00:59:20.3663319Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3664340Z         npx playwright show-trace work/test-results/integration-journey-later--e0459-real-checkpoint-observation-integration/trace.zip
+verify	Run npm run verify	2026-10-17T00:59:20.3665258Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3665985Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+verify	Run npm run verify	2026-10-17T00:59:20.3666584Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3667920Z   4) [integration] › tests/integration/journey.spec.ts:278:1 › a detected focus change invalidates evidence retained before a later outage 
+verify	Run npm run verify	2026-10-17T00:59:20.3668749Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3669263Z     Error: expect(received).not.toMatch(expected)
+verify	Run npm run verify	2026-10-17T00:59:20.3669732Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3670214Z     Expected pattern: not /last coherent sample/i
+verify	Run npm run verify	2026-10-17T00:59:20.3671715Z     Received string:      "Last coherent sample at 255ms; checkpoint wait ended without a later verified sample"
+verify	Run npm run verify	2026-10-17T00:59:20.3672564Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3673771Z       300 |     const failed = (await run.finish()).steps.at(-1)!;
+verify	Run npm run verify	2026-10-17T00:59:20.3674580Z       301 |     expect(failed.status).toBe('failed');
+verify	Run npm run verify	2026-10-17T00:59:20.3675539Z     > 302 |     expect(failed.observed.unavailable).not.toMatch(/last coherent sample/i);
+verify	Run npm run verify	2026-10-17T00:59:20.3677266Z           |                                             ^
+verify	Run npm run verify	2026-10-17T00:59:20.3677811Z       303 |     expect(failed.observed.testId).toBeNull();
+verify	Run npm run verify	2026-10-17T00:59:20.3678503Z       304 |     await expect(page.getByTestId('changed')).toBeFocused();
+verify	Run npm run verify	2026-10-17T00:59:20.3679033Z       305 |   } finally {
+verify	Run npm run verify	2026-10-17T00:59:20.3679761Z         at /home/runner/work/focus-trail/focus-trail/tests/integration/journey.spec.ts:302:45
+verify	Run npm run verify	2026-10-17T00:59:20.3680251Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3680883Z     attachment #1: focus-trail:dialog.json (application/json) ──────────────────────────────────────
+verify	Run npm run verify	2026-10-17T00:59:20.3683397Z     work/test-results/integration-journey-a-dete-3fe26-ained-before-a-later-outage-integration/attachments/focus-trail-dialog-json-a0933bdc020c7533d2c14cac6e3a5ea48cdc64f9.json
+verify	Run npm run verify	2026-10-17T00:59:20.3685302Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+verify	Run npm run verify	2026-10-17T00:59:20.3685734Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3686433Z     Error Context: work/test-results/integration-journey-a-dete-3fe26-ained-before-a-later-outage-integration/error-context.md
+verify	Run npm run verify	2026-10-17T00:59:20.3687132Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3687705Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+verify	Run npm run verify	2026-10-17T00:59:20.3688786Z     work/test-results/integration-journey-a-dete-3fe26-ained-before-a-later-outage-integration/trace.zip
+verify	Run npm run verify	2026-10-17T00:59:20.3689644Z     Usage:
+verify	Run npm run verify	2026-10-17T00:59:20.3689856Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3690656Z         npx playwright show-trace work/test-results/integration-journey-a-dete-3fe26-ained-before-a-later-outage-integration/trace.zip
+verify	Run npm run verify	2026-10-17T00:59:20.3691613Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3692095Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+verify	Run npm run verify	2026-10-17T00:59:20.3692519Z 
+verify	Run npm run verify	2026-10-17T00:59:20.3692678Z   4 failed
+verify	Run npm run verify	2026-10-17T00:59:20.3693683Z     [integration] › tests/integration/journey.spec.ts:86:1 › names, IDs, and errors are masked while input values are never captured 
+verify	Run npm run verify	2026-10-17T00:59:20.3695011Z     [integration] › tests/integration/journey.spec.ts:100:3 › rejects frame checkpoint targets explicitly 
+verify	Run npm run verify	2026-10-17T00:59:20.3696377Z     [integration] › tests/integration/journey.spec.ts:251:1 › later unavailable captures cannot erase a real checkpoint observation 
+verify	Run npm run verify	2026-10-17T00:59:20.3697814Z     [integration] › tests/integration/journey.spec.ts:278:1 › a detected focus change invalidates evidence retained before a later outage 
+verify	Run npm run verify	2026-10-17T00:59:20.3698767Z   30 passed (30.6s)
+verify	Run npm run verify	2026-10-17T00:59:20.3938053Z ##[error]Process completed with exit code 1.

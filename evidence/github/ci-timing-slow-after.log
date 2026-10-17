@@ -1,0 +1,11 @@
+
+Running 4 tests using 1 worker
+
+(node:42464) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 ../../work/github-focus-trail-verification/ci-timing/journey-slow-after.spec.ts:86:5 › names, IDs, and errors are masked while input values are never captured (2.7s)
+  ✓  2 ../../work/github-focus-trail-verification/ci-timing/journey-slow-after.spec.ts:101:7 › rejects frame checkpoint targets explicitly (311ms)
+  ✓  3 ../../work/github-focus-trail-verification/ci-timing/journey-slow-after.spec.ts:252:5 › later unavailable captures cannot erase a real checkpoint observation (2.3s)
+  ✓  4 ../../work/github-focus-trail-verification/ci-timing/journey-slow-after.spec.ts:284:5 › a detected focus change invalidates evidence retained before a later outage (2.3s)
+
+  4 passed (8.7s)

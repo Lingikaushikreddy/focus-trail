@@ -1,0 +1,12 @@
+
+Running 5 tests using 1 worker
+
+(node:42730) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [integration] › tests/integration/journey.spec.ts:86:1 › names, IDs, and errors are masked while input values are never captured (2.3s)
+  ✓  2 [integration] › tests/integration/journey.spec.ts:101:3 › rejects frame checkpoint targets explicitly (167ms)
+  ✓  3 [integration] › tests/integration/journey.spec.ts:236:1 › busy-page checkpoint timeout preserves its last coherent focus sample (2.7s)
+  ✓  4 [integration] › tests/integration/journey.spec.ts:280:1 › later unavailable captures cannot erase a real checkpoint observation (2.2s)
+  ✓  5 [integration] › tests/integration/journey.spec.ts:312:1 › a detected focus change invalidates evidence retained before a later outage (2.1s)
+
+  5 passed (10.2s)

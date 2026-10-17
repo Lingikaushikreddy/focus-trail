@@ -85,7 +85,8 @@ test('duplicate targets fail strictly while duplicate names permit stable keyed 
 
 test('names, IDs, and errors are masked while input values are never captured', async ({ page }, info) => {
   await page.setContent('<input aria-label="secret.42 account" data-testid="secret.42" value="input-only-secret"><button>Other</button>');
-  const run = createJourney(page, info, { ...options, journeyId: 'secret.42 journey', masks: ['secret.42'], checkpointTimeoutMs: 50 });
+  // This checks redaction, so allow real browser captures to finish on slower CI.
+  const run = createJourney(page, info, { ...options, journeyId: 'secret.42 journey', masks: ['secret.42'], checkpointTimeoutMs: 2000 });
   await run.press('Tab');
   await run.expectFocus('secret.42-input', page.getByRole('textbox'));
   await expect(run.expectFocus('secret.42-failure', page.getByRole('button'))).rejects.toThrow();
@@ -102,7 +103,7 @@ for (const boundary of ['frame', 'shadow', 'other page'] as const) {
     const other = boundary === 'other page' ? await context.newPage() : null;
     if (other) await other.setContent('<button>Other</button>');
     const target = boundary === 'frame' ? page.frameLocator('iframe').getByRole('button') : boundary === 'shadow' ? page.locator('#host').getByRole('button') : other!.getByRole('button');
-    const run = createJourney(page, info, { ...options, checkpointTimeoutMs: 60 });
+    const run = createJourney(page, info, options);
     await expect(run.expectFocus('unsupported', target)).rejects.toThrow(/frame|shadow|page/i);
     expect((await run.finish()).status).toBe('failed');
     await other?.close();
@@ -234,37 +235,70 @@ base('later finalization preserves a timely finished journey after its duration 
 
 base('busy-page checkpoint timeout preserves its last coherent focus sample', async ({ page }, info) => {
   await page.setContent('<button data-testid="outside">Outside</button><button data-testid="expected">Expected</button>');
-  const run = createJourney(page, info, { ...options, checkpointTimeoutMs: 300 });
+  const run = createJourney(page, info, { ...options, checkpointTimeoutMs: 2000 });
   await run.press('Tab');
   await expect(page.getByTestId('outside')).toBeFocused();
-  await page.evaluate(() => {
-    setTimeout(() => { const end = performance.now() + 650; while (performance.now() < end) { /* Busy application task. */ } }, 140);
-  });
-  await expect(run.expectFocus('expected', page.getByTestId('expected'))).rejects.toThrow(/focus/i);
-  const failed = (await run.finish()).steps.at(-1)!;
-  expect(failed.status).toBe('failed');
-  expect(failed.observed).toMatchObject({ tag: 'button', role: 'button', name: 'Outside', testId: 'outside' });
-  expect(failed.observed.unavailable).toMatch(/last coherent sample/i);
-  await expect(page.getByTestId('outside')).toBeFocused();
-});
-
-base('later unavailable captures cannot erase a real checkpoint observation', async ({ page }, info) => {
-  await page.setContent('<button data-testid="outside">Outside</button><button data-testid="expected">Expected</button>');
-  const run = createJourney(page, info, { ...options, checkpointTimeoutMs: 140 });
-  await run.press('Tab');
   const context = page.context();
   const originalSession = context.newCDPSession;
-  let firstCapture = true;
-  // The first checkpoint sample is real Chromium. Subsequent protocol outages
-  // reproduce capture unavailability deterministically, independent of CPU load.
+  const control = await originalSession.call(context, page);
+  await control.send('Runtime.enable');
+  await control.send('Runtime.addBinding', { name: 'focusTrailBusyStarted' });
+  let captureIndex = 0;
+  let busyStarted = false;
+  let busyTask: Promise<unknown> | undefined;
+  // A second capture is only requested after the first coherent sample was stored.
+  // Signal from Chromium before blocking its main thread, instead of racing a timer.
   context.newCDPSession = async target => {
-    if (!firstCapture) throw new Error('Injected protocol outage');
-    firstCapture = false;
+    captureIndex++;
+    if (captureIndex === 2) {
+      const started = new Promise<void>(resolve => control.once('Runtime.bindingCalled', () => resolve()));
+      busyTask = control.send('Runtime.evaluate', { expression: `
+        focusTrailBusyStarted('');
+        { const end = performance.now() + 2500; while (performance.now() < end) {} }
+      ` });
+      await started;
+      busyStarted = true;
+    }
     return originalSession.call(context, target);
   };
   try {
     await expect(run.expectFocus('expected', page.getByTestId('expected'))).rejects.toThrow(/focus/i);
     const failed = (await run.finish()).steps.at(-1)!;
+    expect(busyStarted, 'the page must become busy after a coherent capture').toBe(true);
+    expect(failed.status).toBe('failed');
+    expect(failed.observed).toMatchObject({ tag: 'button', role: 'button', name: 'Outside', testId: 'outside' });
+    expect(failed.observed.unavailable).toMatch(/last coherent sample/i);
+    await busyTask;
+    await expect(page.getByTestId('outside')).toBeFocused();
+  } finally {
+    context.newCDPSession = originalSession;
+    await busyTask;
+    await control.detach();
+  }
+});
+
+base('later unavailable captures cannot erase a real checkpoint observation', async ({ page }, info) => {
+  await page.setContent('<button data-testid="outside">Outside</button><button data-testid="expected">Expected</button>');
+  const run = createJourney(page, info, { ...options, checkpointTimeoutMs: 2000 });
+  await run.press('Tab');
+  const context = page.context();
+  const originalSession = context.newCDPSession;
+  let captureIndex = 0;
+  let outages = 0;
+  // The first checkpoint sample is real Chromium. Subsequent protocol outages
+  // reproduce capture unavailability deterministically, independent of CPU load.
+  context.newCDPSession = async target => {
+    captureIndex++;
+    if (captureIndex > 1) {
+      outages++;
+      throw new Error('Injected protocol outage');
+    }
+    return originalSession.call(context, target);
+  };
+  try {
+    await expect(run.expectFocus('expected', page.getByTestId('expected'))).rejects.toThrow(/focus/i);
+    const failed = (await run.finish()).steps.at(-1)!;
+    expect(outages, 'a later capture must encounter the injected outage').toBeGreaterThan(0);
     expect(failed.status).toBe('failed');
     expect(failed.observed).toMatchObject({ tag: 'button', role: 'button', name: 'Outside', testId: 'outside' });
     expect(failed.observed.unavailable).toMatch(/last coherent sample.*\d+ms/i);
@@ -277,19 +311,27 @@ base('later unavailable captures cannot erase a real checkpoint observation', as
 
 base('a detected focus change invalidates evidence retained before a later outage', async ({ page }, info) => {
   await page.setContent('<button data-testid="outside">Outside</button><button data-testid="changed">Changed</button><button data-testid="expected">Expected</button>');
-  const run = createJourney(page, info, { ...options, checkpointTimeoutMs: 220 });
+  const run = createJourney(page, info, { ...options, checkpointTimeoutMs: 2000 });
   await run.press('Tab');
   const context = page.context();
   const originalSession = context.newCDPSession;
   let captureIndex = 0;
+  let changedDuringCapture = false;
+  let outages = 0;
   context.newCDPSession = async target => {
     captureIndex++;
-    if (captureIndex > 2) throw new Error('Injected protocol outage');
+    if (captureIndex > 2) {
+      outages++;
+      throw new Error('Injected protocol outage');
+    }
     const session = await originalSession.call(context, target);
     if (captureIndex === 2) {
       const originalSend = session.send.bind(session);
       session.send = async (method, params) => {
-        if (method === 'Accessibility.getPartialAXTree') await page.keyboard.press('Tab');
+        if (method === 'Accessibility.getPartialAXTree') {
+          await page.keyboard.press('Tab');
+          changedDuringCapture = true;
+        }
         return originalSend(method, params);
       };
     }
@@ -298,6 +340,8 @@ base('a detected focus change invalidates evidence retained before a later outag
   try {
     await expect(run.expectFocus('expected', page.getByTestId('expected'))).rejects.toThrow(/focus/i);
     const failed = (await run.finish()).steps.at(-1)!;
+    expect(changedDuringCapture, 'focus must change inside the second real capture').toBe(true);
+    expect(outages, 'a later capture must encounter the injected outage').toBeGreaterThan(0);
     expect(failed.status).toBe('failed');
     expect(failed.observed.unavailable).not.toMatch(/last coherent sample/i);
     expect(failed.observed.testId).toBeNull();

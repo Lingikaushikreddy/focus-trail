@@ -42,5 +42,17 @@
     "passingJourneys": 3,
     "deliberatelyFailingJourneysDetected": 3,
     "record": "demo-verification.json"
+  },
+  "ciTiming": {
+    "productionCodeChanged": false,
+    "originalLinuxFailures": 4,
+    "controlledBeforeFailures": 3,
+    "controlledSlowAfterPasses": 10,
+    "retries": 0,
+    "fullSourceTestsAfter": 156,
+    "rawLinuxFailure": "github-ci-linux-before-tests.log",
+    "controlledBefore": "ci-timing-slow-before.log",
+    "controlledAfter": "ci-timing-slow-after-repeat.log",
+    "fullAfter": "ci-timing-npm-test-after.log"
   }
 }

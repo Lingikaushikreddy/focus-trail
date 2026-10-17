@@ -35,3 +35,13 @@ These are development dependencies. Product capture/comparison behavior, the Pla
 README pictures were captured from the real local keyboard demo and checked-in report, then visually inspected. [Screenshot hashes](screenshots.json) identify the files. The report retains its qualification when a fresh focus sample is unavailable. Reports and primary data remain available under `evidence/demo/` and the pilot's private operator evidence.
 
 Human status remains **0/5 assessments and 0/3 independent installations**. Repository availability does not satisfy the public npm release gate.
+
+## Remote CI follow-up
+
+The first push exposed an invalid `runner.temp` expression at job-level `env`. Both workflows now use `github.workspace`, a supported context at that location; see [GitHub's context-availability reference](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#context-availability).
+
+The next Linux run exposed four overly tight test deadlines ([original log](github-ci-linux-before-tests.log)). The test-specific 50–220 ms bounds could expire before the intended browser samples or injected outages occurred. A controlled probe adding 25 ms per real CDP send reproduced three failures ([before](ci-timing-slow-before.log)).
+
+Only integration tests changed: redaction and evidence checks now allow real captures to complete, assert that the intended outage/focus-change milestones actually occurred, and synchronize a busy browser task after the first coherent sample. The dedicated short-timeout test and production timeout maximum remain intact. No product code, original contract assertion or frozen candidate changed.
+
+The revised suite passed all [156 source tests](ci-timing-npm-test-after.log), [five targeted cases](ci-timing-targeted-after.log), and [ten slowed-CDP repeat cases](ci-timing-slow-after-repeat.log), with no retries. Independent static review found no weakened assertions. The remote workflow is rerun on the pushed commit.

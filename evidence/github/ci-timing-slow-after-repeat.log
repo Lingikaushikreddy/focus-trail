@@ -1,0 +1,19 @@
+
+Running 10 tests using 1 worker
+
+(node:43363) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 ../../work/github-focus-trail-verification/ci-timing/journey-slow-after.spec.ts:86:5 › names, IDs, and errors are masked while input values are never captured (2.6s)
+  ✓   2 ../../work/github-focus-trail-verification/ci-timing/journey-slow-after.spec.ts:101:7 › rejects frame checkpoint targets explicitly (318ms)
+  ✓   3 ../../work/github-focus-trail-verification/ci-timing/journey-slow-after.spec.ts:236:5 › busy-page checkpoint timeout preserves its last coherent focus sample (3.1s)
+  ✓   4 ../../work/github-focus-trail-verification/ci-timing/journey-slow-after.spec.ts:280:5 › later unavailable captures cannot erase a real checkpoint observation (2.3s)
+  ✓   5 ../../work/github-focus-trail-verification/ci-timing/journey-slow-after.spec.ts:312:5 › a detected focus change invalidates evidence retained before a later outage (2.3s)
+(node:43634) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   6 ../../work/github-focus-trail-verification/ci-timing/journey-slow-after.spec.ts:86:5 › names, IDs, and errors are masked while input values are never captured (2.5s)
+  ✓   7 ../../work/github-focus-trail-verification/ci-timing/journey-slow-after.spec.ts:101:7 › rejects frame checkpoint targets explicitly (248ms)
+  ✓   8 ../../work/github-focus-trail-verification/ci-timing/journey-slow-after.spec.ts:236:5 › busy-page checkpoint timeout preserves its last coherent focus sample (3.1s)
+  ✓   9 ../../work/github-focus-trail-verification/ci-timing/journey-slow-after.spec.ts:280:5 › later unavailable captures cannot erase a real checkpoint observation (2.3s)
+  ✓  10 ../../work/github-focus-trail-verification/ci-timing/journey-slow-after.spec.ts:312:5 › a detected focus change invalidates evidence retained before a later outage (2.3s)
+
+  10 passed (22.4s)
