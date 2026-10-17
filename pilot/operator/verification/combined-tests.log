@@ -1,0 +1,45 @@
+✔ extracts one validated raw current from a reporter envelope (199.478ms)
+✔ refuses an absent journey instead of choosing a different capture (2.025708ms)
+✔ refuses repeated journey records rather than arbitrarily selecting a retry (2.512167ms)
+✔ rejects path traversal from the manifest (3.004041ms)
+✔ rejects a companion symlink outside the report directory (2.36975ms)
+✔ refuses a manifest companion containing a different journey (2.523541ms)
+✔ uses package schema validation before writing output (1.785ms)
+✔ does not overwrite an existing extracted file (1.860208ms)
+✔ preserves a failed capture as evidence without silently converting it to passing (2.040958ms)
+✔ blank records and ignored template never count as installations or release evidence (40.333333ms)
+✔ participant-confirmed actual maintained repository installation counts with reporter review-pending (36.164917ms)
+✔ wrong candidate, absent confirmation and engineering smoke evidence do not count (40.377667ms)
+✔ duplicate participant receipts are all flagged and excluded (37.399ms)
+✔ shared repository or environment cannot inflate independent installations (49.574167ms)
+✔ a conflicting early receipt cannot hide three independent installations (42.7825ms)
+✔ incorrect or timed-out diagnoses are excluded from correct-time comparisons (40.063ms)
+✔ willingness cannot substitute for actual day-14 integration (42.182458ms)
+✔ only complete assessments contribute to recent issue and willingness thresholds (40.286083ms)
+✔ allocation mismatch excludes a paired diagnostic comparison (38.770916ms)
+✔ additional wrong approval for one participant fails even when aggregate does not increase (38.956625ms)
+✔ predefined gates permit human review while keyboard assessment is separately recorded (83.204792ms)
+✔ malformed JSON fails with exit two (30.493583ms)
+✔ wrong field types fail with exit two (32.614875ms)
+✔ missing runtime, submitted answer or command evidence remains pending (44.319667ms)
+✔ a faster equal-time tie does not qualify as strictly faster (43.3395ms)
+✔ day14 proof must concern the same maintained repository and environment (43.343625ms)
+✔ baseline opportunity counts outside the fixed two are malformed (31.964375ms)
+✔ prototype property names cannot act as participant identities (33.140667ms)
+✔ no evidence schema can replace the five fixed human participant slots (31.47925ms)
+✔ incorrect and timed-out raw outcomes stay visible despite exclusion from times (31.439375ms)
+✔ unreviewed keyboard evidence stays separately pending without inventing a release gate (39.793584ms)
+✔ raw pending is not a successful reporter review status but unchanged is valid (39.522333ms)
+✔ missing relative test path or first useful result time cannot count as installation (43.3065ms)
+✔ Chromium other than frozen candidate version cannot count (40.991375ms)
+✔ unsafe approvals cannot exceed the one regression opportunity per condition (33.316541ms)
+✔ unnecessary benign replacement is reported separately from unsafe approval (40.163ms)
+✔ answer disclosure and over-eight-minute answers cannot count as correct time or faster (43.492ms)
+ℹ tests 37
+ℹ suites 0
+ℹ pass 37
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1179.245084

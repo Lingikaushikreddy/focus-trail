@@ -1,0 +1,36 @@
+✔ blank records and ignored template never count as installations or release evidence (32.962333ms)
+✔ participant-confirmed actual maintained repository installation counts with reporter review-pending (30.829709ms)
+✔ wrong candidate, absent confirmation and engineering smoke evidence do not count (37.980625ms)
+✔ duplicate participant receipts are all flagged and excluded (32.432ms)
+✔ shared repository or environment cannot inflate independent installations (38.122834ms)
+✔ a conflicting early receipt cannot hide three independent installations (37.71075ms)
+✔ incorrect or timed-out diagnoses are excluded from correct-time comparisons (39.284167ms)
+✔ willingness cannot substitute for actual day-14 integration (37.671ms)
+✔ only complete assessments contribute to recent issue and willingness thresholds (37.193708ms)
+✔ allocation mismatch excludes a paired diagnostic comparison (37.194208ms)
+✔ additional wrong approval for one participant fails even when aggregate does not increase (37.197083ms)
+✔ predefined gates permit human review while keyboard assessment is separately recorded (76.259542ms)
+✔ malformed JSON fails with exit two (28.389208ms)
+✔ wrong field types fail with exit two (29.825541ms)
+✔ missing runtime, submitted answer or command evidence remains pending (36.6785ms)
+✔ a faster equal-time tie does not qualify as strictly faster (36.86275ms)
+✔ day14 proof must concern the same maintained repository and environment (39.351166ms)
+✔ baseline opportunity counts outside the fixed two are malformed (29.305583ms)
+✔ prototype property names cannot act as participant identities (32.0365ms)
+✔ no evidence schema can replace the five fixed human participant slots (34.22475ms)
+✔ incorrect and timed-out raw outcomes stay visible despite exclusion from times (29.717ms)
+✔ unreviewed keyboard evidence stays separately pending without inventing a release gate (38.029292ms)
+✔ raw pending is not a successful reporter review status but unchanged is valid (36.425333ms)
+✔ missing relative test path or first useful result time cannot count as installation (39.388292ms)
+✔ Chromium other than frozen candidate version cannot count (35.684291ms)
+✔ unsafe approvals cannot exceed the one regression opportunity per condition (28.884166ms)
+✔ unnecessary benign replacement is reported separately from unsafe approval (37.81275ms)
+✔ answer disclosure and over-eight-minute answers cannot count as correct time or faster (37.11125ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1066.766

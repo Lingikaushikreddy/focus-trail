@@ -1,7 +1,7 @@
 import { defineConfig } from '@playwright/test';
 export default defineConfig({
   testDir: './tests', timeout: 30000, expect: { timeout: 1000 }, retries: 0, workers: 2,
-  outputDir: '../../work/focus-trail-test-results',
+  outputDir: './work/test-results',
   reporter: [['list']],
   use: { browserName: 'chromium', channel: 'chromium', viewport: { width: 1280, height: 800 }, locale: 'en-US', trace: 'retain-on-failure' },
   projects: [

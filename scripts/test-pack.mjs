@@ -5,7 +5,7 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const work = resolve(process.env.FOCUS_TRAIL_WORK_DIR ?? join(root, '../../work'));
+const work = resolve(process.env.FOCUS_TRAIL_WORK_DIR ?? join(root, 'work'));
 const evidence = join(root, 'evidence/package');
 const npmArgs = process.env.npm_execpath ? [process.env.npm_execpath] : [];
 const npmExecutable = npmArgs.length ? process.execPath : 'npm';
@@ -133,7 +133,10 @@ async function main() {
   await writeFile(join(consumer, 'package.json'), JSON.stringify({ name: 'focus-trail-package-consumer', private: true, type: 'module' }, null, 2));
   await run('install', npmExecutable, [...npmArgs, 'install', '--ignore-scripts', '--no-audit', '--no-fund', '--save-exact', join(evidence, candidate.filename), '@playwright/test@1.64.1']);
   const installed = await realpath(join(consumer, 'node_modules/focus-trail'));
-  await check('installed-copy-outside-source', installed.startsWith(consumer + '/') && !installed.startsWith(root + '/'), { installed });
+  const consumerReal = await realpath(consumer);
+  const sourceReal = await realpath(root);
+  await check('installed-copy-isolated-from-source', installed.startsWith(consumerReal + '/node_modules/') && installed !== sourceReal,
+    { installed, source: sourceReal });
   const peer = JSON.parse(await readFile(join(consumer, 'node_modules/@playwright/test/package.json'), 'utf8'));
   await check('exact-installed-peer', peer.version === '1.64.1', { version: peer.version });
   const resolvedBrowser = await run('browser-cache-resolution', process.execPath, ['--input-type=module', '-e',

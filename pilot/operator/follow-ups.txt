@@ -1,0 +1,15 @@
+Confirmation — send privately after a respondent is screened:
+
+Thanks for volunteering. Your participant ID is [P01], and our confirmed session is [date, time, timezone]. Please use a repository you maintain with an eligible dialog keyboard journey. I’ll send the frozen candidate as an attachment. The session is about 40 minutes; private source and raw application artifacts can stay on your machine. Please confirm the time and whether you consent to retaining a sanitized summary receipt. Recording is separate and optional.
+
+Incomplete installation — send only after an actual attempt:
+
+Thanks for testing Focus Trail. I’ve kept the incomplete attempt and the friction you reported. If you choose to continue, use the same candidate hash, your isolated repository copy and your own normal test setup. Please send a sanitized update with command exits, versions, whether the report opens, actual elapsed time and any help needed. A failed attempt will not be erased or counted as a successful installation.
+
+Working integration follow-up — send within the documented day-14 window:
+
+Has the authored Focus Trail journey continued to run in the repository you maintain? If yes, please confirm the candidate hash, repository/environment aliases, current runner/capture/review statuses, confirmation date and a sanitized evidence reference. Please distinguish a working integration from intent to integrate, and tell me whether you prefer this artifact or the ordinary Playwright trace and why. No private source or raw report is needed.
+
+Receipt confirmation — send after a session, with its sanitized draft:
+
+Please review this summary for accuracy and privacy. Confirm whether it accurately describes the work you performed and which sanitized evidence may be retained/shared. You can correct any result, timing or interpretation. Your identity, source and raw application artifacts will not be published through this receipt without separate agreement.

@@ -1,0 +1,40 @@
+
+Running 1 test using 1 worker
+
+  ✘  1 tests/task.capture.spec.mjs:4:1 › authored dialog keyboard contract (832ms)
+
+
+  1) tests/task.capture.spec.mjs:4:1 › authored dialog keyboard contract ───────────────────────────
+
+    Error: dialog.return
+
+    expect(locator).toBeFocused() failed
+
+    Locator:  getByTestId('opener')
+    Expected: focused
+    Received: inactive
+    Timeout:  500ms
+
+    Call log:
+      - dialog.return getByTestId('opener') with timeout 500ms
+      - waiting for getByTestId('opener')
+        7 × locator resolved to <button data-testid="opener">Calendar settings</button>
+          - unexpected value "inactive"
+
+
+      20 |     const step = { index: oracle.steps.length, action: null, checkpointId: key, expectedTargetKey: key, expected: { tag: 'BUTTON', testId }, observed: await observed(), status: 'passed' };
+      21 |     oracle.steps.push(step);
+    > 22 |     try { await expect(target, key).toBeFocused(); }
+         |                                     ^
+      23 |     catch (error) { step.status = 'failed'; oracle.status = 'failed'; throw error; }
+      24 |   };
+      25 |   try {
+        at checkpoint (/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-pilot/task-generation/consumer/tests/task.capture.spec.mjs:22:37)
+        at /Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-pilot/task-generation/consumer/tests/task.capture.spec.mjs:30:81
+
+    Error Context: ../evidence/ordinary-scenario-2-capture-3/task.capture-authored-dialog-keyboard-contract/error-context.md
+
+  1 failed
+    tests/task.capture.spec.mjs:4:1 › authored dialog keyboard contract ────────────────────────────
+(node:985) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

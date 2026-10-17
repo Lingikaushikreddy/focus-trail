@@ -1,0 +1,33 @@
+{
+  "engineeringEvidenceOnly": true,
+  "archives": [
+    {
+      "archive": "tasks/scenario-1-A.zip",
+      "bytes": 177724,
+      "sha256": "ed151b5d7212c82b8afbdb4fafd6a48252dfc747c07e59b343c6d1ce17061ff2",
+      "operatorMaterialIncluded": false,
+      "sourceBytesMatch": true
+    },
+    {
+      "archive": "tasks/scenario-1-B.zip",
+      "bytes": 189544,
+      "sha256": "a3971359dd4b725fca5bb96eeb836f8989c7d68f75491e732d9d59ba5cabc2ac",
+      "operatorMaterialIncluded": false,
+      "sourceBytesMatch": true
+    },
+    {
+      "archive": "tasks/scenario-2-A.zip",
+      "bytes": 144454,
+      "sha256": "e86aa25de1bb268d9c677accd1a4f9cf82aeb51274f89759719ca1e768b1e846",
+      "operatorMaterialIncluded": false,
+      "sourceBytesMatch": true
+    },
+    {
+      "archive": "tasks/scenario-2-B.zip",
+      "bytes": 156242,
+      "sha256": "1ac287256fabc77478f6e1c258219eaac1436ebb6278d1482a3b2031804d80a9",
+      "operatorMaterialIncluded": false,
+      "sourceBytesMatch": true
+    }
+  ]
+}

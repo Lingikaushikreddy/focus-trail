@@ -1,0 +1,81 @@
+{
+  "schemaVersion": null,
+  "participant": {
+    "id": null,
+    "kind": null,
+    "maintainerConfirmed": null,
+    "ownMaintainedRepositoryConfirmed": null,
+    "repositoryAlias": null,
+    "environmentAlias": null
+  },
+  "evidence": {
+    "participantConfirmation": null,
+    "evidenceReviewedBy": null,
+    "sanitizedEvidenceRefs": null
+  },
+  "installation": {
+    "candidateSha256": null,
+    "nodeVersion": null,
+    "playwrightVersion": null,
+    "browserChannel": null,
+    "chromiumVersion": null,
+    "relativeTestPath": null,
+    "installCommand": null,
+    "installExitCode": null,
+    "runnerExitCode": null,
+    "commandOutcomes": null,
+    "reportGenerated": null,
+    "reportOpened": null,
+    "currentStatus": null,
+    "testStatus": null,
+    "reviewStatus": null,
+    "baselineApprovalCompleted": null,
+    "setupSeconds": null,
+    "firstUsefulResultSeconds": null,
+    "reportReviewSeconds": null,
+    "assistance": null,
+    "failureNotes": null
+  },
+  "assessment": {
+    "completed": null,
+    "within48Hours": null,
+    "recognizesRecentIssue": null,
+    "willingToIntegrate": null,
+    "artifactPreference": null,
+    "preferenceReason": null
+  },
+  "day14": {
+    "workingIntegrationConfirmed": null,
+    "completedByDay14": null,
+    "repositoryAlias": null,
+    "environmentAlias": null,
+    "sanitizedEvidenceRefs": null
+  },
+  "diagnostic": {
+    "order": null,
+    "A": {
+      "taskVariant": null,
+      "diagnosisCorrect": null,
+      "elapsedSeconds": null,
+      "timedOut": null,
+      "wrongBaselineApprovals": null,
+      "baselineDecisionOpportunities": null,
+      "benignBaselineDecisionCorrect": null,
+      "answerDisclosed": null,
+      "assistance": null,
+      "submittedAnswers": null
+    },
+    "B": {
+      "taskVariant": null,
+      "diagnosisCorrect": null,
+      "elapsedSeconds": null,
+      "timedOut": null,
+      "wrongBaselineApprovals": null,
+      "baselineDecisionOpportunities": null,
+      "benignBaselineDecisionCorrect": null,
+      "answerDisclosed": null,
+      "assistance": null,
+      "submittedAnswers": null
+    }
+  }
+}

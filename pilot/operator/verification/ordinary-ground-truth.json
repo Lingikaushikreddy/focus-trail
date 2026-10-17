@@ -1,0 +1,936 @@
+{
+  "scenario-1": {
+    "capture-1": {
+      "scenario": "scenario-1",
+      "browserVersion": "156.0.8078.4",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "locale": "en-US",
+      "retries": 0,
+      "channel": "chromium",
+      "status": "passed",
+      "steps": [
+        {
+          "index": 0,
+          "action": "Tab",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Notebook settings",
+            "testId": "opener"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 1,
+          "action": null,
+          "checkpointId": "dialog.opener",
+          "expectedTargetKey": "dialog.opener",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "opener"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Notebook settings",
+            "testId": "opener"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 2,
+          "action": "Enter",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save settings",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 3,
+          "action": null,
+          "checkpointId": "dialog.save",
+          "expectedTargetKey": "dialog.save",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "save"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save settings",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 4,
+          "action": "Tab",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 5,
+          "action": null,
+          "checkpointId": "dialog.cancel",
+          "expectedTargetKey": "dialog.cancel",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "cancel"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 6,
+          "action": "Shift+Tab",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save settings",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 7,
+          "action": null,
+          "checkpointId": "dialog.save-again",
+          "expectedTargetKey": "dialog.save-again",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "save"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save settings",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 8,
+          "action": "Escape",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Notebook settings",
+            "testId": "opener"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 9,
+          "action": null,
+          "checkpointId": "dialog.return",
+          "expectedTargetKey": "dialog.return",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "opener"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Notebook settings",
+            "testId": "opener"
+          },
+          "status": "passed"
+        }
+      ],
+      "processExit": 0
+    },
+    "capture-2": {
+      "scenario": "scenario-1",
+      "browserVersion": "156.0.8078.4",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "locale": "en-US",
+      "retries": 0,
+      "channel": "chromium",
+      "status": "failed",
+      "steps": [
+        {
+          "index": 0,
+          "action": "Tab",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Notebook settings",
+            "testId": "opener"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 1,
+          "action": null,
+          "checkpointId": "dialog.opener",
+          "expectedTargetKey": "dialog.opener",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "opener"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Notebook settings",
+            "testId": "opener"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 2,
+          "action": "Enter",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save settings",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 3,
+          "action": null,
+          "checkpointId": "dialog.save",
+          "expectedTargetKey": "dialog.save",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "save"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save settings",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 4,
+          "action": "Tab",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 5,
+          "action": null,
+          "checkpointId": "dialog.cancel",
+          "expectedTargetKey": "dialog.cancel",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "cancel"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 6,
+          "action": "Shift+Tab",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save settings",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 7,
+          "action": null,
+          "checkpointId": "dialog.save-again",
+          "expectedTargetKey": "dialog.save-again",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "save"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save settings",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 8,
+          "action": "Escape",
+          "observed": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "testId": null
+          },
+          "status": "passed"
+        },
+        {
+          "index": 9,
+          "action": null,
+          "checkpointId": "dialog.return",
+          "expectedTargetKey": "dialog.return",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "opener"
+          },
+          "observed": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "testId": null
+          },
+          "status": "failed"
+        }
+      ],
+      "processExit": 1
+    },
+    "capture-3": {
+      "scenario": "scenario-1",
+      "browserVersion": "156.0.8078.4",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "locale": "en-US",
+      "retries": 0,
+      "channel": "chromium",
+      "status": "passed",
+      "steps": [
+        {
+          "index": 0,
+          "action": "Tab",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Notebook preferences",
+            "testId": "opener"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 1,
+          "action": null,
+          "checkpointId": "dialog.opener",
+          "expectedTargetKey": "dialog.opener",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "opener"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Notebook preferences",
+            "testId": "opener"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 2,
+          "action": "Enter",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save preferences",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 3,
+          "action": null,
+          "checkpointId": "dialog.save",
+          "expectedTargetKey": "dialog.save",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "save"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save preferences",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 4,
+          "action": "Tab",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 5,
+          "action": null,
+          "checkpointId": "dialog.cancel",
+          "expectedTargetKey": "dialog.cancel",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "cancel"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 6,
+          "action": "Shift+Tab",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save preferences",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 7,
+          "action": null,
+          "checkpointId": "dialog.save-again",
+          "expectedTargetKey": "dialog.save-again",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "save"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save preferences",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 8,
+          "action": "Escape",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Notebook preferences",
+            "testId": "opener"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 9,
+          "action": null,
+          "checkpointId": "dialog.return",
+          "expectedTargetKey": "dialog.return",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "opener"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Notebook preferences",
+            "testId": "opener"
+          },
+          "status": "passed"
+        }
+      ],
+      "processExit": 0
+    }
+  },
+  "scenario-2": {
+    "capture-1": {
+      "scenario": "scenario-2",
+      "browserVersion": "156.0.8078.4",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "locale": "en-US",
+      "retries": 0,
+      "channel": "chromium",
+      "status": "passed",
+      "steps": [
+        {
+          "index": 0,
+          "action": "Tab",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Calendar settings",
+            "testId": "opener"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 1,
+          "action": null,
+          "checkpointId": "dialog.opener",
+          "expectedTargetKey": "dialog.opener",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "opener"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Calendar settings",
+            "testId": "opener"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 2,
+          "action": "Enter",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save settings",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 3,
+          "action": null,
+          "checkpointId": "dialog.save",
+          "expectedTargetKey": "dialog.save",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "save"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save settings",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 4,
+          "action": "Tab",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 5,
+          "action": null,
+          "checkpointId": "dialog.cancel",
+          "expectedTargetKey": "dialog.cancel",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "cancel"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 6,
+          "action": "Shift+Tab",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save settings",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 7,
+          "action": null,
+          "checkpointId": "dialog.save-again",
+          "expectedTargetKey": "dialog.save-again",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "save"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save settings",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 8,
+          "action": "Escape",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Calendar settings",
+            "testId": "opener"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 9,
+          "action": null,
+          "checkpointId": "dialog.return",
+          "expectedTargetKey": "dialog.return",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "opener"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Calendar settings",
+            "testId": "opener"
+          },
+          "status": "passed"
+        }
+      ],
+      "processExit": 0
+    },
+    "capture-2": {
+      "scenario": "scenario-2",
+      "browserVersion": "156.0.8078.4",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "locale": "en-US",
+      "retries": 0,
+      "channel": "chromium",
+      "status": "passed",
+      "steps": [
+        {
+          "index": 0,
+          "action": "Tab",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Calendar preferences",
+            "testId": "opener"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 1,
+          "action": null,
+          "checkpointId": "dialog.opener",
+          "expectedTargetKey": "dialog.opener",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "opener"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Calendar preferences",
+            "testId": "opener"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 2,
+          "action": "Enter",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save preferences",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 3,
+          "action": null,
+          "checkpointId": "dialog.save",
+          "expectedTargetKey": "dialog.save",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "save"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save preferences",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 4,
+          "action": "Tab",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 5,
+          "action": null,
+          "checkpointId": "dialog.cancel",
+          "expectedTargetKey": "dialog.cancel",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "cancel"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 6,
+          "action": "Shift+Tab",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save preferences",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 7,
+          "action": null,
+          "checkpointId": "dialog.save-again",
+          "expectedTargetKey": "dialog.save-again",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "save"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save preferences",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 8,
+          "action": "Escape",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Calendar preferences",
+            "testId": "opener"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 9,
+          "action": null,
+          "checkpointId": "dialog.return",
+          "expectedTargetKey": "dialog.return",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "opener"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Calendar preferences",
+            "testId": "opener"
+          },
+          "status": "passed"
+        }
+      ],
+      "processExit": 0
+    },
+    "capture-3": {
+      "scenario": "scenario-2",
+      "browserVersion": "156.0.8078.4",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "locale": "en-US",
+      "retries": 0,
+      "channel": "chromium",
+      "status": "failed",
+      "steps": [
+        {
+          "index": 0,
+          "action": "Tab",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Calendar settings",
+            "testId": "opener"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 1,
+          "action": null,
+          "checkpointId": "dialog.opener",
+          "expectedTargetKey": "dialog.opener",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "opener"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Calendar settings",
+            "testId": "opener"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 2,
+          "action": "Enter",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save settings",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 3,
+          "action": null,
+          "checkpointId": "dialog.save",
+          "expectedTargetKey": "dialog.save",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "save"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save settings",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 4,
+          "action": "Tab",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 5,
+          "action": null,
+          "checkpointId": "dialog.cancel",
+          "expectedTargetKey": "dialog.cancel",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "cancel"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 6,
+          "action": "Shift+Tab",
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save settings",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 7,
+          "action": null,
+          "checkpointId": "dialog.save-again",
+          "expectedTargetKey": "dialog.save-again",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "save"
+          },
+          "observed": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Save settings",
+            "testId": "save"
+          },
+          "status": "passed"
+        },
+        {
+          "index": 8,
+          "action": "Escape",
+          "observed": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "testId": null
+          },
+          "status": "passed"
+        },
+        {
+          "index": 9,
+          "action": null,
+          "checkpointId": "dialog.return",
+          "expectedTargetKey": "dialog.return",
+          "expected": {
+            "tag": "BUTTON",
+            "testId": "opener"
+          },
+          "observed": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "testId": null
+          },
+          "status": "failed"
+        }
+      ],
+      "processExit": 1
+    }
+  }
+}

@@ -1,0 +1,439 @@
+✔ extracts one validated raw current from a reporter envelope (188.00975ms)
+✔ refuses an absent journey instead of choosing a different capture (1.646875ms)
+✔ refuses repeated journey records rather than arbitrarily selecting a retry (1.482667ms)
+✔ rejects path traversal from the manifest (1.648084ms)
+✔ rejects a companion symlink outside the report directory (2.761833ms)
+✔ refuses a manifest companion containing a different journey (1.725125ms)
+✔ uses package schema validation before writing output (1.621166ms)
+✔ does not overwrite an existing extracted file (1.732209ms)
+✔ preserves a failed capture as evidence without silently converting it to passing (1.781542ms)
+✖ blank records and ignored template never count as installations or release evidence (3.645666ms)
+✖ participant-confirmed actual maintained repository installation counts with reporter review-pending (0.98125ms)
+✖ wrong candidate, absent confirmation and engineering smoke evidence do not count (0.3865ms)
+✖ duplicate participant receipts are all flagged and excluded (0.281083ms)
+✖ shared repository or environment cannot inflate independent installations (0.306625ms)
+✖ a conflicting early receipt cannot hide three independent installations (0.282792ms)
+✖ incorrect or timed-out diagnoses are excluded from correct-time comparisons (0.220708ms)
+✖ willingness cannot substitute for actual day-14 integration (0.212542ms)
+✖ only complete assessments contribute to recent issue and willingness thresholds (0.256125ms)
+✖ allocation mismatch excludes a paired diagnostic comparison (0.436583ms)
+✖ additional wrong approval for one participant fails even when aggregate does not increase (0.292708ms)
+✖ predefined gates permit human review while keyboard assessment is separately recorded (0.222417ms)
+✖ malformed JSON fails with exit two (0.1985ms)
+✖ wrong field types fail with exit two (0.251792ms)
+✖ missing runtime, submitted answer or command evidence remains pending (0.727708ms)
+✖ a faster equal-time tie does not qualify as strictly faster (0.226416ms)
+✖ day14 proof must concern the same maintained repository and environment (0.348917ms)
+✖ baseline opportunity counts outside the fixed two are malformed (0.258042ms)
+✖ prototype property names cannot act as participant identities (0.199ms)
+✖ no evidence schema can replace the five fixed human participant slots (0.186833ms)
+✖ incorrect and timed-out raw outcomes stay visible despite exclusion from times (0.171125ms)
+✖ unreviewed keyboard evidence stays separately pending without inventing a release gate (0.20525ms)
+✖ raw pending is not a successful reporter review status but unchanged is valid (0.213042ms)
+✖ missing relative test path or first useful result time cannot count as installation (0.17525ms)
+✖ Chromium other than frozen candidate version cannot count (0.156792ms)
+✖ unsafe approvals cannot exceed the one regression opportunity per condition (0.152333ms)
+✖ unnecessary benign replacement is reported separately from unsafe approval (0.179583ms)
+✖ answer disclosure and over-eight-minute answers cannot count as correct time or faster (0.183417ms)
+ℹ tests 37
+ℹ suites 0
+ℹ pass 9
+ℹ fail 28
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 256.891292
+
+✖ failing tests:
+
+test at operator/verification/tests/score.test.mjs:57:1
+✖ blank records and ignored template never count as installations or release evidence (3.645666ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-PPsulb'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:58:26)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-PPsulb'
+  }
+
+test at operator/verification/tests/score.test.mjs:66:1
+✖ participant-confirmed actual maintained repository installation counts with reporter review-pending (0.98125ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-4BlTjH'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:67:26)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-4BlTjH'
+  }
+
+test at operator/verification/tests/score.test.mjs:74:1
+✖ wrong candidate, absent confirmation and engineering smoke evidence do not count (0.3865ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-AmGDCH'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:78:20)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-AmGDCH'
+  }
+
+test at operator/verification/tests/score.test.mjs:82:1
+✖ duplicate participant receipts are all flagged and excluded (0.281083ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-mYCr9M'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:83:20)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-mYCr9M'
+  }
+
+test at operator/verification/tests/score.test.mjs:89:1
+✖ shared repository or environment cannot inflate independent installations (0.306625ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-hIyhut'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:93:20)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-hIyhut'
+  }
+
+test at operator/verification/tests/score.test.mjs:99:1
+✖ a conflicting early receipt cannot hide three independent installations (0.282792ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-Qo8Ng1'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:105:18)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-Qo8Ng1'
+  }
+
+test at operator/verification/tests/score.test.mjs:113:1
+✖ incorrect or timed-out diagnoses are excluded from correct-time comparisons (0.220708ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-U4RxrC'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:117:20)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-U4RxrC'
+  }
+
+test at operator/verification/tests/score.test.mjs:123:1
+✖ willingness cannot substitute for actual day-14 integration (0.212542ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-1cP8Hq'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:124:20)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-1cP8Hq'
+  }
+
+test at operator/verification/tests/score.test.mjs:131:1
+✖ only complete assessments contribute to recent issue and willingness thresholds (0.256125ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-vsmtxe'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:134:20)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-vsmtxe'
+  }
+
+test at operator/verification/tests/score.test.mjs:140:1
+✖ allocation mismatch excludes a paired diagnostic comparison (0.436583ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-1ZyRtB'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:142:20)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-1ZyRtB'
+  }
+
+test at operator/verification/tests/score.test.mjs:147:1
+✖ additional wrong approval for one participant fails even when aggregate does not increase (0.292708ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-ZEget9'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:151:20)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-ZEget9'
+  }
+
+test at operator/verification/tests/score.test.mjs:158:1
+✖ predefined gates permit human review while keyboard assessment is separately recorded (0.222417ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-UZJCDt'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:161:19)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-UZJCDt'
+  }
+
+test at operator/verification/tests/score.test.mjs:171:1
+✖ malformed JSON fails with exit two (0.1985ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-t8yjdE'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:172:26)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-t8yjdE'
+  }
+
+test at operator/verification/tests/score.test.mjs:177:1
+✖ wrong field types fail with exit two (0.251792ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-hVBLdh'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:179:26)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-hVBLdh'
+  }
+
+test at operator/verification/tests/score.test.mjs:185:1
+✖ missing runtime, submitted answer or command evidence remains pending (0.727708ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-r7VCtv'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:190:20)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-r7VCtv'
+  }
+
+test at operator/verification/tests/score.test.mjs:196:1
+✖ a faster equal-time tie does not qualify as strictly faster (0.226416ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-Bo3Chc'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:198:20)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-Bo3Chc'
+  }
+
+test at operator/verification/tests/score.test.mjs:202:1
+✖ day14 proof must concern the same maintained repository and environment (0.348917ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-EXV0yJ'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:204:20)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-EXV0yJ'
+  }
+
+test at operator/verification/tests/score.test.mjs:208:1
+✖ baseline opportunity counts outside the fixed two are malformed (0.258042ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-i6IcDs'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:210:18)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-i6IcDs'
+  }
+
+test at operator/verification/tests/score.test.mjs:214:1
+✖ prototype property names cannot act as participant identities (0.199ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-CmcBa0'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:216:18)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-CmcBa0'
+  }
+
+test at operator/verification/tests/score.test.mjs:220:1
+✖ no evidence schema can replace the five fixed human participant slots (0.186833ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-dXW43T'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:222:18)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-dXW43T'
+  }
+
+test at operator/verification/tests/score.test.mjs:226:1
+✖ incorrect and timed-out raw outcomes stay visible despite exclusion from times (0.171125ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-njJDIE'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:228:20)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-njJDIE'
+  }
+
+test at operator/verification/tests/score.test.mjs:234:1
+✖ unreviewed keyboard evidence stays separately pending without inventing a release gate (0.20525ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-orgNGC'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:237:20)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-orgNGC'
+  }
+
+test at operator/verification/tests/score.test.mjs:244:1
+✖ raw pending is not a successful reporter review status but unchanged is valid (0.213042ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-1R8wMb'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:246:18)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-1R8wMb'
+  }
+
+test at operator/verification/tests/score.test.mjs:251:1
+✖ missing relative test path or first useful result time cannot count as installation (0.17525ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-RpzCbx'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:253:18)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-RpzCbx'
+  }
+
+test at operator/verification/tests/score.test.mjs:257:1
+✖ Chromium other than frozen candidate version cannot count (0.156792ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-ObsQth'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:259:18)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-ObsQth'
+  }
+
+test at operator/verification/tests/score.test.mjs:263:1
+✖ unsafe approvals cannot exceed the one regression opportunity per condition (0.152333ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-QQ22l4'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:265:16)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-QQ22l4'
+  }
+
+test at operator/verification/tests/score.test.mjs:269:1
+✖ unnecessary benign replacement is reported separately from unsafe approval (0.179583ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-R5snJI'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:272:18)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-R5snJI'
+  }
+
+test at operator/verification/tests/score.test.mjs:278:1
+✖ answer disclosure and over-eight-minute answers cannot count as correct time or faster (0.183417ms)
+  Error: ENOENT: no such file or directory, mkdtemp '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-myoHzK'
+      at async mkdtemp (node:internal/fs/promises:1909:10)
+      at async run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:16)
+      at async TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:283:18)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'mkdtemp',
+    path: '/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/work/focus-trail-pilot/accounting/synthetic-myoHzK'
+  }

@@ -1,0 +1,110 @@
+{
+  "status": "passed",
+  "browserVersion": "156.0.8078.4",
+  "results": [
+    {
+      "scenario": "scenario-1",
+      "capture": "capture-1",
+      "kind": "Playwright trace viewer",
+      "opened": true,
+      "visibleKeyActions": [
+        "Tab",
+        "Enter",
+        "Escape"
+      ],
+      "pageErrors": []
+    },
+    {
+      "scenario": "scenario-1",
+      "capture": "capture-2",
+      "kind": "Playwright trace viewer",
+      "opened": true,
+      "visibleKeyActions": [
+        "Tab",
+        "Enter",
+        "Escape"
+      ],
+      "pageErrors": []
+    },
+    {
+      "scenario": "scenario-1",
+      "capture": "capture-3",
+      "kind": "Playwright trace viewer",
+      "opened": true,
+      "visibleKeyActions": [
+        "Tab",
+        "Enter",
+        "Escape"
+      ],
+      "pageErrors": []
+    },
+    {
+      "scenario": "scenario-1",
+      "capture": "capture-2",
+      "kind": "Focus Trail offline HTML",
+      "opened": true,
+      "pageErrors": [],
+      "remoteRequests": []
+    },
+    {
+      "scenario": "scenario-1",
+      "capture": "capture-3",
+      "kind": "Focus Trail offline HTML",
+      "opened": true,
+      "pageErrors": [],
+      "remoteRequests": []
+    },
+    {
+      "scenario": "scenario-2",
+      "capture": "capture-1",
+      "kind": "Playwright trace viewer",
+      "opened": true,
+      "visibleKeyActions": [
+        "Tab",
+        "Enter",
+        "Escape"
+      ],
+      "pageErrors": []
+    },
+    {
+      "scenario": "scenario-2",
+      "capture": "capture-2",
+      "kind": "Playwright trace viewer",
+      "opened": true,
+      "visibleKeyActions": [
+        "Tab",
+        "Enter",
+        "Escape"
+      ],
+      "pageErrors": []
+    },
+    {
+      "scenario": "scenario-2",
+      "capture": "capture-3",
+      "kind": "Playwright trace viewer",
+      "opened": true,
+      "visibleKeyActions": [
+        "Tab",
+        "Enter",
+        "Escape"
+      ],
+      "pageErrors": []
+    },
+    {
+      "scenario": "scenario-2",
+      "capture": "capture-2",
+      "kind": "Focus Trail offline HTML",
+      "opened": true,
+      "pageErrors": [],
+      "remoteRequests": []
+    },
+    {
+      "scenario": "scenario-2",
+      "capture": "capture-3",
+      "kind": "Focus Trail offline HTML",
+      "opened": true,
+      "pageErrors": [],
+      "remoteRequests": []
+    }
+  ]
+}

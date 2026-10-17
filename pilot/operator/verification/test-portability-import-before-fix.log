@@ -1,0 +1,381 @@
+✔ extracts one validated raw current from a reporter envelope (190.315375ms)
+✔ refuses an absent journey instead of choosing a different capture (1.687166ms)
+✔ refuses repeated journey records rather than arbitrarily selecting a retry (1.637083ms)
+✔ rejects path traversal from the manifest (1.34475ms)
+✔ rejects a companion symlink outside the report directory (1.627875ms)
+✔ refuses a manifest companion containing a different journey (1.393ms)
+✔ uses package schema validation before writing output (1.377667ms)
+✔ does not overwrite an existing extracted file (1.63675ms)
+✔ preserves a failed capture as evidence without silently converting it to passing (1.529708ms)
+✖ blank records and ignored template never count as installations or release evidence (0.717209ms)
+✖ participant-confirmed actual maintained repository installation counts with reporter review-pending (0.180916ms)
+✖ wrong candidate, absent confirmation and engineering smoke evidence do not count (0.117292ms)
+✖ duplicate participant receipts are all flagged and excluded (0.088666ms)
+✖ shared repository or environment cannot inflate independent installations (0.094208ms)
+✖ a conflicting early receipt cannot hide three independent installations (0.085916ms)
+✖ incorrect or timed-out diagnoses are excluded from correct-time comparisons (0.067ms)
+✖ willingness cannot substitute for actual day-14 integration (0.071666ms)
+✖ only complete assessments contribute to recent issue and willingness thresholds (0.082833ms)
+✖ allocation mismatch excludes a paired diagnostic comparison (0.541875ms)
+✖ additional wrong approval for one participant fails even when aggregate does not increase (0.110708ms)
+✖ predefined gates permit human review while keyboard assessment is separately recorded (0.080584ms)
+✖ malformed JSON fails with exit two (0.050208ms)
+✖ wrong field types fail with exit two (0.074375ms)
+✖ missing runtime, submitted answer or command evidence remains pending (0.056291ms)
+✖ a faster equal-time tie does not qualify as strictly faster (0.330042ms)
+✖ day14 proof must concern the same maintained repository and environment (0.0865ms)
+✖ baseline opportunity counts outside the fixed two are malformed (0.086666ms)
+✖ prototype property names cannot act as participant identities (0.045042ms)
+✖ no evidence schema can replace the five fixed human participant slots (0.1155ms)
+✖ incorrect and timed-out raw outcomes stay visible despite exclusion from times (0.073042ms)
+✖ unreviewed keyboard evidence stays separately pending without inventing a release gate (0.073584ms)
+✖ raw pending is not a successful reporter review status but unchanged is valid (0.049708ms)
+✖ missing relative test path or first useful result time cannot count as installation (0.049041ms)
+✖ Chromium other than frozen candidate version cannot count (0.042208ms)
+✖ unsafe approvals cannot exceed the one regression opportunity per condition (0.038416ms)
+✖ unnecessary benign replacement is reported separately from unsafe approval (0.048417ms)
+✖ answer disclosure and over-eight-minute answers cannot count as correct time or faster (0.045791ms)
+ℹ tests 37
+ℹ suites 0
+ℹ pass 9
+ℹ fail 28
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 250.996125
+
+✖ failing tests:
+
+test at operator/verification/tests/score.test.mjs:57:1
+✖ blank records and ignored template never count as installations or release evidence (0.717209ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:58:32)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+
+test at operator/verification/tests/score.test.mjs:66:1
+✖ participant-confirmed actual maintained repository installation counts with reporter review-pending (0.180916ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:67:32)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+
+test at operator/verification/tests/score.test.mjs:74:1
+✖ wrong candidate, absent confirmation and engineering smoke evidence do not count (0.117292ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:78:26)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:82:1
+✖ duplicate participant receipts are all flagged and excluded (0.088666ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:83:26)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:89:1
+✖ shared repository or environment cannot inflate independent installations (0.094208ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:93:26)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:99:1
+✖ a conflicting early receipt cannot hide three independent installations (0.085916ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:105:24)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:113:1
+✖ incorrect or timed-out diagnoses are excluded from correct-time comparisons (0.067ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:117:26)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:123:1
+✖ willingness cannot substitute for actual day-14 integration (0.071666ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:124:26)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:131:1
+✖ only complete assessments contribute to recent issue and willingness thresholds (0.082833ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:134:26)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:140:1
+✖ allocation mismatch excludes a paired diagnostic comparison (0.541875ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:142:26)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:147:1
+✖ additional wrong approval for one participant fails even when aggregate does not increase (0.110708ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:151:26)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:158:1
+✖ predefined gates permit human review while keyboard assessment is separately recorded (0.080584ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:161:25)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:171:1
+✖ malformed JSON fails with exit two (0.050208ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:172:32)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:177:1
+✖ wrong field types fail with exit two (0.074375ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:179:32)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:185:1
+✖ missing runtime, submitted answer or command evidence remains pending (0.056291ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:190:26)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:196:1
+✖ a faster equal-time tie does not qualify as strictly faster (0.330042ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:198:26)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:202:1
+✖ day14 proof must concern the same maintained repository and environment (0.0865ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:204:26)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:208:1
+✖ baseline opportunity counts outside the fixed two are malformed (0.086666ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:210:24)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:214:1
+✖ prototype property names cannot act as participant identities (0.045042ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:216:24)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:220:1
+✖ no evidence schema can replace the five fixed human participant slots (0.1155ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:222:24)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:226:1
+✖ incorrect and timed-out raw outcomes stay visible despite exclusion from times (0.073042ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:228:26)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:234:1
+✖ unreviewed keyboard evidence stays separately pending without inventing a release gate (0.073584ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:237:26)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:244:1
+✖ raw pending is not a successful reporter review status but unchanged is valid (0.049708ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:246:24)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:251:1
+✖ missing relative test path or first useful result time cannot count as installation (0.049041ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:253:24)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:257:1
+✖ Chromium other than frozen candidate version cannot count (0.042208ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:259:24)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:263:1
+✖ unsafe approvals cannot exceed the one regression opportunity per condition (0.038416ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:265:22)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:269:1
+✖ unnecessary benign replacement is reported separately from unsafe approval (0.048417ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:272:24)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at operator/verification/tests/score.test.mjs:278:1
+✖ answer disclosure and over-eight-minute answers cannot count as correct time or faster (0.045791ms)
+  ReferenceError [Error]: tmpdir is not defined
+      at run (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:38:30)
+      at TestContext.<anonymous> (file:///Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail-pilot/operator/verification/tests/score.test.mjs:283:24)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)

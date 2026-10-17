@@ -1,0 +1,17 @@
+✔ extracts one validated raw current from a reporter envelope (240.570958ms)
+✔ refuses an absent journey instead of choosing a different capture (1.79625ms)
+✔ refuses repeated journey records rather than arbitrarily selecting a retry (1.670375ms)
+✔ rejects path traversal from the manifest (2.126584ms)
+✔ rejects a companion symlink outside the report directory (1.667667ms)
+✔ refuses a manifest companion containing a different journey (1.832208ms)
+✔ uses package schema validation before writing output (1.633333ms)
+✔ does not overwrite an existing extracted file (1.795833ms)
+✔ preserves a failed capture as evidence without silently converting it to passing (1.612542ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 317.339209

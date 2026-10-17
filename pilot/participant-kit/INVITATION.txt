@@ -1,0 +1,18 @@
+Subject: Five Playwright maintainers wanted for a 40-minute Focus Trail pilot
+
+Hi — I’m looking for five maintainers who already use Playwright to try Focus Trail, a small tool that records real keyboard actions and focus checkpoints alongside existing tests.
+
+The session takes about 40 minutes. You’ll install an unpublished candidate in an isolated copy of a repository you maintain, add it to one existing dialog keyboard test, and review two short diagnostic tasks. Installation failures and setup friction are useful results too. We’re checking whether the report helps maintainers find a focus regression and make the right baseline decision.
+
+We need at least three people testing in separate maintained repositories and their own environments. The current candidate uses Node 24, Playwright 1.64.1 and its full Chromium channel. Dependencies can stay on an isolated branch/worktree; please don’t change your main project just for the pilot.
+
+The package writes reports locally. You do not need to share private source, traces, application URLs or report contents. We’ll collect a short, reviewed summary of versions, command outcomes, elapsed times and feedback. Recording is optional and requires separate consent.
+
+If you’re interested, please reply to me with:
+• Whether you maintain a Playwright repository with a short dialog interaction you can exercise by keyboard (a private repository is fine).
+• Whether you can test in your own environment; your OS and current Node/Playwright versions.
+• Two time windows when you could join a 40-minute session, including your timezone.
+
+I’ll confirm your slot and send the package attachment and instructions privately. This invitation does not promise payment, public attribution or publication of your work. Your installation will count only after you confirm the result.
+
+Thanks!

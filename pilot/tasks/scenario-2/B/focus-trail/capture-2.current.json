@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "journeyId": "scenario-2.dialog",
+  "browserVersion": "156.0.8078.4",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "locale": "en-US",
+  "fixtureVersion": "pilot-dialog-v1",
+  "status": "passed",
+  "steps": [
+    {
+      "index": 0,
+      "action": "Tab",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Calendar preferences",
+        "testId": "opener"
+      },
+      "elapsedMs": 32,
+      "status": "passed"
+    },
+    {
+      "index": 1,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Calendar preferences",
+        "testId": "opener"
+      },
+      "elapsedMs": 84,
+      "status": "passed",
+      "checkpointId": "dialog.opener",
+      "expectedTargetKey": "dialog.opener"
+    },
+    {
+      "index": 2,
+      "action": "Enter",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Save preferences",
+        "testId": "save"
+      },
+      "elapsedMs": 90,
+      "status": "passed"
+    },
+    {
+      "index": 3,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Save preferences",
+        "testId": "save"
+      },
+      "elapsedMs": 116,
+      "status": "passed",
+      "checkpointId": "dialog.save",
+      "expectedTargetKey": "dialog.save"
+    },
+    {
+      "index": 4,
+      "action": "Tab",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Cancel",
+        "testId": "cancel"
+      },
+      "elapsedMs": 120,
+      "status": "passed"
+    },
+    {
+      "index": 5,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Cancel",
+        "testId": "cancel"
+      },
+      "elapsedMs": 135,
+      "status": "passed",
+      "checkpointId": "dialog.cancel",
+      "expectedTargetKey": "dialog.cancel"
+    },
+    {
+      "index": 6,
+      "action": "Shift+Tab",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Save preferences",
+        "testId": "save"
+      },
+      "elapsedMs": 142,
+      "status": "passed"
+    },
+    {
+      "index": 7,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Save preferences",
+        "testId": "save"
+      },
+      "elapsedMs": 153,
+      "status": "passed",
+      "checkpointId": "dialog.save-again",
+      "expectedTargetKey": "dialog.save-again"
+    },
+    {
+      "index": 8,
+      "action": "Escape",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Calendar preferences",
+        "testId": "opener"
+      },
+      "elapsedMs": 158,
+      "status": "passed"
+    },
+    {
+      "index": 9,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Calendar preferences",
+        "testId": "opener"
+      },
+      "elapsedMs": 168,
+      "status": "passed",
+      "checkpointId": "dialog.return",
+      "expectedTargetKey": "dialog.return"
+    }
+  ],
+  "appBuild": "build-212"
+}

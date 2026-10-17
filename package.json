@@ -4,13 +4,32 @@
   "description": "Reviewable keyboard focus journeys for existing Playwright tests",
   "type": "module",
   "license": "MIT",
-  "engines": { "node": ">=24 <25" },
-  "exports": {
-    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js", "default": "./dist/index.js" },
-    "./reporter": { "types": "./dist/reporter.d.ts", "import": "./dist/reporter.js", "default": "./dist/reporter.js" }
+  "engines": {
+    "node": ">=24 <25"
   },
-  "bin": { "focus-trail": "./dist/cli.js" },
-    "files": ["dist", "docs", "examples", "evidence/demo/*.html", "README.md", "LICENSE"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./reporter": {
+      "types": "./dist/reporter.d.ts",
+      "import": "./dist/reporter.js",
+      "default": "./dist/reporter.js"
+    }
+  },
+  "bin": {
+    "focus-trail": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "docs",
+    "examples",
+    "evidence/demo/*.html",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsup",
     "lint": "eslint packages tests scripts examples --max-warnings 0",
@@ -26,7 +45,9 @@
     "evidence:repeat": "playwright test --project=integration --grep 'qualification' --repeat-each=20",
     "prepack": "npm run build"
   },
-  "peerDependencies": { "@playwright/test": "1.64.1" },
+  "peerDependencies": {
+    "@playwright/test": "1.64.1"
+  },
   "devDependencies": {
     "@playwright/test": "1.64.1",
     "@types/node": "24.10.1",
@@ -34,6 +55,7 @@
     "tsup": "8.5.0",
     "typescript": "5.9.3",
     "typescript-eslint": "8.48.0",
-    "vitest": "3.2.4"
+    "vite": "6.4.4",
+    "vitest": "5.0.5"
   }
 }

@@ -1,0 +1,246 @@
+[
+  {
+    "scenario": "scenario-1",
+    "capture": "capture-1",
+    "tool": "ordinary-playwright",
+    "args": [
+      "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-pilot/task-generation/consumer/node_modules/@playwright/test/cli.js",
+      "test",
+      "-c",
+      "playwright.config.mjs",
+      "task.capture.spec.mjs"
+    ],
+    "expectedExit": 0,
+    "actualExit": 0,
+    "signal": null,
+    "error": null,
+    "recordedAt": "2026-10-17T00:31:32.788Z",
+    "log": "ordinary-scenario-1-capture-1.log"
+  },
+  {
+    "scenario": "scenario-1",
+    "capture": "capture-2",
+    "tool": "ordinary-playwright",
+    "args": [
+      "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-pilot/task-generation/consumer/node_modules/@playwright/test/cli.js",
+      "test",
+      "-c",
+      "playwright.config.mjs",
+      "task.capture.spec.mjs"
+    ],
+    "expectedExit": 1,
+    "actualExit": 1,
+    "signal": null,
+    "error": null,
+    "recordedAt": "2026-10-17T00:31:34.510Z",
+    "log": "ordinary-scenario-1-capture-2.log"
+  },
+  {
+    "scenario": "scenario-1",
+    "capture": "capture-3",
+    "tool": "ordinary-playwright",
+    "args": [
+      "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-pilot/task-generation/consumer/node_modules/@playwright/test/cli.js",
+      "test",
+      "-c",
+      "playwright.config.mjs",
+      "task.capture.spec.mjs"
+    ],
+    "expectedExit": 0,
+    "actualExit": 0,
+    "signal": null,
+    "error": null,
+    "recordedAt": "2026-10-17T00:31:35.736Z",
+    "log": "ordinary-scenario-1-capture-3.log"
+  },
+  {
+    "scenario": "scenario-2",
+    "capture": "capture-1",
+    "tool": "ordinary-playwright",
+    "args": [
+      "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-pilot/task-generation/consumer/node_modules/@playwright/test/cli.js",
+      "test",
+      "-c",
+      "playwright.config.mjs",
+      "task.capture.spec.mjs"
+    ],
+    "expectedExit": 0,
+    "actualExit": 0,
+    "signal": null,
+    "error": null,
+    "recordedAt": "2026-10-17T00:31:36.834Z",
+    "log": "ordinary-scenario-2-capture-1.log"
+  },
+  {
+    "scenario": "scenario-2",
+    "capture": "capture-2",
+    "tool": "ordinary-playwright",
+    "args": [
+      "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-pilot/task-generation/consumer/node_modules/@playwright/test/cli.js",
+      "test",
+      "-c",
+      "playwright.config.mjs",
+      "task.capture.spec.mjs"
+    ],
+    "expectedExit": 0,
+    "actualExit": 0,
+    "signal": null,
+    "error": null,
+    "recordedAt": "2026-10-17T00:31:38.058Z",
+    "log": "ordinary-scenario-2-capture-2.log"
+  },
+  {
+    "scenario": "scenario-2",
+    "capture": "capture-3",
+    "tool": "ordinary-playwright",
+    "args": [
+      "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-pilot/task-generation/consumer/node_modules/@playwright/test/cli.js",
+      "test",
+      "-c",
+      "playwright.config.mjs",
+      "task.capture.spec.mjs"
+    ],
+    "expectedExit": 1,
+    "actualExit": 1,
+    "signal": null,
+    "error": null,
+    "recordedAt": "2026-10-17T00:31:39.702Z",
+    "log": "ordinary-scenario-2-capture-3.log"
+  },
+  {
+    "scenario": "scenario-1",
+    "capture": "capture-1",
+    "tool": "focus-trail",
+    "args": [
+      "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-pilot/task-generation/consumer/node_modules/@playwright/test/cli.js",
+      "test",
+      "-c",
+      "playwright.config.mjs",
+      "trail.capture.spec.mjs"
+    ],
+    "expectedExit": 0,
+    "actualExit": 0,
+    "signal": null,
+    "error": null,
+    "recordedAt": "2026-10-17T00:31:40.903Z",
+    "log": "trail-scenario-1-capture-1.log"
+  },
+  {
+    "scenario": "scenario-1",
+    "capture": "capture-2",
+    "tool": "focus-trail",
+    "args": [
+      "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-pilot/task-generation/consumer/node_modules/@playwright/test/cli.js",
+      "test",
+      "-c",
+      "playwright.config.mjs",
+      "trail.capture.spec.mjs"
+    ],
+    "expectedExit": 1,
+    "actualExit": 1,
+    "signal": null,
+    "error": null,
+    "recordedAt": "2026-10-17T00:31:42.527Z",
+    "log": "trail-scenario-1-capture-2.log"
+  },
+  {
+    "scenario": "scenario-1",
+    "capture": "capture-3",
+    "tool": "focus-trail",
+    "args": [
+      "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-pilot/task-generation/consumer/node_modules/@playwright/test/cli.js",
+      "test",
+      "-c",
+      "playwright.config.mjs",
+      "trail.capture.spec.mjs"
+    ],
+    "expectedExit": 0,
+    "actualExit": 0,
+    "signal": null,
+    "error": null,
+    "recordedAt": "2026-10-17T00:31:43.737Z",
+    "log": "trail-scenario-1-capture-3.log"
+  },
+  {
+    "scenario": "scenario-1",
+    "capture": "capture-2",
+    "tool": "focus-trail-compare",
+    "expectedExit": 1,
+    "actualExit": 1
+  },
+  {
+    "scenario": "scenario-1",
+    "capture": "capture-3",
+    "tool": "focus-trail-compare",
+    "expectedExit": 0,
+    "actualExit": 0
+  },
+  {
+    "scenario": "scenario-2",
+    "capture": "capture-1",
+    "tool": "focus-trail",
+    "args": [
+      "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-pilot/task-generation/consumer/node_modules/@playwright/test/cli.js",
+      "test",
+      "-c",
+      "playwright.config.mjs",
+      "trail.capture.spec.mjs"
+    ],
+    "expectedExit": 0,
+    "actualExit": 0,
+    "signal": null,
+    "error": null,
+    "recordedAt": "2026-10-17T00:31:44.929Z",
+    "log": "trail-scenario-2-capture-1.log"
+  },
+  {
+    "scenario": "scenario-2",
+    "capture": "capture-2",
+    "tool": "focus-trail",
+    "args": [
+      "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-pilot/task-generation/consumer/node_modules/@playwright/test/cli.js",
+      "test",
+      "-c",
+      "playwright.config.mjs",
+      "trail.capture.spec.mjs"
+    ],
+    "expectedExit": 0,
+    "actualExit": 0,
+    "signal": null,
+    "error": null,
+    "recordedAt": "2026-10-17T00:31:46.136Z",
+    "log": "trail-scenario-2-capture-2.log"
+  },
+  {
+    "scenario": "scenario-2",
+    "capture": "capture-3",
+    "tool": "focus-trail",
+    "args": [
+      "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-pilot/task-generation/consumer/node_modules/@playwright/test/cli.js",
+      "test",
+      "-c",
+      "playwright.config.mjs",
+      "trail.capture.spec.mjs"
+    ],
+    "expectedExit": 1,
+    "actualExit": 1,
+    "signal": null,
+    "error": null,
+    "recordedAt": "2026-10-17T00:31:47.792Z",
+    "log": "trail-scenario-2-capture-3.log"
+  },
+  {
+    "scenario": "scenario-2",
+    "capture": "capture-2",
+    "tool": "focus-trail-compare",
+    "expectedExit": 0,
+    "actualExit": 0
+  },
+  {
+    "scenario": "scenario-2",
+    "capture": "capture-3",
+    "tool": "focus-trail-compare",
+    "expectedExit": 1,
+    "actualExit": 1
+  }
+]

@@ -1,0 +1,89 @@
+{
+  "status": "evaluated",
+  "publicReleaseStatus": "pending",
+  "publicationNotPerformed": true,
+  "trustBoundary": "Counts rely on operator-reviewed, sanitized participant-confirmed claims. This tool cannot authenticate people, repositories, environments, execution, answers, or referenced evidence.",
+  "candidateSha256": "79bac5b64c1f96e7cb684e4bb746cc37af4bda902f719590bacc3984fb8e67e4",
+  "filesRead": 0,
+  "independentInstallationGate": {
+    "count": 0,
+    "required": 3,
+    "met": false
+  },
+  "pilotDecisionGates": {
+    "fiveAssessed": false,
+    "original48Hour": false,
+    "originalDay14": false,
+    "diagnostic": false
+  },
+  "keyboardAssessment": {
+    "documented": false,
+    "status": "pending"
+  },
+  "installations": {
+    "count": 0,
+    "participants": [],
+    "baselinesApproved": 0,
+    "medianSetupSeconds": null,
+    "medianFirstUsefulResultSeconds": null,
+    "medianReportReviewSeconds": null
+  },
+  "assessments": {
+    "count": 0,
+    "recentIssueRecognized": 0,
+    "willingToIntegrate": 0,
+    "within48Hours": 0
+  },
+  "day14": {
+    "integrations": 0,
+    "participants": [],
+    "artifactPreferenceCount": 0
+  },
+  "diagnostic": {
+    "passed": false,
+    "correctAndFasterCount": 0,
+    "participants": [],
+    "noAdditionalWrongApprovals": false,
+    "wrongBaselineApprovals": {
+      "A": 0,
+      "B": 0
+    },
+    "benignBaselineDecisionCorrect": {
+      "A": 0,
+      "B": 0
+    },
+    "baselineDecisionOpportunities": {
+      "A": 0,
+      "B": 0
+    },
+    "medianCorrectSeconds": {
+      "A": null,
+      "B": null
+    },
+    "orderEffects": [
+      {
+        "order": "AB",
+        "count": 0,
+        "medianCorrectSeconds": {
+          "A": null,
+          "B": null
+        }
+      },
+      {
+        "order": "BA",
+        "count": 0,
+        "medianCorrectSeconds": {
+          "A": null,
+          "B": null
+        }
+      }
+    ],
+    "interpretation": "Descriptive product decision threshold for five sessions; no statistical inference. Incorrect, timed-out, disclosed, and over-480-second outcomes are reported but excluded from correct-time comparisons. Wrong approvals count only unsafe regression approvals; benign replacements are reported separately."
+  },
+  "duplicates": {
+    "participants": [],
+    "repositories": [],
+    "environments": []
+  },
+  "individualOutcomes": []
+}

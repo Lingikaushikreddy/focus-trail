@@ -10,11 +10,11 @@ await mkdir(directory, { recursive: true });
 await rm(resolve(directory, 'baselines'), { recursive: true, force: true });
 await mkdir(resolve(directory, 'baselines'));
 async function run(variant, kind, expectedExit) {
-  const out = resolve('../../work/demo-record-' + variant);
+  const out = resolve('work/demo-record-' + variant);
   await rm(out, { recursive: true, force: true });
   const args = ['node_modules/@playwright/test/cli.js', 'test', '-c', 'examples/dialog/playwright.config.ts'];
   if (kind) args.push('--grep', kind);
-  const child = spawnSync(process.execPath, args, { encoding: 'utf8', env: { ...process.env, FOCUS_TRAIL_VARIANT: variant, FOCUS_TRAIL_REPORT_OUTPUT: out, FOCUS_TRAIL_TEST_OUTPUT: resolve('../../work/demo-tests-' + variant) } });
+  const child = spawnSync(process.execPath, args, { encoding: 'utf8', env: { ...process.env, FOCUS_TRAIL_VARIANT: variant, FOCUS_TRAIL_REPORT_OUTPUT: out, FOCUS_TRAIL_TEST_OUTPUT: resolve('work/demo-tests-' + variant) } });
   await writeFile(resolve(directory, variant + '.log'), (child.stdout ?? '') + (child.stderr ?? ''));
   assert.equal(child.status, expectedExit, `Demo ${variant} expected exit ${expectedExit}\n${child.stdout}\n${child.stderr}`);
   const records = JSON.parse(await readFile(resolve(out, 'reports.json'), 'utf8'));

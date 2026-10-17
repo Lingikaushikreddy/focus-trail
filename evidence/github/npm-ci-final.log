@@ -1,0 +1,9 @@
+npm warn deprecated source-map@0.8.0-beta.0: The work that was done in this beta branch won't be included in future versions
+npm warn deprecated eslint@9.39.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 256 packages, and audited 257 packages in 2s
+
+48 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities

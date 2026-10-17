@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "journeyId": "scenario-1.dialog",
+  "browserVersion": "156.0.8078.4",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "locale": "en-US",
+  "fixtureVersion": "pilot-dialog-v1",
+  "status": "passed",
+  "steps": [
+    {
+      "index": 0,
+      "action": "Tab",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Notebook preferences",
+        "testId": "opener"
+      },
+      "elapsedMs": 43,
+      "status": "passed"
+    },
+    {
+      "index": 1,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Notebook preferences",
+        "testId": "opener"
+      },
+      "elapsedMs": 85,
+      "status": "passed",
+      "checkpointId": "dialog.opener",
+      "expectedTargetKey": "dialog.opener"
+    },
+    {
+      "index": 2,
+      "action": "Enter",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Save preferences",
+        "testId": "save"
+      },
+      "elapsedMs": 93,
+      "status": "passed"
+    },
+    {
+      "index": 3,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Save preferences",
+        "testId": "save"
+      },
+      "elapsedMs": 107,
+      "status": "passed",
+      "checkpointId": "dialog.save",
+      "expectedTargetKey": "dialog.save"
+    },
+    {
+      "index": 4,
+      "action": "Tab",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Cancel",
+        "testId": "cancel"
+      },
+      "elapsedMs": 111,
+      "status": "passed"
+    },
+    {
+      "index": 5,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Cancel",
+        "testId": "cancel"
+      },
+      "elapsedMs": 119,
+      "status": "passed",
+      "checkpointId": "dialog.cancel",
+      "expectedTargetKey": "dialog.cancel"
+    },
+    {
+      "index": 6,
+      "action": "Shift+Tab",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Save preferences",
+        "testId": "save"
+      },
+      "elapsedMs": 123,
+      "status": "passed"
+    },
+    {
+      "index": 7,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Save preferences",
+        "testId": "save"
+      },
+      "elapsedMs": 132,
+      "status": "passed",
+      "checkpointId": "dialog.save-again",
+      "expectedTargetKey": "dialog.save-again"
+    },
+    {
+      "index": 8,
+      "action": "Escape",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Notebook preferences",
+        "testId": "opener"
+      },
+      "elapsedMs": 136,
+      "status": "passed"
+    },
+    {
+      "index": 9,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Notebook preferences",
+        "testId": "opener"
+      },
+      "elapsedMs": 145,
+      "status": "passed",
+      "checkpointId": "dialog.return",
+      "expectedTargetKey": "dialog.return"
+    }
+  ],
+  "appBuild": "build-213"
+}

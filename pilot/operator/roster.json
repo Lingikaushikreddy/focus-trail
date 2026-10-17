@@ -1,0 +1,12 @@
+{
+  "status": "invitation prepared for user forwarding; no participants enrolled",
+  "pilotStart": null,
+  "recruitmentChannel": null,
+  "participants": [
+    { "id": "p01", "name": null, "contact": null, "timezone": null, "confirmedSlot": null, "repositoryAlias": null, "environmentAlias": null, "eligibilityConfirmed": null, "participationConsent": null, "recordingConsent": null, "receiptRetentionConsent": null },
+    { "id": "p02", "name": null, "contact": null, "timezone": null, "confirmedSlot": null, "repositoryAlias": null, "environmentAlias": null, "eligibilityConfirmed": null, "participationConsent": null, "recordingConsent": null, "receiptRetentionConsent": null },
+    { "id": "p03", "name": null, "contact": null, "timezone": null, "confirmedSlot": null, "repositoryAlias": null, "environmentAlias": null, "eligibilityConfirmed": null, "participationConsent": null, "recordingConsent": null, "receiptRetentionConsent": null },
+    { "id": "p04", "name": null, "contact": null, "timezone": null, "confirmedSlot": null, "repositoryAlias": null, "environmentAlias": null, "eligibilityConfirmed": null, "participationConsent": null, "recordingConsent": null, "receiptRetentionConsent": null },
+    { "id": "p05", "name": null, "contact": null, "timezone": null, "confirmedSlot": null, "repositoryAlias": null, "environmentAlias": null, "eligibilityConfirmed": null, "participationConsent": null, "recordingConsent": null, "receiptRetentionConsent": null }
+  ]
+}

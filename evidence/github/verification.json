@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-16",
+  "timezone": "America/Los_Angeles",
+  "status": "passed local GitHub delivery qualification",
+  "engineeringEvidenceOnly": true,
+  "node": "24.22.0",
+  "developmentTools": {
+    "vitest": "5.0.5",
+    "vite": "6.4.4"
+  },
+  "tests": {
+    "unit": 114,
+    "browserIntegration": 34,
+    "reportE2E": 8,
+    "total": 156,
+    "packedConsumerChecks": 56,
+    "packedConsumerFailures": 0,
+    "pilotCompanion": 37
+  },
+  "audit": {
+    "reportedVulnerabilities": 0,
+    "record": "npm-audit-final.json"
+  },
+  "frozenPilotCandidateSha256": "79bac5b64c1f96e7cb684e4bb746cc37af4bda902f719590bacc3984fb8e67e4",
+  "newSourcePackSha256": "b4194f7df10cd09f6f44bf83ced3fd2d6c7faee552819eb01b25d723cbb6ba5e",
+  "candidateNote": "Current source pack includes documentation and development-tool changes. It is engineering evidence; the original frozen human-pilot candidate remains unchanged in distribution and participant kit.",
+  "humanPilot": {
+    "assessments": 0,
+    "independentInstallations": 0,
+    "publicNpmRelease": "pending"
+  },
+  "evidence": {
+    "source": "source-verify-final.log",
+    "package": "source-package-verification.json",
+    "pilot": "pilot-verify-final.log",
+    "screenshots": "screenshots.json"
+  },
+  "repository": "https://github.com/Lingikaushikreddy/focus-trail",
+  "visibility": "private",
+  "pushStatus": "verified separately after push",
+  "demo": {
+    "passingJourneys": 3,
+    "deliberatelyFailingJourneysDetected": 3,
+    "record": "demo-verification.json"
+  }
+}

@@ -1,0 +1,2 @@
+# Preserve primary terminal evidence verbatim, including its whitespace.
+*.log -whitespace

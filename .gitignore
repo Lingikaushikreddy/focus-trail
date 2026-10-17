@@ -5,3 +5,8 @@ playwright-report/
 *.tgz
 .superpowers/
 evidence/screenshots/
+work/
+!distribution/*.tgz
+!evidence/package/focus-trail-0.1.0.tgz
+!evidence/upstream/focus-trail-tested-0.1.0.tgz
+!pilot/participant-kit/candidate/focus-trail-0.1.0.tgz

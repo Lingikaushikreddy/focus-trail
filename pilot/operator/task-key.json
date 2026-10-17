@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "privateOperatorOnly": true,
+  "engineeringEvidenceOnly": true,
+  "noParticipantResults": true,
+  "candidateSha256": "79bac5b64c1f96e7cb684e4bb746cc37af4bda902f719590bacc3984fb8e67e4",
+  "environment": {
+    "node": "v24.22.0",
+    "playwright": "1.64.1",
+    "browserVersion": "156.0.8078.4",
+    "channel": "chromium",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "locale": "en-US",
+    "retries": 0
+  },
+  "groundTruth": {
+    "path": "verification/ordinary-ground-truth.json",
+    "rawEvidenceReference": "verification/ordinary-ground-truth.json",
+    "engineeringSourcePath": "work/focus-trail-pilot/task-generation/evidence/ordinary-ground-truth.json",
+    "sha256": "6cd390f2133c9964e0e04836528d6c20e15788d81bae19e5a984f44ec1810ab3",
+    "sealedAt": "2026-10-17T00:31:39.706Z",
+    "method": "All six ordinary Playwright runs and activeElement observations completed before the first Focus Trail recording. Raw evidence contains every action/checkpoint index, authored expected key/locator, observed destination and full sequence."
+  },
+  "indexConvention": "JSON steps are zero-based; index 9 is displayed as Step 10. Escape is action index 8. Score the first changed checkpoint, dialog.return.",
+  "authoredCheckpoints": [
+    {
+      "index": 1,
+      "key": "dialog.opener",
+      "testId": "opener"
+    },
+    {
+      "index": 3,
+      "key": "dialog.save",
+      "testId": "save"
+    },
+    {
+      "index": 5,
+      "key": "dialog.cancel",
+      "testId": "cancel"
+    },
+    {
+      "index": 7,
+      "key": "dialog.save-again",
+      "testId": "save"
+    },
+    {
+      "index": 9,
+      "key": "dialog.return",
+      "testId": "opener"
+    }
+  ],
+  "equivalentAnswers": {
+    "expectedDestination": [
+      "opener",
+      "original settings button",
+      "data-testid=opener"
+    ],
+    "observedDestinationForFailure": [
+      "BODY",
+      "document body",
+      "no focused control; body active"
+    ],
+    "firstChangedCheckpoint": [
+      "dialog.return",
+      "return to opener after Escape",
+      "step 9 zero-based / Step 10 displayed"
+    ],
+    "failureDecision": [
+      "reject proposed baseline",
+      "keep reviewed reference and fix focus return"
+    ],
+    "benignDecision": [
+      "retain reviewed baseline; descriptive change only",
+      "keyboard contract unchanged; label/build change acceptable"
+    ]
+  },
+  "comparisonEvidenceNote": "Focus Trail lowercases DOM tag names. Its BODY samples carry unavailable or explicitly historical-sample qualifications; the independent ordinary observations also identify BODY. The raw qualifications are retained and do not constitute a different destination.",
+  "tasks": [
+    {
+      "id": "scenario-1",
+      "displayLabel": "Notebook",
+      "referenceCapture": "capture-1",
+      "keys": [
+        "Tab",
+        "Enter",
+        "Tab",
+        "Shift+Tab",
+        "Escape"
+      ],
+      "proposedDecisionCount": 2,
+      "captures": [
+        {
+          "id": "capture-1",
+          "status": "passed",
+          "expectedExit": 0,
+          "ordinaryExit": 0,
+          "focusTrailExit": 0,
+          "correctDecision": "reviewed-reference",
+          "firstChangedStep": null,
+          "firstChangedCheckpoint": null,
+          "expectedDestination": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Notebook settings",
+            "testId": "opener"
+          },
+          "observedDestination": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Notebook settings",
+            "testId": "opener"
+          },
+          "observationQualification": null,
+          "appBuild": "build-211",
+          "ordinaryEvidenceRecord": "scenario-1.capture-1",
+          "rawTraceSha256": "6fc675db4ab05794aa43860c722080b7a00789f9c5c7f4b0528c80c379f780d6",
+          "comparison": null
+        },
+        {
+          "id": "capture-2",
+          "status": "failed",
+          "expectedExit": 1,
+          "ordinaryExit": 1,
+          "focusTrailExit": 1,
+          "correctDecision": "reject",
+          "firstChangedStep": 9,
+          "firstChangedCheckpoint": "dialog.return",
+          "expectedDestination": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Notebook settings",
+            "testId": "opener"
+          },
+          "observedDestination": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "testId": null
+          },
+          "observationQualification": "Last coherent sample at 604ms; checkpoint wait ended without a later verified sample",
+          "appBuild": "build-212",
+          "ordinaryEvidenceRecord": "scenario-1.capture-2",
+          "rawTraceSha256": "768376f3d0286d1134b85b6730c897c713d77067dba479ae41393738321487a4",
+          "comparison": "tasks/scenario-1/B/focus-trail/capture-2.json"
+        },
+        {
+          "id": "capture-3",
+          "status": "passed",
+          "expectedExit": 0,
+          "ordinaryExit": 0,
+          "focusTrailExit": 0,
+          "correctDecision": "retain",
+          "firstChangedStep": null,
+          "firstChangedCheckpoint": null,
+          "expectedDestination": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Notebook preferences",
+            "testId": "opener"
+          },
+          "observedDestination": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Notebook preferences",
+            "testId": "opener"
+          },
+          "observationQualification": null,
+          "appBuild": "build-213",
+          "ordinaryEvidenceRecord": "scenario-1.capture-3",
+          "rawTraceSha256": "63f09d511494af96418b9a81b1d2560eede809ef9d4e4791781b830d7d4d8281",
+          "comparison": "tasks/scenario-1/B/focus-trail/capture-3.json"
+        }
+      ]
+    },
+    {
+      "id": "scenario-2",
+      "displayLabel": "Calendar",
+      "referenceCapture": "capture-1",
+      "keys": [
+        "Tab",
+        "Enter",
+        "Tab",
+        "Shift+Tab",
+        "Escape"
+      ],
+      "proposedDecisionCount": 2,
+      "captures": [
+        {
+          "id": "capture-1",
+          "status": "passed",
+          "expectedExit": 0,
+          "ordinaryExit": 0,
+          "focusTrailExit": 0,
+          "correctDecision": "reviewed-reference",
+          "firstChangedStep": null,
+          "firstChangedCheckpoint": null,
+          "expectedDestination": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Calendar settings",
+            "testId": "opener"
+          },
+          "observedDestination": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Calendar settings",
+            "testId": "opener"
+          },
+          "observationQualification": null,
+          "appBuild": "build-211",
+          "ordinaryEvidenceRecord": "scenario-2.capture-1",
+          "rawTraceSha256": "3ffd39469d3e147f394459ffbcb155b2bcbfd727628833dfd94f6196b3a1f832",
+          "comparison": null
+        },
+        {
+          "id": "capture-2",
+          "status": "passed",
+          "expectedExit": 0,
+          "ordinaryExit": 0,
+          "focusTrailExit": 0,
+          "correctDecision": "retain",
+          "firstChangedStep": null,
+          "firstChangedCheckpoint": null,
+          "expectedDestination": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Calendar preferences",
+            "testId": "opener"
+          },
+          "observedDestination": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Calendar preferences",
+            "testId": "opener"
+          },
+          "observationQualification": null,
+          "appBuild": "build-212",
+          "ordinaryEvidenceRecord": "scenario-2.capture-2",
+          "rawTraceSha256": "00e444157e5e19f7d25a35f9e271cc0e00aeac842eb72fa045d232fbc43660f7",
+          "comparison": "tasks/scenario-2/B/focus-trail/capture-2.json"
+        },
+        {
+          "id": "capture-3",
+          "status": "failed",
+          "expectedExit": 1,
+          "ordinaryExit": 1,
+          "focusTrailExit": 1,
+          "correctDecision": "reject",
+          "firstChangedStep": 9,
+          "firstChangedCheckpoint": "dialog.return",
+          "expectedDestination": {
+            "tag": "BUTTON",
+            "role": "button",
+            "name": "Calendar settings",
+            "testId": "opener"
+          },
+          "observedDestination": {
+            "tag": "BODY",
+            "role": null,
+            "name": null,
+            "testId": null
+          },
+          "observationQualification": "Last coherent sample at 597ms; checkpoint wait ended without a later verified sample",
+          "appBuild": "build-213",
+          "ordinaryEvidenceRecord": "scenario-2.capture-3",
+          "rawTraceSha256": "746dd59be6616a6173cab554708ef02c881e68eb977df0b926bdc7e4792178fe",
+          "comparison": "tasks/scenario-2/B/focus-trail/capture-3.json"
+        }
+      ]
+    }
+  ]
+}

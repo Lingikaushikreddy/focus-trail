@@ -1,0 +1,17 @@
+{
+  "archive": "focus-trail-pilot-participant-kit.zip",
+  "bytes": 72922,
+  "sha256": "4e8dce6186eb8c009e4711d0bbe378611fb1a748009e8adf099552265b70d634",
+  "candidateSha256": "79bac5b64c1f96e7cb684e4bb746cc37af4bda902f719590bacc3984fb8e67e4",
+  "members": [
+    "participant-kit/INVITATION.txt",
+    "participant-kit/START-HERE.md",
+    "participant-kit/candidate/SHA256SUMS",
+    "participant-kit/candidate/focus-trail-0.1.0.tgz",
+    "participant-kit/candidate/manifest.json",
+    "participant-kit/helpers/extract.mjs"
+  ],
+  "operatorMaterialIncluded": false,
+  "allArchiveMembersMatchFinalSource": true,
+  "engineeringEvidenceOnly": true
+}

@@ -1,0 +1,519 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "engineeringEvidenceOnly": true,
+  "participantResults": 0,
+  "independentInstallations": 0,
+  "candidateSha256": "79bac5b64c1f96e7cb684e4bb746cc37af4bda902f719590bacc3984fb8e67e4",
+  "installedPackagePath": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-pilot/task-generation/consumer/node_modules/focus-trail",
+  "installedPackageVersion": "0.1.0",
+  "environment": {
+    "node": "v24.22.0",
+    "playwright": "1.64.1",
+    "browserVersion": "156.0.8078.4",
+    "channel": "chromium",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "locale": "en-US",
+    "retries": 0
+  },
+  "checks": {
+    "ordinaryRunsCompletedBeforeFocusTrail": true,
+    "ordinaryReferencePasses": 2,
+    "ordinaryFailureExitsPreserved": 2,
+    "ordinaryDescriptivePasses": 2,
+    "focusTrailFailuresAtIndex9": 2,
+    "focusTrailDescriptiveUnchanged": 2,
+    "sharedAAndBBytesEqual": true,
+    "traceViewerOpened": 6,
+    "offlineReportsOpened": 4,
+    "reportRemoteRequests": 0,
+    "newHumanInstallsClaimed": 0
+  },
+  "commands": {
+    "generate": "work/runtime/node_modules/node/bin/node work/focus-trail-pilot/task-generation/generate.mjs",
+    "packetVerification": "work/runtime/node_modules/node/bin/node work/focus-trail-pilot/task-generation/verify.mjs",
+    "browserInspection": "PLAYWRIGHT_BROWSERS_PATH=work/browsers work/runtime/node_modules/node/bin/node work/focus-trail-pilot/task-generation/inspect-packets.mjs"
+  },
+  "groundTruth": {
+    "path": "verification/ordinary-ground-truth.json",
+    "rawEvidenceReference": "verification/ordinary-ground-truth.json",
+    "engineeringSourcePath": "work/focus-trail-pilot/task-generation/evidence/ordinary-ground-truth.json",
+    "sha256": "6cd390f2133c9964e0e04836528d6c20e15788d81bae19e5a984f44ec1810ab3",
+    "sealedAt": "2026-10-17T00:31:39.706Z",
+    "method": "All six ordinary Playwright runs and activeElement observations completed before the first Focus Trail recording. Raw evidence contains every action/checkpoint index, authored expected key/locator, observed destination and full sequence."
+  },
+  "rawProcessReceipts": "verification/task-process-receipts.json",
+  "browserInspectionEvidence": "verification/task-browser-inspection.json",
+  "primaryEvidenceHashes": {
+    "processReceipts": "8317f9620a9b5e4d4191a3dac30b0121c0b8f78aed10fb24d0400b2cabc10b5e",
+    "browserInspection": "6445910dcdfdd6cd352d77803e1df8da123662bdedce1b0b613ff87c6f9bcb19"
+  },
+  "evidenceSourcePaths": {
+    "processReceipts": "work/focus-trail-pilot/task-generation/evidence/process-receipts.json",
+    "browserInspection": "work/focus-trail-pilot/task-generation/evidence/browser-inspection.json"
+  },
+  "rawTraceAuthenticity": [
+    {
+      "scenario": "scenario-1",
+      "capture": "capture-1",
+      "rawTrace": "work/focus-trail-pilot/task-generation/evidence/ordinary-scenario-1-capture-1/task.capture-authored-dialog-keyboard-contract/trace.zip",
+      "sha256": "6fc675db4ab05794aa43860c722080b7a00789f9c5c7f4b0528c80c379f780d6",
+      "packetTrace": "outputs/focus-trail-pilot/tasks/scenario-1/A/capture-1/trace.zip",
+      "byteIdenticalToRaw": true,
+      "noExecutableAppSource": true,
+      "emptyNetworkStream": true,
+      "snapshotEvents": 46
+    },
+    {
+      "scenario": "scenario-1",
+      "capture": "capture-2",
+      "rawTrace": "work/focus-trail-pilot/task-generation/evidence/ordinary-scenario-1-capture-2/task.capture-authored-dialog-keyboard-contract/trace.zip",
+      "sha256": "768376f3d0286d1134b85b6730c897c713d77067dba479ae41393738321487a4",
+      "packetTrace": "outputs/focus-trail-pilot/tasks/scenario-1/A/capture-2/trace.zip",
+      "byteIdenticalToRaw": true,
+      "noExecutableAppSource": true,
+      "emptyNetworkStream": true,
+      "snapshotEvents": 46
+    },
+    {
+      "scenario": "scenario-1",
+      "capture": "capture-3",
+      "rawTrace": "work/focus-trail-pilot/task-generation/evidence/ordinary-scenario-1-capture-3/task.capture-authored-dialog-keyboard-contract/trace.zip",
+      "sha256": "63f09d511494af96418b9a81b1d2560eede809ef9d4e4791781b830d7d4d8281",
+      "packetTrace": "outputs/focus-trail-pilot/tasks/scenario-1/A/capture-3/trace.zip",
+      "byteIdenticalToRaw": true,
+      "noExecutableAppSource": true,
+      "emptyNetworkStream": true,
+      "snapshotEvents": 46
+    },
+    {
+      "scenario": "scenario-2",
+      "capture": "capture-1",
+      "rawTrace": "work/focus-trail-pilot/task-generation/evidence/ordinary-scenario-2-capture-1/task.capture-authored-dialog-keyboard-contract/trace.zip",
+      "sha256": "3ffd39469d3e147f394459ffbcb155b2bcbfd727628833dfd94f6196b3a1f832",
+      "packetTrace": "outputs/focus-trail-pilot/tasks/scenario-2/A/capture-1/trace.zip",
+      "byteIdenticalToRaw": true,
+      "noExecutableAppSource": true,
+      "emptyNetworkStream": true,
+      "snapshotEvents": 46
+    },
+    {
+      "scenario": "scenario-2",
+      "capture": "capture-2",
+      "rawTrace": "work/focus-trail-pilot/task-generation/evidence/ordinary-scenario-2-capture-2/task.capture-authored-dialog-keyboard-contract/trace.zip",
+      "sha256": "00e444157e5e19f7d25a35f9e271cc0e00aeac842eb72fa045d232fbc43660f7",
+      "packetTrace": "outputs/focus-trail-pilot/tasks/scenario-2/A/capture-2/trace.zip",
+      "byteIdenticalToRaw": true,
+      "noExecutableAppSource": true,
+      "emptyNetworkStream": true,
+      "snapshotEvents": 46
+    },
+    {
+      "scenario": "scenario-2",
+      "capture": "capture-3",
+      "rawTrace": "work/focus-trail-pilot/task-generation/evidence/ordinary-scenario-2-capture-3/task.capture-authored-dialog-keyboard-contract/trace.zip",
+      "sha256": "746dd59be6616a6173cab554708ef02c881e68eb977df0b926bdc7e4792178fe",
+      "packetTrace": "outputs/focus-trail-pilot/tasks/scenario-2/A/capture-3/trace.zip",
+      "byteIdenticalToRaw": true,
+      "noExecutableAppSource": true,
+      "emptyNetworkStream": true,
+      "snapshotEvents": 46
+    }
+  ],
+  "processExits": [
+    {
+      "scenario": "scenario-1",
+      "capture": "capture-1",
+      "tool": "ordinary-playwright",
+      "expectedExit": 0,
+      "actualExit": 0
+    },
+    {
+      "scenario": "scenario-1",
+      "capture": "capture-2",
+      "tool": "ordinary-playwright",
+      "expectedExit": 1,
+      "actualExit": 1
+    },
+    {
+      "scenario": "scenario-1",
+      "capture": "capture-3",
+      "tool": "ordinary-playwright",
+      "expectedExit": 0,
+      "actualExit": 0
+    },
+    {
+      "scenario": "scenario-2",
+      "capture": "capture-1",
+      "tool": "ordinary-playwright",
+      "expectedExit": 0,
+      "actualExit": 0
+    },
+    {
+      "scenario": "scenario-2",
+      "capture": "capture-2",
+      "tool": "ordinary-playwright",
+      "expectedExit": 0,
+      "actualExit": 0
+    },
+    {
+      "scenario": "scenario-2",
+      "capture": "capture-3",
+      "tool": "ordinary-playwright",
+      "expectedExit": 1,
+      "actualExit": 1
+    },
+    {
+      "scenario": "scenario-1",
+      "capture": "capture-1",
+      "tool": "focus-trail",
+      "expectedExit": 0,
+      "actualExit": 0
+    },
+    {
+      "scenario": "scenario-1",
+      "capture": "capture-2",
+      "tool": "focus-trail",
+      "expectedExit": 1,
+      "actualExit": 1
+    },
+    {
+      "scenario": "scenario-1",
+      "capture": "capture-3",
+      "tool": "focus-trail",
+      "expectedExit": 0,
+      "actualExit": 0
+    },
+    {
+      "scenario": "scenario-1",
+      "capture": "capture-2",
+      "tool": "focus-trail-compare",
+      "expectedExit": 1,
+      "actualExit": 1
+    },
+    {
+      "scenario": "scenario-1",
+      "capture": "capture-3",
+      "tool": "focus-trail-compare",
+      "expectedExit": 0,
+      "actualExit": 0
+    },
+    {
+      "scenario": "scenario-2",
+      "capture": "capture-1",
+      "tool": "focus-trail",
+      "expectedExit": 0,
+      "actualExit": 0
+    },
+    {
+      "scenario": "scenario-2",
+      "capture": "capture-2",
+      "tool": "focus-trail",
+      "expectedExit": 0,
+      "actualExit": 0
+    },
+    {
+      "scenario": "scenario-2",
+      "capture": "capture-3",
+      "tool": "focus-trail",
+      "expectedExit": 1,
+      "actualExit": 1
+    },
+    {
+      "scenario": "scenario-2",
+      "capture": "capture-2",
+      "tool": "focus-trail-compare",
+      "expectedExit": 0,
+      "actualExit": 0
+    },
+    {
+      "scenario": "scenario-2",
+      "capture": "capture-3",
+      "tool": "focus-trail-compare",
+      "expectedExit": 1,
+      "actualExit": 1
+    }
+  ],
+  "limitations": [
+    "Synthetic local fixtures establish engineering ground truth, not task equivalence or diagnostic speed in humans.",
+    "Traces exclude page loading and application executable source by starting after loading; authored test source is supplied separately.",
+    "Focus Trail BODY evidence is text-only and may retain an explicitly qualified historical coherent sample. Ordinary observations corroborate the destination.",
+    "Report accessibility, keyboard-user assessment, five human sessions and independent installations remain uncollected."
+  ],
+  "investigations": [
+    "attempt-1-generation.log: tag casing mismatch in verifier",
+    "attempt-2-generation.log: BODY qualification mismatch in verifier",
+    "attempt-3-generation.log: historical-sample qualification mismatch in verifier",
+    "Initial edited ZIP prototype was replaced; only original generation-time traces are shipped. Earlier raw runs/prototypes remain in work, outside participant packets."
+  ],
+  "artifactHashes": [
+    {
+      "path": "tasks/README.md",
+      "sha256": "90d18bffe050c222b98b2fb38541fe37da2fb45ba1cf09514c1f4a33e12fb006",
+      "bytes": 635
+    },
+    {
+      "path": "tasks/scenario-1/A/brief.md",
+      "sha256": "ea60f118bcf74691d0b08eace2f271d6c66e5e6e8c1af7a250545a1c7acaaf69",
+      "bytes": 942
+    },
+    {
+      "path": "tasks/scenario-1/A/capture-1/assertions.log",
+      "sha256": "3713f0b32ebd1d1001cc377268c60a097aa9877534f28bbe1285f589cf87c122",
+      "bytes": 300
+    },
+    {
+      "path": "tasks/scenario-1/A/capture-1/trace.zip",
+      "sha256": "6fc675db4ab05794aa43860c722080b7a00789f9c5c7f4b0528c80c379f780d6",
+      "bytes": 61514
+    },
+    {
+      "path": "tasks/scenario-1/A/capture-2/assertions.log",
+      "sha256": "0a644d976b9c5fc3cbbe7d883cd3b092b29ad9c0d117616d1e99b3cbc4e4a2bf",
+      "bytes": 2025
+    },
+    {
+      "path": "tasks/scenario-1/A/capture-2/trace.zip",
+      "sha256": "768376f3d0286d1134b85b6730c897c713d77067dba479ae41393738321487a4",
+      "bytes": 70108
+    },
+    {
+      "path": "tasks/scenario-1/A/capture-3/assertions.log",
+      "sha256": "9b5b8b1ef3b9d2492c2a3b9ac4107d52c40e7a66c976bef92a67f351112f7fd8",
+      "bytes": 301
+    },
+    {
+      "path": "tasks/scenario-1/A/capture-3/trace.zip",
+      "sha256": "63f09d511494af96418b9a81b1d2560eede809ef9d4e4791781b830d7d4d8281",
+      "bytes": 63738
+    },
+    {
+      "path": "tasks/scenario-1/A/README.md",
+      "sha256": "31075c52ca00ad8e0991be29b01eaf7350fd560458db695192153407904b9c68",
+      "bytes": 1041
+    },
+    {
+      "path": "tasks/scenario-1/A/task.capture.spec.mjs",
+      "sha256": "976f9d9b704717f706fd7b2810d00789c3b06fed3678849d2fd77b52bfcfaaca",
+      "bytes": 2356
+    },
+    {
+      "path": "tasks/scenario-1/B/brief.md",
+      "sha256": "ea60f118bcf74691d0b08eace2f271d6c66e5e6e8c1af7a250545a1c7acaaf69",
+      "bytes": 942
+    },
+    {
+      "path": "tasks/scenario-1/B/capture-1/assertions.log",
+      "sha256": "3713f0b32ebd1d1001cc377268c60a097aa9877534f28bbe1285f589cf87c122",
+      "bytes": 300
+    },
+    {
+      "path": "tasks/scenario-1/B/capture-1/trace.zip",
+      "sha256": "6fc675db4ab05794aa43860c722080b7a00789f9c5c7f4b0528c80c379f780d6",
+      "bytes": 61514
+    },
+    {
+      "path": "tasks/scenario-1/B/capture-2/assertions.log",
+      "sha256": "0a644d976b9c5fc3cbbe7d883cd3b092b29ad9c0d117616d1e99b3cbc4e4a2bf",
+      "bytes": 2025
+    },
+    {
+      "path": "tasks/scenario-1/B/capture-2/trace.zip",
+      "sha256": "768376f3d0286d1134b85b6730c897c713d77067dba479ae41393738321487a4",
+      "bytes": 70108
+    },
+    {
+      "path": "tasks/scenario-1/B/capture-3/assertions.log",
+      "sha256": "9b5b8b1ef3b9d2492c2a3b9ac4107d52c40e7a66c976bef92a67f351112f7fd8",
+      "bytes": 301
+    },
+    {
+      "path": "tasks/scenario-1/B/capture-3/trace.zip",
+      "sha256": "63f09d511494af96418b9a81b1d2560eede809ef9d4e4791781b830d7d4d8281",
+      "bytes": 63738
+    },
+    {
+      "path": "tasks/scenario-1/B/focus-trail/capture-1.json",
+      "sha256": "ab27c9e461fcbb8f74b929a8e4d2343dfa044943361dd99bff91b986fc1a5d36",
+      "bytes": 3126
+    },
+    {
+      "path": "tasks/scenario-1/B/focus-trail/capture-2.current.json",
+      "sha256": "33fa26c341d64366475eb66ba2f59066b0cc8e8ffe63f5fe568b0d0006804f1d",
+      "bytes": 3399
+    },
+    {
+      "path": "tasks/scenario-1/B/focus-trail/capture-2.html",
+      "sha256": "bafbc660a05c618051d8b477f708e19bba7996778ea4f42cd3a936f7dd23288f",
+      "bytes": 25188
+    },
+    {
+      "path": "tasks/scenario-1/B/focus-trail/capture-2.json",
+      "sha256": "cb1f06e02e6d713d6ba733d54e4ded589ce127de01c5d1fa94cc49bd950865fa",
+      "bytes": 7346
+    },
+    {
+      "path": "tasks/scenario-1/B/focus-trail/capture-3.current.json",
+      "sha256": "edffc95d4383cdb89aefad1c5187288f8df502a0b932ecd04eefeac5a50a1f74",
+      "bytes": 3150
+    },
+    {
+      "path": "tasks/scenario-1/B/focus-trail/capture-3.html",
+      "sha256": "2fa191bcd144353a763f26230d07e8d49679c4343878e07f1535cadbac1822da",
+      "bytes": 24394
+    },
+    {
+      "path": "tasks/scenario-1/B/focus-trail/capture-3.json",
+      "sha256": "0ecf0465b06153998fe6939d17f1137274b76e7252ec25d76579e1582d592283",
+      "bytes": 6906
+    },
+    {
+      "path": "tasks/scenario-1/B/README.md",
+      "sha256": "31075c52ca00ad8e0991be29b01eaf7350fd560458db695192153407904b9c68",
+      "bytes": 1041
+    },
+    {
+      "path": "tasks/scenario-1/B/task.capture.spec.mjs",
+      "sha256": "976f9d9b704717f706fd7b2810d00789c3b06fed3678849d2fd77b52bfcfaaca",
+      "bytes": 2356
+    },
+    {
+      "path": "tasks/scenario-1/README.md",
+      "sha256": "60de0c4023c0d141f83ef7e24b7fb87a2d580c39f96b5376c79f13186985e1d0",
+      "bytes": 1569
+    },
+    {
+      "path": "tasks/scenario-2/A/brief.md",
+      "sha256": "133618a35721743cc051b41d9f8326ca7a9591cc8eba5700e200528b443f1cb5",
+      "bytes": 942
+    },
+    {
+      "path": "tasks/scenario-2/A/capture-1/assertions.log",
+      "sha256": "8ca180822bb22fb91422896a8434869c9b3019b4d6cb5f17d72535bd4da254b1",
+      "bytes": 301
+    },
+    {
+      "path": "tasks/scenario-2/A/capture-1/trace.zip",
+      "sha256": "3ffd39469d3e147f394459ffbcb155b2bcbfd727628833dfd94f6196b3a1f832",
+      "bytes": 60516
+    },
+    {
+      "path": "tasks/scenario-2/A/capture-2/assertions.log",
+      "sha256": "404af0399896a1dcc4a62f54b633749a06149930489daf50a6a25d1e45f68fa4",
+      "bytes": 301
+    },
+    {
+      "path": "tasks/scenario-2/A/capture-2/trace.zip",
+      "sha256": "00e444157e5e19f7d25a35f9e271cc0e00aeac842eb72fa045d232fbc43660f7",
+      "bytes": 71069
+    },
+    {
+      "path": "tasks/scenario-2/A/capture-3/assertions.log",
+      "sha256": "728d0bf648f33ee9b8b003a8917d302750ccad8d672b5dab38f00a3357c454db",
+      "bytes": 2025
+    },
+    {
+      "path": "tasks/scenario-2/A/capture-3/trace.zip",
+      "sha256": "746dd59be6616a6173cab554708ef02c881e68eb977df0b926bdc7e4792178fe",
+      "bytes": 49214
+    },
+    {
+      "path": "tasks/scenario-2/A/README.md",
+      "sha256": "21cc6f1a603464c7bca09ad327996a47477f80e10fabc30e06a8663b283d894b",
+      "bytes": 1041
+    },
+    {
+      "path": "tasks/scenario-2/A/task.capture.spec.mjs",
+      "sha256": "c008a298b079a15c605a5229e8262f57eb7dce0b333d5ea879451a19eed706b2",
+      "bytes": 2356
+    },
+    {
+      "path": "tasks/scenario-2/B/brief.md",
+      "sha256": "133618a35721743cc051b41d9f8326ca7a9591cc8eba5700e200528b443f1cb5",
+      "bytes": 942
+    },
+    {
+      "path": "tasks/scenario-2/B/capture-1/assertions.log",
+      "sha256": "8ca180822bb22fb91422896a8434869c9b3019b4d6cb5f17d72535bd4da254b1",
+      "bytes": 301
+    },
+    {
+      "path": "tasks/scenario-2/B/capture-1/trace.zip",
+      "sha256": "3ffd39469d3e147f394459ffbcb155b2bcbfd727628833dfd94f6196b3a1f832",
+      "bytes": 60516
+    },
+    {
+      "path": "tasks/scenario-2/B/capture-2/assertions.log",
+      "sha256": "404af0399896a1dcc4a62f54b633749a06149930489daf50a6a25d1e45f68fa4",
+      "bytes": 301
+    },
+    {
+      "path": "tasks/scenario-2/B/capture-2/trace.zip",
+      "sha256": "00e444157e5e19f7d25a35f9e271cc0e00aeac842eb72fa045d232fbc43660f7",
+      "bytes": 71069
+    },
+    {
+      "path": "tasks/scenario-2/B/capture-3/assertions.log",
+      "sha256": "728d0bf648f33ee9b8b003a8917d302750ccad8d672b5dab38f00a3357c454db",
+      "bytes": 2025
+    },
+    {
+      "path": "tasks/scenario-2/B/capture-3/trace.zip",
+      "sha256": "746dd59be6616a6173cab554708ef02c881e68eb977df0b926bdc7e4792178fe",
+      "bytes": 49214
+    },
+    {
+      "path": "tasks/scenario-2/B/focus-trail/capture-1.json",
+      "sha256": "410545a7d0936498f77a7fe50553d6a5f14b8124ec9bf9d3af9035cfd735bfa0",
+      "bytes": 3124
+    },
+    {
+      "path": "tasks/scenario-2/B/focus-trail/capture-2.current.json",
+      "sha256": "6655bbd80358435ecd12306271ec12d45055c38f2b70cffe07bc88c0fab370c4",
+      "bytes": 3150
+    },
+    {
+      "path": "tasks/scenario-2/B/focus-trail/capture-2.html",
+      "sha256": "192c06e91f7cd9df5c40239423257f85a64213e4a934b57e08107cc177a16607",
+      "bytes": 24392
+    },
+    {
+      "path": "tasks/scenario-2/B/focus-trail/capture-2.json",
+      "sha256": "e5120d377da7379dee98e8d391a15e43e8893331be8f363e46f384a9fa841344",
+      "bytes": 6904
+    },
+    {
+      "path": "tasks/scenario-2/B/focus-trail/capture-3.current.json",
+      "sha256": "ea4ed33d77e8efd923223bf1ba5901168355a7c00ef4542cc4110d747f7b77d4",
+      "bytes": 3397
+    },
+    {
+      "path": "tasks/scenario-2/B/focus-trail/capture-3.html",
+      "sha256": "4c09094e7e735e7e497089d2e672763b4fd84b95d3cc14da424bf2e7e0fb5c9c",
+      "bytes": 25184
+    },
+    {
+      "path": "tasks/scenario-2/B/focus-trail/capture-3.json",
+      "sha256": "f240c56743f7e7d326db918ba7af6cd5ad80aba8e0543c9e25f0def9cd0f4a30",
+      "bytes": 7342
+    },
+    {
+      "path": "tasks/scenario-2/B/README.md",
+      "sha256": "21cc6f1a603464c7bca09ad327996a47477f80e10fabc30e06a8663b283d894b",
+      "bytes": 1041
+    },
+    {
+      "path": "tasks/scenario-2/B/task.capture.spec.mjs",
+      "sha256": "c008a298b079a15c605a5229e8262f57eb7dce0b333d5ea879451a19eed706b2",
+      "bytes": 2356
+    },
+    {
+      "path": "tasks/scenario-2/README.md",
+      "sha256": "f523b7802a01f6049a84b50bcd5c739fee4c150ede5f71ac7cda546916c83480",
+      "bytes": 1569
+    }
+  ]
+}

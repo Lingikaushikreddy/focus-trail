@@ -1,0 +1,14 @@
+{
+  "name": "focus-trail",
+  "version": "0.1.0",
+  "file": "focus-trail-0.1.0.tgz",
+  "sha256": "79bac5b64c1f96e7cb684e4bb746cc37af4bda902f719590bacc3984fb8e67e4",
+  "node": ">=24 <25",
+  "qualifiedNode": "24.22.0",
+  "playwright": "1.64.1",
+  "browser": "Chromium installed by Playwright 1.64.1",
+  "channel": "chromium",
+  "qualifiedChromium": "156.0.8078.4",
+  "publication": "unpublished private pilot candidate",
+  "independentHumanInstallations": 0
+}

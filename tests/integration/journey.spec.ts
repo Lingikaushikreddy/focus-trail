@@ -178,7 +178,7 @@ test('checkpoint count is bounded and finalized journeys reject additional actio
 });
 
 base('fixture finalizer updates early-passed attachment after external activation failure', async ({}, info) => {
-  const directory = resolve('../../work/fixture-probe');
+  const directory = resolve('work/fixture-probe');
   await mkdir(directory, { recursive: true });
   const source = resolve('packages/core/src/journey.ts');
   await writeFile(resolve(directory, 'probe.spec.ts'), `import { test } from ${JSON.stringify(source)};\ntest('activation', async ({ page, journey }, info) => {\n await page.setContent('<button>Target</button>');\n const run=journey(page,info,{journeyId:'activation',fixtureVersion:'1',masks:['secret.42']});\n await run.press('Tab'); await run.expectFocus('target',page.getByRole('button')); await run.finish();\n throw new Error('External activation failed secret.42\\ninput-only-secret');\n});\n`);

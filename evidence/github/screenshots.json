@@ -1,0 +1,17 @@
+{
+  "source": "actual local demo and checked-in reports; no synthetic image generation",
+  "images": {
+    "report-first-difference.png": {
+      "sha256": "d4ff4d60c426c4fa29c45bc6ed015e739979ae9c284a80e6cb5e7b2f4d4df8bb",
+      "bytes": 124628
+    },
+    "demo-keyboard-dialog.png": {
+      "sha256": "4480417c4bced28bfe0b6d10d447a78ce2c8aee16c3a3de9f1f1c2f94963cc32",
+      "bytes": 197514
+    },
+    "report-before-after.png": {
+      "sha256": "583e5d283104ceb88bfe33e83957dce3be6fafe6765eb3fe369ed513b6709886",
+      "bytes": 193680
+    }
+  }
+}

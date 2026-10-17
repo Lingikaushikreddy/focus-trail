@@ -2,6 +2,8 @@
 
 Status: prepared; **no participant results or independent installations collected**. Local package smoke tests are engineering evidence and do not satisfy external gates.
 
+The complete runnable [pilot kit](../pilot/README.md) includes the frozen installer, forwarding invitation, paired task attachments, private operator guide, blank receipts, conservative scorer and engineering verification.
+
 Use five maintainers who already run Playwright. Obtain permission before recording their work. Ask them to install the candidate in a fresh copy of a local test application and instrument one existing dialog journey. Record installation failures as well as successes; do not discard troubleshooting time. Record first useful result time separately from report review time; original target is under ten minutes.
 
 ## Paired review tasks
