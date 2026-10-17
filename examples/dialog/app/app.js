@@ -11,6 +11,12 @@ const fixtures = {
 const [title, description] = fixtures[variant] ?? fixtures.good;
 document.querySelector('#variant-title').textContent = title;
 document.querySelector('#variant-description').textContent = description;
+document.querySelector('#fixture-tag').textContent = ['lost-return', 'escape', 'activation'].includes(variant) ? 'Deliberate fault' : 'Working fixture';
+if (variant === 'escape') {
+  document.querySelector('#journey-final-key').textContent = 'Tab';
+  document.querySelector('#journey-final-label').textContent = 'Focus leaves the dialog';
+  document.querySelector('#journey-exit-hint').hidden = false;
+}
 for (const link of document.querySelectorAll('nav a')) if (link.getAttribute('href') === '?variant=' + variant) link.setAttribute('aria-current', 'page');
 const opener = document.querySelector('#opener');
 const modal = document.querySelector('#modal');
@@ -47,6 +53,13 @@ document.addEventListener('keydown', event => {
   }
 });
 document.addEventListener('focusin', event => {
-  const label = event.target === document.body ? 'Document body' : event.target.textContent?.trim() || event.target.tagName;
+  const label = event.target === document.body ? 'Document body'
+    : (event.target.getAttribute('aria-label') || event.target.innerText || event.target.textContent || event.target.tagName).replace(/\s+/g, ' ').trim();
   document.querySelector('#focus').textContent = label;
+  document.querySelector('#focus-detail').textContent = event.target === document.body
+    ? 'Focus is on the document, outside any control'
+    : event.target === save || event.target === cancel
+      ? 'Inside the notification dialog'
+      : event.target === opener ? 'The dialog’s starting point' : 'Outside the notification dialog';
+  for (const node of document.querySelectorAll('[data-path]')) node.classList.toggle('is-active', node.dataset.path === event.target.id);
 });

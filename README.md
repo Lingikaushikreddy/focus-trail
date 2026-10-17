@@ -10,7 +10,7 @@ Focus Trail adds authored focus checkpoints to an existing Playwright test, reco
 >
 > Engineering qualification passed. Human evidence: **0/5 maintainer assessments · 0/3 independent installations**. Public npm release remains pending. [Measured status](pilot/operator/status.json)
 
-![Focus Trail dialog workshop opened by keyboard, with Cancel visibly focused.](docs/images/demo-keyboard-dialog.png)
+![Focus Trail's interactive landing page: a real keyboard journey beside a live focus inspector.](docs/images/frontend-desktop.png)
 
 ## What it does
 
@@ -98,7 +98,16 @@ npm run build
 npm run demo
 ```
 
-Open **http://127.0.0.1:49371**. The workshop contains a working dialog and controlled return-focus, modal-containment and activation faults. Navigate with the keyboard and open the linked reports. The server also serves the checked-in reports; no browser download is needed just to view them.
+Open **http://127.0.0.1:49371**. The responsive demo includes a live focus inspector, a working dialog and controlled return-focus, modal-containment and activation faults. Start with **Tab**, then follow the displayed keys and explore the linked reports. The server also serves the checked-in reports; no browser download is needed just to view them.
+
+<details>
+<summary>See the keyboard dialog and frontend verification</summary>
+
+![The redesigned dialog opened using the keyboard, with Cancel visibly focused.](docs/images/demo-keyboard-dialog.png)
+
+[Desktop/mobile pictures and browser verification](evidence/frontend/README.md): 14 UI checks, ten viewport widths, all six fixture behaviors and no external asset requests.
+
+</details>
 
 To regenerate them with actual browser tests:
 

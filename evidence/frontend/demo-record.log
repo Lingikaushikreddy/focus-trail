@@ -1,0 +1,5 @@
+
+> focus-trail@0.1.0 demo:record
+> node scripts/record-demo.mjs
+
+Recorded 3 passing baselines and verified all 3 deliberately failing demo journeys.

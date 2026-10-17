@@ -32,7 +32,7 @@ These are development dependencies. Product capture/comparison behavior, the Pla
 
 ## Pictures and reports
 
-README pictures were captured from the real local keyboard demo and checked-in report, then visually inspected. [Screenshot hashes](screenshots.json) identify the files. The report retains its qualification when a fresh focus sample is unavailable. Reports and primary data remain available under `evidence/demo/` and the pilot's private operator evidence.
+README pictures were captured from the real local keyboard demo and checked-in report, then visually inspected. [Screenshot hashes](screenshots.json) identify the original delivery pictures at commit `8cc9fd2`; the subsequent [frontend verification](../frontend/README.md) records the redesigned demo and its current screenshot hashes. The report retains its qualification when a fresh focus sample is unavailable. Reports and primary data remain available under `evidence/demo/` and the pilot's operator evidence.
 
 Human status remains **0/5 assessments and 0/3 independent installations**. Repository availability does not satisfy the public npm release gate.
 

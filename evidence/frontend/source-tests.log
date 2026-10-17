@@ -1,0 +1,85 @@
+
+> focus-trail@0.1.0 test
+> npm run test:unit && npm run test:integration && npm run test:e2e
+
+
+> focus-trail@0.1.0 test:unit
+> vitest run
+
+
+ RUN  v5.0.5 /Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/frontend-refresh/qualification
+
+Focus Trail: Invalid baseline: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+Focus Trail: Invalid attachment: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+
+ Test Files  3 passed (3)
+      Tests  114 passed (114)
+   Start at  18:18:56
+   Duration  802ms (tests 80%, transform 16%, import 3%, worker 1%)
+
+
+> focus-trail@0.1.0 test:integration
+> playwright test --project=integration
+
+
+Running 34 tests using 2 workers
+
+(node:63776) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:63775) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 [integration] › tests/integration/capture.spec.ts:4:1 › captures Chromium computed accessible role and labelledby name without form values (407ms)
+  ✓   1 [integration] › tests/integration/demo.spec.ts:4:1 › demo good fixture opens, wraps and returns focus using real keys (490ms)
+  ✓   3 [integration] › tests/integration/capture.spec.ts:12:1 › masks computed names and target evidence using literal strings (159ms)
+  ✓   4 [integration] › tests/integration/demo.spec.ts:23:1 › demo return mutation reproduces body focus after Escape (285ms)
+  ✓   5 [integration] › tests/integration/capture.spec.ts:18:1 › body focus and unavailable capture remain explicit evidence (228ms)
+  ✓   7 [integration] › tests/integration/capture.spec.ts:25:1 › focused shadow content is explicitly unsupported (169ms)
+  ✓   6 [integration] › tests/integration/demo.spec.ts:32:1 › demo activation mutation leaves focus unchanged but does not open dialog (263ms)
+  ✓   8 [integration] › tests/integration/capture.spec.ts:31:1 › focused iframe content is explicitly unsupported (178ms)
+  ✓   9 [integration] › tests/integration/demo.spec.ts:39:1 › demo escape mutation permits focus outside the open modal (310ms)
+  ✓  10 [integration] › tests/integration/journey.spec.ts:25:1 › real keyboard journey opens a dialog, navigates, and restores focus (416ms)
+  ✓  12 [integration] › tests/integration/journey.spec.ts:53:1 › caught checkpoint failure still attaches a failed return result (349ms)
+  ✓  13 [integration] › tests/integration/journey.spec.ts:68:1 › checkpoint retries until delayed application focus is observed (363ms)
+  ✓  11 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (959ms)
+  ✓  14 [integration] › tests/integration/journey.spec.ts:77:1 › duplicate targets fail strictly while duplicate names permit stable keyed locators (253ms)
+  ✓  15 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (922ms)
+  ✓  17 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (449ms)
+  ✓  18 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (477ms)
+  ✓  16 [integration] › tests/integration/journey.spec.ts:86:1 › names, IDs, and errors are masked while input values are never captured (2.2s)
+  ✓  19 [integration] › tests/integration/journey.spec.ts:101:3 › rejects frame checkpoint targets explicitly (164ms)
+  ✓  20 [integration] › tests/integration/journey.spec.ts:101:3 › rejects shadow checkpoint targets explicitly (158ms)
+  ✓  21 [integration] › tests/integration/journey.spec.ts:101:3 › rejects other page checkpoint targets explicitly (199ms)
+  ✓  22 [integration] › tests/integration/journey.spec.ts:113:1 › unsupported focused observations fail keyboard records explicitly (131ms)
+  ✓  23 [integration] › tests/integration/journey.spec.ts:120:1 › closed-page failures retain unavailable evidence and attach JSON (126ms)
+  ✓  24 [integration] › tests/integration/journey.spec.ts:128:1 › fixed viewport and actual locale are recorded; null viewport is rejected (291ms)
+  ✓  25 [integration] › tests/integration/journey.spec.ts:142:1 › action and duration budgets reject input before delivering extra keys (266ms)
+  ✓  26 [integration] › tests/integration/journey.spec.ts:156:1 › checkpoint timeout remains bounded and illegal budget/key extensions are rejected (211ms)
+  ✓  27 [integration] › tests/integration/journey.spec.ts:171:1 › checkpoint count is bounded and finalized journeys reject additional actions (604ms)
+  ✓  28 [integration] › tests/integration/journey.spec.ts:181:1 › fixture finalizer updates early-passed attachment after external activation failure (1.0s)
+  ✓  29 [integration] › tests/integration/journey.spec.ts:203:1 › idle journeys fail their duration budget at first finish (190ms)
+  ✓  30 [integration] › tests/integration/journey.spec.ts:210:1 › unsupported browser fails before constructing a journey (102ms)
+  ✓  31 [integration] › tests/integration/journey.spec.ts:226:1 › later finalization preserves a timely finished journey after its duration limit (460ms)
+  ✓  32 [integration] › tests/integration/journey.spec.ts:236:1 › busy-page checkpoint timeout preserves its last coherent focus sample (2.7s)
+  ✓  33 [integration] › tests/integration/journey.spec.ts:280:1 › later unavailable captures cannot erase a real checkpoint observation (2.1s)
+  ✓  34 [integration] › tests/integration/journey.spec.ts:312:1 › a detected focus change invalidates evidence retained before a later outage (2.2s)
+
+  34 passed (16.7s)
+
+> focus-trail@0.1.0 test:e2e
+> playwright test --project=e2e
+
+
+Running 8 tests using 1 worker
+
+(node:64188) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [e2e] › tests/e2e/report.spec.ts:24:1 › selects the exact first difference and supports real keyboard step controls (458ms)
+  ✓  2 [e2e] › tests/e2e/report.spec.ts:51:1 › shows a run failure separately when the recorded checkpoints passed (198ms)
+  ✓  3 [e2e] › tests/e2e/report.spec.ts:59:1 › highlights the actual failed key action rather than a later run outcome (194ms)
+  ✓  4 [e2e] › tests/e2e/report.spec.ts:71:1 › qualifies retained focus evidence in the observed-target summary when a later capture is unavailable (183ms)
+  ✓  5 [e2e] › tests/e2e/report.spec.ts:83:1 › hostile names, roles, ids, builds and errors remain literal text (190ms)
+  ✓  6 [e2e] › tests/e2e/report.spec.ts:102:1 › opens a portable report offline with no remote requests and missing-image text (170ms)
+  ✓  7 [e2e] › tests/e2e/report.spec.ts:119:1 › a raster image that cannot decode falls back to readable focus evidence (151ms)
+  ✓  8 [e2e] › tests/e2e/report.spec.ts:128:1 › focus evidence works with images disabled, at narrow width and 200% text zoom (593ms)
+
+  8 passed (2.8s)
