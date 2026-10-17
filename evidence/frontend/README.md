@@ -32,6 +32,6 @@ The full [source test run](source-tests.log) passed **114 unit + 34 browser inte
 
 ## Reproduce
 
-Use Node 24, install the lockfile dependencies and full Chromium, then run `npm run demo`. Start with Tab and follow the displayed keys in each fixture. Run `npm test` and `npm run demo:record` in a disposable source copy to refresh engineering evidence without replacing the historical records. The UI browser-check script used for this capture is [preserved here](verify-ui.mjs); run it from any directory after starting the demo.
+Use Node 24, install the lockfile dependencies and full Chromium, then run `npm run demo`. Start with Tab and follow the displayed keys in each fixture. Run `npm test` and `npm run demo:record` in a disposable source copy to refresh engineering evidence without replacing the historical records. The UI browser-check script used for this capture is [preserved here](verify-ui.mjs); run it from any directory after starting the demo. All 14 checks also passed from a [checkout path containing spaces](space-path-verification.log), producing identical screenshot hashes.
 
 The four frozen pilot tarballs retain SHA-256 `79bac5b64c1f96e7cb684e4bb746cc37af4bda902f719590bacc3984fb8e67e4`. Their packaged workshop retains the earlier design; this redesign belongs to the current source checkout. These checks do not count as a maintainer installation, a human keyboard-user assessment or a public npm release.

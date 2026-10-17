@@ -3,6 +3,7 @@ import { expect } from '../../node_modules/@playwright/test/index.mjs';
 import assert from 'node:assert/strict';
 import { mkdir, readFile, writeFile, stat } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
+import { fileURLToPath } from 'node:url';
 
 const repo = new URL('../../', import.meta.url);
 const evidence = new URL('evidence/frontend/', repo);
@@ -19,7 +20,7 @@ const checks = [];
 async function check(name, operation) { await operation(); checks.push({ name, result: 'passed' }); }
 const screenshots = [];
 async function shot(name, description, options = {}) {
-  const path = new URL(name, images).pathname;
+  const path = fileURLToPath(new URL(name, images));
   await page.screenshot({ path, ...options });
   screenshots.push({ path: 'docs/images/' + name, description, bytes: (await stat(path)).size, sha256: createHash('sha256').update(await readFile(path)).digest('hex') });
 }

@@ -1,0 +1,25 @@
+{
+  "checks": 14,
+  "screenshots": [
+    {
+      "path": "docs/images/frontend-desktop.png",
+      "description": "Redesigned landing page, reached with a real Tab; Open settings has visible focus and the inspector reflects it.",
+      "bytes": 288635,
+      "sha256": "24192a80f8d2ebec13ecda9fb323edbef37a391691a8664e3b562dd7140080a7"
+    },
+    {
+      "path": "docs/images/demo-keyboard-dialog.png",
+      "description": "Real keyboard navigation: Tab, Enter, Tab; Cancel is visibly focused in the redesigned dialog.",
+      "bytes": 554954,
+      "sha256": "16a5aa64d000f9cc08d12122b4cdf24dbde2beef842c3110f98a7e9cdfcb94a9"
+    },
+    {
+      "path": "docs/images/frontend-mobile.png",
+      "description": "The actual responsive landing page at 390px, including stacked report evidence.",
+      "bytes": 578768,
+      "sha256": "00d88687756a120d7c6ddd717a8b56e7e4b3244625a443ce08a5e17555c64103"
+    }
+  ],
+  "browserErrors": [],
+  "externalRequests": []
+}
