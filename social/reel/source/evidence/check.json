@@ -71,27 +71,15 @@
     "inspection": "available"
   },
   "snapshots": {
-    "enabled": true,
-    "files": [
-      ".hyperframes/artifacts/snapshots/1c385739-186f-4071-b0f9-a6ce3d6baf07/frame-00-at-1.5s.png",
-      ".hyperframes/artifacts/snapshots/1c385739-186f-4071-b0f9-a6ce3d6baf07/frame-01-at-4.8s.png",
-      ".hyperframes/artifacts/snapshots/1c385739-186f-4071-b0f9-a6ce3d6baf07/frame-02-at-9.8s.png",
-      ".hyperframes/artifacts/snapshots/1c385739-186f-4071-b0f9-a6ce3d6baf07/frame-03-at-15.0s.png",
-      ".hyperframes/artifacts/snapshots/1c385739-186f-4071-b0f9-a6ce3d6baf07/frame-04-at-19.9s.png"
-    ],
-    "times": [
-      1.5,
-      4.8,
-      9.8,
-      15,
-      19.95
-    ],
+    "enabled": false,
+    "files": [],
+    "times": [],
     "findingFiles": []
   },
   "saved": {
-    "id": "464112b1-7bb0-46d0-8548-99f4a625ba39",
+    "id": "825a6624-2997-44b1-a2bf-9cce95039383",
     "revision": null,
-    "report": "<workspace>/outputs/focus-trail-reel/.hyperframes/artifacts/checks/464112b1-7bb0-46d0-8548-99f4a625ba39.json",
+    "report": "<workspace>/outputs/focus-trail-reel/.hyperframes/artifacts/checks/825a6624-2997-44b1-a2bf-9cce95039383.json",
     "attribution": "inputs-changed"
   },
   "_meta": {

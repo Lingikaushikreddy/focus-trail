@@ -39,11 +39,11 @@ SEED = 42
 SAMPLE_RATE = 24000
 OUT_RATE = 48000
 lines = [
-    dict(id='intro', text='Pretty UI. But where’s focus?', synthesisText='Pretty U I. But where’s focus?', start=0.15, slotEnd=2.9, speed=1.08),
-    dict(id='good', text='Tab. Enter. Tab. Escape. Focus returns.', start=3.15, slotEnd=7.9, speed=1.05),
-    dict(id='bad', text='Same keys. This time, focus gets lost.', start=8.15, slotEnd=12.9, speed=1.04),
-    dict(id='report', text='Focus Trail flags the failed return checkpoint.', start=13.15, slotEnd=17.4, speed=1.05),
-    dict(id='close', text='Keep your place. Try Focus Trail.', start=17.5, slotEnd=19.9, speed=1.10),
+    dict(id='intro', text='Looks ready to ship, right?', start=0.15, slotEnd=2.9, speed=1.02),
+    dict(id='good', text='A quick setting change. Back to what you were doing.', start=3.2, slotEnd=7.9, speed=1.03),
+    dict(id='bad', text='Then one tiny change… and suddenly, you’ve lost your place.', start=8.9, slotEnd=12.9, speed=0.98),
+    dict(id='report', text='Focus Trail shows you where the journey breaks.', start=13.15, slotEnd=17.4, speed=1.03),
+    dict(id='close', text='Catch it before your users do.', start=17.5, slotEnd=19.9, speed=1.04),
 ]
 
 def sha(path):
@@ -75,18 +75,6 @@ with tempfile.TemporaryDirectory(prefix='focus-trail-narration-') as scratch:
             chunks.append(audio)
             offset += len(audio) / SAMPLE_RATE
         audio = np.concatenate(chunks)
-        edit = None
-        if spec['id'] in ('good', 'bad'):
-            # A pause inside the already-silent sentence boundary makes the
-            # outcome sentence start after the actual Escape event at 6.24s.
-            cut, pause = (2.05, 1.15) if spec['id'] == 'good' else (1.10, 1.55)
-            pos = round(cut * SAMPLE_RATE)
-            audio = np.concatenate([audio[:pos], np.zeros(round(pause * SAMPLE_RATE)), audio[pos:]])
-            for word in words:
-                if word['start'] >= cut:
-                    word['start'] = round(word['start'] + pause, 6)
-                    word['end'] = round(word['end'] + pause, 6)
-            edit = dict(type='insert-silence', at=cut, duration=pause, reason='Outcome narration follows Escape; no speech time stretch.')
         raw = Path(scratch) / f"{spec['id']}-raw.wav"
         sf.write(raw, audio, SAMPLE_RATE, subtype='PCM_16')
         dest = out / f"{spec['id']}.wav"
@@ -99,8 +87,6 @@ with tempfile.TemporaryDirectory(prefix='focus-trail-narration-') as scratch:
             raise RuntimeError(f"{spec['id']} does not fit slot: {duration}")
         data, _ = sf.read(dest)
         cue = {**spec, 'path': str(dest.relative_to(project)), 'duration': round(duration, 6), 'end': round(spec['start'] + duration, 6), 'sha256': sha(dest), 'words': words, 'peakDbfs': round(20 * np.log10(max(np.max(np.abs(data)), 1e-12)), 3), 'normalization': normalization}
-        if edit:
-            cue['edit'] = edit
         cues.append(cue)
         print(f"{spec['id']}: {duration:.3f}s, ends {cue['end']:.3f}s, peak {cue['peakDbfs']:.2f} dBFS", flush=True)
 metadata = {
@@ -109,6 +95,7 @@ metadata = {
     'sampleRate': OUT_RATE, 'channels': 1, 'format': 'PCM signed 16-bit WAV',
     'seed': SEED, 'device': 'CPU', 'fallbackPhonemizer': 'Disabled; English lexicon only',
     'normalization': {'method': 'FFmpeg loudnorm', 'targetIntegratedLufs': -17, 'truePeakLimitDbtp': -2, 'targetLra': 7},
+    'delivery': 'Story-led narration using natural model punctuation; no inserted silence and no speech time stretching.',
     'wordTimingMethod': 'Kokoro predicted phoneme durations joined into tokens; estimates, not ASR measurements',
     'versions': {name: importlib.metadata.version(name) for name in ['kokoro', 'torch', 'misaki', 'soundfile', 'numpy', 'transformers', 'en-core-web-sm']},
     'license': {'model': 'Apache-2.0', 'engine': 'Apache-2.0', 'modelSource': f'https://huggingface.co/{REPO}/tree/{REVISION}', 'engineSource': 'https://github.com/hexgrad/kokoro', 'note': 'This is a stock synthetic voice, not a voice clone. Model weights and runtime dependencies are excluded from the distribution.'},

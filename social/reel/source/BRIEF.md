@@ -38,3 +38,5 @@ Inspect representative source frames, validate seekability and captions, render 
 Production decision: eight quiet local keypress effects, synchronized to the actual key events. Local neural narration; no music.
 
 User follow-up: add AI voice and publish the Reel, cover, editable source and verification evidence to the public GitHub repository, with a clean README gallery.
+
+Narration revision requested: tell an interesting, conversational developer story; do not read the interface or recite the key labels. Hook → ordinary experience → hidden break → product payoff → calm CTA. Preserve the 20-second visuals and real keyboard proof.

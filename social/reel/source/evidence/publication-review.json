@@ -1,6 +1,136 @@
 {
   "passed": true,
+  "scope": "Current publishable Git media/source/README payload and ZIP. Ignored local HyperFrames check cache excluded; concurrent visual review receipts not audited.",
   "findings": [],
+  "mp4Sha256": "cde88f65d1d1d6113b65da436069a55a79706bd64c7d628d53ece742a7fc0f38",
+  "scriptWordCount": 39,
+  "voiceFiles": [
+    {
+      "id": "intro",
+      "text": "Looks ready to ship, right?",
+      "start": 0.15,
+      "duration": 1.95,
+      "sha256": "1df223b9f898989eaaa6f0e13f220467a31d79c6f7b598cef621278c02604061",
+      "checks": {
+        "hash": true,
+        "registry": true,
+        "wavDuration": true,
+        "indexStart": true,
+        "indexDuration": true,
+        "indexSource": true,
+        "slotFit": true
+      }
+    },
+    {
+      "id": "good",
+      "text": "A quick setting change. Back to what you were doing.",
+      "start": 3.2,
+      "duration": 3.15,
+      "sha256": "28a39bf5c6793190a0ef6fb1e67bfbbfa33f94a8a1f720840e6788803acce078",
+      "checks": {
+        "hash": true,
+        "registry": true,
+        "wavDuration": true,
+        "indexStart": true,
+        "indexDuration": true,
+        "indexSource": true,
+        "slotFit": true
+      }
+    },
+    {
+      "id": "bad",
+      "text": "Then one tiny change\u2026 and suddenly, you\u2019ve lost your place.",
+      "start": 8.9,
+      "duration": 3.7,
+      "sha256": "316b9a027fef9a12d1135375ad09102113df5c2b1210761ae88159b637f3eea8",
+      "checks": {
+        "hash": true,
+        "registry": true,
+        "wavDuration": true,
+        "indexStart": true,
+        "indexDuration": true,
+        "indexSource": true,
+        "slotFit": true
+      }
+    },
+    {
+      "id": "report",
+      "text": "Focus Trail shows you where the journey breaks.",
+      "start": 13.15,
+      "duration": 3.0,
+      "sha256": "ef72ff12b54a25dc9cfaeecc332765d0f6b1202aa1fb48b8b9957a0a5e177af0",
+      "checks": {
+        "hash": true,
+        "registry": true,
+        "wavDuration": true,
+        "indexStart": true,
+        "indexDuration": true,
+        "indexSource": true,
+        "slotFit": true
+      }
+    },
+    {
+      "id": "close",
+      "text": "Catch it before your users do.",
+      "start": 17.5,
+      "duration": 2.1,
+      "sha256": "07a5167b40c37fa2c54a69e21040e20c24df3dee3c252220b72062c1872d4d4a",
+      "checks": {
+        "hash": true,
+        "registry": true,
+        "wavDuration": true,
+        "indexStart": true,
+        "indexDuration": true,
+        "indexSource": true,
+        "slotFit": true
+      }
+    }
+  ],
+  "zip": {
+    "sha256": "be4ea89cf4f0070ecc53c80ff8b36014be648ef0ca12bcbb68ac014c54f8d9db",
+    "crc": null,
+    "voiceMatches": [
+      {
+        "id": "intro",
+        "matches": true,
+        "paths": [
+          "focus-trail-reel/assets/voice/intro.wav"
+        ]
+      },
+      {
+        "id": "good",
+        "matches": true,
+        "paths": [
+          "focus-trail-reel/assets/voice/good.wav"
+        ]
+      },
+      {
+        "id": "bad",
+        "matches": true,
+        "paths": [
+          "focus-trail-reel/assets/voice/bad.wav"
+        ]
+      },
+      {
+        "id": "report",
+        "matches": true,
+        "paths": [
+          "focus-trail-reel/assets/voice/report.wav"
+        ]
+      },
+      {
+        "id": "close",
+        "matches": true,
+        "paths": [
+          "focus-trail-reel/assets/voice/close.wav"
+        ]
+      }
+    ],
+    "machinePaths": [],
+    "runtimeOrModels": [],
+    "fileCount": 85,
+    "mp4Matches": true
+  },
   "relativeReadmeLinks": [
     {
       "from": "README.md",
@@ -399,6 +529,16 @@
     },
     {
       "from": "evidence/reel/README.md",
+      "target": "relocated-source-check.json",
+      "exists": true
+    },
+    {
+      "from": "evidence/reel/README.md",
+      "target": "publication-review.json",
+      "exists": true
+    },
+    {
+      "from": "evidence/reel/README.md",
       "target": "verification.json",
       "exists": true
     },
@@ -423,64 +563,64 @@
       "exists": true
     }
   ],
-  "voiceFiles": [
-    {
-      "id": "intro",
-      "sha256": "7f6e80aa4e6bc5b29ad217f4ca8ac7e009265ee373abe36e58843b972fd4d838",
-      "registeredMatches": true,
-      "sampleRate": 48000,
-      "channels": 1,
-      "width": 2,
-      "duration": 2.05
-    },
-    {
-      "id": "good",
-      "sha256": "b6652bea2a52ec46e08df5abf4a3c7e1929ee202c5df5ed01a08873bc2047e23",
-      "registeredMatches": true,
-      "sampleRate": 48000,
-      "channels": 1,
-      "width": 2,
-      "duration": 4.7
-    },
-    {
-      "id": "bad",
-      "sha256": "a66d34edc758eb99b6be9d987dda896da9564a3f2970b2f787882b89b9a4404d",
-      "registeredMatches": true,
-      "sampleRate": 48000,
-      "channels": 1,
-      "width": 2,
-      "duration": 4.6
-    },
-    {
-      "id": "report",
-      "sha256": "ed11fd1d877fb688df01bc6a8f996fa37621628b0efa8d09560fb17e98d6086a",
-      "registeredMatches": true,
-      "sampleRate": 48000,
-      "channels": 1,
-      "width": 2,
-      "duration": 3.4
-    },
-    {
-      "id": "close",
-      "sha256": "ddfe35ecf2f35aaefa8b9d09b5ae786f4df11bb773be4c67c209eaced2c1e6be",
-      "registeredMatches": true,
-      "sampleRate": 48000,
-      "channels": 1,
-      "width": 2,
-      "duration": 2.4
-    }
-  ],
-  "zip": {
-    "badCrc": null,
-    "fileCount": 83,
-    "machinePaths": [],
-    "runtimeOrModels": []
-  },
-  "mp4Sha256": "8c96d1f9d1ca3effb38de0508a1b5f1ce73b51ad91139f0fc23868a472ec2a39",
   "trackedChanges": [
-    "README.md"
+    "evidence/reel/README.md",
+    "evidence/reel/audio-analysis.log",
+    "evidence/reel/audio-events.json",
+    "evidence/reel/audio-match.json",
+    "evidence/reel/check.json",
+    "evidence/reel/encoded-contact-sheet.png",
+    "evidence/reel/encoded-good-result.png",
+    "evidence/reel/ffprobe.json",
+    "evidence/reel/mix-loudness.log",
+    "evidence/reel/narration-registration.json",
+    "evidence/reel/narration-verification.json",
+    "evidence/reel/publication-manifest.json",
+    "evidence/reel/render.log",
+    "evidence/reel/verification.json",
+    "social/reel/focus-trail-instagram-kit.zip",
+    "social/reel/focus-trail-instagram-reel.mp4",
+    "social/reel/narration-script.txt",
+    "social/reel/narration.srt",
+    "social/reel/source/.media/audio/voice/voice_001.wav",
+    "social/reel/source/.media/audio/voice/voice_002.wav",
+    "social/reel/source/.media/audio/voice/voice_003.wav",
+    "social/reel/source/.media/audio/voice/voice_004.wav",
+    "social/reel/source/.media/audio/voice/voice_005.wav",
+    "social/reel/source/.media/index.md",
+    "social/reel/source/.media/manifest.jsonl",
+    "social/reel/source/BRIEF.md",
+    "social/reel/source/README.md",
+    "social/reel/source/STORYBOARD.md",
+    "social/reel/source/VOICE.md",
+    "social/reel/source/assets/voice/bad.wav",
+    "social/reel/source/assets/voice/close.wav",
+    "social/reel/source/assets/voice/good.wav",
+    "social/reel/source/assets/voice/intro.wav",
+    "social/reel/source/assets/voice/report.wav",
+    "social/reel/source/evidence/README.md",
+    "social/reel/source/evidence/audio-analysis.log",
+    "social/reel/source/evidence/audio-events.json",
+    "social/reel/source/evidence/audio-match.json",
+    "social/reel/source/evidence/check.json",
+    "social/reel/source/evidence/encoded-contact-sheet.png",
+    "social/reel/source/evidence/encoded-good-result.png",
+    "social/reel/source/evidence/ffprobe.json",
+    "social/reel/source/evidence/mix-loudness.log",
+    "social/reel/source/evidence/narration-registration.json",
+    "social/reel/source/evidence/narration-verification.json",
+    "social/reel/source/evidence/render.log",
+    "social/reel/source/evidence/verification.json",
+    "social/reel/source/index.html",
+    "social/reel/source/narration-cues.json",
+    "social/reel/source/narration-registration.json",
+    "social/reel/source/narration-script.txt",
+    "social/reel/source/narration-verification.json",
+    "social/reel/source/narration.srt",
+    "social/reel/source/renders/focus-trail-instagram-reel.mp4",
+    "social/reel/source/scripts/generate-voice.py"
   ],
-  "gitStatus": " M README.md\n?? evidence/reel/\n?? social/reel/\n",
+  "gitStatus": " M evidence/reel/README.md\n M evidence/reel/audio-analysis.log\n M evidence/reel/audio-events.json\n M evidence/reel/audio-match.json\n M evidence/reel/check.json\n M evidence/reel/encoded-contact-sheet.png\n M evidence/reel/encoded-good-result.png\n M evidence/reel/ffprobe.json\n M evidence/reel/mix-loudness.log\n M evidence/reel/narration-registration.json\n M evidence/reel/narration-verification.json\n M evidence/reel/publication-manifest.json\n M evidence/reel/render.log\n M evidence/reel/verification.json\n M social/reel/focus-trail-instagram-kit.zip\n M social/reel/focus-trail-instagram-reel.mp4\n M social/reel/narration-script.txt\n M social/reel/narration.srt\n M social/reel/source/.media/audio/voice/voice_001.wav\n M social/reel/source/.media/audio/voice/voice_002.wav\n M social/reel/source/.media/audio/voice/voice_003.wav\n M social/reel/source/.media/audio/voice/voice_004.wav\n M social/reel/source/.media/audio/voice/voice_005.wav\n M social/reel/source/.media/index.md\n M social/reel/source/.media/manifest.jsonl\n M social/reel/source/BRIEF.md\n M social/reel/source/README.md\n M social/reel/source/STORYBOARD.md\n M social/reel/source/VOICE.md\n M social/reel/source/assets/voice/bad.wav\n M social/reel/source/assets/voice/close.wav\n M social/reel/source/assets/voice/good.wav\n M social/reel/source/assets/voice/intro.wav\n M social/reel/source/assets/voice/report.wav\n M social/reel/source/evidence/README.md\n M social/reel/source/evidence/audio-analysis.log\n M social/reel/source/evidence/audio-events.json\n M social/reel/source/evidence/audio-match.json\n M social/reel/source/evidence/check.json\n M social/reel/source/evidence/encoded-contact-sheet.png\n M social/reel/source/evidence/encoded-good-result.png\n M social/reel/source/evidence/ffprobe.json\n M social/reel/source/evidence/mix-loudness.log\n M social/reel/source/evidence/narration-registration.json\n M social/reel/source/evidence/narration-verification.json\n M social/reel/source/evidence/render.log\n M social/reel/source/evidence/verification.json\n M social/reel/source/index.html\n M social/reel/source/narration-cues.json\n M social/reel/source/narration-registration.json\n M social/reel/source/narration-script.txt\n M social/reel/source/narration-verification.json\n M social/reel/source/narration.srt\n M social/reel/source/renders/focus-trail-instagram-reel.mp4\n M social/reel/source/scripts/generate-voice.py\n?? evidence/reel/narrative-review.json\n?? social/reel/source/evidence/narrative-review.json\n",
   "frozenCandidates": [
     {
       "path": "distribution/focus-trail-0.1.0.tgz",
@@ -495,5 +635,11 @@
       "sha256": "79bac5b64c1f96e7cb684e4bb746cc37af4bda902f719590bacc3984fb8e67e4"
     }
   ],
-  "payloadFiles": 116
+  "excludedIgnoredArtifacts": [
+    {
+      "path": "social/reel/source/.hyperframes/video-state.json",
+      "reason": "Generated by relocated HyperFrames check; ignored by source/.gitignore, untracked, and absent from ZIP.",
+      "ignoreRule": "social/reel/source/.gitignore:1:.hyperframes/\tsocial/reel/source/.hyperframes/video-state.json"
+    }
+  ]
 }

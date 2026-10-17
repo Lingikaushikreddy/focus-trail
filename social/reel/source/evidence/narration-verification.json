@@ -3,10 +3,10 @@
   "cues": [
     {
       "id": "intro",
-      "duration": 2.05,
-      "sha256": "7f6e80aa4e6bc5b29ad217f4ca8ac7e009265ee373abe36e58843b972fd4d838",
-      "integratedLufs": -15.55,
-      "truePeakDbtp": -2.0,
+      "duration": 1.95,
+      "sha256": "1df223b9f898989eaaa6f0e13f220467a31d79c6f7b598cef621278c02604061",
+      "integratedLufs": -14.92,
+      "truePeakDbtp": -1.99,
       "checks": {
         "sha256Matches": true,
         "durationMatches": true,
@@ -17,9 +17,9 @@
     },
     {
       "id": "good",
-      "duration": 4.7,
-      "sha256": "b6652bea2a52ec46e08df5abf4a3c7e1929ee202c5df5ed01a08873bc2047e23",
-      "integratedLufs": -17.04,
+      "duration": 3.15,
+      "sha256": "28a39bf5c6793190a0ef6fb1e67bfbbfa33f94a8a1f720840e6788803acce078",
+      "integratedLufs": -17.27,
       "truePeakDbtp": -2.0,
       "checks": {
         "sha256Matches": true,
@@ -31,9 +31,9 @@
     },
     {
       "id": "bad",
-      "duration": 4.6,
-      "sha256": "a66d34edc758eb99b6be9d987dda896da9564a3f2970b2f787882b89b9a4404d",
-      "integratedLufs": -16.84,
+      "duration": 3.7,
+      "sha256": "316b9a027fef9a12d1135375ad09102113df5c2b1210761ae88159b637f3eea8",
+      "integratedLufs": -18.32,
       "truePeakDbtp": -2.0,
       "checks": {
         "sha256Matches": true,
@@ -45,9 +45,9 @@
     },
     {
       "id": "report",
-      "duration": 3.4,
-      "sha256": "ed11fd1d877fb688df01bc6a8f996fa37621628b0efa8d09560fb17e98d6086a",
-      "integratedLufs": -17.52,
+      "duration": 3.0,
+      "sha256": "ef72ff12b54a25dc9cfaeecc332765d0f6b1202aa1fb48b8b9957a0a5e177af0",
+      "integratedLufs": -16.77,
       "truePeakDbtp": -2.0,
       "checks": {
         "sha256Matches": true,
@@ -59,9 +59,9 @@
     },
     {
       "id": "close",
-      "duration": 2.4,
-      "sha256": "ddfe35ecf2f35aaefa8b9d09b5ae786f4df11bb773be4c67c209eaced2c1e6be",
-      "integratedLufs": -16.28,
+      "duration": 2.1,
+      "sha256": "07a5167b40c37fa2c54a69e21040e20c24df3dee3c252220b72062c1872d4d4a",
+      "integratedLufs": -15.9,
       "truePeakDbtp": -2.0,
       "checks": {
         "sha256Matches": true,

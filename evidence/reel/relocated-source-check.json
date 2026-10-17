@@ -72,10 +72,10 @@
     "findingFiles": []
   },
   "saved": {
-    "id": "f3e90a3d-157b-43dc-9adb-423fe326042c",
-    "revision": null,
-    "report": "<workspace>/outputs/focus-trail/social/reel/source/.hyperframes/artifacts/checks/f3e90a3d-157b-43dc-9adb-423fe326042c.json",
-    "attribution": "unversioned"
+    "id": "21bb6966-d41c-424c-b4d2-dc2d0ad95361",
+    "revision": "bf7c5953-2eed-4789-bc3c-8ae27c215626",
+    "report": "<workspace>/outputs/focus-trail/social/reel/source/.hyperframes/artifacts/checks/21bb6966-d41c-424c-b4d2-dc2d0ad95361.json",
+    "attribution": "recorded-revision"
   },
   "_meta": {
     "version": "0.8.167",

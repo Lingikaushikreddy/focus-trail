@@ -1,6 +1,6 @@
 # Focus Trail · Instagram Reel
 
-A 20-second portrait Reel showing the new UI, a working keyboard journey, a deliberate lost-return-focus bug, and its saved report.
+A 20-second portrait Reel showing the new UI, a working keyboard journey, a deliberate lost-return-focus bug, and its saved report. The narration tells a short developer story with a curious hook, a hidden break and a user-facing payoff.
 
 - **Video:** `renders/focus-trail-instagram-reel.mp4`
 - **Cover:** `poster.png`

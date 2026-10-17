@@ -1,8 +1,8 @@
 {
-  "verified_utc": "2026-10-17T02:04:14.571401+00:00",
+  "verified_utc": "2026-10-17T02:13:49.571272+00:00",
   "artifact": "renders/focus-trail-instagram-reel.mp4",
-  "sha256": "8c96d1f9d1ca3effb38de0508a1b5f1ce73b51ad91139f0fc23868a472ec2a39",
-  "bytes": 2599855,
+  "sha256": "cde88f65d1d1d6113b65da436069a55a79706bd64c7d628d53ece742a7fc0f38",
+  "bytes": 2569031,
   "video": {
     "duration_seconds": 20,
     "dimensions": [
@@ -24,21 +24,22 @@
     "provider": "local Kokoro",
     "voice_segments": 5,
     "encoded_match": {
-      "minimum_segment_correlation": 0.999946,
-      "whole_mix_correlation": 0.999967,
+      "minimum_segment_correlation": 0.999862,
+      "whole_mix_correlation": 0.999942,
       "passed": true,
       "record": "audio-match.json"
     },
     "voice_verification_checks": 25,
     "voice_source_hashes": {
-      "assets/voice/bad.wav": "a66d34edc758eb99b6be9d987dda896da9564a3f2970b2f787882b89b9a4404d",
-      "assets/voice/close.wav": "ddfe35ecf2f35aaefa8b9d09b5ae786f4df11bb773be4c67c209eaced2c1e6be",
-      "assets/voice/good.wav": "b6652bea2a52ec46e08df5abf4a3c7e1929ee202c5df5ed01a08873bc2047e23",
-      "assets/voice/intro.wav": "7f6e80aa4e6bc5b29ad217f4ca8ac7e009265ee373abe36e58843b972fd4d838",
-      "assets/voice/report.wav": "ed11fd1d877fb688df01bc6a8f996fa37621628b0efa8d09560fb17e98d6086a"
+      "assets/voice/intro.wav": "1df223b9f898989eaaa6f0e13f220467a31d79c6f7b598cef621278c02604061",
+      "assets/voice/good.wav": "28a39bf5c6793190a0ef6fb1e67bfbbfa33f94a8a1f720840e6788803acce078",
+      "assets/voice/bad.wav": "316b9a027fef9a12d1135375ad09102113df5c2b1210761ae88159b637f3eea8",
+      "assets/voice/report.wav": "ef72ff12b54a25dc9cfaeecc332765d0f6b1202aa1fb48b8b9957a0a5e177af0",
+      "assets/voice/close.wav": "07a5167b40c37fa2c54a69e21040e20c24df3dee3c252220b72062c1872d4d4a"
     },
-    "integrated_lufs": -13.55,
-    "true_peak_dbtp": -1.96
+    "integrated_lufs": -13.6,
+    "true_peak_dbtp": -1.97,
+    "narrative_style": "Short developer story: ship-ready hook, ordinary setting change, hidden focus break, discovery, user-facing CTA"
   },
   "decode_errors": 0,
   "hyperframes_version": "0.8.167",
@@ -54,7 +55,7 @@
     "motion_audit_enabled": false
   },
   "source_sha256": {
-    "index.html": "7d948606b47b61cdeacdfbe73198ff7c902b144040d59eb3e1486995382f1c6c",
+    "index.html": "0030fd191efde6e51df224164bc2c45ea2205c6a6f41c7c1a8d4bd5791ace573",
     "compositions/frames/bad.html": "8038526832d5b5977860893d7f4a11608f253f34d999d9379625245deb1d12fa",
     "compositions/frames/good.html": "cb326bf17026be3a8d092f4c05786cabcf6ae2fbb554670fc7394ab8a759c9c2",
     "compositions/frames/intro.html": "9ac53f0d025afafd0ca115c8a5018633307b6f654496368437add52dfce62234",

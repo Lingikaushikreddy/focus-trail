@@ -1,19 +1,19 @@
 1
-00:00:00,150 --> 00:00:02,200
-Pretty UI. But where’s focus?
+00:00:00,150 --> 00:00:02,100
+Looks ready to ship, right?
 
 2
-00:00:03,150 --> 00:00:07,850
-Tab. Enter. Tab. Escape. Focus returns.
+00:00:03,200 --> 00:00:06,350
+A quick setting change. Back to what you were doing.
 
 3
-00:00:08,150 --> 00:00:12,750
-Same keys. This time, focus gets lost.
+00:00:08,900 --> 00:00:12,600
+Then one tiny change… and suddenly, you’ve lost your place.
 
 4
-00:00:13,150 --> 00:00:16,550
-Focus Trail flags the failed return checkpoint.
+00:00:13,150 --> 00:00:16,150
+Focus Trail shows you where the journey breaks.
 
 5
-00:00:17,500 --> 00:00:19,900
-Keep your place. Try Focus Trail.
+00:00:17,500 --> 00:00:19,600
+Catch it before your users do.
