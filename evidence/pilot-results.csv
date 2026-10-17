@@ -1,0 +1,6 @@
+participant,order,independent_repository,install_success,setup_seconds,first_useful_result_seconds,A_correct,A_seconds,A_wrong_baseline_approvals,B_correct,B_seconds,B_wrong_baseline_approvals,preference,assistance,notes
+p01,AB,,,,,,,,,,,,,
+p02,AB,,,,,,,,,,,,,
+p03,AB,,,,,,,,,,,,,
+p04,BA,,,,,,,,,,,,,
+p05,BA,,,,,,,,,,,,,

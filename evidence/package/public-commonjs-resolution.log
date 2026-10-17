@@ -1,0 +1,17 @@
+{
+  "executable": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/runtime/node_modules/node/bin/node",
+  "args": [
+    "-e",
+    "for (const name of ['focus-trail','focus-trail/reporter']) { console.log(require.resolve(name)); } if (typeof require('focus-trail').createJourney !== 'function') throw new Error('Missing public helper'); if (typeof require('focus-trail/reporter').default !== 'function') throw new Error('Missing reporter');"
+  ],
+  "cwd": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt",
+  "expectedExit": 0,
+  "actualExit": 0,
+  "signal": null
+}
+
+STDOUT
+/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt/node_modules/focus-trail/dist/index.js
+/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt/node_modules/focus-trail/dist/reporter.js
+
+STDERR

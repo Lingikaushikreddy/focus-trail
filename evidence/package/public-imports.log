@@ -1,0 +1,17 @@
+{
+  "executable": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/runtime/node_modules/node/bin/node",
+  "args": [
+    "--input-type=module",
+    "-e",
+    "import { createJourney, test, compare, parseJourney, InvalidJourneyError } from 'focus-trail'; import Reporter from 'focus-trail/reporter'; for (const value of [createJourney,test,compare,parseJourney,InvalidJourneyError,Reporter]) { if (typeof value !== 'function') throw new Error('Missing public export'); } console.log('Public exports resolved from installed package');"
+  ],
+  "cwd": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt",
+  "expectedExit": 0,
+  "actualExit": 0,
+  "signal": null
+}
+
+STDOUT
+Public exports resolved from installed package
+
+STDERR

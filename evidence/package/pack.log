@@ -1,0 +1,210 @@
+{
+  "executable": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/runtime/node_modules/node/bin/node",
+  "args": [
+    "/opt/homebrew/lib/node_modules/npm/bin/npm-cli.js",
+    "pack",
+    "--ignore-scripts",
+    "--json",
+    "--pack-destination",
+    "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail/evidence/package"
+  ],
+  "cwd": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail",
+  "expectedExit": 0,
+  "actualExit": 0,
+  "signal": null
+}
+
+STDOUT
+[
+  {
+    "id": "focus-trail@0.1.0",
+    "name": "focus-trail",
+    "version": "0.1.0",
+    "size": 65252,
+    "unpackedSize": 282130,
+    "shasum": "29ad848f9f9d4b66bc06db20b881d1a9b1fb1bd0",
+    "integrity": "sha512-+ZkyAwkSP3phoIalzrNi1aUStOktdCrlielFKZv5OdSS+2Zf52baGV3B9UQXy+dZcWHGNPg1kYWO+GFq6g+j8A==",
+    "filename": "focus-trail-0.1.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1081,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 4293,
+        "mode": 420
+      },
+      {
+        "path": "dist/chunk-5AIYLYST.js",
+        "size": 14274,
+        "mode": 420
+      },
+      {
+        "path": "dist/chunk-5AIYLYST.js.map",
+        "size": 19438,
+        "mode": 420
+      },
+      {
+        "path": "dist/chunk-FTC5XAX4.js",
+        "size": 9127,
+        "mode": 420
+      },
+      {
+        "path": "dist/chunk-FTC5XAX4.js.map",
+        "size": 18189,
+        "mode": 420
+      },
+      {
+        "path": "dist/cli.d.ts",
+        "size": 94,
+        "mode": 420
+      },
+      {
+        "path": "dist/cli.js",
+        "size": 2413,
+        "mode": 493
+      },
+      {
+        "path": "dist/cli.js.map",
+        "size": 4166,
+        "mode": 420
+      },
+      {
+        "path": "dist/index.d.ts",
+        "size": 1350,
+        "mode": 420
+      },
+      {
+        "path": "dist/index.js",
+        "size": 16292,
+        "mode": 420
+      },
+      {
+        "path": "dist/index.js.map",
+        "size": 28463,
+        "mode": 420
+      },
+      {
+        "path": "dist/reporter.d.ts",
+        "size": 1179,
+        "mode": 420
+      },
+      {
+        "path": "dist/reporter.js",
+        "size": 8684,
+        "mode": 420
+      },
+      {
+        "path": "dist/reporter.js.map",
+        "size": 14977,
+        "mode": 420
+      },
+      {
+        "path": "dist/types-Cah3DzEv.d.ts",
+        "size": 2067,
+        "mode": 420
+      },
+      {
+        "path": "docs/baseline-review.md",
+        "size": 3738,
+        "mode": 420
+      },
+      {
+        "path": "docs/implementation.md",
+        "size": 3246,
+        "mode": 420
+      },
+      {
+        "path": "docs/limits.md",
+        "size": 4115,
+        "mode": 420
+      },
+      {
+        "path": "docs/original-spec.md",
+        "size": 17773,
+        "mode": 420
+      },
+      {
+        "path": "docs/pilot.md",
+        "size": 2428,
+        "mode": 420
+      },
+      {
+        "path": "docs/provenance.md",
+        "size": 3102,
+        "mode": 420
+      },
+      {
+        "path": "docs/qualification.md",
+        "size": 6344,
+        "mode": 420
+      },
+      {
+        "path": "docs/quickstart.md",
+        "size": 4350,
+        "mode": 420
+      },
+      {
+        "path": "evidence/demo/activation.html",
+        "size": 13157,
+        "mode": 420
+      },
+      {
+        "path": "evidence/demo/escape.html",
+        "size": 21796,
+        "mode": 420
+      },
+      {
+        "path": "evidence/demo/good.html",
+        "size": 20874,
+        "mode": 420
+      },
+      {
+        "path": "evidence/demo/lost-return.html",
+        "size": 21759,
+        "mode": 420
+      },
+      {
+        "path": "examples/dialog/app/app.js",
+        "size": 2914,
+        "mode": 420
+      },
+      {
+        "path": "examples/dialog/app/index.html",
+        "size": 2901,
+        "mode": 420
+      },
+      {
+        "path": "examples/dialog/app/style.css",
+        "size": 2820,
+        "mode": 420
+      },
+      {
+        "path": "examples/dialog/playwright.config.ts",
+        "size": 648,
+        "mode": 420
+      },
+      {
+        "path": "examples/dialog/server.mjs",
+        "size": 1277,
+        "mode": 420
+      },
+      {
+        "path": "examples/dialog/tests/journeys.spec.ts",
+        "size": 1183,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 1618,
+        "mode": 420
+      }
+    ],
+    "entryCount": 35,
+    "bundled": []
+  }
+]
+
+STDERR

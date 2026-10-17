@@ -1,0 +1,43 @@
+{
+  "passingJourneys": 3,
+  "detectedFaults": [
+    {
+      "variant": "lost-return",
+      "journeyId": "return-focus",
+      "expectedExit": 1,
+      "actualExit": 1,
+      "status": "regressed",
+      "firstDifference": {
+        "index": 7,
+        "checkpointId": "return-opener",
+        "kind": "checkpoint",
+        "reason": "Checkpoint return-opener did not receive focus within 500ms"
+      }
+    },
+    {
+      "variant": "escape",
+      "journeyId": "modal-containment",
+      "expectedExit": 1,
+      "actualExit": 1,
+      "status": "regressed",
+      "firstDifference": {
+        "index": 7,
+        "checkpointId": "save-wrap",
+        "kind": "checkpoint",
+        "reason": "Checkpoint save-wrap did not receive focus within 500ms"
+      }
+    },
+    {
+      "variant": "activation",
+      "journeyId": "activation",
+      "expectedExit": 1,
+      "actualExit": 1,
+      "status": "regressed",
+      "firstDifference": {
+        "index": 3,
+        "kind": "run-failure",
+        "reason": "Application test failed: Error: Enter should open the settings dialog"
+      }
+    }
+  ]
+}

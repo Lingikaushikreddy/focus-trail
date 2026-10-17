@@ -1,0 +1,33 @@
+
+Running 1 test using 1 worker
+
+  ✘  1 examples/dialog/tests/journeys.spec.ts:5:3 › return-focus (771ms)
+
+
+  1) examples/dialog/tests/journeys.spec.ts:5:3 › return-focus ─────────────────────────────────────
+
+    Error: Checkpoint return-opener did not receive focus within 500ms
+
+       at ../../../packages/core/src/journey.ts:73
+
+      71 |     result.status = 'failed';
+      72 |     result.error ??= redact(message);
+    > 73 |     return new Error(redact(message));
+         |            ^
+      74 |   };
+      75 |   const assertDuration = () => {
+      76 |     if (remaining() <= 0) throw new Error('Journey duration budget exceeded');
+        at fail (/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail/packages/core/src/journey.ts:73:12)
+        at record (/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail/packages/core/src/journey.ts:102:13)
+        at /Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail/packages/core/src/journey.ts:133:9
+
+    attachment #1: focus-trail:return-focus.json (application/json) ────────────────────────────────
+    ../../work/demo-tests-lost-return/journeys-return-focus/attachments/focus-trail-return-focus-json-7e51662aeecb0891e74ba76e64912200f29b49da.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../work/demo-tests-lost-return/journeys-return-focus/error-context.md
+
+  1 failed
+    examples/dialog/tests/journeys.spec.ts:5:3 › return-focus ──────────────────────────────────────
+(node:69582) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

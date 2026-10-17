@@ -1,0 +1,20 @@
+{
+  "executable": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt/node_modules/.bin/focus-trail",
+  "args": [
+    "compare",
+    "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt/reviewed-baselines/packed.dialog.json",
+    "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt/incomparable.json",
+    "--out",
+    "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail/evidence/package/cli-incomparable.html"
+  ],
+  "cwd": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt",
+  "expectedExit": 3,
+  "actualExit": 3,
+  "signal": null
+}
+
+STDOUT
+incomparable: browserVersion differs between the baseline and current run.
+Report: /Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail/evidence/package/cli-incomparable.html
+
+STDERR

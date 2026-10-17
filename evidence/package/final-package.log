@@ -1,0 +1,22 @@
+
+> focus-trail@0.1.0 test:pack
+> node scripts/test-pack.mjs
+
+pack: exit 0
+install: exit 0
+browser-cache-resolution: exit 0
+public-imports: exit 0
+public-commonjs-resolution: exit 0
+browser-baseline-capture: exit 0
+browser-unchanged: exit 0
+browser-lost-return: exit 1
+browser-activation: exit 1
+browser-action-budget: exit 1
+browser-checkpoint-budget: exit 1
+cli-unchanged: exit 0
+cli-lost-return: exit 1
+cli-activation: exit 1
+cli-invalid: exit 2
+cli-incomparable: exit 3
+cli-failed-baseline: exit 2
+Package verification: passed; evidence/package/verification.json

@@ -1,0 +1,60 @@
+{
+  "qualificationDate": "2026-10-16",
+  "timezone": "America/Los_Angeles",
+  "version": "0.1.0",
+  "status": "local engineering qualification passed; independent human release gate pending",
+  "environment": {
+    "node": "v24.22.0",
+    "platform": "darwin",
+    "architecture": "arm64",
+    "playwright": "1.64.1",
+    "chromium": "156.0.8078.4",
+    "revision": "1248",
+    "channel": "chromium",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "locale": "en-US"
+  },
+  "verification": {
+    "lint": "passed",
+    "typecheck": "passed",
+    "build": "passed",
+    "unitTests": 114,
+    "integrationTests": 34,
+    "reportE2ETests": 8,
+    "totalAutomatedTests": 156,
+    "repeatCases": 80,
+    "repeatFailures": 0,
+    "packageChecks": 56,
+    "packageFailures": 0,
+    "demoAutonomousBootstrap": "passed",
+    "codeReview": "three findings addressed; scoped re-review clean",
+    "sourceDerivedFrameworkReproduction": "verified against final tarball"
+  },
+  "candidate": {
+    "path": "evidence/package/focus-trail-0.1.0.tgz",
+    "sha256": "727d54f969814c4fb375fe4b845da1b361db7cdbcf337296b58da2803e99aace",
+    "integrity": "sha512-+ZkyAwkSP3phoIalzrNi1aUStOktdCrlielFKZv5OdSS+2Zf52baGV3B9UQXy+dZcWHGNPg1kYWO+GFq6g+j8A=="
+  },
+  "evidence": {
+    "fullVerification": "evidence/verification.log",
+    "repeats": "evidence/repeat-verification.log",
+    "package": "evidence/package/verification.json",
+    "framework": "evidence/upstream/result.json",
+    "codeReview": "evidence/code-review.md",
+    "reReview": "evidence/code-re-review.md",
+    "firstFailedRepeat": "evidence/investigation/repeat-before-fix.log"
+  },
+  "externalGates": {
+    "independentMaintainerInstallations": {
+      "required": 3,
+      "completed": 0,
+      "status": "pending"
+    },
+    "fiveMaintainerDiagnosticPilot": "prepared; no outcomes collected",
+    "inclusiveHumanReportAssessment": "pending",
+    "publicPublication": "not performed"
+  }
+}

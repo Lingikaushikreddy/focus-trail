@@ -1,0 +1,179 @@
+{
+  "testId": "aa09586c1d16412a1f00-72a0c3810512c424318b",
+  "testTitle": "journeys.spec.ts › activation",
+  "testStatus": "failed",
+  "retry": 0,
+  "journeyId": "activation",
+  "reviewStatus": "regressed",
+  "html": "63669d56f526af74312818a6b3e896fd.html",
+  "json": "63669d56f526af74312818a6b3e896fd.json",
+  "current": {
+    "schemaVersion": 1,
+    "journeyId": "activation",
+    "browserVersion": "156.0.8078.4",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "locale": "en-US",
+    "fixtureVersion": "dialog-1",
+    "status": "failed",
+    "steps": [
+      {
+        "index": 0,
+        "action": "Tab",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Open settings",
+          "testId": "opener"
+        },
+        "elapsedMs": 23,
+        "status": "passed"
+      },
+      {
+        "index": 1,
+        "action": null,
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Open settings",
+          "testId": "opener"
+        },
+        "elapsedMs": 54,
+        "status": "passed",
+        "checkpointId": "opener",
+        "expectedTargetKey": "opener"
+      },
+      {
+        "index": 2,
+        "action": "Enter",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Open settings",
+          "testId": "opener"
+        },
+        "elapsedMs": 58,
+        "status": "passed"
+      }
+    ],
+    "appBuild": "activation",
+    "error": "Application test failed: Error: Enter should open the settings dialog"
+  },
+  "comparison": {
+    "status": "regressed",
+    "base": {
+      "schemaVersion": 1,
+      "journeyId": "activation",
+      "browserVersion": "156.0.8078.4",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "locale": "en-US",
+      "fixtureVersion": "dialog-1",
+      "status": "passed",
+      "steps": [
+        {
+          "index": 0,
+          "action": "Tab",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open settings",
+            "testId": "opener"
+          },
+          "elapsedMs": 11,
+          "status": "passed"
+        },
+        {
+          "index": 1,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open settings",
+            "testId": "opener"
+          },
+          "elapsedMs": 33,
+          "status": "passed",
+          "checkpointId": "opener",
+          "expectedTargetKey": "opener"
+        },
+        {
+          "index": 2,
+          "action": "Enter",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Save changes",
+            "testId": "save"
+          },
+          "elapsedMs": 38,
+          "status": "passed"
+        }
+      ],
+      "appBuild": "good"
+    },
+    "current": {
+      "schemaVersion": 1,
+      "journeyId": "activation",
+      "browserVersion": "156.0.8078.4",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "locale": "en-US",
+      "fixtureVersion": "dialog-1",
+      "status": "failed",
+      "steps": [
+        {
+          "index": 0,
+          "action": "Tab",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open settings",
+            "testId": "opener"
+          },
+          "elapsedMs": 23,
+          "status": "passed"
+        },
+        {
+          "index": 1,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open settings",
+            "testId": "opener"
+          },
+          "elapsedMs": 54,
+          "status": "passed",
+          "checkpointId": "opener",
+          "expectedTargetKey": "opener"
+        },
+        {
+          "index": 2,
+          "action": "Enter",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open settings",
+            "testId": "opener"
+          },
+          "elapsedMs": 58,
+          "status": "passed"
+        }
+      ],
+      "appBuild": "activation",
+      "error": "Application test failed: Error: Enter should open the settings dialog"
+    },
+    "firstDifference": {
+      "index": 3,
+      "kind": "run-failure",
+      "reason": "Application test failed: Error: Enter should open the settings dialog"
+    }
+  }
+}

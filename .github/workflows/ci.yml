@@ -1,0 +1,26 @@
+name: Verify
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      CI: 'true'
+      FOCUS_TRAIL_WORK_DIR: ${{ runner.temp }}/focus-trail-work
+      PLAYWRIGHT_BROWSERS_PATH: ${{ runner.temp }}/focus-trail-browsers
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.22.0'
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run verify

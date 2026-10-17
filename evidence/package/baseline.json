@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "journeyId": "packed.dialog",
+  "browserVersion": "156.0.8078.4",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "locale": "en-US",
+  "fixtureVersion": "packed-fixture-v1",
+  "status": "passed",
+  "steps": [
+    {
+      "index": 0,
+      "action": "Tab",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Open dialog",
+        "testId": null
+      },
+      "elapsedMs": 11,
+      "status": "passed"
+    },
+    {
+      "index": 1,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Open dialog",
+        "testId": null
+      },
+      "elapsedMs": 37,
+      "status": "passed",
+      "checkpointId": "dialog.launcher",
+      "expectedTargetKey": "dialog.launcher"
+    },
+    {
+      "index": 2,
+      "action": "Enter",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Close dialog",
+        "testId": null
+      },
+      "elapsedMs": 43,
+      "status": "passed"
+    },
+    {
+      "index": 3,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Close dialog",
+        "testId": null
+      },
+      "elapsedMs": 51,
+      "status": "passed",
+      "checkpointId": "dialog.close",
+      "expectedTargetKey": "dialog.close"
+    },
+    {
+      "index": 4,
+      "action": "Escape",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Open dialog",
+        "testId": null
+      },
+      "elapsedMs": 55,
+      "status": "passed"
+    },
+    {
+      "index": 5,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Open dialog",
+        "testId": null
+      },
+      "elapsedMs": 65,
+      "status": "passed",
+      "checkpointId": "dialog.return",
+      "expectedTargetKey": "dialog.return"
+    }
+  ]
+}

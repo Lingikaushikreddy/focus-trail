@@ -1,0 +1,19 @@
+{
+  "executable": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt/node_modules/.bin/focus-trail",
+  "args": [
+    "compare",
+    "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt/reviewed-baselines/packed.dialog.json",
+    "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt/invalid.json",
+    "--out",
+    "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail/evidence/package/cli-invalid.html"
+  ],
+  "cwd": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt",
+  "expectedExit": 2,
+  "actualExit": 2,
+  "signal": null
+}
+
+STDOUT
+
+STDERR
+Focus Trail tool error: schemaVersion: only schema version 1 is supported

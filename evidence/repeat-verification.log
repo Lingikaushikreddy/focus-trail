@@ -1,0 +1,129 @@
+
+> focus-trail@0.1.0 evidence:repeat
+> playwright test --project=integration --grep 'qualification' --repeat-each=20 --output=../../work/repeat-final-tests
+
+
+Running 80 tests using 2 workers
+
+(node:66664) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:66665) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.1s)
+  ✓   2 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.2s)
+  ✓   4 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (1.0s)
+  ✓   3 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (1.0s)
+  ✓   5 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (578ms)
+  ✓   6 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (585ms)
+  ✓   8 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (422ms)
+  ✓   7 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (427ms)
+(node:66877) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:66876) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  10 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.0s)
+  ✓   9 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.1s)
+  ✓  11 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (871ms)
+  ✓  12 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (886ms)
+  ✓  13 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (624ms)
+  ✓  14 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (613ms)
+  ✓  15 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (438ms)
+  ✓  16 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (451ms)
+(node:67034) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:67036) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  18 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.1s)
+  ✓  17 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.1s)
+  ✓  19 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (1.2s)
+  ✓  20 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (1.2s)
+  ✓  22 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (734ms)
+  ✓  21 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (749ms)
+  ✓  23 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (736ms)
+  ✓  24 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (749ms)
+(node:67173) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:67174) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  25 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.3s)
+  ✓  26 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.3s)
+  ✓  27 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (1.2s)
+  ✓  28 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (1.2s)
+  ✓  29 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (811ms)
+  ✓  30 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (835ms)
+  ✓  31 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (769ms)
+  ✓  32 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (753ms)
+(node:67284) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:67285) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  33 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.1s)
+  ✓  34 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.1s)
+  ✓  35 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (867ms)
+  ✓  36 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (861ms)
+  ✓  37 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (586ms)
+  ✓  38 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (584ms)
+  ✓  39 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (464ms)
+  ✓  40 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (433ms)
+(node:67401) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:67402) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  41 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.3s)
+  ✓  42 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.4s)
+  ✓  44 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (830ms)
+  ✓  43 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (840ms)
+  ✓  46 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (696ms)
+  ✓  45 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (710ms)
+  ✓  47 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (594ms)
+  ✓  48 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (595ms)
+(node:67820) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:67819) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  50 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.1s)
+  ✓  49 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.1s)
+  ✓  51 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (899ms)
+  ✓  52 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (885ms)
+  ✓  53 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (534ms)
+  ✓  54 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (535ms)
+  ✓  55 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (474ms)
+  ✓  56 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (480ms)
+(node:67952) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:67953) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  57 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.1s)
+  ✓  58 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.0s)
+  ✓  60 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (1.0s)
+  ✓  59 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (1.1s)
+  ✓  61 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (719ms)
+  ✓  62 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (727ms)
+  ✓  63 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (521ms)
+  ✓  64 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (530ms)
+(node:68079) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:68080) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  66 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.1s)
+  ✓  65 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.1s)
+  ✓  67 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (870ms)
+  ✓  68 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (888ms)
+  ✓  69 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (715ms)
+  ✓  70 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (726ms)
+  ✓  72 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (472ms)
+  ✓  71 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (501ms)
+(node:68188) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:68187) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  73 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.1s)
+  ✓  74 [integration] › tests/integration/qualification.spec.ts:36:1 › qualification detects exact lost-return checkpoint against independent body oracle (1.0s)
+  ✓  76 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (949ms)
+  ✓  75 [integration] › tests/integration/qualification.spec.ts:45:1 › qualification detects escaping modal focus against independent locator oracle (976ms)
+  ✓  77 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (528ms)
+  ✓  78 [integration] › tests/integration/qualification.spec.ts:54:1 › qualification accepts delayed focus and changed build without false alarm (534ms)
+  ✓  79 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (529ms)
+  ✓  80 [integration] › tests/integration/qualification.spec.ts:60:1 › qualification accepts authored alternate return destination when opener disappears (552ms)
+
+  80 passed (40.6s)

@@ -1,0 +1,27 @@
+{
+  "executable": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/runtime/node_modules/node/bin/node",
+  "args": [
+    "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt/node_modules/@playwright/test/cli.js",
+    "test",
+    "--config=playwright.config.mjs",
+    "--grep",
+    "public helper|public dialog"
+  ],
+  "cwd": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt",
+  "expectedExit": 0,
+  "actualExit": 0,
+  "signal": null
+}
+
+STDOUT
+
+Running 2 tests using 1 worker
+
+  ✓  1 tests/public.spec.mjs:13:1 › public helper records a journey (301ms)
+  ✓  2 tests/public.spec.mjs:21:1 › public dialog fixture journey (179ms)
+
+  2 passed (1.3s)
+
+STDERR
+(node:77869) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

@@ -1,0 +1,302 @@
+{
+  "status": "regressed",
+  "base": {
+    "schemaVersion": 1,
+    "journeyId": "pyrit-remove-escape",
+    "browserVersion": "156.0.8078.4",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "locale": "en-US",
+    "fixtureVersion": "extracted-pyrit-pinned-1",
+    "status": "passed",
+    "steps": [
+      {
+        "index": 0,
+        "action": "Tab",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "New Converter",
+          "testId": "new-converter"
+        },
+        "elapsedMs": 7,
+        "status": "passed"
+      },
+      {
+        "index": 1,
+        "action": null,
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "New Converter",
+          "testId": "new-converter"
+        },
+        "elapsedMs": 19,
+        "status": "passed",
+        "checkpointId": "new-converter",
+        "expectedTargetKey": "new-converter"
+      },
+      {
+        "index": 2,
+        "action": "Tab",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Remove focus_probe",
+          "testId": "opener"
+        },
+        "elapsedMs": 23,
+        "status": "passed"
+      },
+      {
+        "index": 3,
+        "action": null,
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Remove focus_probe",
+          "testId": "opener"
+        },
+        "elapsedMs": 28,
+        "status": "passed",
+        "checkpointId": "remove-opener",
+        "expectedTargetKey": "remove-opener"
+      },
+      {
+        "index": 4,
+        "action": "Enter",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Cancel",
+          "testId": "cancel"
+        },
+        "elapsedMs": 39,
+        "status": "passed"
+      },
+      {
+        "index": 5,
+        "action": null,
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Cancel",
+          "testId": "cancel"
+        },
+        "elapsedMs": 46,
+        "status": "passed",
+        "checkpointId": "dialog-cancel",
+        "expectedTargetKey": "dialog-cancel"
+      },
+      {
+        "index": 6,
+        "action": "Tab",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Remove",
+          "testId": "confirm"
+        },
+        "elapsedMs": 49,
+        "status": "passed"
+      },
+      {
+        "index": 7,
+        "action": null,
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Remove",
+          "testId": "confirm"
+        },
+        "elapsedMs": 53,
+        "status": "passed",
+        "checkpointId": "dialog-remove",
+        "expectedTargetKey": "dialog-remove"
+      },
+      {
+        "index": 8,
+        "action": "Escape",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Remove focus_probe",
+          "testId": "opener"
+        },
+        "elapsedMs": 59,
+        "status": "passed"
+      },
+      {
+        "index": 9,
+        "action": null,
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Remove focus_probe",
+          "testId": "opener"
+        },
+        "elapsedMs": 495,
+        "status": "passed",
+        "checkpointId": "return-opener",
+        "expectedTargetKey": "return-opener"
+      }
+    ],
+    "appBuild": "after"
+  },
+  "current": {
+    "schemaVersion": 1,
+    "journeyId": "pyrit-remove-escape",
+    "browserVersion": "156.0.8078.4",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "locale": "en-US",
+    "fixtureVersion": "extracted-pyrit-pinned-1",
+    "status": "failed",
+    "steps": [
+      {
+        "index": 0,
+        "action": "Tab",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "New Converter",
+          "testId": "new-converter"
+        },
+        "elapsedMs": 15,
+        "status": "passed"
+      },
+      {
+        "index": 1,
+        "action": null,
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "New Converter",
+          "testId": "new-converter"
+        },
+        "elapsedMs": 29,
+        "status": "passed",
+        "checkpointId": "new-converter",
+        "expectedTargetKey": "new-converter"
+      },
+      {
+        "index": 2,
+        "action": "Tab",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Remove focus_probe",
+          "testId": "opener"
+        },
+        "elapsedMs": 33,
+        "status": "passed"
+      },
+      {
+        "index": 3,
+        "action": null,
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Remove focus_probe",
+          "testId": "opener"
+        },
+        "elapsedMs": 39,
+        "status": "passed",
+        "checkpointId": "remove-opener",
+        "expectedTargetKey": "remove-opener"
+      },
+      {
+        "index": 4,
+        "action": "Enter",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Cancel",
+          "testId": "cancel"
+        },
+        "elapsedMs": 50,
+        "status": "passed"
+      },
+      {
+        "index": 5,
+        "action": null,
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Cancel",
+          "testId": "cancel"
+        },
+        "elapsedMs": 57,
+        "status": "passed",
+        "checkpointId": "dialog-cancel",
+        "expectedTargetKey": "dialog-cancel"
+      },
+      {
+        "index": 6,
+        "action": "Tab",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Remove",
+          "testId": "confirm"
+        },
+        "elapsedMs": 60,
+        "status": "passed"
+      },
+      {
+        "index": 7,
+        "action": null,
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Remove",
+          "testId": "confirm"
+        },
+        "elapsedMs": 67,
+        "status": "passed",
+        "checkpointId": "dialog-remove",
+        "expectedTargetKey": "dialog-remove"
+      },
+      {
+        "index": 8,
+        "action": "Escape",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Remove",
+          "testId": "confirm"
+        },
+        "elapsedMs": 72,
+        "status": "passed"
+      },
+      {
+        "index": 9,
+        "action": null,
+        "observed": {
+          "tag": "body",
+          "role": null,
+          "name": null,
+          "testId": null,
+          "unavailable": "Last coherent sample at 1996ms; checkpoint wait ended without a later verified sample"
+        },
+        "elapsedMs": 1997,
+        "status": "failed",
+        "checkpointId": "return-opener",
+        "expectedTargetKey": "return-opener",
+        "error": "Checkpoint return-opener did not receive focus within 500ms"
+      }
+    ],
+    "appBuild": "before",
+    "error": "Checkpoint return-opener did not receive focus within 500ms"
+  },
+  "firstDifference": {
+    "index": 9,
+    "checkpointId": "return-opener",
+    "kind": "checkpoint",
+    "reason": "Checkpoint return-opener did not receive focus within 500ms"
+  }
+}

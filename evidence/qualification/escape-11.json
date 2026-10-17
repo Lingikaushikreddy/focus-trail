@@ -1,0 +1,493 @@
+{
+  "base": {
+    "schemaVersion": 1,
+    "journeyId": "containment",
+    "fixtureVersion": "dialog-1",
+    "appBuild": "good",
+    "browserVersion": "156.0.8078.4",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "locale": "en-US",
+    "status": "passed",
+    "steps": [
+      {
+        "index": 0,
+        "action": "Tab",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Open settings",
+          "testId": "opener"
+        },
+        "elapsedMs": 13,
+        "status": "passed"
+      },
+      {
+        "index": 1,
+        "action": null,
+        "checkpointId": "opener",
+        "expectedTargetKey": "opener",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Open settings",
+          "testId": "opener"
+        },
+        "elapsedMs": 41,
+        "status": "passed"
+      },
+      {
+        "index": 2,
+        "action": "Enter",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Save changes",
+          "testId": "save"
+        },
+        "elapsedMs": 48,
+        "status": "passed"
+      },
+      {
+        "index": 3,
+        "action": null,
+        "checkpointId": "save",
+        "expectedTargetKey": "save",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Save changes",
+          "testId": "save"
+        },
+        "elapsedMs": 66,
+        "status": "passed"
+      },
+      {
+        "index": 4,
+        "action": "Tab",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Cancel",
+          "testId": "cancel"
+        },
+        "elapsedMs": 71,
+        "status": "passed"
+      },
+      {
+        "index": 5,
+        "action": null,
+        "checkpointId": "cancel",
+        "expectedTargetKey": "cancel",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Cancel",
+          "testId": "cancel"
+        },
+        "elapsedMs": 87,
+        "status": "passed"
+      },
+      {
+        "index": 6,
+        "action": "Tab",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Save changes",
+          "testId": "save"
+        },
+        "elapsedMs": 93,
+        "status": "passed"
+      },
+      {
+        "index": 7,
+        "action": null,
+        "checkpointId": "save-wrap",
+        "expectedTargetKey": "save-wrap",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Save changes",
+          "testId": "save"
+        },
+        "elapsedMs": 112,
+        "status": "passed"
+      }
+    ]
+  },
+  "current": {
+    "schemaVersion": 1,
+    "journeyId": "containment",
+    "fixtureVersion": "dialog-1",
+    "appBuild": "escape",
+    "browserVersion": "156.0.8078.4",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "locale": "en-US",
+    "status": "failed",
+    "steps": [
+      {
+        "index": 0,
+        "action": "Tab",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Open settings",
+          "testId": "opener"
+        },
+        "elapsedMs": 10,
+        "status": "passed"
+      },
+      {
+        "index": 1,
+        "action": null,
+        "checkpointId": "opener",
+        "expectedTargetKey": "opener",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Open settings",
+          "testId": "opener"
+        },
+        "elapsedMs": 40,
+        "status": "passed"
+      },
+      {
+        "index": 2,
+        "action": "Enter",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Save changes",
+          "testId": "save"
+        },
+        "elapsedMs": 45,
+        "status": "passed"
+      },
+      {
+        "index": 3,
+        "action": null,
+        "checkpointId": "save",
+        "expectedTargetKey": "save",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Save changes",
+          "testId": "save"
+        },
+        "elapsedMs": 63,
+        "status": "passed"
+      },
+      {
+        "index": 4,
+        "action": "Tab",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Cancel",
+          "testId": "cancel"
+        },
+        "elapsedMs": 70,
+        "status": "passed"
+      },
+      {
+        "index": 5,
+        "action": null,
+        "checkpointId": "cancel",
+        "expectedTargetKey": "cancel",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Cancel",
+          "testId": "cancel"
+        },
+        "elapsedMs": 87,
+        "status": "passed"
+      },
+      {
+        "index": 6,
+        "action": "Tab",
+        "observed": {
+          "tag": "a",
+          "role": "link",
+          "name": "Outside the dialog",
+          "testId": "outside"
+        },
+        "elapsedMs": 99,
+        "status": "passed"
+      },
+      {
+        "index": 7,
+        "action": null,
+        "checkpointId": "save-wrap",
+        "expectedTargetKey": "save-wrap",
+        "observed": {
+          "tag": "a",
+          "role": "link",
+          "name": "Outside the dialog",
+          "testId": "outside",
+          "unavailable": "Last coherent sample at 450ms; checkpoint wait ended without a later verified sample"
+        },
+        "elapsedMs": 464,
+        "status": "failed",
+        "error": "Checkpoint save-wrap did not receive focus within 400ms"
+      }
+    ],
+    "error": "Checkpoint save-wrap did not receive focus within 400ms"
+  },
+  "comparison": {
+    "status": "regressed",
+    "base": {
+      "schemaVersion": 1,
+      "journeyId": "containment",
+      "browserVersion": "156.0.8078.4",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "locale": "en-US",
+      "fixtureVersion": "dialog-1",
+      "status": "passed",
+      "steps": [
+        {
+          "index": 0,
+          "action": "Tab",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open settings",
+            "testId": "opener"
+          },
+          "elapsedMs": 13,
+          "status": "passed"
+        },
+        {
+          "index": 1,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open settings",
+            "testId": "opener"
+          },
+          "elapsedMs": 41,
+          "status": "passed",
+          "checkpointId": "opener",
+          "expectedTargetKey": "opener"
+        },
+        {
+          "index": 2,
+          "action": "Enter",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Save changes",
+            "testId": "save"
+          },
+          "elapsedMs": 48,
+          "status": "passed"
+        },
+        {
+          "index": 3,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Save changes",
+            "testId": "save"
+          },
+          "elapsedMs": 66,
+          "status": "passed",
+          "checkpointId": "save",
+          "expectedTargetKey": "save"
+        },
+        {
+          "index": 4,
+          "action": "Tab",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "elapsedMs": 71,
+          "status": "passed"
+        },
+        {
+          "index": 5,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "elapsedMs": 87,
+          "status": "passed",
+          "checkpointId": "cancel",
+          "expectedTargetKey": "cancel"
+        },
+        {
+          "index": 6,
+          "action": "Tab",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Save changes",
+            "testId": "save"
+          },
+          "elapsedMs": 93,
+          "status": "passed"
+        },
+        {
+          "index": 7,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Save changes",
+            "testId": "save"
+          },
+          "elapsedMs": 112,
+          "status": "passed",
+          "checkpointId": "save-wrap",
+          "expectedTargetKey": "save-wrap"
+        }
+      ],
+      "appBuild": "good"
+    },
+    "current": {
+      "schemaVersion": 1,
+      "journeyId": "containment",
+      "browserVersion": "156.0.8078.4",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "locale": "en-US",
+      "fixtureVersion": "dialog-1",
+      "status": "failed",
+      "steps": [
+        {
+          "index": 0,
+          "action": "Tab",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open settings",
+            "testId": "opener"
+          },
+          "elapsedMs": 10,
+          "status": "passed"
+        },
+        {
+          "index": 1,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open settings",
+            "testId": "opener"
+          },
+          "elapsedMs": 40,
+          "status": "passed",
+          "checkpointId": "opener",
+          "expectedTargetKey": "opener"
+        },
+        {
+          "index": 2,
+          "action": "Enter",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Save changes",
+            "testId": "save"
+          },
+          "elapsedMs": 45,
+          "status": "passed"
+        },
+        {
+          "index": 3,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Save changes",
+            "testId": "save"
+          },
+          "elapsedMs": 63,
+          "status": "passed",
+          "checkpointId": "save",
+          "expectedTargetKey": "save"
+        },
+        {
+          "index": 4,
+          "action": "Tab",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "elapsedMs": 70,
+          "status": "passed"
+        },
+        {
+          "index": 5,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "elapsedMs": 87,
+          "status": "passed",
+          "checkpointId": "cancel",
+          "expectedTargetKey": "cancel"
+        },
+        {
+          "index": 6,
+          "action": "Tab",
+          "observed": {
+            "tag": "a",
+            "role": "link",
+            "name": "Outside the dialog",
+            "testId": "outside"
+          },
+          "elapsedMs": 99,
+          "status": "passed"
+        },
+        {
+          "index": 7,
+          "action": null,
+          "observed": {
+            "tag": "a",
+            "role": "link",
+            "name": "Outside the dialog",
+            "testId": "outside",
+            "unavailable": "Last coherent sample at 450ms; checkpoint wait ended without a later verified sample"
+          },
+          "elapsedMs": 464,
+          "status": "failed",
+          "checkpointId": "save-wrap",
+          "expectedTargetKey": "save-wrap",
+          "error": "Checkpoint save-wrap did not receive focus within 400ms"
+        }
+      ],
+      "appBuild": "escape",
+      "error": "Checkpoint save-wrap did not receive focus within 400ms"
+    },
+    "firstDifference": {
+      "index": 7,
+      "checkpointId": "save-wrap",
+      "kind": "checkpoint",
+      "reason": "Checkpoint save-wrap did not receive focus within 400ms"
+    }
+  }
+}

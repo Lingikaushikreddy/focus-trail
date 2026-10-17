@@ -1,0 +1,11 @@
+{
+  "scope": "Local synthetic fixture only; no independent pilot evidence",
+  "journeyId": "packed.dialog",
+  "fixtureVersion": "packed-fixture-v1",
+  "checkpoints": [
+    "dialog.launcher",
+    "dialog.close",
+    "dialog.return"
+  ],
+  "reviewedAt": "2026-10-17T00:11:30.386Z"
+}

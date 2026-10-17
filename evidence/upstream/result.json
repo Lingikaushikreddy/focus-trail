@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 1,
+  "claim": "Extracted and adapted PyRIT Remove-dialog source mechanism; complete upstream application was not executed.",
+  "upstream": {
+    "issue": "https://github.com/microsoft/PyRIT/issues/2701",
+    "pullRequest": "https://github.com/microsoft/PyRIT/pull/2717",
+    "beforeRevision": "6fd719317c09228cb332cacf5d76b6602610b591",
+    "afterRevision": "a1a4aade4ddd67885920c0cc052a902b4be916d7",
+    "originalPlaywrightVersion": "1.63.0",
+    "originalReportedPlatform": "Windows",
+    "sha256": {
+      "ConverterRegistry.before.tsx": "af34268468bb32f0647d4f340cd67a6852129774696dcbfbcd4607a914e2c9ad",
+      "ConverterRegistry.after.tsx": "da69e5f8b0edde996b5a68f7af521360605a8d0c08d57581cc7b886d100c2b6b",
+      "package-lock.before.json": "ac86d05764b659cf5a0ede16cf013596b9eec4810c61d0d22acb2b71ad9da59b",
+      "package.before.json": "a6581e25d347bb019e839f76241aec6f71e6294f846557374b436745398506d1",
+      "main.before.tsx": "137951f2726d2111bf2efc5bc87c191f3a99c57ef2a130f5bcab0aa96a117342",
+      "useTheme.before.tsx": "b85ca868f48bfa2710b7a5e39d9babfdf289f13574e63dc177df6818234971fa"
+    }
+  },
+  "adaptations": [
+    "Static one-row converter data replaces routing, authentication, API, loading, and converter creation.",
+    "Refresh, unrelated table columns, icons, and styling are omitted; mounted New Converter fallback and Remove opener remain.",
+    "Remove dialog uses the upstream controlled state, Fluent Dialog/Surface/Body/Title/Content/Actions, and Escape callback. Removing is false because backend deletion is outside this scenario.",
+    "Before closes by clearing converterToRemove. After preserves useRestoreFocusTarget, captured opener ref, open-dialog guard, and the post-commit useEffect focus restore/fallback.",
+    "Confirm handler dismisses without a backend request but is not activated. No harness focus()/blur() calls or injected DOM keyboard events are used.",
+    "The exact five-key sequence is authored for this extracted layout; the issue does not supply an exact Tab count.",
+    "StrictMode and FluentProvider with webLightTheme retain the upstream provider structure while omitting theme preferences."
+  ],
+  "environment": {
+    "node": "v24.22.0",
+    "platform": "darwin",
+    "architecture": "arm64",
+    "playwrightVersion": "1.64.1",
+    "playwrightImportPath": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail/node_modules/@playwright/test/index.mjs",
+    "focusTrailCorePath": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/upstream-repro/node_modules/focus-trail/dist/index.js",
+    "focusTrailVersion": "0.1.0",
+    "focusTrailTarballPath": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail/evidence/upstream/focus-trail-tested-0.1.0.tgz",
+    "focusTrailTarballSha256": "727d54f969814c4fb375fe4b845da1b361db7cdbcf337296b58da2803e99aace",
+    "chromiumChannel": "chromium",
+    "chromiumExecutable": "/Users/kaushikreddy/Library/Caches/ms-playwright/chromium-1248/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing",
+    "chromiumRegistryEntry": {
+      "name": "chromium",
+      "revision": "1248",
+      "installByDefault": true,
+      "browserVersion": "156.0.8078.4",
+      "title": "Chrome for Testing"
+    },
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "locale": "en-US",
+    "dependencies": {
+      "react": {
+        "installed": "19.2.8",
+        "upstream": "19.2.8"
+      },
+      "react-dom": {
+        "installed": "19.2.8",
+        "upstream": "19.2.8"
+      },
+      "@fluentui/react-components": {
+        "installed": "9.74.7",
+        "upstream": "9.74.7"
+      },
+      "@fluentui/react-dialog": {
+        "installed": "9.18.4",
+        "upstream": "9.18.4"
+      },
+      "@fluentui/react-tabster": {
+        "installed": "9.26.17",
+        "upstream": "9.26.17"
+      },
+      "tabster": {
+        "installed": "8.8.0",
+        "upstream": "8.8.0"
+      },
+      "vite": {
+        "installed": "8.2.2",
+        "upstream": "8.2.2"
+      },
+      "@vitejs/plugin-react": {
+        "installed": "6.1.1",
+        "upstream": "6.1.1"
+      }
+    },
+    "fixtureLockSharedDependencyMismatches": [],
+    "fixtureServerPort": 58314,
+    "actualBrowserVersion": "156.0.8078.4"
+  },
+  "keySequence": [
+    "Tab",
+    "Tab",
+    "Enter",
+    "Tab",
+    "Escape"
+  ],
+  "scenarios": [
+    {
+      "variant": "before",
+      "driver": "ordinary Playwright keyboard",
+      "captures": [
+        {
+          "checkpoint": "new-converter",
+          "activeElement": {
+            "tag": "button",
+            "testId": "new-converter",
+            "text": "New Converter",
+            "isBody": false,
+            "isConnected": true
+          }
+        },
+        {
+          "checkpoint": "remove-opener",
+          "activeElement": {
+            "tag": "button",
+            "testId": "opener",
+            "text": "Remove",
+            "isBody": false,
+            "isConnected": true
+          }
+        },
+        {
+          "checkpoint": "dialog-cancel",
+          "activeElement": {
+            "tag": "button",
+            "testId": "cancel",
+            "text": "Cancel",
+            "isBody": false,
+            "isConnected": true
+          }
+        },
+        {
+          "checkpoint": "dialog-remove",
+          "activeElement": {
+            "tag": "button",
+            "testId": "confirm",
+            "text": "Remove",
+            "isBody": false,
+            "isConnected": true
+          }
+        }
+      ],
+      "afterDismissal": {
+        "tag": "body",
+        "testId": null,
+        "text": "Converter RegistryNew Converterfocus_probeRemove",
+        "isBody": true,
+        "isConnected": true
+      },
+      "ordinaryReturnAssertion": "failed",
+      "ordinaryReturnAssertionError": "expect(locator).toBeFocused() failed\nLocator:  getByTestId('opener')\nExpected: focused\nReceived: inactive",
+      "observedKeys": [
+        {
+          "key": "Tab",
+          "isTrusted": true
+        },
+        {
+          "key": "Tab",
+          "isTrusted": true
+        },
+        {
+          "key": "Enter",
+          "isTrusted": true
+        },
+        {
+          "key": "Tab",
+          "isTrusted": true
+        },
+        {
+          "key": "Escape",
+          "isTrusted": true
+        }
+      ],
+      "pageErrors": []
+    },
+    {
+      "variant": "after",
+      "driver": "ordinary Playwright keyboard",
+      "captures": [
+        {
+          "checkpoint": "new-converter",
+          "activeElement": {
+            "tag": "button",
+            "testId": "new-converter",
+            "text": "New Converter",
+            "isBody": false,
+            "isConnected": true
+          }
+        },
+        {
+          "checkpoint": "remove-opener",
+          "activeElement": {
+            "tag": "button",
+            "testId": "opener",
+            "text": "Remove",
+            "isBody": false,
+            "isConnected": true
+          }
+        },
+        {
+          "checkpoint": "dialog-cancel",
+          "activeElement": {
+            "tag": "button",
+            "testId": "cancel",
+            "text": "Cancel",
+            "isBody": false,
+            "isConnected": true
+          }
+        },
+        {
+          "checkpoint": "dialog-remove",
+          "activeElement": {
+            "tag": "button",
+            "testId": "confirm",
+            "text": "Remove",
+            "isBody": false,
+            "isConnected": true
+          }
+        }
+      ],
+      "afterDismissal": {
+        "tag": "button",
+        "testId": "opener",
+        "text": "Remove",
+        "isBody": false,
+        "isConnected": true
+      },
+      "ordinaryReturnAssertion": "passed",
+      "observedKeys": [
+        {
+          "key": "Tab",
+          "isTrusted": true
+        },
+        {
+          "key": "Tab",
+          "isTrusted": true
+        },
+        {
+          "key": "Enter",
+          "isTrusted": true
+        },
+        {
+          "key": "Tab",
+          "isTrusted": true
+        },
+        {
+          "key": "Escape",
+          "isTrusted": true
+        }
+      ],
+      "pageErrors": []
+    },
+    {
+      "variant": "before",
+      "driver": "installed Focus Trail core",
+      "captures": [
+        {
+          "checkpoint": "new-converter",
+          "activeElement": {
+            "tag": "button",
+            "testId": "new-converter",
+            "text": "New Converter",
+            "isBody": false,
+            "isConnected": true
+          }
+        },
+        {
+          "checkpoint": "remove-opener",
+          "activeElement": {
+            "tag": "button",
+            "testId": "opener",
+            "text": "Remove",
+            "isBody": false,
+            "isConnected": true
+          }
+        },
+        {
+          "checkpoint": "dialog-cancel",
+          "activeElement": {
+            "tag": "button",
+            "testId": "cancel",
+            "text": "Cancel",
+            "isBody": false,
+            "isConnected": true
+          }
+        },
+        {
+          "checkpoint": "dialog-remove",
+          "activeElement": {
+            "tag": "button",
+            "testId": "confirm",
+            "text": "Remove",
+            "isBody": false,
+            "isConnected": true
+          }
+        }
+      ],
+      "afterDismissal": {
+        "tag": "body",
+        "testId": null,
+        "text": "Converter RegistryNew Converterfocus_probeRemove",
+        "isBody": true,
+        "isConnected": true
+      },
+      "ordinaryReturnAssertion": "failed",
+      "ordinaryReturnAssertionError": "expect(locator).toBeFocused() failed\nLocator:  getByTestId('opener')\nExpected: focused\nReceived: inactive",
+      "focusTrailReturnAssertion": "failed",
+      "observedKeys": [
+        {
+          "key": "Tab",
+          "isTrusted": true
+        },
+        {
+          "key": "Tab",
+          "isTrusted": true
+        },
+        {
+          "key": "Enter",
+          "isTrusted": true
+        },
+        {
+          "key": "Tab",
+          "isTrusted": true
+        },
+        {
+          "key": "Escape",
+          "isTrusted": true
+        }
+      ],
+      "pageErrors": [],
+      "focusTrailStatus": "failed"
+    },
+    {
+      "variant": "after",
+      "driver": "installed Focus Trail core",
+      "captures": [
+        {
+          "checkpoint": "new-converter",
+          "activeElement": {
+            "tag": "button",
+            "testId": "new-converter",
+            "text": "New Converter",
+            "isBody": false,
+            "isConnected": true
+          }
+        },
+        {
+          "checkpoint": "remove-opener",
+          "activeElement": {
+            "tag": "button",
+            "testId": "opener",
+            "text": "Remove",
+            "isBody": false,
+            "isConnected": true
+          }
+        },
+        {
+          "checkpoint": "dialog-cancel",
+          "activeElement": {
+            "tag": "button",
+            "testId": "cancel",
+            "text": "Cancel",
+            "isBody": false,
+            "isConnected": true
+          }
+        },
+        {
+          "checkpoint": "dialog-remove",
+          "activeElement": {
+            "tag": "button",
+            "testId": "confirm",
+            "text": "Remove",
+            "isBody": false,
+            "isConnected": true
+          }
+        }
+      ],
+      "afterDismissal": {
+        "tag": "button",
+        "testId": "opener",
+        "text": "Remove",
+        "isBody": false,
+        "isConnected": true
+      },
+      "ordinaryReturnAssertion": "passed",
+      "focusTrailReturnAssertion": "passed",
+      "observedKeys": [
+        {
+          "key": "Tab",
+          "isTrusted": true
+        },
+        {
+          "key": "Tab",
+          "isTrusted": true
+        },
+        {
+          "key": "Enter",
+          "isTrusted": true
+        },
+        {
+          "key": "Tab",
+          "isTrusted": true
+        },
+        {
+          "key": "Escape",
+          "isTrusted": true
+        }
+      ],
+      "pageErrors": [],
+      "focusTrailStatus": "passed"
+    }
+  ],
+  "focusTrailComparison": {
+    "status": "regressed",
+    "firstDifference": {
+      "index": 9,
+      "checkpointId": "return-opener",
+      "kind": "checkpoint",
+      "reason": "Checkpoint return-opener did not receive focus within 500ms"
+    }
+  },
+  "status": "verified",
+  "serverClosed": true,
+  "completedAt": "2026-10-17T00:12:49.113Z"
+}

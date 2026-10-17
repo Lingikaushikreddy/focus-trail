@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "journeyId": "pyrit-remove-escape",
+  "fixtureVersion": "extracted-pyrit-pinned-1",
+  "appBuild": "after",
+  "browserVersion": "156.0.8078.4",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "locale": "en-US",
+  "status": "passed",
+  "steps": [
+    {
+      "index": 0,
+      "action": "Tab",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "New Converter",
+        "testId": "new-converter"
+      },
+      "elapsedMs": 7,
+      "status": "passed"
+    },
+    {
+      "index": 1,
+      "action": null,
+      "checkpointId": "new-converter",
+      "expectedTargetKey": "new-converter",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "New Converter",
+        "testId": "new-converter"
+      },
+      "elapsedMs": 19,
+      "status": "passed"
+    },
+    {
+      "index": 2,
+      "action": "Tab",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Remove focus_probe",
+        "testId": "opener"
+      },
+      "elapsedMs": 23,
+      "status": "passed"
+    },
+    {
+      "index": 3,
+      "action": null,
+      "checkpointId": "remove-opener",
+      "expectedTargetKey": "remove-opener",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Remove focus_probe",
+        "testId": "opener"
+      },
+      "elapsedMs": 28,
+      "status": "passed"
+    },
+    {
+      "index": 4,
+      "action": "Enter",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Cancel",
+        "testId": "cancel"
+      },
+      "elapsedMs": 39,
+      "status": "passed"
+    },
+    {
+      "index": 5,
+      "action": null,
+      "checkpointId": "dialog-cancel",
+      "expectedTargetKey": "dialog-cancel",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Cancel",
+        "testId": "cancel"
+      },
+      "elapsedMs": 46,
+      "status": "passed"
+    },
+    {
+      "index": 6,
+      "action": "Tab",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Remove",
+        "testId": "confirm"
+      },
+      "elapsedMs": 49,
+      "status": "passed"
+    },
+    {
+      "index": 7,
+      "action": null,
+      "checkpointId": "dialog-remove",
+      "expectedTargetKey": "dialog-remove",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Remove",
+        "testId": "confirm"
+      },
+      "elapsedMs": 53,
+      "status": "passed"
+    },
+    {
+      "index": 8,
+      "action": "Escape",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Remove focus_probe",
+        "testId": "opener"
+      },
+      "elapsedMs": 59,
+      "status": "passed"
+    },
+    {
+      "index": 9,
+      "action": null,
+      "checkpointId": "return-opener",
+      "expectedTargetKey": "return-opener",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Remove focus_probe",
+        "testId": "opener"
+      },
+      "elapsedMs": 495,
+      "status": "passed"
+    }
+  ]
+}

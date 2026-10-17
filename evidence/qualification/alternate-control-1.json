@@ -1,0 +1,481 @@
+{
+  "base": {
+    "schemaVersion": 1,
+    "journeyId": "alternate",
+    "fixtureVersion": "dialog-1",
+    "appBuild": "alternate",
+    "browserVersion": "156.0.8078.4",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "locale": "en-US",
+    "status": "passed",
+    "steps": [
+      {
+        "index": 0,
+        "action": "Tab",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Open settings",
+          "testId": "opener"
+        },
+        "elapsedMs": 11,
+        "status": "passed"
+      },
+      {
+        "index": 1,
+        "action": null,
+        "checkpointId": "opener",
+        "expectedTargetKey": "opener",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Open settings",
+          "testId": "opener"
+        },
+        "elapsedMs": 43,
+        "status": "passed"
+      },
+      {
+        "index": 2,
+        "action": "Enter",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Save changes",
+          "testId": "save"
+        },
+        "elapsedMs": 49,
+        "status": "passed"
+      },
+      {
+        "index": 3,
+        "action": null,
+        "checkpointId": "save",
+        "expectedTargetKey": "save",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Save changes",
+          "testId": "save"
+        },
+        "elapsedMs": 66,
+        "status": "passed"
+      },
+      {
+        "index": 4,
+        "action": "Tab",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Cancel",
+          "testId": "cancel"
+        },
+        "elapsedMs": 71,
+        "status": "passed"
+      },
+      {
+        "index": 5,
+        "action": null,
+        "checkpointId": "cancel",
+        "expectedTargetKey": "cancel",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Cancel",
+          "testId": "cancel"
+        },
+        "elapsedMs": 83,
+        "status": "passed"
+      },
+      {
+        "index": 6,
+        "action": "Escape",
+        "observed": {
+          "tag": "h3",
+          "role": "heading",
+          "name": "Settings saved",
+          "testId": "next"
+        },
+        "elapsedMs": 89,
+        "status": "passed"
+      },
+      {
+        "index": 7,
+        "action": null,
+        "checkpointId": "next-step",
+        "expectedTargetKey": "next-step",
+        "observed": {
+          "tag": "h3",
+          "role": "heading",
+          "name": "Settings saved",
+          "testId": "next"
+        },
+        "elapsedMs": 105,
+        "status": "passed"
+      }
+    ]
+  },
+  "current": {
+    "schemaVersion": 1,
+    "journeyId": "alternate",
+    "fixtureVersion": "dialog-1",
+    "appBuild": "alternate",
+    "browserVersion": "156.0.8078.4",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "locale": "en-US",
+    "status": "passed",
+    "steps": [
+      {
+        "index": 0,
+        "action": "Tab",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Open settings",
+          "testId": "opener"
+        },
+        "elapsedMs": 9,
+        "status": "passed"
+      },
+      {
+        "index": 1,
+        "action": null,
+        "checkpointId": "opener",
+        "expectedTargetKey": "opener",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Open settings",
+          "testId": "opener"
+        },
+        "elapsedMs": 40,
+        "status": "passed"
+      },
+      {
+        "index": 2,
+        "action": "Enter",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Save changes",
+          "testId": "save"
+        },
+        "elapsedMs": 47,
+        "status": "passed"
+      },
+      {
+        "index": 3,
+        "action": null,
+        "checkpointId": "save",
+        "expectedTargetKey": "save",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Save changes",
+          "testId": "save"
+        },
+        "elapsedMs": 60,
+        "status": "passed"
+      },
+      {
+        "index": 4,
+        "action": "Tab",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Cancel",
+          "testId": "cancel"
+        },
+        "elapsedMs": 65,
+        "status": "passed"
+      },
+      {
+        "index": 5,
+        "action": null,
+        "checkpointId": "cancel",
+        "expectedTargetKey": "cancel",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Cancel",
+          "testId": "cancel"
+        },
+        "elapsedMs": 76,
+        "status": "passed"
+      },
+      {
+        "index": 6,
+        "action": "Escape",
+        "observed": {
+          "tag": "h3",
+          "role": "heading",
+          "name": "Settings saved",
+          "testId": "next"
+        },
+        "elapsedMs": 82,
+        "status": "passed"
+      },
+      {
+        "index": 7,
+        "action": null,
+        "checkpointId": "next-step",
+        "expectedTargetKey": "next-step",
+        "observed": {
+          "tag": "h3",
+          "role": "heading",
+          "name": "Settings saved",
+          "testId": "next"
+        },
+        "elapsedMs": 92,
+        "status": "passed"
+      }
+    ]
+  },
+  "comparison": {
+    "status": "unchanged",
+    "base": {
+      "schemaVersion": 1,
+      "journeyId": "alternate",
+      "browserVersion": "156.0.8078.4",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "locale": "en-US",
+      "fixtureVersion": "dialog-1",
+      "status": "passed",
+      "steps": [
+        {
+          "index": 0,
+          "action": "Tab",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open settings",
+            "testId": "opener"
+          },
+          "elapsedMs": 11,
+          "status": "passed"
+        },
+        {
+          "index": 1,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open settings",
+            "testId": "opener"
+          },
+          "elapsedMs": 43,
+          "status": "passed",
+          "checkpointId": "opener",
+          "expectedTargetKey": "opener"
+        },
+        {
+          "index": 2,
+          "action": "Enter",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Save changes",
+            "testId": "save"
+          },
+          "elapsedMs": 49,
+          "status": "passed"
+        },
+        {
+          "index": 3,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Save changes",
+            "testId": "save"
+          },
+          "elapsedMs": 66,
+          "status": "passed",
+          "checkpointId": "save",
+          "expectedTargetKey": "save"
+        },
+        {
+          "index": 4,
+          "action": "Tab",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "elapsedMs": 71,
+          "status": "passed"
+        },
+        {
+          "index": 5,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "elapsedMs": 83,
+          "status": "passed",
+          "checkpointId": "cancel",
+          "expectedTargetKey": "cancel"
+        },
+        {
+          "index": 6,
+          "action": "Escape",
+          "observed": {
+            "tag": "h3",
+            "role": "heading",
+            "name": "Settings saved",
+            "testId": "next"
+          },
+          "elapsedMs": 89,
+          "status": "passed"
+        },
+        {
+          "index": 7,
+          "action": null,
+          "observed": {
+            "tag": "h3",
+            "role": "heading",
+            "name": "Settings saved",
+            "testId": "next"
+          },
+          "elapsedMs": 105,
+          "status": "passed",
+          "checkpointId": "next-step",
+          "expectedTargetKey": "next-step"
+        }
+      ],
+      "appBuild": "alternate"
+    },
+    "current": {
+      "schemaVersion": 1,
+      "journeyId": "alternate",
+      "browserVersion": "156.0.8078.4",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "locale": "en-US",
+      "fixtureVersion": "dialog-1",
+      "status": "passed",
+      "steps": [
+        {
+          "index": 0,
+          "action": "Tab",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open settings",
+            "testId": "opener"
+          },
+          "elapsedMs": 9,
+          "status": "passed"
+        },
+        {
+          "index": 1,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open settings",
+            "testId": "opener"
+          },
+          "elapsedMs": 40,
+          "status": "passed",
+          "checkpointId": "opener",
+          "expectedTargetKey": "opener"
+        },
+        {
+          "index": 2,
+          "action": "Enter",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Save changes",
+            "testId": "save"
+          },
+          "elapsedMs": 47,
+          "status": "passed"
+        },
+        {
+          "index": 3,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Save changes",
+            "testId": "save"
+          },
+          "elapsedMs": 60,
+          "status": "passed",
+          "checkpointId": "save",
+          "expectedTargetKey": "save"
+        },
+        {
+          "index": 4,
+          "action": "Tab",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "elapsedMs": 65,
+          "status": "passed"
+        },
+        {
+          "index": 5,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Cancel",
+            "testId": "cancel"
+          },
+          "elapsedMs": 76,
+          "status": "passed",
+          "checkpointId": "cancel",
+          "expectedTargetKey": "cancel"
+        },
+        {
+          "index": 6,
+          "action": "Escape",
+          "observed": {
+            "tag": "h3",
+            "role": "heading",
+            "name": "Settings saved",
+            "testId": "next"
+          },
+          "elapsedMs": 82,
+          "status": "passed"
+        },
+        {
+          "index": 7,
+          "action": null,
+          "observed": {
+            "tag": "h3",
+            "role": "heading",
+            "name": "Settings saved",
+            "testId": "next"
+          },
+          "elapsedMs": 92,
+          "status": "passed",
+          "checkpointId": "next-step",
+          "expectedTargetKey": "next-step"
+        }
+      ],
+      "appBuild": "alternate"
+    }
+  }
+}

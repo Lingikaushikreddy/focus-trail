@@ -1,0 +1,51 @@
+{
+  "status": "failed",
+  "engineeringEvidenceOnly": true,
+  "node": "v24.22.0",
+  "peer": "@playwright/test@1.64.1",
+  "browserPath": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/browsers",
+  "checks": [
+    {
+      "name": "node24",
+      "passed": true
+    },
+    {
+      "name": "caller-built-dist-index.js",
+      "passed": true
+    },
+    {
+      "name": "caller-built-dist-index.d.ts",
+      "passed": true
+    },
+    {
+      "name": "caller-built-dist-reporter.js",
+      "passed": true
+    },
+    {
+      "name": "caller-built-dist-reporter.d.ts",
+      "passed": true
+    },
+    {
+      "name": "caller-built-dist-cli.js",
+      "passed": true
+    },
+    {
+      "name": "pack",
+      "passed": true,
+      "expectedExit": 0,
+      "actualExit": 0,
+      "log": "pack.log"
+    },
+    {
+      "name": "packed-public-files",
+      "passed": false
+    }
+  ],
+  "candidate": {
+    "filename": "focus-trail-0.1.0.tgz",
+    "integrity": "sha512-8RhN4E/fg3cVVJig/NXD1Rh54ASuLi3df4i7jX0EDatTsJvhIhyYBeYMQWrevG+wICJ9bUA1bau4zoYNtz2PDw==",
+    "shasum": "39f42b97202f0397036e3b40c5d1672f7b42e69c"
+  },
+  "error": "Package verification failed: packed-public-files",
+  "finishedAt": "2026-10-16T23:55:07.295Z"
+}

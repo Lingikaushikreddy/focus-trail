@@ -1,0 +1,42 @@
+{
+  "executable": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/runtime/node_modules/node/bin/node",
+  "args": [
+    "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-DdAlcx/node_modules/@playwright/test/cli.js",
+    "test",
+    "--config=playwright.config.mjs",
+    "--grep",
+    "public helper|public dialog"
+  ],
+  "cwd": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-DdAlcx",
+  "expectedExit": 0,
+  "actualExit": 1,
+  "signal": null
+}
+
+STDOUT
+
+STDERR
+Error: Package subpath './reporter' is not defined by "exports" in /Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-DdAlcx/node_modules/focus-trail/package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:315:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:606:13)
+    at resolveExports (node:internal/modules/cjs/loader:754:36)
+    at Module._findPath (node:internal/modules/cjs/loader:821:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1557:27)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1118:27)
+    at defaultResolve (node:internal/modules/cjs/loader:1199:20)
+    at nextStep (node:internal/modules/customization_hooks:189:26)
+    at resolve (/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-DdAlcx/node_modules/playwright/lib/common/index.js:829:19)
+    at nextStep (node:internal/modules/customization_hooks:189:26)
+    at resolveWithHooks (node:internal/modules/customization_hooks:417:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1212:25)
+    at require.resolve (node:internal/modules/helpers:175:31)
+    at /Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-DdAlcx/node_modules/playwright/lib/common/index.js:628:21
+    at Array.map (<anonymous>)
+    at resolveReporters (/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-DdAlcx/node_modules/playwright/lib/common/index.js:625:34)
+    at new FullConfigInternal (/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-DdAlcx/node_modules/playwright/lib/common/index.js:523:60)
+    at loadConfig (/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-DdAlcx/node_modules/playwright/lib/common/index.js:1292:22)
+    at Object.loadConfigFromFile (/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-DdAlcx/node_modules/playwright/lib/common/index.js:1508:10)
+    at runTests (/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-DdAlcx/node_modules/playwright/lib/cli/testActions.js:44:18)
+    at _Command.<anonymous> (/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-DdAlcx/node_modules/playwright/lib/program.js:55:7) {
+  code: 'ERR_PACKAGE_PATH_NOT_EXPORTED'
+}

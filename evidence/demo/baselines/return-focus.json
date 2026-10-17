@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "journeyId": "return-focus",
+  "browserVersion": "156.0.8078.4",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "locale": "en-US",
+  "fixtureVersion": "dialog-1",
+  "status": "passed",
+  "steps": [
+    {
+      "index": 0,
+      "action": "Tab",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Open settings",
+        "testId": "opener"
+      },
+      "elapsedMs": 55,
+      "status": "passed"
+    },
+    {
+      "index": 1,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Open settings",
+        "testId": "opener"
+      },
+      "elapsedMs": 92,
+      "status": "passed",
+      "checkpointId": "opener",
+      "expectedTargetKey": "opener"
+    },
+    {
+      "index": 2,
+      "action": "Enter",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Save changes",
+        "testId": "save"
+      },
+      "elapsedMs": 99,
+      "status": "passed"
+    },
+    {
+      "index": 3,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Save changes",
+        "testId": "save"
+      },
+      "elapsedMs": 109,
+      "status": "passed",
+      "checkpointId": "save",
+      "expectedTargetKey": "save"
+    },
+    {
+      "index": 4,
+      "action": "Tab",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Cancel",
+        "testId": "cancel"
+      },
+      "elapsedMs": 112,
+      "status": "passed"
+    },
+    {
+      "index": 5,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Cancel",
+        "testId": "cancel"
+      },
+      "elapsedMs": 120,
+      "status": "passed",
+      "checkpointId": "cancel",
+      "expectedTargetKey": "cancel"
+    },
+    {
+      "index": 6,
+      "action": "Escape",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Open settings",
+        "testId": "opener"
+      },
+      "elapsedMs": 124,
+      "status": "passed"
+    },
+    {
+      "index": 7,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Open settings",
+        "testId": "opener"
+      },
+      "elapsedMs": 131,
+      "status": "passed",
+      "checkpointId": "return-opener",
+      "expectedTargetKey": "return-opener"
+    }
+  ],
+  "appBuild": "good"
+}

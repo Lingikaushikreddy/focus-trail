@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "journeyId": "modal-containment",
+  "browserVersion": "156.0.8078.4",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "locale": "en-US",
+  "fixtureVersion": "dialog-1",
+  "status": "passed",
+  "steps": [
+    {
+      "index": 0,
+      "action": "Tab",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Open settings",
+        "testId": "opener"
+      },
+      "elapsedMs": 17,
+      "status": "passed"
+    },
+    {
+      "index": 1,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Open settings",
+        "testId": "opener"
+      },
+      "elapsedMs": 42,
+      "status": "passed",
+      "checkpointId": "opener",
+      "expectedTargetKey": "opener"
+    },
+    {
+      "index": 2,
+      "action": "Enter",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Save changes",
+        "testId": "save"
+      },
+      "elapsedMs": 48,
+      "status": "passed"
+    },
+    {
+      "index": 3,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Save changes",
+        "testId": "save"
+      },
+      "elapsedMs": 62,
+      "status": "passed",
+      "checkpointId": "save",
+      "expectedTargetKey": "save"
+    },
+    {
+      "index": 4,
+      "action": "Tab",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Cancel",
+        "testId": "cancel"
+      },
+      "elapsedMs": 65,
+      "status": "passed"
+    },
+    {
+      "index": 5,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Cancel",
+        "testId": "cancel"
+      },
+      "elapsedMs": 72,
+      "status": "passed",
+      "checkpointId": "cancel",
+      "expectedTargetKey": "cancel"
+    },
+    {
+      "index": 6,
+      "action": "Tab",
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Save changes",
+        "testId": "save"
+      },
+      "elapsedMs": 76,
+      "status": "passed"
+    },
+    {
+      "index": 7,
+      "action": null,
+      "observed": {
+        "tag": "button",
+        "role": "button",
+        "name": "Save changes",
+        "testId": "save"
+      },
+      "elapsedMs": 84,
+      "status": "passed",
+      "checkpointId": "save-wrap",
+      "expectedTargetKey": "save-wrap"
+    }
+  ],
+  "appBuild": "good"
+}

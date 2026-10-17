@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Focus Trail · Dialog workshop</title><link rel="stylesheet" href="style.css"><script type="module" src="app.js"></script></head>
+<body>
+<header><span class="mark" aria-hidden="true">⌨</span><strong>Focus Trail</strong><span>Dialog workshop</span></header>
+<main>
+  <div class="intro"><h1>Follow the focus.</h1><p>A dialog can look right and still lose your place. Try the same keyboard journey in a working dialog and three deliberately broken versions.</p></div>
+  <div class="workspace">
+    <section class="experiment" data-outside>
+      <h2 id="variant-title">Good dialog</h2><p id="variant-description">Closing this dialog returns focus to its opener.</p>
+      <div class="keys" aria-label="Keyboard journey"><kbd>Tab</kbd><span>then</span><kbd>Enter</kbd><span>then</span><kbd>Tab</kbd><span>then</span><kbd>Escape</kbd></div>
+      <button data-testid="opener" id="opener">Open settings</button>
+      <p class="hint">Start with Tab. No mouse is needed.</p>
+      <p id="saved" role="status"></p>
+      <h3 id="next" tabindex="-1" data-testid="next">Settings saved</h3>
+    </section>
+    <div id="modal" role="dialog" aria-modal="true" aria-labelledby="dialog-title" hidden>
+      <div class="surface"><h2 id="dialog-title">Notification settings</h2><p>Save your current notification preferences, or cancel to return.</p><div class="actions"><button data-testid="save" id="save">Save changes</button><button data-testid="cancel" id="cancel">Cancel</button></div></div>
+    </div>
+    <aside data-outside>
+      <h2>Watch the destination</h2><p>Each checkpoint compares an authored target with the element that actually received focus.</p>
+      <a href="#variants" data-testid="outside">Outside the dialog</a>
+      <div class="focus-readout"><span>Current focus</span><output id="focus">Document body</output></div>
+    </aside>
+  </div>
+  <section id="variants" data-outside><h2>Choose a fixture</h2><nav aria-label="Dialog fixtures"><a href="?variant=good">Good dialog</a><a href="?variant=lost-return">Lost return focus</a><a href="?variant=escape">Focus escapes</a><a href="?variant=activation">Activation fails</a></nav></section>
+  <section class="reports" data-outside><h2>Read the recorded journeys</h2><p>These reports were generated locally with real Chromium keyboard actions. The failures are deliberate test fixtures.</p><nav aria-label="Recorded reports"><a href="/reports/good.html">Passing journey</a><a href="/reports/lost-return.html">Lost return report</a><a href="/reports/escape.html">Escaping focus report</a><a href="/reports/activation.html">Activation failure report</a></nav></section>
+</main>
+<footer data-outside>Passing authored checkpoints establishes the expected journey within its tested scope.</footer>
+</body></html>

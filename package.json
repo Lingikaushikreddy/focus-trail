@@ -1,0 +1,39 @@
+{
+  "name": "focus-trail",
+  "version": "0.1.0",
+  "description": "Reviewable keyboard focus journeys for existing Playwright tests",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=24 <25" },
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js", "default": "./dist/index.js" },
+    "./reporter": { "types": "./dist/reporter.d.ts", "import": "./dist/reporter.js", "default": "./dist/reporter.js" }
+  },
+  "bin": { "focus-trail": "./dist/cli.js" },
+    "files": ["dist", "docs", "examples", "evidence/demo/*.html", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint packages tests scripts examples --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "test:unit": "vitest run",
+    "test:integration": "playwright test --project=integration",
+    "test:e2e": "playwright test --project=e2e",
+    "test:pack": "node scripts/test-pack.mjs",
+    "test": "npm run test:unit && npm run test:integration && npm run test:e2e",
+    "verify": "npm run lint && npm run typecheck && npm run build && npm test && npm run test:pack",
+    "demo": "node examples/dialog/server.mjs",
+    "demo:record": "node scripts/record-demo.mjs",
+    "evidence:repeat": "playwright test --project=integration --grep 'qualification' --repeat-each=20",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": { "@playwright/test": "1.64.1" },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "24.10.1",
+    "eslint": "9.39.1",
+    "tsup": "8.5.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.48.0",
+    "vitest": "3.2.4"
+  }
+}

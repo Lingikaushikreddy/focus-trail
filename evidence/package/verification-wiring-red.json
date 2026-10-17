@@ -1,0 +1,83 @@
+{
+  "status": "failed",
+  "engineeringEvidenceOnly": true,
+  "node": "v24.22.0",
+  "peer": "@playwright/test@1.64.1",
+  "browserPath": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/browsers",
+  "checks": [
+    {
+      "name": "node24",
+      "passed": true
+    },
+    {
+      "name": "caller-built-dist-index.js",
+      "passed": true
+    },
+    {
+      "name": "caller-built-dist-index.d.ts",
+      "passed": true
+    },
+    {
+      "name": "caller-built-dist-reporter.js",
+      "passed": true
+    },
+    {
+      "name": "caller-built-dist-reporter.d.ts",
+      "passed": true
+    },
+    {
+      "name": "caller-built-dist-cli.js",
+      "passed": true
+    },
+    {
+      "name": "pack",
+      "passed": true,
+      "expectedExit": 0,
+      "actualExit": 0,
+      "log": "pack.log"
+    },
+    {
+      "name": "packed-public-files",
+      "passed": true
+    },
+    {
+      "name": "install",
+      "passed": true,
+      "expectedExit": 0,
+      "actualExit": 0,
+      "log": "install.log"
+    },
+    {
+      "name": "installed-copy-outside-source",
+      "passed": true,
+      "installed": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-DdAlcx/node_modules/focus-trail"
+    },
+    {
+      "name": "exact-installed-peer",
+      "passed": true,
+      "version": "1.64.1"
+    },
+    {
+      "name": "public-imports",
+      "passed": true,
+      "expectedExit": 0,
+      "actualExit": 0,
+      "log": "public-imports.log"
+    },
+    {
+      "name": "browser-baseline-capture",
+      "passed": false,
+      "expectedExit": 0,
+      "actualExit": 1,
+      "log": "browser-baseline-capture.log"
+    }
+  ],
+  "candidate": {
+    "filename": "focus-trail-0.1.0.tgz",
+    "integrity": "sha512-KUqMArIgqY3wPTL+QGbH0TEoBJnkUdFCoCltthDipUXs3WSPyJRpXzfXUD6h/6G5eqBo/7ZSf2RzhE25HcwNZQ==",
+    "shasum": "1165b635b13082031ebc696844567e0201be2099"
+  },
+  "consumer": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-DdAlcx",
+  "error": "Package verification failed: browser-baseline-capture",
+  "finishedAt": "2026-10-16T23:57:42.014Z"
+}

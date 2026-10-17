@@ -1,0 +1,321 @@
+{
+  "status": "passed",
+  "engineeringEvidenceOnly": true,
+  "node": "v24.22.0",
+  "peer": "@playwright/test@1.64.1",
+  "browserEnvironment": {
+    "PLAYWRIGHT_BROWSERS_PATH": null
+  },
+  "checks": [
+    {
+      "name": "node24",
+      "passed": true
+    },
+    {
+      "name": "caller-built-dist-index.js",
+      "passed": true
+    },
+    {
+      "name": "caller-built-dist-index.d.ts",
+      "passed": true
+    },
+    {
+      "name": "caller-built-dist-reporter.js",
+      "passed": true
+    },
+    {
+      "name": "caller-built-dist-reporter.d.ts",
+      "passed": true
+    },
+    {
+      "name": "caller-built-dist-cli.js",
+      "passed": true
+    },
+    {
+      "name": "pack",
+      "passed": true,
+      "expectedExit": 0,
+      "actualExit": 0,
+      "log": "pack.log"
+    },
+    {
+      "name": "packed-public-files",
+      "passed": true
+    },
+    {
+      "name": "install",
+      "passed": true,
+      "expectedExit": 0,
+      "actualExit": 0,
+      "log": "install.log"
+    },
+    {
+      "name": "installed-copy-outside-source",
+      "passed": true,
+      "installed": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-mOecAe/node_modules/focus-trail"
+    },
+    {
+      "name": "exact-installed-peer",
+      "passed": true,
+      "version": "1.64.1"
+    },
+    {
+      "name": "browser-cache-resolution",
+      "passed": true,
+      "expectedExit": 0,
+      "actualExit": 0,
+      "log": "browser-cache-resolution.log"
+    },
+    {
+      "name": "browser-cache-environment-preserved",
+      "passed": true,
+      "browserPathEnvironment": null,
+      "executablePath": "/Users/kaushikreddy/Library/Caches/ms-playwright/chromium-1248/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
+    },
+    {
+      "name": "public-imports",
+      "passed": true,
+      "expectedExit": 0,
+      "actualExit": 0,
+      "log": "public-imports.log"
+    },
+    {
+      "name": "public-commonjs-resolution",
+      "passed": true,
+      "expectedExit": 0,
+      "actualExit": 0,
+      "log": "public-commonjs-resolution.log"
+    },
+    {
+      "name": "browser-baseline-capture",
+      "passed": true,
+      "expectedExit": 0,
+      "actualExit": 0,
+      "log": "browser-baseline-capture.log"
+    },
+    {
+      "name": "one-report-packed.helper-reports-baseline-capture",
+      "passed": true,
+      "found": 1
+    },
+    {
+      "name": "manifest-baseline-capture",
+      "passed": true
+    },
+    {
+      "name": "direct-helper-browser-pass",
+      "passed": true
+    },
+    {
+      "name": "one-report-packed.dialog-reports-baseline-capture",
+      "passed": true,
+      "found": 1
+    },
+    {
+      "name": "manifest-baseline-capture",
+      "passed": true
+    },
+    {
+      "name": "unreviewed-capture-has-no-comparison",
+      "passed": true
+    },
+    {
+      "name": "synthetic-baseline-review",
+      "passed": true
+    },
+    {
+      "name": "explicit-environment-captured",
+      "passed": true
+    },
+    {
+      "name": "text-only-default-capture",
+      "passed": true
+    },
+    {
+      "name": "browser-unchanged",
+      "passed": true,
+      "expectedExit": 0,
+      "actualExit": 0,
+      "log": "browser-unchanged.log"
+    },
+    {
+      "name": "one-report-packed.dialog-reports-unchanged",
+      "passed": true,
+      "found": 1
+    },
+    {
+      "name": "manifest-unchanged",
+      "passed": true
+    },
+    {
+      "name": "reviewed-unchanged-comparison",
+      "passed": true
+    },
+    {
+      "name": "browser-lost-return",
+      "passed": true,
+      "expectedExit": 1,
+      "actualExit": 1,
+      "log": "browser-lost-return.log"
+    },
+    {
+      "name": "one-report-packed.dialog-reports-lost-return",
+      "passed": true,
+      "found": 1
+    },
+    {
+      "name": "manifest-lost-return",
+      "passed": true
+    },
+    {
+      "name": "lost-return-is-exact-regression",
+      "passed": true
+    },
+    {
+      "name": "browser-activation",
+      "passed": true,
+      "expectedExit": 1,
+      "actualExit": 1,
+      "log": "browser-activation.log"
+    },
+    {
+      "name": "one-report-packed.dialog-reports-activation",
+      "passed": true,
+      "found": 1
+    },
+    {
+      "name": "manifest-activation",
+      "passed": true
+    },
+    {
+      "name": "external-activation-failure-preserved",
+      "passed": true
+    },
+    {
+      "name": "browser-action-budget",
+      "passed": true,
+      "expectedExit": 1,
+      "actualExit": 1,
+      "log": "browser-action-budget.log"
+    },
+    {
+      "name": "one-report-packed.bounds-reports-action-budget",
+      "passed": true,
+      "found": 1
+    },
+    {
+      "name": "manifest-action-budget",
+      "passed": true
+    },
+    {
+      "name": "public-action-budget-capped-at100",
+      "passed": true
+    },
+    {
+      "name": "browser-checkpoint-budget",
+      "passed": true,
+      "expectedExit": 1,
+      "actualExit": 1,
+      "log": "browser-checkpoint-budget.log"
+    },
+    {
+      "name": "one-report-packed.bounds-reports-checkpoint-budget",
+      "passed": true,
+      "found": 1
+    },
+    {
+      "name": "manifest-checkpoint-budget",
+      "passed": true
+    },
+    {
+      "name": "public-checkpoint-budget-capped-at100",
+      "passed": true
+    },
+    {
+      "name": "cli-unchanged",
+      "passed": true,
+      "expectedExit": 0,
+      "actualExit": 0,
+      "log": "cli-unchanged.log"
+    },
+    {
+      "name": "cli-unchanged-report-written",
+      "passed": true
+    },
+    {
+      "name": "cli-lost-return",
+      "passed": true,
+      "expectedExit": 1,
+      "actualExit": 1,
+      "log": "cli-lost-return.log"
+    },
+    {
+      "name": "cli-lost-return-report-written",
+      "passed": true
+    },
+    {
+      "name": "cli-activation",
+      "passed": true,
+      "expectedExit": 1,
+      "actualExit": 1,
+      "log": "cli-activation.log"
+    },
+    {
+      "name": "cli-activation-report-written",
+      "passed": true
+    },
+    {
+      "name": "cli-invalid",
+      "passed": true,
+      "expectedExit": 2,
+      "actualExit": 2,
+      "log": "cli-invalid.log"
+    },
+    {
+      "name": "cli-incomparable",
+      "passed": true,
+      "expectedExit": 3,
+      "actualExit": 3,
+      "log": "cli-incomparable.log"
+    },
+    {
+      "name": "cli-incomparable-report-written",
+      "passed": true
+    },
+    {
+      "name": "cli-failed-baseline",
+      "passed": true,
+      "expectedExit": 2,
+      "actualExit": 2,
+      "log": "cli-failed-baseline.log"
+    },
+    {
+      "name": "reviewed-baseline-unchanged",
+      "passed": true
+    }
+  ],
+  "candidate": {
+    "filename": "focus-trail-0.1.0.tgz",
+    "integrity": "sha512-Ueh7JPlN3l1lufAoAQm42OeZTM5yblewHoHt5lRh4Vs4qHaPVx2/yrJanqO+Nvggt0Gl3FizrZ0IfngTrG3l5g==",
+    "shasum": "e6f2144b48e19a3c0551f09ebe40d3352879ce31",
+    "sha256": "1f786953db7ad860faac431cd1ad6bf578fbf0c635803f711aca879a4fb8c31f"
+  },
+  "consumer": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-mOecAe",
+  "browserResolution": {
+    "browserPathEnvironment": null,
+    "executablePath": "/Users/kaushikreddy/Library/Caches/ms-playwright/chromium-1248/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
+  },
+  "syntheticBaselineReview": {
+    "scope": "Local synthetic fixture only; no independent pilot evidence",
+    "journeyId": "packed.dialog",
+    "fixtureVersion": "packed-fixture-v1",
+    "checkpoints": [
+      "dialog.launcher",
+      "dialog.close",
+      "dialog.return"
+    ],
+    "reviewedAt": "2026-10-17T00:05:33.330Z"
+  },
+  "chromiumVersion": "156.0.8078.4",
+  "finishedAt": "2026-10-17T00:05:40.327Z"
+}

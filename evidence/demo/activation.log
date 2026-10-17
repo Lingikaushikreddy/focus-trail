@@ -1,0 +1,41 @@
+
+Running 1 test using 1 worker
+
+  ✘  1 examples/dialog/tests/journeys.spec.ts:5:3 › activation (729ms)
+
+
+  1) examples/dialog/tests/journeys.spec.ts:5:3 › activation ───────────────────────────────────────
+
+    Error: Enter should open the settings dialog
+
+    expect(locator).toBeVisible() failed
+
+    Locator: getByRole('dialog')
+    Expected: visible
+    Timeout: 500ms
+    Error: element(s) not found
+
+    Call log:
+      - Enter should open the settings dialog getByRole('dialog') with timeout 500ms
+      - waiting for getByRole('dialog')
+
+
+       9 |     await trail.press('Tab'); await trail.expectFocus('opener', page.getByTestId('opener'));
+      10 |     await trail.press('Enter');
+    > 11 |     await expect(page.getByRole('dialog'), 'Enter should open the settings dialog').toBeVisible();
+         |                                                                                     ^
+      12 |     if (kind !== 'activation') {
+      13 |       await trail.expectFocus('save', page.getByTestId('save'));
+      14 |       await trail.press('Tab'); await trail.expectFocus('cancel', page.getByTestId('cancel'));
+        at /Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail/examples/dialog/tests/journeys.spec.ts:11:85
+
+    attachment #1: focus-trail:activation.json (application/json) ──────────────────────────────────
+    ../../work/demo-tests-activation/journeys-activation/attachments/focus-trail-activation-json-9ab109dfe737aab77c41fdedaa3c974baeebbee1.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../work/demo-tests-activation/journeys-activation/error-context.md
+
+  1 failed
+    examples/dialog/tests/journeys.spec.ts:5:3 › activation ────────────────────────────────────────
+(node:69614) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

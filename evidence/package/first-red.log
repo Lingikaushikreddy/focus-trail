@@ -1,0 +1,7 @@
+
+> focus-trail@0.1.0 test:pack
+> node scripts/test-pack.mjs
+
+pack: exit 0
+Package verification failed: packed-public-files
+Package verification: failed; evidence/package/verification.json

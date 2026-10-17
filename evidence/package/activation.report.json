@@ -1,0 +1,296 @@
+{
+  "testId": "0f31d19e9cc707d9d6fd-41d8eb18f19eceecd03d",
+  "testTitle": "public.spec.mjs › public dialog fixture journey",
+  "testStatus": "failed",
+  "retry": 0,
+  "journeyId": "packed.dialog",
+  "reviewStatus": "regressed",
+  "html": "437fd2afd3a8e81620157cee4c6e6cf9.html",
+  "json": "437fd2afd3a8e81620157cee4c6e6cf9.json",
+  "current": {
+    "schemaVersion": 1,
+    "journeyId": "packed.dialog",
+    "browserVersion": "156.0.8078.4",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "locale": "en-US",
+    "fixtureVersion": "packed-fixture-v1",
+    "status": "failed",
+    "steps": [
+      {
+        "index": 0,
+        "action": "Tab",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Open dialog",
+          "testId": null
+        },
+        "elapsedMs": 29,
+        "status": "passed"
+      },
+      {
+        "index": 1,
+        "action": null,
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Open dialog",
+          "testId": null
+        },
+        "elapsedMs": 75,
+        "status": "passed",
+        "checkpointId": "dialog.launcher",
+        "expectedTargetKey": "dialog.launcher"
+      },
+      {
+        "index": 2,
+        "action": "Enter",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Close dialog",
+          "testId": null
+        },
+        "elapsedMs": 82,
+        "status": "passed"
+      },
+      {
+        "index": 3,
+        "action": null,
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Close dialog",
+          "testId": null
+        },
+        "elapsedMs": 93,
+        "status": "passed",
+        "checkpointId": "dialog.close",
+        "expectedTargetKey": "dialog.close"
+      },
+      {
+        "index": 4,
+        "action": "Escape",
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Open dialog",
+          "testId": null
+        },
+        "elapsedMs": 98,
+        "status": "passed"
+      },
+      {
+        "index": 5,
+        "action": null,
+        "observed": {
+          "tag": "button",
+          "role": "button",
+          "name": "Open dialog",
+          "testId": null
+        },
+        "elapsedMs": 112,
+        "status": "passed",
+        "checkpointId": "dialog.return",
+        "expectedTargetKey": "dialog.return"
+      }
+    ],
+    "error": "Application test failed: Error: expect(locator).toHaveText(expected) failed"
+  },
+  "comparison": {
+    "status": "regressed",
+    "base": {
+      "schemaVersion": 1,
+      "journeyId": "packed.dialog",
+      "browserVersion": "156.0.8078.4",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "locale": "en-US",
+      "fixtureVersion": "packed-fixture-v1",
+      "status": "passed",
+      "steps": [
+        {
+          "index": 0,
+          "action": "Tab",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open dialog",
+            "testId": null
+          },
+          "elapsedMs": 11,
+          "status": "passed"
+        },
+        {
+          "index": 1,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open dialog",
+            "testId": null
+          },
+          "elapsedMs": 37,
+          "status": "passed",
+          "checkpointId": "dialog.launcher",
+          "expectedTargetKey": "dialog.launcher"
+        },
+        {
+          "index": 2,
+          "action": "Enter",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Close dialog",
+            "testId": null
+          },
+          "elapsedMs": 43,
+          "status": "passed"
+        },
+        {
+          "index": 3,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Close dialog",
+            "testId": null
+          },
+          "elapsedMs": 51,
+          "status": "passed",
+          "checkpointId": "dialog.close",
+          "expectedTargetKey": "dialog.close"
+        },
+        {
+          "index": 4,
+          "action": "Escape",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open dialog",
+            "testId": null
+          },
+          "elapsedMs": 55,
+          "status": "passed"
+        },
+        {
+          "index": 5,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open dialog",
+            "testId": null
+          },
+          "elapsedMs": 65,
+          "status": "passed",
+          "checkpointId": "dialog.return",
+          "expectedTargetKey": "dialog.return"
+        }
+      ]
+    },
+    "current": {
+      "schemaVersion": 1,
+      "journeyId": "packed.dialog",
+      "browserVersion": "156.0.8078.4",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "locale": "en-US",
+      "fixtureVersion": "packed-fixture-v1",
+      "status": "failed",
+      "steps": [
+        {
+          "index": 0,
+          "action": "Tab",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open dialog",
+            "testId": null
+          },
+          "elapsedMs": 29,
+          "status": "passed"
+        },
+        {
+          "index": 1,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open dialog",
+            "testId": null
+          },
+          "elapsedMs": 75,
+          "status": "passed",
+          "checkpointId": "dialog.launcher",
+          "expectedTargetKey": "dialog.launcher"
+        },
+        {
+          "index": 2,
+          "action": "Enter",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Close dialog",
+            "testId": null
+          },
+          "elapsedMs": 82,
+          "status": "passed"
+        },
+        {
+          "index": 3,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Close dialog",
+            "testId": null
+          },
+          "elapsedMs": 93,
+          "status": "passed",
+          "checkpointId": "dialog.close",
+          "expectedTargetKey": "dialog.close"
+        },
+        {
+          "index": 4,
+          "action": "Escape",
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open dialog",
+            "testId": null
+          },
+          "elapsedMs": 98,
+          "status": "passed"
+        },
+        {
+          "index": 5,
+          "action": null,
+          "observed": {
+            "tag": "button",
+            "role": "button",
+            "name": "Open dialog",
+            "testId": null
+          },
+          "elapsedMs": 112,
+          "status": "passed",
+          "checkpointId": "dialog.return",
+          "expectedTargetKey": "dialog.return"
+        }
+      ],
+      "error": "Application test failed: Error: expect(locator).toHaveText(expected) failed"
+    },
+    "firstDifference": {
+      "index": 6,
+      "kind": "run-failure",
+      "reason": "Application test failed: Error: expect(locator).toHaveText(expected) failed"
+    }
+  }
+}
