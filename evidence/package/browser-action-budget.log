@@ -1,13 +1,13 @@
 {
   "executable": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/runtime/node_modules/node/bin/node",
   "args": [
-    "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt/node_modules/@playwright/test/cli.js",
+    "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-jMp2F0/node_modules/@playwright/test/cli.js",
     "test",
     "--config=playwright.config.mjs",
     "--grep",
     "public fixture bounds"
   ],
-  "cwd": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt",
+  "cwd": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-jMp2F0",
   "expectedExit": 1,
   "actualExit": 1,
   "signal": null
@@ -17,17 +17,17 @@ STDOUT
 
 Running 1 test using 1 worker
 
-  ✘  1 tests/public.spec.mjs:39:1 › public fixture bounds journey (762ms)
+  ✘  1 tests/public.spec.mjs:39:1 › public fixture bounds journey (642ms)
 
 
   1) tests/public.spec.mjs:39:1 › public fixture bounds journey ────────────────────────────────────
 
     Error: Action budget exceeded
-        at fail (/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt/node_modules/focus-trail/packages/core/src/journey.ts:73:12)
-        at /Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt/node_modules/focus-trail/packages/core/src/journey.ts:112:42
+        at fail (/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-jMp2F0/node_modules/focus-trail/packages/core/src/journey.ts:73:12)
+        at /Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-jMp2F0/node_modules/focus-trail/packages/core/src/journey.ts:112:42
 
     attachment #1: focus-trail:packed.bounds.json (application/json) ───────────────────────────────
-    test-results/action-budget/public-public-fixture-bounds-journey/attachments/focus-trail-packed-bounds-json-5e7d98980782e0908deada69276db02732285be9.json
+    test-results/action-budget/public-public-fixture-bounds-journey/attachments/focus-trail-packed-bounds-json-a5105c6b8df667f80a85bf7b8a9fd335671be03c.json
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     Error Context: test-results/action-budget/public-public-fixture-bounds-journey/error-context.md
@@ -36,5 +36,5 @@ Running 1 test using 1 worker
     tests/public.spec.mjs:39:1 › public fixture bounds journey ─────────────────────────────────────
 
 STDERR
-(node:77997) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(node:82326) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
 (Use `node --trace-warnings ...` to show where the warning was created)

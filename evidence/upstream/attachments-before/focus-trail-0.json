@@ -20,7 +20,7 @@
         "name": "New Converter",
         "testId": "new-converter"
       },
-      "elapsedMs": 15,
+      "elapsedMs": 11,
       "status": "passed"
     },
     {
@@ -34,7 +34,7 @@
         "name": "New Converter",
         "testId": "new-converter"
       },
-      "elapsedMs": 29,
+      "elapsedMs": 26,
       "status": "passed"
     },
     {
@@ -46,7 +46,7 @@
         "name": "Remove focus_probe",
         "testId": "opener"
       },
-      "elapsedMs": 33,
+      "elapsedMs": 30,
       "status": "passed"
     },
     {
@@ -60,7 +60,7 @@
         "name": "Remove focus_probe",
         "testId": "opener"
       },
-      "elapsedMs": 39,
+      "elapsedMs": 36,
       "status": "passed"
     },
     {
@@ -72,7 +72,7 @@
         "name": "Cancel",
         "testId": "cancel"
       },
-      "elapsedMs": 50,
+      "elapsedMs": 48,
       "status": "passed"
     },
     {
@@ -86,7 +86,7 @@
         "name": "Cancel",
         "testId": "cancel"
       },
-      "elapsedMs": 57,
+      "elapsedMs": 55,
       "status": "passed"
     },
     {
@@ -98,7 +98,7 @@
         "name": "Remove",
         "testId": "confirm"
       },
-      "elapsedMs": 60,
+      "elapsedMs": 59,
       "status": "passed"
     },
     {
@@ -112,7 +112,7 @@
         "name": "Remove",
         "testId": "confirm"
       },
-      "elapsedMs": 67,
+      "elapsedMs": 65,
       "status": "passed"
     },
     {
@@ -124,7 +124,7 @@
         "name": "Remove",
         "testId": "confirm"
       },
-      "elapsedMs": 72,
+      "elapsedMs": 71,
       "status": "passed"
     },
     {
@@ -137,9 +137,9 @@
         "role": null,
         "name": null,
         "testId": null,
-        "unavailable": "Last coherent sample at 1996ms; checkpoint wait ended without a later verified sample"
+        "unavailable": "Last coherent sample at 1448ms; checkpoint wait ended without a later verified sample"
       },
-      "elapsedMs": 1997,
+      "elapsedMs": 1500,
       "status": "failed",
       "error": "Checkpoint return-opener did not receive focus within 500ms"
     }

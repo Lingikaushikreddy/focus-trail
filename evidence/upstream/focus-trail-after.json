@@ -34,7 +34,7 @@
         "name": "New Converter",
         "testId": "new-converter"
       },
-      "elapsedMs": 19,
+      "elapsedMs": 21,
       "status": "passed"
     },
     {
@@ -46,7 +46,7 @@
         "name": "Remove focus_probe",
         "testId": "opener"
       },
-      "elapsedMs": 23,
+      "elapsedMs": 24,
       "status": "passed"
     },
     {
@@ -60,7 +60,7 @@
         "name": "Remove focus_probe",
         "testId": "opener"
       },
-      "elapsedMs": 28,
+      "elapsedMs": 29,
       "status": "passed"
     },
     {
@@ -72,7 +72,7 @@
         "name": "Cancel",
         "testId": "cancel"
       },
-      "elapsedMs": 39,
+      "elapsedMs": 41,
       "status": "passed"
     },
     {
@@ -86,7 +86,7 @@
         "name": "Cancel",
         "testId": "cancel"
       },
-      "elapsedMs": 46,
+      "elapsedMs": 48,
       "status": "passed"
     },
     {
@@ -98,7 +98,7 @@
         "name": "Remove",
         "testId": "confirm"
       },
-      "elapsedMs": 49,
+      "elapsedMs": 51,
       "status": "passed"
     },
     {
@@ -112,7 +112,7 @@
         "name": "Remove",
         "testId": "confirm"
       },
-      "elapsedMs": 53,
+      "elapsedMs": 58,
       "status": "passed"
     },
     {
@@ -124,7 +124,7 @@
         "name": "Remove focus_probe",
         "testId": "opener"
       },
-      "elapsedMs": 59,
+      "elapsedMs": 64,
       "status": "passed"
     },
     {
@@ -138,7 +138,7 @@
         "name": "Remove focus_probe",
         "testId": "opener"
       },
-      "elapsedMs": 495,
+      "elapsedMs": 510,
       "status": "passed"
     }
   ]

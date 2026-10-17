@@ -33,7 +33,7 @@
           "name": "New Converter",
           "testId": "new-converter"
         },
-        "elapsedMs": 19,
+        "elapsedMs": 21,
         "status": "passed",
         "checkpointId": "new-converter",
         "expectedTargetKey": "new-converter"
@@ -47,7 +47,7 @@
           "name": "Remove focus_probe",
           "testId": "opener"
         },
-        "elapsedMs": 23,
+        "elapsedMs": 24,
         "status": "passed"
       },
       {
@@ -59,7 +59,7 @@
           "name": "Remove focus_probe",
           "testId": "opener"
         },
-        "elapsedMs": 28,
+        "elapsedMs": 29,
         "status": "passed",
         "checkpointId": "remove-opener",
         "expectedTargetKey": "remove-opener"
@@ -73,7 +73,7 @@
           "name": "Cancel",
           "testId": "cancel"
         },
-        "elapsedMs": 39,
+        "elapsedMs": 41,
         "status": "passed"
       },
       {
@@ -85,7 +85,7 @@
           "name": "Cancel",
           "testId": "cancel"
         },
-        "elapsedMs": 46,
+        "elapsedMs": 48,
         "status": "passed",
         "checkpointId": "dialog-cancel",
         "expectedTargetKey": "dialog-cancel"
@@ -99,7 +99,7 @@
           "name": "Remove",
           "testId": "confirm"
         },
-        "elapsedMs": 49,
+        "elapsedMs": 51,
         "status": "passed"
       },
       {
@@ -111,7 +111,7 @@
           "name": "Remove",
           "testId": "confirm"
         },
-        "elapsedMs": 53,
+        "elapsedMs": 58,
         "status": "passed",
         "checkpointId": "dialog-remove",
         "expectedTargetKey": "dialog-remove"
@@ -125,7 +125,7 @@
           "name": "Remove focus_probe",
           "testId": "opener"
         },
-        "elapsedMs": 59,
+        "elapsedMs": 64,
         "status": "passed"
       },
       {
@@ -137,7 +137,7 @@
           "name": "Remove focus_probe",
           "testId": "opener"
         },
-        "elapsedMs": 495,
+        "elapsedMs": 510,
         "status": "passed",
         "checkpointId": "return-opener",
         "expectedTargetKey": "return-opener"
@@ -166,7 +166,7 @@
           "name": "New Converter",
           "testId": "new-converter"
         },
-        "elapsedMs": 15,
+        "elapsedMs": 11,
         "status": "passed"
       },
       {
@@ -178,7 +178,7 @@
           "name": "New Converter",
           "testId": "new-converter"
         },
-        "elapsedMs": 29,
+        "elapsedMs": 26,
         "status": "passed",
         "checkpointId": "new-converter",
         "expectedTargetKey": "new-converter"
@@ -192,7 +192,7 @@
           "name": "Remove focus_probe",
           "testId": "opener"
         },
-        "elapsedMs": 33,
+        "elapsedMs": 30,
         "status": "passed"
       },
       {
@@ -204,7 +204,7 @@
           "name": "Remove focus_probe",
           "testId": "opener"
         },
-        "elapsedMs": 39,
+        "elapsedMs": 36,
         "status": "passed",
         "checkpointId": "remove-opener",
         "expectedTargetKey": "remove-opener"
@@ -218,7 +218,7 @@
           "name": "Cancel",
           "testId": "cancel"
         },
-        "elapsedMs": 50,
+        "elapsedMs": 48,
         "status": "passed"
       },
       {
@@ -230,7 +230,7 @@
           "name": "Cancel",
           "testId": "cancel"
         },
-        "elapsedMs": 57,
+        "elapsedMs": 55,
         "status": "passed",
         "checkpointId": "dialog-cancel",
         "expectedTargetKey": "dialog-cancel"
@@ -244,7 +244,7 @@
           "name": "Remove",
           "testId": "confirm"
         },
-        "elapsedMs": 60,
+        "elapsedMs": 59,
         "status": "passed"
       },
       {
@@ -256,7 +256,7 @@
           "name": "Remove",
           "testId": "confirm"
         },
-        "elapsedMs": 67,
+        "elapsedMs": 65,
         "status": "passed",
         "checkpointId": "dialog-remove",
         "expectedTargetKey": "dialog-remove"
@@ -270,7 +270,7 @@
           "name": "Remove",
           "testId": "confirm"
         },
-        "elapsedMs": 72,
+        "elapsedMs": 71,
         "status": "passed"
       },
       {
@@ -281,9 +281,9 @@
           "role": null,
           "name": null,
           "testId": null,
-          "unavailable": "Last coherent sample at 1996ms; checkpoint wait ended without a later verified sample"
+          "unavailable": "Last coherent sample at 1448ms; checkpoint wait ended without a later verified sample"
         },
-        "elapsedMs": 1997,
+        "elapsedMs": 1500,
         "status": "failed",
         "checkpointId": "return-opener",
         "expectedTargetKey": "return-opener",

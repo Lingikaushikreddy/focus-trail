@@ -6,9 +6,9 @@
     "--ignore-scripts",
     "--json",
     "--pack-destination",
-    "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail/evidence/package"
+    "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-clean-source/evidence/package"
   ],
-  "cwd": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/outputs/focus-trail",
+  "cwd": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-clean-source",
   "expectedExit": 0,
   "actualExit": 0,
   "signal": null
@@ -22,8 +22,8 @@ STDOUT
     "version": "0.1.0",
     "size": 65252,
     "unpackedSize": 282130,
-    "shasum": "29ad848f9f9d4b66bc06db20b881d1a9b1fb1bd0",
-    "integrity": "sha512-+ZkyAwkSP3phoIalzrNi1aUStOktdCrlielFKZv5OdSS+2Zf52baGV3B9UQXy+dZcWHGNPg1kYWO+GFq6g+j8A==",
+    "shasum": "e1e8693da357b57208ff71dad5a5a859485df952",
+    "integrity": "sha512-9iqw1AXWqrAFyGX2SaueD7nUI6pYdRmfDCBC4f1z2NWPcklTToeCXStwzZ5oY3tglpLQskbqGVRb3XkMesJ/Qg==",
     "filename": "focus-trail-0.1.0.tgz",
     "files": [
       {

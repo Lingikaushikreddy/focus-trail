@@ -31,21 +31,23 @@
     "packageFailures": 0,
     "demoAutonomousBootstrap": "passed",
     "codeReview": "three findings addressed; scoped re-review clean",
-    "sourceDerivedFrameworkReproduction": "verified against final tarball"
+    "sourceDerivedFrameworkReproduction": "verified against final tarball",
+    "cleanSourceCheckout": "npm ci then CI=true npm run verify passed without dist or a pre-existing demo server"
   },
   "candidate": {
     "path": "evidence/package/focus-trail-0.1.0.tgz",
-    "sha256": "727d54f969814c4fb375fe4b845da1b361db7cdbcf337296b58da2803e99aace",
-    "integrity": "sha512-+ZkyAwkSP3phoIalzrNi1aUStOktdCrlielFKZv5OdSS+2Zf52baGV3B9UQXy+dZcWHGNPg1kYWO+GFq6g+j8A=="
+    "sha256": "79bac5b64c1f96e7cb684e4bb746cc37af4bda902f719590bacc3984fb8e67e4",
+    "integrity": "sha512-9iqw1AXWqrAFyGX2SaueD7nUI6pYdRmfDCBC4f1z2NWPcklTToeCXStwzZ5oY3tglpLQskbqGVRb3XkMesJ/Qg=="
   },
   "evidence": {
-    "fullVerification": "evidence/verification.log",
+    "fullVerification": "evidence/clean-source-verification.log",
     "repeats": "evidence/repeat-verification.log",
     "package": "evidence/package/verification.json",
     "framework": "evidence/upstream/result.json",
     "codeReview": "evidence/code-review.md",
     "reReview": "evidence/code-re-review.md",
-    "firstFailedRepeat": "evidence/investigation/repeat-before-fix.log"
+    "firstFailedRepeat": "evidence/investigation/repeat-before-fix.log",
+    "cleanSourceSetup": "evidence/clean-source-review.md"
   },
   "externalGates": {
     "independentMaintainerInstallations": {

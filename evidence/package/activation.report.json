@@ -28,7 +28,7 @@
           "name": "Open dialog",
           "testId": null
         },
-        "elapsedMs": 29,
+        "elapsedMs": 16,
         "status": "passed"
       },
       {
@@ -40,7 +40,7 @@
           "name": "Open dialog",
           "testId": null
         },
-        "elapsedMs": 75,
+        "elapsedMs": 54,
         "status": "passed",
         "checkpointId": "dialog.launcher",
         "expectedTargetKey": "dialog.launcher"
@@ -54,7 +54,7 @@
           "name": "Close dialog",
           "testId": null
         },
-        "elapsedMs": 82,
+        "elapsedMs": 59,
         "status": "passed"
       },
       {
@@ -66,7 +66,7 @@
           "name": "Close dialog",
           "testId": null
         },
-        "elapsedMs": 93,
+        "elapsedMs": 69,
         "status": "passed",
         "checkpointId": "dialog.close",
         "expectedTargetKey": "dialog.close"
@@ -80,7 +80,7 @@
           "name": "Open dialog",
           "testId": null
         },
-        "elapsedMs": 98,
+        "elapsedMs": 73,
         "status": "passed"
       },
       {
@@ -92,7 +92,7 @@
           "name": "Open dialog",
           "testId": null
         },
-        "elapsedMs": 112,
+        "elapsedMs": 82,
         "status": "passed",
         "checkpointId": "dialog.return",
         "expectedTargetKey": "dialog.return"
@@ -123,7 +123,7 @@
             "name": "Open dialog",
             "testId": null
           },
-          "elapsedMs": 11,
+          "elapsedMs": 10,
           "status": "passed"
         },
         {
@@ -135,7 +135,7 @@
             "name": "Open dialog",
             "testId": null
           },
-          "elapsedMs": 37,
+          "elapsedMs": 36,
           "status": "passed",
           "checkpointId": "dialog.launcher",
           "expectedTargetKey": "dialog.launcher"
@@ -187,7 +187,7 @@
             "name": "Open dialog",
             "testId": null
           },
-          "elapsedMs": 65,
+          "elapsedMs": 64,
           "status": "passed",
           "checkpointId": "dialog.return",
           "expectedTargetKey": "dialog.return"
@@ -215,7 +215,7 @@
             "name": "Open dialog",
             "testId": null
           },
-          "elapsedMs": 29,
+          "elapsedMs": 16,
           "status": "passed"
         },
         {
@@ -227,7 +227,7 @@
             "name": "Open dialog",
             "testId": null
           },
-          "elapsedMs": 75,
+          "elapsedMs": 54,
           "status": "passed",
           "checkpointId": "dialog.launcher",
           "expectedTargetKey": "dialog.launcher"
@@ -241,7 +241,7 @@
             "name": "Close dialog",
             "testId": null
           },
-          "elapsedMs": 82,
+          "elapsedMs": 59,
           "status": "passed"
         },
         {
@@ -253,7 +253,7 @@
             "name": "Close dialog",
             "testId": null
           },
-          "elapsedMs": 93,
+          "elapsedMs": 69,
           "status": "passed",
           "checkpointId": "dialog.close",
           "expectedTargetKey": "dialog.close"
@@ -267,7 +267,7 @@
             "name": "Open dialog",
             "testId": null
           },
-          "elapsedMs": 98,
+          "elapsedMs": 73,
           "status": "passed"
         },
         {
@@ -279,7 +279,7 @@
             "name": "Open dialog",
             "testId": null
           },
-          "elapsedMs": 112,
+          "elapsedMs": 82,
           "status": "passed",
           "checkpointId": "dialog.return",
           "expectedTargetKey": "dialog.return"

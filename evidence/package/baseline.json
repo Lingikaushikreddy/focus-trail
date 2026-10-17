@@ -19,7 +19,7 @@
         "name": "Open dialog",
         "testId": null
       },
-      "elapsedMs": 11,
+      "elapsedMs": 10,
       "status": "passed"
     },
     {
@@ -31,7 +31,7 @@
         "name": "Open dialog",
         "testId": null
       },
-      "elapsedMs": 37,
+      "elapsedMs": 36,
       "status": "passed",
       "checkpointId": "dialog.launcher",
       "expectedTargetKey": "dialog.launcher"
@@ -83,7 +83,7 @@
         "name": "Open dialog",
         "testId": null
       },
-      "elapsedMs": 65,
+      "elapsedMs": 64,
       "status": "passed",
       "checkpointId": "dialog.return",
       "expectedTargetKey": "dialog.return"

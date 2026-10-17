@@ -28,7 +28,7 @@
           "name": "Open dialog",
           "testId": null
         },
-        "elapsedMs": 24,
+        "elapsedMs": 13,
         "status": "passed"
       },
       {
@@ -40,7 +40,7 @@
           "name": "Open dialog",
           "testId": null
         },
-        "elapsedMs": 67,
+        "elapsedMs": 51,
         "status": "passed",
         "checkpointId": "dialog.launcher",
         "expectedTargetKey": "dialog.launcher"
@@ -54,7 +54,7 @@
           "name": "Close dialog",
           "testId": null
         },
-        "elapsedMs": 71,
+        "elapsedMs": 55,
         "status": "passed"
       },
       {
@@ -66,7 +66,7 @@
           "name": "Close dialog",
           "testId": null
         },
-        "elapsedMs": 80,
+        "elapsedMs": 66,
         "status": "passed",
         "checkpointId": "dialog.close",
         "expectedTargetKey": "dialog.close"
@@ -80,7 +80,7 @@
           "name": "Other control",
           "testId": null
         },
-        "elapsedMs": 84,
+        "elapsedMs": 70,
         "status": "passed"
       },
       {
@@ -91,9 +91,9 @@
           "role": "button",
           "name": "Other control",
           "testId": null,
-          "unavailable": "Last coherent sample at 325ms; checkpoint wait ended without a later verified sample"
+          "unavailable": "Last coherent sample at 310ms; checkpoint wait ended without a later verified sample"
         },
-        "elapsedMs": 327,
+        "elapsedMs": 313,
         "status": "failed",
         "checkpointId": "dialog.return",
         "expectedTargetKey": "dialog.return",
@@ -125,7 +125,7 @@
             "name": "Open dialog",
             "testId": null
           },
-          "elapsedMs": 11,
+          "elapsedMs": 10,
           "status": "passed"
         },
         {
@@ -137,7 +137,7 @@
             "name": "Open dialog",
             "testId": null
           },
-          "elapsedMs": 37,
+          "elapsedMs": 36,
           "status": "passed",
           "checkpointId": "dialog.launcher",
           "expectedTargetKey": "dialog.launcher"
@@ -189,7 +189,7 @@
             "name": "Open dialog",
             "testId": null
           },
-          "elapsedMs": 65,
+          "elapsedMs": 64,
           "status": "passed",
           "checkpointId": "dialog.return",
           "expectedTargetKey": "dialog.return"
@@ -217,7 +217,7 @@
             "name": "Open dialog",
             "testId": null
           },
-          "elapsedMs": 24,
+          "elapsedMs": 13,
           "status": "passed"
         },
         {
@@ -229,7 +229,7 @@
             "name": "Open dialog",
             "testId": null
           },
-          "elapsedMs": 67,
+          "elapsedMs": 51,
           "status": "passed",
           "checkpointId": "dialog.launcher",
           "expectedTargetKey": "dialog.launcher"
@@ -243,7 +243,7 @@
             "name": "Close dialog",
             "testId": null
           },
-          "elapsedMs": 71,
+          "elapsedMs": 55,
           "status": "passed"
         },
         {
@@ -255,7 +255,7 @@
             "name": "Close dialog",
             "testId": null
           },
-          "elapsedMs": 80,
+          "elapsedMs": 66,
           "status": "passed",
           "checkpointId": "dialog.close",
           "expectedTargetKey": "dialog.close"
@@ -269,7 +269,7 @@
             "name": "Other control",
             "testId": null
           },
-          "elapsedMs": 84,
+          "elapsedMs": 70,
           "status": "passed"
         },
         {
@@ -280,9 +280,9 @@
             "role": "button",
             "name": "Other control",
             "testId": null,
-            "unavailable": "Last coherent sample at 325ms; checkpoint wait ended without a later verified sample"
+            "unavailable": "Last coherent sample at 310ms; checkpoint wait ended without a later verified sample"
           },
-          "elapsedMs": 327,
+          "elapsedMs": 313,
           "status": "failed",
           "checkpointId": "dialog.return",
           "expectedTargetKey": "dialog.return",

@@ -1,13 +1,13 @@
 {
   "executable": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/runtime/node_modules/node/bin/node",
   "args": [
-    "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt/node_modules/@playwright/test/cli.js",
+    "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-jMp2F0/node_modules/@playwright/test/cli.js",
     "test",
     "--config=playwright.config.mjs",
     "--grep",
     "public dialog"
   ],
-  "cwd": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt",
+  "cwd": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-jMp2F0",
   "expectedExit": 1,
   "actualExit": 1,
   "signal": null
@@ -17,7 +17,7 @@ STDOUT
 
 Running 1 test using 1 worker
 
-  ✘  1 tests/public.spec.mjs:21:1 › public dialog fixture journey (783ms)
+  ✘  1 tests/public.spec.mjs:21:1 › public dialog fixture journey (739ms)
 
 
   1) tests/public.spec.mjs:21:1 › public dialog fixture journey ────────────────────────────────────
@@ -43,10 +43,10 @@ Running 1 test using 1 worker
       37 | });
       38 |
       39 | test('public fixture bounds journey', async ({ page, journey }, testInfo) => {
-        at /Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt/tests/public.spec.mjs:36:44
+        at /Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-jMp2F0/tests/public.spec.mjs:36:44
 
     attachment #1: focus-trail:packed.dialog.json (application/json) ───────────────────────────────
-    test-results/activation/public-public-dialog-fixture-journey/attachments/focus-trail-packed-dialog-json-0885c9cf688a55b36435617bd66507750f36c727.json
+    test-results/activation/public-public-dialog-fixture-journey/attachments/focus-trail-packed-dialog-json-1548f63860ee958e3221581f805feb51fb828215.json
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     Error Context: test-results/activation/public-public-dialog-fixture-journey/error-context.md
@@ -55,5 +55,5 @@ Running 1 test using 1 worker
     tests/public.spec.mjs:21:1 › public dialog fixture journey ─────────────────────────────────────
 
 STDERR
-(node:77925) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(node:82309) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
 (Use `node --trace-warnings ...` to show where the warning was created)

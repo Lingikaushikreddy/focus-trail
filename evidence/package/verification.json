@@ -4,7 +4,7 @@
   "node": "v24.22.0",
   "peer": "@playwright/test@1.64.1",
   "browserEnvironment": {
-    "PLAYWRIGHT_BROWSERS_PATH": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/browsers"
+    "PLAYWRIGHT_BROWSERS_PATH": null
   },
   "checks": [
     {
@@ -52,7 +52,7 @@
     {
       "name": "installed-copy-outside-source",
       "passed": true,
-      "installed": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt/node_modules/focus-trail"
+      "installed": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-jMp2F0/node_modules/focus-trail"
     },
     {
       "name": "exact-installed-peer",
@@ -69,8 +69,8 @@
     {
       "name": "browser-cache-environment-preserved",
       "passed": true,
-      "browserPathEnvironment": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/browsers",
-      "executablePath": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/browsers/chromium-1248/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
+      "browserPathEnvironment": null,
+      "executablePath": "/Users/kaushikreddy/Library/Caches/ms-playwright/chromium-1248/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
     },
     {
       "name": "public-imports",
@@ -296,14 +296,14 @@
   ],
   "candidate": {
     "filename": "focus-trail-0.1.0.tgz",
-    "integrity": "sha512-+ZkyAwkSP3phoIalzrNi1aUStOktdCrlielFKZv5OdSS+2Zf52baGV3B9UQXy+dZcWHGNPg1kYWO+GFq6g+j8A==",
-    "shasum": "29ad848f9f9d4b66bc06db20b881d1a9b1fb1bd0",
-    "sha256": "727d54f969814c4fb375fe4b845da1b361db7cdbcf337296b58da2803e99aace"
+    "integrity": "sha512-9iqw1AXWqrAFyGX2SaueD7nUI6pYdRmfDCBC4f1z2NWPcklTToeCXStwzZ5oY3tglpLQskbqGVRb3XkMesJ/Qg==",
+    "shasum": "e1e8693da357b57208ff71dad5a5a859485df952",
+    "sha256": "79bac5b64c1f96e7cb684e4bb746cc37af4bda902f719590bacc3984fb8e67e4"
   },
-  "consumer": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt",
+  "consumer": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-jMp2F0",
   "browserResolution": {
-    "browserPathEnvironment": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/browsers",
-    "executablePath": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/browsers/chromium-1248/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
+    "browserPathEnvironment": null,
+    "executablePath": "/Users/kaushikreddy/Library/Caches/ms-playwright/chromium-1248/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
   },
   "syntheticBaselineReview": {
     "scope": "Local synthetic fixture only; no independent pilot evidence",
@@ -314,8 +314,8 @@
       "dialog.close",
       "dialog.return"
     ],
-    "reviewedAt": "2026-10-17T00:11:30.386Z"
+    "reviewedAt": "2026-10-17T00:16:20.196Z"
   },
   "chromiumVersion": "156.0.8078.4",
-  "finishedAt": "2026-10-17T00:11:39.013Z"
+  "finishedAt": "2026-10-17T00:16:26.588Z"
 }

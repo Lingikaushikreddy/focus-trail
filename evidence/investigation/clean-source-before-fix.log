@@ -1,0 +1,8 @@
+
+> focus-trail@0.1.0 typecheck
+> tsc --noEmit
+
+examples/dialog/tests/journeys.spec.ts(1,22): error TS2307: Cannot find module '../../../dist/index.js' or its corresponding type declarations.
+examples/dialog/tests/journeys.spec.ts(5,23): error TS7031: Binding element 'page' implicitly has an 'any' type.
+examples/dialog/tests/journeys.spec.ts(5,29): error TS7031: Binding element 'journey' implicitly has an 'any' type.
+examples/dialog/tests/journeys.spec.ts(5,40): error TS7006: Parameter 'info' implicitly has an 'any' type.

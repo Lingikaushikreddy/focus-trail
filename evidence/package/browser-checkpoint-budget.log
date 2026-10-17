@@ -1,13 +1,13 @@
 {
   "executable": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/runtime/node_modules/node/bin/node",
   "args": [
-    "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt/node_modules/@playwright/test/cli.js",
+    "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-jMp2F0/node_modules/@playwright/test/cli.js",
     "test",
     "--config=playwright.config.mjs",
     "--grep",
     "public fixture bounds"
   ],
-  "cwd": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt",
+  "cwd": "/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-jMp2F0",
   "expectedExit": 1,
   "actualExit": 1,
   "signal": null
@@ -17,17 +17,17 @@ STDOUT
 
 Running 1 test using 1 worker
 
-  ✘  1 tests/public.spec.mjs:39:1 › public fixture bounds journey (1.7s)
+  ✘  1 tests/public.spec.mjs:39:1 › public fixture bounds journey (640ms)
 
 
   1) tests/public.spec.mjs:39:1 › public fixture bounds journey ────────────────────────────────────
 
     Error: Checkpoint budget exceeded
-        at fail (/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt/node_modules/focus-trail/packages/core/src/journey.ts:73:12)
-        at /Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-pGTpzt/node_modules/focus-trail/packages/core/src/journey.ts:130:38
+        at fail (/Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-jMp2F0/node_modules/focus-trail/packages/core/src/journey.ts:73:12)
+        at /Users/kaushikreddy/Documents/Codex/2026-10-16/users-kaushikreddy-documents-codex-2026-10-5/work/focus-trail-consumer-jMp2F0/node_modules/focus-trail/packages/core/src/journey.ts:130:38
 
     attachment #1: focus-trail:packed.bounds.json (application/json) ───────────────────────────────
-    test-results/checkpoint-budget/public-public-fixture-bounds-journey/attachments/focus-trail-packed-bounds-json-ae8af6d71e2a54d00fd8a662ddac568fa4b4dab2.json
+    test-results/checkpoint-budget/public-public-fixture-bounds-journey/attachments/focus-trail-packed-bounds-json-40e01fcf289c5500576600cdaff9129c81884a2a.json
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     Error Context: test-results/checkpoint-budget/public-public-fixture-bounds-journey/error-context.md
@@ -36,5 +36,5 @@ Running 1 test using 1 worker
     tests/public.spec.mjs:39:1 › public fixture bounds journey ─────────────────────────────────────
 
 STDERR
-(node:78045) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(node:82345) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
 (Use `node --trace-warnings ...` to show where the warning was created)
